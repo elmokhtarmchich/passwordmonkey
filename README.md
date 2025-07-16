@@ -1,5 +1,5 @@
 ---
-title: securepass
+title: PasswordMonkey
 emoji: 🐳
 colorFrom: gray
 colorTo: pink
