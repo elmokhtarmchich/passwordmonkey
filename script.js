@@ -1,5 +1,7 @@
+// Material Design 3 PasswordMonkey Script
+
 document.addEventListener('DOMContentLoaded', function() {
-    // DOM Elements
+    // --- DOM Elements ---
     const lengthSlider = document.getElementById('password-length');
     const lengthValue = document.getElementById('length-value');
     const uppercaseCheckbox = document.getElementById('uppercase');
@@ -9,11 +11,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const excludeAmbiguousCheckbox = document.getElementById('exclude-ambiguous');
     const excludeSimilarCheckbox = document.getElementById('exclude-similar');
     const generateBtn = document.getElementById('generate-btn');
-    const generatedPassword = document.getElementById('generated-password');
+    const generatedPasswordDiv = document.getElementById('generated-password');
+    const passwordContainer = document.getElementById('password-container');
     const copyBtn = document.getElementById('copy-btn');
     const tooltip = document.getElementById('tooltip');
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const darkModeIcon = document.getElementById('dark-mode-icon');
 
-    // Character sets
+    // --- Character Sets ---
     const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
     const numberChars = '0123456789';
@@ -21,143 +26,113 @@ document.addEventListener('DOMContentLoaded', function() {
     const ambiguousChars = 'iIlL1!|oO0';
     const similarChars = '0Oo1lI';
 
-    // Update length value display
-    lengthSlider.addEventListener('input', function() {
-        lengthValue.textContent = this.value;
-    });
+    // --- Functions ---
 
-    // Generate password function
     function generatePassword() {
         let length = parseInt(lengthSlider.value);
         let charset = '';
-        
-        // Build character set based on selected options
         if (uppercaseCheckbox.checked) charset += uppercaseChars;
         if (lowercaseCheckbox.checked) charset += lowercaseChars;
         if (numbersCheckbox.checked) charset += numberChars;
         if (symbolsCheckbox.checked) charset += symbolChars;
-        
-        // If no character types selected, use all
         if (charset === '') {
             charset = uppercaseChars + lowercaseChars + numberChars + symbolChars;
-            uppercaseCheckbox.checked = true;
-            lowercaseCheckbox.checked = true;
-            numbersCheckbox.checked = true;
+            [uppercaseCheckbox, lowercaseCheckbox, numbersCheckbox, symbolsCheckbox].forEach(cb => cb.checked = true);
         }
-        
-        // Remove ambiguous characters if option is checked
         if (excludeAmbiguousCheckbox.checked) {
             charset = charset.split('').filter(char => !ambiguousChars.includes(char)).join('');
         }
-        
-        // Remove similar characters if option is checked
         if (excludeSimilarCheckbox.checked) {
             charset = charset.split('').filter(char => !similarChars.includes(char)).join('');
         }
-        
-        // Generate password
         let password = '';
-        for (let i = 0; i < length; i++) {
-            const randomIndex = Math.floor(Math.random() * charset.length);
-            password += charset[randomIndex];
+        if (charset.length > 0) {
+            for (let i = 0; i < length; i++) {
+                const randomIndex = Math.floor(Math.random() * charset.length);
+                password += charset[randomIndex];
+            }
         }
-        
         return password;
     }
 
-    // Calculate password strength
     function calculateStrength(password) {
         let strength = 0;
+        if (!password) return 0;
         const length = password.length;
-        
-        // Length contributes up to 50% of the score
         strength += Math.min(length / 50 * 50, 50);
-        
-        // Character variety contributes up to 50% of the score
         let varietyScore = 0;
         if (/[A-Z]/.test(password)) varietyScore += 10;
         if (/[a-z]/.test(password)) varietyScore += 10;
         if (/[0-9]/.test(password)) varietyScore += 10;
         if (/[^A-Za-z0-9]/.test(password)) varietyScore += 20;
-        
         strength += varietyScore;
-        
-        // Cap at 100
-        strength = Math.min(strength, 100);
-        
-        return strength;
+        return Math.min(strength, 100);
     }
 
-    // Update strength display
     function updateStrengthDisplay(password) {
         const strength = calculateStrength(password);
-        const passwordContainer = document.querySelector('.bg-white.border.border-gray-300');
         
-        // Remove existing strength classes
-        passwordContainer.classList.remove(
-            'border-red-500', 'border-yellow-500', 'border-green-500',
-            'bg-red-50', 'bg-yellow-50', 'bg-green-50'
-        );
+        const baseClasses = ['bg-white', 'dark:bg-gray-600', 'border-gray-300', 'dark:border-gray-500'];
+        const weakClasses = ['bg-red-100', 'dark:bg-red-900', 'border-red-500'];
+        const mediumClasses = ['bg-yellow-100', 'dark:bg-yellow-900', 'border-yellow-500'];
+        const strongClasses = ['bg-green-100', 'dark:bg-green-900', 'border-green-500'];
         
-        // Add appropriate strength classes
-        if (strength < 30) {
-            passwordContainer.classList.add('border-red-500', 'bg-red-50');
+        passwordContainer.classList.remove(...baseClasses, ...weakClasses, ...mediumClasses, ...strongClasses);
+
+        if (strength === 0) {
+             passwordContainer.classList.add(...baseClasses);
+        } else if (strength < 30) {
+            passwordContainer.classList.add(...weakClasses);
         } else if (strength < 70) {
-            passwordContainer.classList.add('border-yellow-500', 'bg-yellow-50');
+            passwordContainer.classList.add(...mediumClasses);
         } else {
-            passwordContainer.classList.add('border-green-500', 'bg-green-50');
+            passwordContainer.classList.add(...strongClasses);
         }
     }
 
-    // Function to handle changes and generate password
     function handleParameterChange() {
         const password = generatePassword();
-        generatedPassword.textContent = password;
+        generatedPasswordDiv.textContent = password || 'Select options';
         updateStrengthDisplay(password);
     }
 
-    // Add event listeners to input elements
-    lengthSlider.addEventListener('input', handleParameterChange);
-    uppercaseCheckbox.addEventListener('change', handleParameterChange);
-    lowercaseCheckbox.addEventListener('change', handleParameterChange);
-    numbersCheckbox.addEventListener('change', handleParameterChange);
-    symbolsCheckbox.addEventListener('change', handleParameterChange);
-    excludeAmbiguousCheckbox.addEventListener('change', handleParameterChange);
-    excludeSimilarCheckbox.addEventListener('change', handleParameterChange);
+    function setDarkMode(enabled) {
+        const isDark = document.body.classList.toggle('dark', enabled);
+        if (darkModeIcon) {
+            darkModeIcon.classList.toggle('fa-moon', isDark);
+            darkModeIcon.classList.toggle('fa-sun', !isDark);
+        }
+        localStorage.setItem('pm_dark', isDark ? '1' : '0');
+        updateStrengthDisplay(generatedPasswordDiv.textContent);
+    }
+    
+    // --- Event Listeners ---
+    
+    const allCheckboxes = [uppercaseCheckbox, lowercaseCheckbox, numbersCheckbox, symbolsCheckbox, excludeAmbiguousCheckbox, excludeSimilarCheckbox];
+    allCheckboxes.forEach(el => el.addEventListener('change', handleParameterChange));
 
-    // Generate password on button click
-    generateBtn.addEventListener('click', function() {
+    lengthSlider.addEventListener('input', () => {
+        lengthValue.textContent = lengthSlider.value;
         handleParameterChange();
     });
+    
+    generateBtn.addEventListener('click', handleParameterChange);
 
-    // Copy password to clipboard
-    copyBtn.addEventListener('click', function() {
-        if (generatedPassword.textContent === 'Click Generate') return;
-        
-        navigator.clipboard.writeText(generatedPassword.textContent).then(function() {
-            tooltip.classList.add('tooltip-visible');
-            setTimeout(function() {
-                tooltip.classList.remove('tooltip-visible');
-            }, 2000);
-        });
+    copyBtn.addEventListener('click', () => {
+        const passText = generatedPasswordDiv.textContent;
+        if (passText && passText !== 'Click Generate' && passText !== 'Select options') {
+            navigator.clipboard.writeText(passText).then(() => {
+                tooltip.classList.add('tooltip-visible');
+                setTimeout(() => tooltip.classList.remove('tooltip-visible'), 2000);
+            });
+        }
     });
 
-    // Generate initial password on page load
-    generateBtn.click();
-});
-document.addEventListener('DOMContentLoaded', function() {
-    // Copy password to clipboard
-    copyBtn.addEventListener('click', function() {
-        if (generatedPassword.textContent === 'Click Generate') return;
-        
-        navigator.clipboard.writeText(generatedPassword.textContent).then(function() {
-            tooltip.classList.add('tooltip-visible');
-            setTimeout(function() {
-                tooltip.classList.remove('tooltip-visible');
-            }, 2000);
-        });
+    darkModeToggle.addEventListener('click', () => {
+        setDarkMode(!document.body.classList.contains('dark'));
     });
 
-    // Generate initial password on page load
-    generateBtn.click();
+    // --- Initial Load ---
+    const savedDark = localStorage.getItem('pm_dark');
+    setDarkMode(savedDark === null ? true : savedDark === '1');
 });
