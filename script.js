@@ -17,6 +17,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const tooltip = document.getElementById('tooltip');
     const darkModeToggle = document.getElementById('dark-mode-toggle');
     const darkModeIcon = document.getElementById('dark-mode-icon');
+    const installPwaBtn = document.getElementById('install-pwa-btn');
+    const strengthText = document.getElementById('strength-text');
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    let deferredPrompt;
+
+    // --- Mobile Menu Toggle ---
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
 
     // --- Character Sets ---
     const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -25,6 +37,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const symbolChars = '!@#$%^&*()_+-=[]{}|;:,.<>?';
     const ambiguousChars = 'iIlL1!|oO0';
     const similarChars = '0Oo1lI';
+
+    // --- PWA Installation ---
+    window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        installPwaBtn.classList.remove('hidden');
+    });
+
+    installPwaBtn.addEventListener('click', async () => {
+        if (deferredPrompt) {
+            deferredPrompt.prompt();
+            const { outcome } = await deferredPrompt.userChoice;
+            if (outcome === 'accepted') {
+                installPwaBtn.classList.add('hidden');
+            }
+            deferredPrompt = null;
+        }
+    });
 
     // --- Functions ---
 
@@ -77,16 +107,32 @@ document.addEventListener('DOMContentLoaded', function() {
         const mediumClasses = ['bg-yellow-100', 'dark:bg-yellow-900', 'border-yellow-500'];
         const strongClasses = ['bg-green-100', 'dark:bg-green-900', 'border-green-500'];
         
+        const weakText = ['text-red-400'];
+        const mediumText = ['text-yellow-400'];
+        const strongText = ['text-green-400'];
+
         passwordContainer.classList.remove(...baseClasses, ...weakClasses, ...mediumClasses, ...strongClasses);
+        strengthText.classList.remove('text-red-400', 'text-yellow-400', 'text-green-400');
+        strengthText.textContent = '';
+        strengthText.style.display = 'none';
 
         if (strength === 0) {
              passwordContainer.classList.add(...baseClasses);
         } else if (strength < 30) {
             passwordContainer.classList.add(...weakClasses);
+            strengthText.textContent = 'Weak';
+            strengthText.classList.add(...weakText);
+            strengthText.style.display = 'inline';
         } else if (strength < 70) {
             passwordContainer.classList.add(...mediumClasses);
+            strengthText.textContent = 'Medium';
+            strengthText.classList.add(...mediumText);
+            strengthText.style.display = 'inline';
         } else {
             passwordContainer.classList.add(...strongClasses);
+            strengthText.textContent = 'Strong';
+            strengthText.classList.add(...strongText);
+            strengthText.style.display = 'inline';
         }
     }
 
@@ -135,6 +181,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- Initial Load ---
     const savedDark = localStorage.getItem('pm_dark');
     setDarkMode(savedDark === null ? true : savedDark === '1');
+
+    // Generate password only if on the main page
+    if (document.getElementById('generate-btn')) {
+        handleParameterChange();
+    }
     
     // JSON-LD structured data
   const orgJsonLd = {
