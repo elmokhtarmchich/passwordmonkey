@@ -135,4 +135,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- Initial Load ---
     const savedDark = localStorage.getItem('pm_dark');
     setDarkMode(savedDark === null ? true : savedDark === '1');
+    
+    // JSON-LD structured data
+  const orgJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PasswordMonkey",
+    "url": "https://passwordmonkey.org/",
+    "logo": "https://passwordmonkey.org/favicon_io/android-chrome-192x192.png",
+    "sameAs": [
+      "https://twitter.com/yourhandle",
+      "https://facebook.com/yourpage"
+    ]
+  };
+  document.getElementById('jsonld-organization').textContent = JSON.stringify(orgJsonLd, null, 2);
 });
