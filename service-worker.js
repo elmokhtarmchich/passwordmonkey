@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pm-cache-v3';
+const CACHE_NAME = 'pm-cache-v7';
 const ASSETS = [
   '/',
   'index.html',
@@ -8,9 +8,10 @@ const ASSETS = [
   'style.css',
   'script.js',
   'manifest.json',
-  'fonts/Aptos.ttf',
+  'fonts/Ubuntu-Regular.ttf',
   'images/nordvpn_logo.svg',
   'images/nordpass_logo.svg',
+  'images/google_logo.svg',
   'favicon_io/favicon.ico',
   'favicon_io/apple-touch-icon.png',
   'favicon_io/android-chrome-192x192.png',
