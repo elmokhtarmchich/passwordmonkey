@@ -21,10 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const strengthText = document.getElementById('strength-text');
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
-    const saveCredentialBtn = document.getElementById('save-credential-btn');
-    const openSaveModalBtn = document.getElementById('open-save-modal-btn');
-    const closeSaveModalBtn = document.getElementById('close-save-modal-btn');
-    const saveCredentialModal = document.getElementById('save-credential-modal');
     let deferredPrompt;
 
     // --- Mobile Menu Toggle ---
@@ -33,65 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
             mobileMenu.classList.toggle('hidden');
         });
     }
-
-    // --- Save Credential Modal ---
-    if (openSaveModalBtn) {
-        openSaveModalBtn.addEventListener('click', () => {
-            saveCredentialModal.classList.remove('hidden');
-        });
-    }
-    if (closeSaveModalBtn) {
-        closeSaveModalBtn.addEventListener('click', () => {
-            saveCredentialModal.classList.add('hidden');
-        });
-    }
-    // Close modal if clicking outside of it
-    window.addEventListener('click', (event) => {
-        if (event.target === saveCredentialModal) {
-            saveCredentialModal.classList.add('hidden');
-        }
-    });
-
-    // --- Save Credential to Password Manager ---
-    if (saveCredentialBtn) {
-        saveCredentialBtn.addEventListener('click', async () => {
-            const username = document.getElementById('credential-username').value;
-            const website = document.getElementById('credential-website').value;
-            const password = generatedPasswordDiv.textContent;
-
-            if (!username || !website || !password || password === 'Click Generate' || password === 'Select options') {
-                alert('Please fill in the username, website, and generate a password first.');
-                return;
-            }
-
-            if ('credentials' in navigator) {
-                const credential = new PasswordCredential({
-                    id: username,
-                    name: username,
-                    password: password,
-                    iconURL: `https://` + website + `/favicon.ico`
-                });
-
-                try {
-                    await navigator.credentials.store(credential);
-                    alert('Password saved to your browser\'s password manager!');
-                } catch (e) {
-                    alert('Password could not be saved. The request was cancelled or an error occurred.');
-                    console.error('Error storing credential:', e);
-                }
-            } else {
-                alert('Your browser does not support the Credential Management API. Please copy the password manually.');
-            }
-        });
-    }
-
-    // --- Character Sets ---
-    const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
-    const numberChars = '0123456789';
-    const symbolChars = '!@#$%^&*()_+-=[]{}|;:,.<>?';
-    const ambiguousChars = 'iIlL1!|oO0';
-    const similarChars = '0Oo1lI';
 
     // --- PWA Installation ---
     window.addEventListener('beforeinstallprompt', (e) => {
@@ -110,6 +47,14 @@ document.addEventListener('DOMContentLoaded', function() {
             deferredPrompt = null;
         }
     });
+
+    // --- Character Sets ---
+    const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
+    const numberChars = '0123456789';
+    const symbolChars = '!@#$%^&*()_+-=[]{}|;:,.<>?';
+    const ambiguousChars = 'iIlL1!|oO0';
+    const similarChars = '0Oo1lI';
 
     // --- Functions ---
 
