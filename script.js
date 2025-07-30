@@ -21,6 +21,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const strengthText = document.getElementById('strength-text');
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
+    const qrCodeBtn = document.getElementById('qr-code-btn');
+    const qrCodeModal = document.getElementById('qr-code-modal');
+    const closeQrModalBtn = document.getElementById('close-qr-modal-btn');
+    const qrCodeContainer = document.getElementById('qr-code-container');
     let deferredPrompt;
 
     // --- Mobile Menu Toggle ---
@@ -29,6 +33,51 @@ document.addEventListener('DOMContentLoaded', function() {
             mobileMenu.classList.toggle('hidden');
         });
     }
+
+    // --- QR Code Modal ---
+    if (qrCodeBtn) {
+        qrCodeBtn.addEventListener('click', () => {
+            const password = generatedPasswordDiv.textContent;
+            
+            if (password === 'Click Generate' || password === 'Select options') {
+                alert('Please generate a password first.');
+                return;
+            }
+            
+            // Clear previous QR code
+            qrCodeContainer.innerHTML = '';
+            
+            // Generate new QR code
+            QRCode.toCanvas(qrCodeContainer, password, {
+                width: 200,
+                margin: 2,
+                color: {
+                    dark: '#000000',
+                    light: '#FFFFFF'
+                }
+            }, function (error) {
+                if (error) {
+                    console.error('QR Code generation error:', error);
+                    qrCodeContainer.innerHTML = '<p class="text-red-500">Error generating QR code</p>';
+                }
+            });
+            
+            qrCodeModal.classList.remove('hidden');
+        });
+    }
+    
+    if (closeQrModalBtn) {
+        closeQrModalBtn.addEventListener('click', () => {
+            qrCodeModal.classList.add('hidden');
+        });
+    }
+    
+    // Close QR modal if clicking outside of it
+    window.addEventListener('click', (event) => {
+        if (event.target === qrCodeModal) {
+            qrCodeModal.classList.add('hidden');
+        }
+    });
 
     // --- PWA Installation ---
     window.addEventListener('beforeinstallprompt', (e) => {
