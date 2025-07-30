@@ -36,7 +36,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- QR Code Modal ---
     if (qrCodeBtn) {
+        console.log('QR Code button found'); // Debug log
         qrCodeBtn.addEventListener('click', () => {
+            console.log('QR Code button clicked'); // Debug log
             const password = generatedPasswordDiv.textContent;
             
             if (password === 'Click Generate' || password === 'Select options') {
@@ -44,26 +46,44 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
+            // Check if QRCode library is available
+            if (typeof QRCode === 'undefined') {
+                console.error('QRCode library not loaded');
+                alert('QR Code library not available. Please refresh the page.');
+                return;
+            }
+            
             // Clear previous QR code
             qrCodeContainer.innerHTML = '';
             
-            // Generate new QR code
-            QRCode.toCanvas(qrCodeContainer, password, {
-                width: 200,
-                margin: 2,
-                color: {
-                    dark: '#000000',
-                    light: '#FFFFFF'
-                }
-            }, function (error) {
-                if (error) {
-                    console.error('QR Code generation error:', error);
-                    qrCodeContainer.innerHTML = '<p class="text-red-500">Error generating QR code</p>';
-                }
-            });
+            console.log('Generating QR code for:', password); // Debug log
+            
+            // Generate new QR code using a more reliable method
+            try {
+                QRCode.toCanvas(qrCodeContainer, password, {
+                    width: 200,
+                    margin: 2,
+                    color: {
+                        dark: '#000000',
+                        light: '#FFFFFF'
+                    }
+                }, function (error) {
+                    if (error) {
+                        console.error('QR Code generation error:', error);
+                        qrCodeContainer.innerHTML = '<p class="text-red-500">Error generating QR code</p>';
+                    } else {
+                        console.log('QR Code generated successfully'); // Debug log
+                    }
+                });
+            } catch (error) {
+                console.error('QR Code generation failed:', error);
+                qrCodeContainer.innerHTML = '<p class="text-red-500">Failed to generate QR code</p>';
+            }
             
             qrCodeModal.classList.remove('hidden');
         });
+    } else {
+        console.error('QR Code button not found'); // Debug log
     }
     
     if (closeQrModalBtn) {
