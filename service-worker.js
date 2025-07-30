@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pm-cache-v8';
+const CACHE_NAME = 'pm-cache-v9';
 const ASSETS = [
   '/',
   'index.html',
@@ -7,6 +7,7 @@ const ASSETS = [
   'donate.html',
   'style.css',
   'script.js',
+  'js/qrcode.min.js',
   'manifest.json',
   'fonts/OpenSans.ttf',
   'images/nordvpn_logo.svg',
