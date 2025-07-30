@@ -47,6 +47,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             // Check if QRCode library is available
+            console.log('Checking QRCode library...'); // Debug log
+            console.log('typeof QRCode:', typeof QRCode); // Debug log
+            console.log('QRCode object:', QRCode); // Debug log
+            
             if (typeof QRCode === 'undefined') {
                 console.error('QRCode library not loaded');
                 alert('QR Code library not available. Please refresh the page.');
@@ -58,9 +62,13 @@ document.addEventListener('DOMContentLoaded', function() {
             
             console.log('Generating QR code for:', password); // Debug log
             
-            // Generate new QR code using a more reliable method
+            // Generate new QR code using a simpler method
             try {
-                QRCode.toCanvas(qrCodeContainer, password, {
+                // Create a canvas element
+                const canvas = document.createElement('canvas');
+                qrCodeContainer.appendChild(canvas);
+                
+                QRCode.toCanvas(canvas, password, {
                     width: 200,
                     margin: 2,
                     color: {
