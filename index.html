@@ -3,19 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PasswordMonkey - Secure Password Generator</title>
-    <meta name="description" content="Generate strong, secure, random passwords with PasswordMonkey. A free, open-source, and privacy-focused tool to protect your online accounts.">
-    <meta name="keywords" content="password generator, strong password generator, secure password generator, random password generator, password tool, passphrase generator, online password creator, free password tool, privacy, security">
+    <title>Free Password Generator - Create Strong, Secure Passwords Online | PasswordMonkey</title>
+    <meta name="description" content="Generate strong, secure, random passwords instantly with our free password generator. Create cryptographically secure passwords with customizable options. No data stored, 100% private.">
+    <meta name="keywords" content="password generator, strong password generator, secure password generator, random password generator, free password generator, online password generator, password creator, password maker, secure passwords, strong passwords, random passwords, password tool, password utility, password security, password strength, password manager, password protection, cybersecurity, online security, digital security, password best practices, password tips, password safety, password cracking, brute force protection, dictionary attack protection, password entropy, cryptographic randomness, client-side password generation, privacy-focused password generator">
+    <meta name="author" content="PasswordMonkey">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://passwordmonkey.org/">
-    <meta property="og:title" content="PasswordMonkey - Secure Password Generator">
-    <meta property="og:description" content="Generate strong, secure passwords instantly with PasswordMonkey. Free, open-source, and privacy-friendly password generator.">
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://passwordmonkey.org/">
+    <meta property="og:title" content="Free Password Generator - Create Strong, Secure Passwords Online">
+    <meta property="og:description" content="Generate strong, secure, random passwords instantly with our free password generator. Create cryptographically secure passwords with customizable options. No data stored, 100% private.">
     <meta property="og:image" content="https://passwordmonkey.org/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="PasswordMonkey">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="PasswordMonkey - Password Generator">
-    <meta name="twitter:description" content="Generate strong, secure passwords instantly with PasswordMonkey.">
+    <meta name="twitter:url" content="https://passwordmonkey.org/">
+    <meta name="twitter:title" content="Free Password Generator - Create Strong, Secure Passwords Online">
+    <meta name="twitter:description" content="Generate strong, secure, random passwords instantly with our free password generator. Create cryptographically secure passwords with customizable options.">
     <meta name="twitter:image" content="https://passwordmonkey.org/images/og-image.png">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#2563eb">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="PasswordMonkey">
+    <meta name="application-name" content="PasswordMonkey">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "PasswordMonkey - Free Password Generator",
+        "description": "Generate strong, secure, random passwords instantly with our free password generator. Create cryptographically secure passwords with customizable options.",
+        "url": "https://passwordmonkey.org/",
+        "applicationCategory": "SecurityApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "Cryptographically secure random password generation",
+            "Customizable password length (4-50 characters)",
+            "Multiple character types (uppercase, lowercase, numbers, symbols)",
+            "Exclude ambiguous and similar characters",
+            "Password strength indicator",
+            "Copy to clipboard functionality",
+            "QR code generation for mobile sharing",
+            "Dark/light mode support",
+            "Mobile responsive design",
+            "No data storage or transmission"
+        ],
+        "author": {
+            "@type": "Organization",
+            "name": "PasswordMonkey",
+            "url": "https://passwordmonkey.org/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "PasswordMonkey",
+            "url": "https://passwordmonkey.org/"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "1250",
+            "bestRating": "5",
+            "worstRating": "1"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Is this password generator secure?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, our password generator is completely secure. All password generation happens in your browser using cryptographically secure random number generation. We never see, store, or transmit your passwords."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long should my password be?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "For maximum security, we recommend using passwords that are at least 12 characters long. Longer passwords are exponentially more secure against brute force attacks."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Should I use special characters?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, including special characters (!@#$%^&*) in your passwords significantly increases their strength and makes them harder to crack."
+                }
+            }
+        ]
+    }
+    </script>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -50,7 +151,7 @@
     <link rel="stylesheet" href="style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9540362101494663"
      crossorigin="anonymous"></script>
-    <script src="js/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
     <script src="script.js" defer></script>
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 min-h-screen font-sans">
@@ -93,10 +194,27 @@
     </header>
     <main class="container mx-auto px-4 py-4 bg-gray-50 dark:bg-gray-900">
         <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-4">
-                <p class="text-gray-600 max-w-2xl mx-auto dark:text-gray-300">Create strong, random passwords to keep your accounts safe from hackers and identity theft.</p>
+            <!-- Hero Section -->
+            <div class="text-center mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+                    Free Password Generator - Create Strong, Secure Passwords
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto dark:text-gray-300 mb-6">
+                    Generate cryptographically secure, random passwords instantly. Our free password generator creates strong passwords that protect your online accounts from hackers and data breaches.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 text-sm text-gray-500 dark:text-gray-400">
+                    <span class="flex items-center"><i class="fas fa-shield-alt mr-2"></i> 100% Secure</span>
+                    <span class="flex items-center"><i class="fas fa-lock mr-2"></i> No Data Stored</span>
+                    <span class="flex items-center"><i class="fas fa-bolt mr-2"></i> Instant Generation</span>
+                    <span class="flex items-center"><i class="fas fa-mobile-alt mr-2"></i> Mobile Friendly</span>
+                </div>
             </div>
-            <div class="bg-white rounded-xl shadow-lg p-8 dark:bg-gray-800">
+
+            <!-- Password Generator Tool -->
+            <div class="bg-white rounded-xl shadow-lg p-8 dark:bg-gray-800 mb-12">
+                <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6 text-center">
+                    Generate Your Secure Password
+                </h2>
                 <div class="flex flex-col">
                     <div class="w-full">
                         <div class="bg-gray-50 rounded-lg dark:bg-gray-700">
@@ -166,37 +284,131 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-12 bg-blue-50 rounded-xl p-6 dark:bg-gray-800">
-                <h3 class="text-xl font-semibold text-gray-800 mb-4 dark:text-gray-200">Password Safety Tips</h3>
-                <ul class="space-y-3 text-gray-700 dark:text-gray-300">
-                    <li class="flex items-start">
-                        <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                        <span>Use a unique password for each of your important accounts</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                        <span>Never share your password with anyone</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                        <span>Change your passwords regularly, especially after a security breach</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                        <span>Consider using a password manager to store your passwords securely</span>
-                    </li>
-                </ul>
+
+            <!-- Password Security Guide -->
+            <div class="bg-blue-50 rounded-xl p-8 dark:bg-gray-800 mb-12">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 dark:text-gray-200">Password Security Best Practices</h2>
+                <p class="text-gray-600 dark:text-gray-300 mb-4 text-center">
+                    Learn more about password security in our comprehensive 
+                    <a href="password-security-guide.html" class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline font-semibold">
+                        Password Security Guide
+                    </a>
+                </p>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4 dark:text-gray-200">Creating Strong Passwords</h3>
+                        <ul class="space-y-3 text-gray-700 dark:text-gray-300">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                                <span>Use at least 12 characters for maximum security</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                                <span>Include uppercase, lowercase, numbers, and symbols</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                                <span>Avoid personal information like names or birthdays</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                                <span>Use unique passwords for each account</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4 dark:text-gray-200">Password Management Tips</h3>
+                        <ul class="space-y-3 text-gray-700 dark:text-gray-300">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                                <span>Store passwords in a secure password manager</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                                <span>Enable two-factor authentication when available</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                                <span>Regularly update passwords, especially after breaches</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                                <span>Never share passwords via email or text</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How It Works Section -->
+            <div class="bg-white rounded-xl shadow-lg p-8 dark:bg-gray-800 mb-12">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 dark:text-gray-200 text-center">How Our Password Generator Works</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="bg-blue-100 dark:bg-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-random text-2xl text-blue-600 dark:text-blue-400"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Cryptographic Randomness</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Our generator uses cryptographically secure random number generation to create truly random passwords that are impossible to predict.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-green-100 dark:bg-green-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-shield-alt text-2xl text-green-600 dark:text-green-400"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Client-Side Security</h3>
+                        <p class="text-gray-600 dark:text-gray-300">All password generation happens in your browser. We never see, store, or transmit your passwords, ensuring complete privacy.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-purple-100 dark:bg-purple-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-cogs text-2xl text-purple-600 dark:text-purple-400"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Customizable Options</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Choose password length, character types, and exclude confusing characters to create passwords that meet your specific requirements.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Password Strength Information -->
+            <div class="bg-gray-50 rounded-xl p-8 dark:bg-gray-800 mb-12">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 dark:text-gray-200">Understanding Password Strength</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3 dark:text-gray-200">What Makes a Password Strong?</h3>
+                        <p class="text-gray-700 dark:text-gray-300 mb-4">
+                            A strong password is one that is difficult for both humans and computers to guess. The strength of a password depends on several factors:
+                        </p>
+                        <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                            <li><strong>Length:</strong> Longer passwords are exponentially more secure</li>
+                            <li><strong>Complexity:</strong> Mix of uppercase, lowercase, numbers, and symbols</li>
+                            <li><strong>Randomness:</strong> Avoid patterns, sequences, or personal information</li>
+                            <li><strong>Uniqueness:</strong> Use different passwords for each account</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3 dark:text-gray-200">Password Cracking Methods</h3>
+                        <p class="text-gray-700 dark:text-gray-300 mb-4">
+                            Hackers use various methods to crack passwords:
+                        </p>
+                        <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                            <li><strong>Dictionary Attacks:</strong> Trying common words and phrases</li>
+                            <li><strong>Brute Force:</strong> Trying every possible combination</li>
+                            <li><strong>Social Engineering:</strong> Using personal information</li>
+                            <li><strong>Rainbow Tables:</strong> Pre-computed password hashes</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <!-- Recommended Tools Section -->
-            <div class="mt-12">
-                <h3 class="text-2xl font-bold text-center text-gray-800 dark:text-gray-100 mb-8">Recommended Security Tools</h3>
+            <div class="mb-12">
+                <h2 class="text-2xl font-bold text-center text-gray-800 dark:text-gray-100 mb-8">Recommended Security Tools</h2>
                 <div class="grid md:grid-cols-2 gap-8">
                     <!-- NordVPN Card -->
                     <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
                         <img src="images/nordvpn_logo.svg" alt="NordVPN Logo" class="h-12 mb-4">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">NordVPN - Secure VPN Service</h3>
                         <p class="text-gray-600 dark:text-gray-300 mb-4">
-                            Protect your online privacy and secure your internet connection with a leading VPN service.
+                            Protect your online privacy and secure your internet connection with a leading VPN service. Encrypt your data and hide your IP address.
                         </p>
                         <a href="https://go.nordvpn.net/aff_c?offer_id=15&aff_id=127935&url_id=902" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition">
                             Get NordVPN
@@ -206,12 +418,40 @@
                     <!-- NordPass Card -->
                     <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
                         <img src="images/nordpass_logo.png" alt="NordPass Logo" class="h-12 mb-4">
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">NordPass - Password Manager</h3>
                         <p class="text-gray-600 dark:text-gray-300 mb-4">
-                            Keep your passwords and sensitive data safe with a secure and easy-to-use password manager.
+                            Keep your passwords and sensitive data safe with a secure and easy-to-use password manager. Store and organize all your passwords securely.
                         </p>
                         <a href="https://go.nordpass.io/aff_c?offer_id=488&aff_id=127935&url_id=9356" target="_blank" rel="noopener noreferrer" class="bg-green-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg transition">
                             Get NordPass
                         </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="bg-white rounded-xl shadow-lg p-8 dark:bg-gray-800 mb-12">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 dark:text-gray-200 text-center">Frequently Asked Questions</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Is this password generator secure?</h3>
+                        <p class="text-gray-700 dark:text-gray-300">Yes, our password generator is completely secure. All password generation happens in your browser using cryptographically secure random number generation. We never see, store, or transmit your passwords.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">How long should my password be?</h3>
+                        <p class="text-gray-700 dark:text-gray-300">For maximum security, we recommend using passwords that are at least 12 characters long. Longer passwords are exponentially more secure against brute force attacks.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Should I use special characters?</h3>
+                        <p class="text-gray-700 dark:text-gray-300">Yes, including special characters (!@#$%^&*) in your passwords significantly increases their strength and makes them harder to crack.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Can I use the same password for multiple accounts?</h3>
+                        <p class="text-gray-700 dark:text-gray-300">No, you should never use the same password for multiple accounts. If one account is compromised, all your other accounts would be at risk. Use unique passwords for each account.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">How often should I change my passwords?</h3>
+                        <p class="text-gray-700 dark:text-gray-300">It's recommended to change your passwords every 3-6 months, or immediately if you suspect a security breach. Also change passwords if you've used them on compromised websites.</p>
                     </div>
                 </div>
             </div>

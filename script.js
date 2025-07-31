@@ -48,10 +48,10 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Check if QRCode library is available
             console.log('Checking QRCode library...'); // Debug log
-            console.log('typeof QRCode:', typeof QRCode); // Debug log
-            console.log('QRCode object:', QRCode); // Debug log
+            console.log('typeof qrcode:', typeof qrcode); // Debug log
+            console.log('qrcode object:', qrcode); // Debug log
             
-            if (typeof QRCode === 'undefined') {
+            if (typeof qrcode === 'undefined') {
                 console.error('QRCode library not loaded');
                 alert('QR Code library not available. Please refresh the page.');
                 return;
@@ -62,27 +62,16 @@ document.addEventListener('DOMContentLoaded', function() {
             
             console.log('Generating QR code for:', password); // Debug log
             
-            // Generate new QR code using a simpler method
+            // Generate new QR code using qrcode-generator library
             try {
-                // Create a canvas element
-                const canvas = document.createElement('canvas');
-                qrCodeContainer.appendChild(canvas);
+                const qr = qrcode(0, 'M');
+                qr.addData(password);
+                qr.make();
                 
-                QRCode.toCanvas(canvas, password, {
-                    width: 200,
-                    margin: 2,
-                    color: {
-                        dark: '#000000',
-                        light: '#FFFFFF'
-                    }
-                }, function (error) {
-                    if (error) {
-                        console.error('QR Code generation error:', error);
-                        qrCodeContainer.innerHTML = '<p class="text-red-500">Error generating QR code</p>';
-                    } else {
-                        console.log('QR Code generated successfully'); // Debug log
-                    }
-                });
+                const qrImage = qr.createImgTag(5, 2);
+                qrCodeContainer.innerHTML = qrImage;
+                
+                console.log('QR Code generated successfully'); // Debug log
             } catch (error) {
                 console.error('QR Code generation failed:', error);
                 qrCodeContainer.innerHTML = '<p class="text-red-500">Failed to generate QR code</p>';

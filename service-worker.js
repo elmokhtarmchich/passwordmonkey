@@ -1,13 +1,13 @@
-const CACHE_NAME = 'pm-cache-v9';
+const CACHE_NAME = 'pm-cache-v11';
 const ASSETS = [
   '/',
   'index.html',
   'about.html',
   'privacy.html',
   'donate.html',
+  'password-security-guide.html',
   'style.css',
   'script.js',
-  'js/qrcode.min.js',
   'manifest.json',
   'fonts/OpenSans.ttf',
   'images/nordvpn_logo.svg',

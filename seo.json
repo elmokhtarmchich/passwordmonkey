@@ -1,44 +1,18 @@
 {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "name": "PasswordMonkey",
-      "url": "https://passwordmonkey.org/",
-      "logo": "https://passwordmonkey.org/favicon_io/android-chrome-192x192.png",
-      "sameAs": [
-        "https://twitter.com/yourhandle",
-        "https://facebook.com/yourpage"
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://passwordmonkey.org/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Features",
-          "item": "https://passwordmonkey.org/#features"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Pricing",
-          "item": "https://passwordmonkey.org/#pricing"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "About",
-          "item": "https://passwordmonkey.org/#about"
-        }
-      ]
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PasswordMonkey",
+    "url": "https://passwordmonkey.org/",
+    "logo": "https://passwordmonkey.org/images/logo.png",
+    "description": "Free online password generator that creates strong, secure, random passwords instantly. No data stored, 100% private and secure.",
+    "foundingDate": "2024",
+    "sameAs": [
+        "https://twitter.com/passwordmonkey",
+        "https://github.com/passwordmonkey"
+    ],
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "url": "https://passwordmonkey.org/contact"
     }
-  ]
 } 
