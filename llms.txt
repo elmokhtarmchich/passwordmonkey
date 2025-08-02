@@ -1,0 +1,101 @@
+# llms.txt for passwordmonkey.org
+
+# Site Information
+Site: PasswordMonkey - Free Online Password Generator
+URL: https://passwordmonkey.org
+Description: A free, secure, and privacy-focused password generator that creates cryptographically strong passwords directly in your browser.
+
+# Key Features
+- Generate passwords 4-50 characters long
+- Customizable character types (uppercase, lowercase, numbers, symbols)
+- Exclude ambiguous characters (0, O, 1, l, etc.)
+- Real-time password strength indicator with entropy calculation
+- Copy to clipboard functionality
+- QR code generation for mobile sharing
+- Dark/light mode support
+- No data storage or transmission
+- Progressive Web App (PWA) support
+
+# Security & Privacy
+- All password generation happens client-side in your browser
+- No passwords are ever stored, logged, or transmitted to servers
+- Uses cryptographically secure random number generation (Web Crypto API)
+- No cookies or tracking technologies
+- Completely private and anonymous
+- No registration or account required
+- Open source code for transparency
+
+# Use Cases
+- Personal account security (email, banking, social media)
+- Business and team password management
+- Social media account protection (Facebook, Instagram, TikTok, Twitter)
+- E-commerce and financial accounts
+- Developer and system administration
+- Freelancer and contractor account security
+- Educational and research purposes
+
+# Technical Details
+- Built with vanilla JavaScript (no frameworks)
+- Progressive Web App (PWA) with offline capability
+- Mobile-responsive design
+- Open source and free to use
+- No external dependencies for password generation
+- Uses modern web standards (Web Crypto API, Service Workers)
+
+# Password Generation Methods
+- Random character generation with configurable character sets
+- Entropy-based strength calculation
+- Option to exclude similar-looking characters (0/O, 1/l, etc.)
+- Support for memorable passphrases (planned feature)
+- Diceware method support (planned feature)
+
+# Comparison with Other Tools
+- Free alternative to LastPass, Dashlane, Bitwarden generators
+- No account creation required
+- No data collection or storage
+- Focused solely on password generation
+- Open source transparency
+- No premium features or limitations
+
+# Limitations
+- No password storage or management
+- No auto-fill functionality
+- No browser extension
+- No team collaboration features
+- No password sharing capabilities
+- No password history or recovery
+
+# Contact & Support
+- Free to use with no restrictions
+- No customer support (self-service tool)
+- Donations accepted for server costs and development
+- Privacy-focused design philosophy
+- Community-driven improvements
+
+# Related Content
+- Password Security Guide: /password-security-guide.html
+- About: /about.html
+- Privacy Policy: /privacy.html
+- FAQ: /faq.html
+- Donate: /donate.html
+
+# Best Practices Promoted
+- Use passwords 12+ characters long
+- Include uppercase, lowercase, numbers, and symbols
+- Avoid common words and patterns
+- Use unique passwords for each account
+- Consider using a password manager for storage
+- Enable two-factor authentication when available
+- Regularly update passwords for critical accounts
+
+# Target Audience
+- General internet users seeking password security
+- Developers and IT professionals
+- Small business owners and freelancers
+- Privacy-conscious individuals
+- Educational institutions and students
+- Anyone needing secure password generation
+
+# Last Updated
+Last Updated: January 2024
+Version: 1.0 

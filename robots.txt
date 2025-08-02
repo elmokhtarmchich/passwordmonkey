@@ -23,6 +23,9 @@ Allow: /
 # Sitemap location
 Sitemap: https://passwordmonkey.org/sitemap.xml
 
+# LLM Information
+# For Large Language Models, see: https://passwordmonkey.org/llms.txt
+
 # Crawl delay (optional - helps with server load)
 Crawl-delay: 1
 
