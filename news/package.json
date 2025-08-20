@@ -1,0 +1,37 @@
+{
+  "name": "passwordmonkey-news-updater",
+  "version": "1.0.0",
+  "description": "Automated news manifest updater for PasswordMonkey website",
+  "main": "update-manifest.js",
+  "scripts": {
+    "update": "node update-manifest.js",
+    "update:help": "node update-manifest.js --help",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "news",
+    "manifest",
+    "automation",
+    "n8n",
+    "passwordmonkey",
+    "seo",
+    "metadata"
+  ],
+  "author": "PasswordMonkey Team",
+  "license": "MIT",
+  "dependencies": {
+    "jsdom": "^22.1.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/passwordmonkey.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/passwordmonkey/issues"
+  },
+  "homepage": "https://passwordmonkey.org/news"
+} 

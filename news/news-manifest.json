@@ -1,0 +1,53 @@
+{
+  "lastUpdated": "2025-01-15T12:00:00Z",
+  "totalArticles": 2,
+  "articles": [
+    {
+      "filename": "2025-01-15-sample-article.html",
+      "title": "New Password Security Threat Discovered",
+      "date": "2025-01-15",
+      "excerpt": "Learn about the latest password security threat and how to protect your accounts with strong passwords and security best practices.",
+      "url": "/news/2025-01-15-sample-article.html",
+      "metaDescription": "Learn about the latest password security threat and how to protect your accounts with strong passwords and security best practices.",
+      "keywords": "password security, cybersecurity, data breach, password safety, digital security",
+      "author": "PasswordMonkey",
+      "readTime": "5 min read",
+      "category": "Security Threats"
+    },
+    {
+      "filename": "2025-08-20-password-breach.html",
+      "title": "Password breach exposes millions of accounts",
+      "date": "2025-08-20",
+      "excerpt": "A major password breach has exposed millions of accounts. Learn what happened and how to protect yourself.",
+      "url": "/news/2025-08-20-password-breach.html",
+      "metaDescription": "A major password breach has exposed millions of accounts. Learn what happened and how to protect yourself.",
+      "keywords": "password breach, data breach, account security, cybersecurity, password safety",
+      "author": "PasswordMonkey",
+      "readTime": "3 min read",
+      "category": "Data Breaches"
+    }
+  ],
+  "categories": [
+    "Security Threats",
+    "Data Breaches",
+    "Password Best Practices",
+    "Cybersecurity News",
+    "Industry Updates"
+  ],
+  "schema": {
+    "version": "1.0",
+    "description": "News manifest for PasswordMonkey news section. Auto-generated and updated by n8n automation.",
+    "fields": {
+      "filename": "HTML filename in /news directory",
+      "title": "Article headline",
+      "date": "Publish date in YYYY-MM-DD format",
+      "excerpt": "First 150-200 characters of article content",
+      "url": "Full URL to the article",
+      "metaDescription": "SEO meta description",
+      "keywords": "Comma-separated keywords for SEO",
+      "author": "Article author (usually PasswordMonkey)",
+      "readTime": "Estimated reading time",
+      "category": "Article category for organization"
+    }
+  }
+} 

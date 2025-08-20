@@ -1,44 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Password Security News | Password Monkey | Testing 123</title>
-  <meta name="description" content="Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.">
-  <link rel="stylesheet" href="/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Security News | Password Monkey</title>
+    <meta name="description" content="Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.">
+    <meta name="keywords" content="password security news, cybersecurity news, data breach updates, password safety news, digital security updates, PasswordMonkey news">
+    <meta name="author" content="PasswordMonkey">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://passwordmonkey.org/news/">
+    <meta property="og:title" content="Password Security News | Password Monkey">
+    <meta property="og:description" content="Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.">
+    <meta property="og:image" content="https://passwordmonkey.org/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="PasswordMonkey">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://passwordmonkey.org/news/">
+    <meta name="twitter:title" content="Password Security News | Password Monkey">
+    <meta name="twitter:description" content="Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.">
+    <meta name="twitter:image" content="https://passwordmonkey.org/images/og-image.png">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#2563eb">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="PasswordMonkey News">
+    <meta name="application-name" content="PasswordMonkey News">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Structured Data - NewsPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsPage",
+        "name": "Password Security News",
+        "description": "Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.",
+        "url": "https://passwordmonkey.org/news/",
+        "mainEntity": {
+            "@type": "ItemList",
+            "name": "Password Security News Articles",
+            "description": "Collection of password security and cybersecurity news articles"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "PasswordMonkey",
+            "url": "https://passwordmonkey.org/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://passwordmonkey.org/images/site_logo.png"
+            }
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "PasswordMonkey",
+            "url": "https://passwordmonkey.org/"
+        }
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Open Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        'blue-600': '#2563eb',
+                        'blue-700': '#1d4ed8',
+                        'gray-50': '#f9fafb',
+                        'gray-200': '#e5e7eb',
+                        'gray-300': '#d1d5db',
+                        'gray-400': '#9ca3af',
+                        'gray-500': '#6b7280',
+                        'gray-600': '#4b5563',
+                        'gray-700': '#374151',
+                        'gray-800': '#1f2937',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="shortcut icon" href="../favicon_io/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9540362101494663"
+     crossorigin="anonymous"></script>
+    <script src="../script.js" defer></script>
+    <script src="news-aggregator.js" defer></script>
 </head>
-<body>
-  <header>
-    <nav>
-      <a href="/">Home</a> | 
-      <a href="/news">News</a>
-    </nav>
-  </header>
+<body class="bg-gray-50 dark:bg-gray-900 min-h-screen font-sans">
+    <header class="bg-white shadow-md dark:bg-gray-800">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <a href="../index.html" class="flex items-center">
+                <i class="fas fa-lock text-blue-500 text-3xl mr-3"></i>
+                <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-100">PasswordMonkey</h1>
+            </a>
+            <div class="flex items-center">
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-4 items-center">
+                    <a href="../index.html" class="text-gray-600 hover:text-blue-500 transition dark:text-gray-300 dark:hover:text-blue-400">Home</a>
+                    <a href="../faq.html" class="text-gray-600 hover:text-blue-500 transition dark:text-gray-300 dark:hover:text-blue-400">FAQ</a>
+                    <a href="../about.html" class="text-gray-600 hover:text-blue-500 transition dark:text-gray-300 dark:hover:text-blue-400">About</a>
+                    <a href="../privacy.html" class="text-gray-600 hover:text-blue-500 transition dark:text-gray-300 dark:hover:text-blue-400">Privacy</a>
+                    <a href="../donate.html" class="text-gray-600 hover:text-blue-500 transition dark:text-gray-300 dark:hover:text-blue-400">Donate</a>
+                    <a href="index.html" class="text-blue-600 font-semibold">News</a>
+                </nav>
 
-  <main>
-    <h1>Password Security News</h1>
-    <p>Stay updated on the latest password safety news, data breaches, and cybersecurity trends.</p>
+                <!-- Common Buttons -->
+                <button id="install-pwa-btn" class="hidden bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition ml-4" aria-label="Install App">
+                    <i class="fas fa-download mr-2"></i> Install
+                </button>
+                <button id="dark-mode-toggle" class="ml-4 text-gray-600 dark:text-gray-200 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition" aria-label="Toggle dark mode">
+                    <i id="dark-mode-icon" class="fas fa-moon text-2xl"></i>
+                </button>
 
-    <section class="news-list">
-      <!-- Each article card -->
-      <article>
-        <h2><a href="/news/2025-08-20-password-breach.html">Password breach exposes millions of accounts</a></h2>
-        <p class="date">Published: Aug 20, 2025</p>
-        <p>A recent breach exposed millions of user credentials across multiple platforms. Learn how to protect yourself...</p>
-        <a href="/news/2025-08-20-password-breach.html">Read more →</a>
-      </article>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="ml-4 md:hidden text-gray-600 dark:text-gray-200 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 shadow-md">
+            <a href="../index.html" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Home</a>
+            <a href="../faq.html" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">FAQ</a>
+            <a href="../about.html" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">About</a>
+            <a href="../privacy.html" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Privacy</a>
+            <a href="../donate.html" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Donate</a>
+            <a href="index.html" class="block py-2 px-4 text-sm text-blue-600 font-semibold bg-blue-50 dark:bg-blue-900/20">News</a>
+        </div>
+    </header>
 
-      <article>
-        <h2><a href="/news/2025-08-18-secure-passwords.html">How to build stronger social media passwords</a></h2>
-        <p class="date">Published: Aug 18, 2025</p>
-        <p>Weak passwords are still the main cause of hacked accounts. Here’s how to create strong ones for Instagram, TikTok, and Facebook...</p>
-        <a href="/news/2025-08-18-secure-passwords.html">Read more →</a>
-      </article>
-    </section>
-  </main>
+    <main class="container mx-auto px-4 py-8 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <!-- Breadcrumb Navigation -->
+            <nav class="mb-6 text-sm text-gray-600 dark:text-gray-400">
+                <a href="../index.html" class="hover:text-blue-600 dark:hover:text-blue-400">Home</a>
+                <span class="mx-2">→</span>
+                <span class="text-gray-800 dark:text-gray-200">Password Security News</span>
+            </nav>
 
-  <footer>
-    <p>© 2025 Password Monkey | <a href="/">Home</a></p>
-  </footer>
+            <!-- Page Header -->
+            <header class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100 mb-6">
+                    <i class="fas fa-newspaper text-blue-600 mr-4"></i>
+                    Password Security News
+                </h1>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Stay updated on the latest password safety news, data breaches, and cybersecurity trends. 
+                    Get expert insights and practical tips to protect your digital life.
+                </p>
+            </header>
+
+            <!-- Search and Filter Section -->
+            <section class="mb-8">
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+                    <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
+                        <div class="flex-1 max-w-md">
+                            <label for="news-search" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                Search Articles
+                            </label>
+                            <div class="relative">
+                                <input 
+                                    type="text" 
+                                    id="news-search" 
+                                    placeholder="Search for articles, keywords, or topics..."
+                                    class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:placeholder-gray-400"
+                                >
+                                <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="text-sm text-gray-600 dark:text-gray-400">
+                                <i class="fas fa-rss mr-2"></i>
+                                <span>RSS Feed</span>
+                            </div>
+                            <a href="#" class="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 text-sm font-medium">
+                                Subscribe to Updates
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- News Section -->
+            <section id="news-section">
+                <!-- Page Info -->
+                <div id="page-info" class="text-center mb-6">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+
+                <!-- News Grid -->
+                <div id="news-list" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- News articles will be automatically populated here -->
+                </div>
+
+                <!-- Loading State -->
+                <div id="loading-state" class="text-center py-12">
+                    <div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400">Loading news articles...</p>
+                </div>
+
+                <!-- Pagination -->
+                <div id="pagination" class="mt-12">
+                    <!-- Pagination will be automatically populated here -->
+                </div>
+            </section>
+
+            <!-- Newsletter Signup -->
+            <section class="mt-16">
+                <div class="bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl shadow-lg p-8 text-center text-white">
+                    <h2 class="text-2xl font-bold mb-4">Stay Updated on Password Security</h2>
+                    <p class="text-blue-100 mb-6 max-w-2xl mx-auto">
+                        Get the latest password security news, data breach alerts, and cybersecurity tips delivered to your inbox. 
+                        No spam, just valuable security insights.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                        <input 
+                            type="email" 
+                            placeholder="Enter your email address"
+                            class="flex-1 px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-white focus:ring-opacity-50"
+                        >
+                        <button class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors">
+                            Subscribe
+                        </button>
+                    </div>
+                    <p class="text-blue-200 text-sm mt-4">
+                        <i class="fas fa-shield-alt mr-2"></i>
+                        We respect your privacy. Unsubscribe at any time.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Quick Links -->
+            <section class="mt-16">
+                <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6 text-center">Quick Links</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
+                        <i class="fas fa-lock text-3xl text-blue-600 mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Password Generator</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Create strong, secure passwords instantly</p>
+                        <a href="../index.html" class="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
+                            Generate Passwords →
+                        </a>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
+                        <i class="fas fa-question-circle text-3xl text-blue-600 mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Security FAQ</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Get answers to common security questions</p>
+                        <a href="../faq.html" class="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
+                            View FAQ →
+                        </a>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
+                        <i class="fas fa-book text-3xl text-blue-600 mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Security Guide</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Learn password security best practices</p>
+                        <a href="../password-security-guide.html" class="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
+                            Read Guide →
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-12 dark:bg-black">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-lock text-blue-400 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold">PasswordMonkey</h3>
+                    </div>
+                    <p class="text-gray-400 max-w-xs">Creating strong passwords to protect your digital life.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Menu</h4>
+                        <ul class="space-y-2">
+                            <li><a href="../index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                            <li><a href="../about.html" class="text-gray-400 hover:text-white transition">About</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Support</h4>
+                        <ul class="space-y-2">
+                            <li><a href="../donate.html" class="text-gray-400 hover:text-white transition">Donate</a></li>
+                            <li><a href="../privacy.html" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">
+                    &copy; 2024 PasswordMonkey. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
