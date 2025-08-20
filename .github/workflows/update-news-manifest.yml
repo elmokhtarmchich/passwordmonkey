@@ -1,0 +1,40 @@
+name: Update News Manifest
+
+on:
+  push:
+    paths:
+      - 'news/*.html'
+      - '!news/index.html'
+
+permissions:
+  contents: write
+
+jobs:
+  update-manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Generate news manifest
+        run: node scripts/update-manifest.js
+
+      - name: Commit and push changes (if any)
+        shell: bash
+        run: |
+          if [[ -n "$(git status --porcelain news/news-manifest.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add news/news-manifest.json
+            git commit -m "chore(news): auto-update news manifest"
+            git push
+          else
+            echo "No changes to commit"
+          fi

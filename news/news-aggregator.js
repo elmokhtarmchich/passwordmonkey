@@ -34,7 +34,17 @@ class NewsAggregator {
             const response = await fetch('/news/news-manifest.json');
             if (response.ok) {
                 const manifest = await response.json();
-                this.allArticles = manifest.articles || [];
+                // Support both array format and object with `articles` key
+                const rawArticles = Array.isArray(manifest) ? manifest : (manifest.articles || []);
+                // Normalize fields for rendering
+                this.allArticles = rawArticles.map(item => ({
+                    title: item.title || '',
+                    date: item.date || '',
+                    url: item.url || '#',
+                    // Prefer `excerpt` if present, else use `description`
+                    excerpt: (item.excerpt || item.description || '').toString().slice(0, 200),
+                    filename: item.filename || (item.url ? item.url.split('/').pop() : undefined)
+                }));
             } else {
                 // Fallback: try to discover articles by checking common patterns
                 await this.discoverArticlesFallback();
@@ -46,6 +56,7 @@ class NewsAggregator {
 
         // Sort articles by date (newest first)
         this.allArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
+        this.hideLoadingState();
     }
 
     async discoverArticlesFallback() {
@@ -84,6 +95,7 @@ class NewsAggregator {
         this.renderArticles(currentArticles);
         this.renderPagination();
         this.updatePageInfo();
+        this.hideLoadingState();
     }
 
     renderArticles(articles) {
@@ -131,9 +143,7 @@ class NewsAggregator {
                     Read more 
                     <i class="fas fa-arrow-right ml-2 text-sm"></i>
                 </a>
-                <span class="text-xs text-gray-500 dark:text-gray-400">
-                    ${article.filename}
-                </span>
+                ${article.filename ? `<span class="text-xs text-gray-500 dark:text-gray-400">${this.escapeHtml(article.filename)}</span>` : ''}
             </footer>
         `;
 
@@ -274,6 +284,7 @@ class NewsAggregator {
                     </button>
                 </div>
             `;
+            this.hideLoadingState();
             return;
         }
 
@@ -286,6 +297,7 @@ class NewsAggregator {
         if (this.paginationContainer) {
             this.paginationContainer.innerHTML = '';
         }
+        this.hideLoadingState();
     }
 
     formatDate(dateString) {
@@ -317,6 +329,7 @@ class NewsAggregator {
                 <p class="text-gray-500 dark:text-gray-500 text-sm mt-2">Check back soon for updates!</p>
             </div>
         `;
+        this.hideLoadingState();
     }
 
     showError(message) {
@@ -331,6 +344,14 @@ class NewsAggregator {
                 </button>
             </div>
         `;
+        this.hideLoadingState();
+    }
+
+    hideLoadingState() {
+        const loading = document.getElementById('loading-state');
+        if (loading) {
+            loading.style.display = 'none';
+        }
     }
 }
 
