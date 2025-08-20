@@ -26,14 +26,29 @@ jobs:
       - name: Generate news manifest
         run: node scripts/update-manifest.js
 
+      - name: Generate sitemap.xml and rss.xml
+        run: node scripts/generate-news-xml.js
+
       - name: Commit and push changes (if any)
         shell: bash
         run: |
+          CHANGED=0
           if [[ -n "$(git status --porcelain news/news-manifest.json)" ]]; then
+            CHANGED=1
+            git add news/news-manifest.json
+          fi
+          if [[ -n "$(git status --porcelain news/sitemap.xml)" ]]; then
+            CHANGED=1
+            git add news/sitemap.xml
+          fi
+          if [[ -n "$(git status --porcelain news/rss.xml)" ]]; then
+            CHANGED=1
+            git add news/rss.xml
+          fi
+          if [[ "$CHANGED" == "1" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add news/news-manifest.json
-            git commit -m "chore(news): auto-update news manifest"
+            git commit -m "chore(news): auto-update manifest and XML feeds"
             git push
           else
             echo "No changes to commit"
