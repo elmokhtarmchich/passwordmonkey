@@ -4,7 +4,13 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Wed, 20 Aug 2025 14:14:27 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 20 Aug 2025 14:37:21 GMT</lastBuildDate>
+    <item>
+      <title>Major Password Breach Exposes User Data | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-21-password-breach-example-abc12345.html</link>
+      <pubDate>Thu, 21 Aug 2025 00:00:00 GMT</pubDate>
+      <description>A recent password breach exposed user data at a major service. Learn what happened and how to protect your accounts with strong, unique passwords and MFA.</description>
+    </item>
     <item>
       <title>Password breach exposes millions of accounts | Password Monkey | Testing 123</title>
       <link>https://passwordmonkey.org/news/2025-08-19-password-breach.html</link>
