@@ -1,0 +1,10 @@
+# PasswordMonkey n8n Cloud Environment Variables
+# Copy these to your n8n Cloud environment variables section
+
+NEWS_KEYWORDS="password,cybersecurity,data breach,encryption"
+GITHUB_OWNER="elmok"
+GITHUB_REPO="passwordmonkey-news"
+GITHUB_BRANCH="main"
+GITHUB_TEMPLATE_PATH="templates/article.html"
+USE_SUMMARY=true
+REPO_BASE_PATH="articles/"
