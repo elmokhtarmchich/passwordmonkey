@@ -10,7 +10,7 @@ This workflow fetches cybersecurity/password-related news from multiple RSS feed
 - OpenAI (optional): required only if `USE_SUMMARY=true`.
 
 ## Environment variables (in n8n)
-- `GITHUB_OWNER`: your GitHub org/user
+- `GITHUB_OWNER`: elmokhtarmchich
 - `GITHUB_REPO`: `passwordmonkey`
 - `GITHUB_BRANCH`: `main` (default)
 - `NEWS_KEYWORDS`: `password,breach,authentication,cybersecurity` (default)
