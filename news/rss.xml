@@ -4,18 +4,24 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Sat, 23 Aug 2025 22:00:30 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 24 Aug 2025 14:45:15 GMT</lastBuildDate>
     <item>
       <title>Password breach exposes millions of accounts | Password Monkey | Testing 123</title>
       <link>https://passwordmonkey.org/news/2025-08-19-password-breach.html</link>
-      <pubDate>Sat, 23 Aug 2025 00:00:00 GMT</pubDate>
+      <pubDate>Sun, 24 Aug 2025 00:00:00 GMT</pubDate>
       <description>A major password breach has exposed millions of accounts. Learn what happened and how to protect yourself.</description>
     </item>
     <item>
       <title>test article | Password Monkey | Testing 123</title>
       <link>https://passwordmonkey.org/news/2025-08-20-password-test1.html</link>
-      <pubDate>Sat, 23 Aug 2025 00:00:00 GMT</pubDate>
+      <pubDate>Sun, 24 Aug 2025 00:00:00 GMT</pubDate>
       <description>A major password breach has exposed millions of accounts. Learn what happened and how to protect yourself.</description>
+    </item>
+    <item>
+      <title>Malicious Go Module Poses as SSH Brute-Force Tool, Steals Credentials via Telegram Bot | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-24-malicious-go-module-poses-as-ssh-brute-force-tool--0b226f.html</link>
+      <pubDate>Sun, 24 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Malicious Go Module Poses as SSH Brute-Force Tool, Steals Credentials via Telegram Bot</description>
     </item>
     <item>
       <title>GeoServer Exploits, PolarEdge, and Gayfemboy Push Cybercrime Beyond Traditional Botnets | Password Monkey</title>
