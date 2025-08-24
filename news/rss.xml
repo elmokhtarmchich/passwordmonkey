@@ -4,13 +4,7 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Sun, 24 Aug 2025 23:20:58 GMT</lastBuildDate>
-    <item>
-      <title>test article | Password Monkey | Testing 123</title>
-      <link>https://passwordmonkey.org/news/2025-08-20-password-test1.html</link>
-      <pubDate>Sun, 24 Aug 2025 00:00:00 GMT</pubDate>
-      <description>A major password breach has exposed millions of accounts. Learn what happened and how to protect yourself.</description>
-    </item>
+    <lastBuildDate>Sun, 24 Aug 2025 23:21:14 GMT</lastBuildDate>
     <item>
       <title>Malicious Go Module Poses as SSH Brute-Force Tool, Steals Credentials via Telegram Bot | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2025-08-24-malicious-go-module-poses-as-ssh-brute-force-tool--0b226f.html</link>
