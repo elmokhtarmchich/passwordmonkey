@@ -4,7 +4,7 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Mon, 25 Aug 2025 13:00:22 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 25 Aug 2025 14:00:19 GMT</lastBuildDate>
     <item>
       <title>Aspire Rural Health System Data Breach Impacts Nearly 140,000 | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2025-08-25-aspire-rural-health-system-data-breach-impacts-nea-b928b3.html</link>
@@ -22,6 +22,12 @@
       <link>https://passwordmonkey.org/news/2025-08-25-google-tests-qr-code-verification-for-text-message-78c7de.html</link>
       <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
       <description>Google tests QR code verification for text messages</description>
+    </item>
+    <item>
+      <title>⚡ Weekly Recap: Password Manager Flaws, Apple 0-Day, Hidden AI Prompts, In-the-Wild Exploits &amp; More | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-25-weekly-recap-password-manager-flaws-apple-0-day-hi-558c18.html</link>
+      <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
+      <description>⚡ Weekly Recap: Password Manager Flaws, Apple 0-Day, Hidden AI Prompts, In-the-Wild Exploits &amp; More</description>
     </item>
     <item>
       <title>Malicious Go Module Poses as SSH Brute-Force Tool, Steals Credentials via Telegram Bot | Password Monkey</title>
