@@ -4,7 +4,163 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Wed, 20 Aug 2025 14:37:21 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 26 Aug 2025 20:40:09 GMT</lastBuildDate>
+    <item>
+      <title>CISA warns of actively exploited Git code execution flaw | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-26-cisa-warns-of-actively-exploited-git-code-executio-3e6df0.html</link>
+      <pubDate>Tue, 26 Aug 2025 00:00:00 GMT</pubDate>
+      <description>CISA warns of actively exploited Git code execution flaw</description>
+    </item>
+    <item>
+      <title>DSLRoot, Proxies, and the Threat of ‘Legal Botnets’ | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-26-dslroot-proxies-and-the-threat-of-legal-botnets-8aab02.html</link>
+      <pubDate>Tue, 26 Aug 2025 00:00:00 GMT</pubDate>
+      <description>DSLRoot, Proxies, and the Threat of ‘Legal Botnets’</description>
+    </item>
+    <item>
+      <title>FTC Calls on Tech Firms to Resist Foreign Anti-Encryption Demands | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-26-ftc-calls-on-tech-firms-to-resist-foreign-anti-enc-09aa79.html</link>
+      <pubDate>Tue, 26 Aug 2025 00:00:00 GMT</pubDate>
+      <description>FTC Calls on Tech Firms to Resist Foreign Anti-Encryption Demands</description>
+    </item>
+    <item>
+      <title>Healthcare Services Group Data Breach Impacts 624,000 | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-26-healthcare-services-group-data-breach-impacts-6240-dd6527.html</link>
+      <pubDate>Tue, 26 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Healthcare Services Group Data Breach Impacts 624,000</description>
+    </item>
+    <item>
+      <title>HOOK Android Trojan Adds Ransomware Overlays, Expands to 107 Remote Commands | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-26-hook-android-trojan-adds-ransomware-overlays-expan-d7fdfb.html</link>
+      <pubDate>Tue, 26 Aug 2025 00:00:00 GMT</pubDate>
+      <description>HOOK Android Trojan Adds Ransomware Overlays, Expands to 107 Remote Commands</description>
+    </item>
+    <item>
+      <title>Hundreds of Thousands Affected by Auchan Data Breach | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-26-hundreds-of-thousands-affected-by-auchan-data-brea-636c7a.html</link>
+      <pubDate>Tue, 26 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Hundreds of Thousands Affected by Auchan Data Breach</description>
+    </item>
+    <item>
+      <title>MixShell Malware Delivered via Contact Forms Targets U.S. Supply Chain Manufacturers | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-26-mixshell-malware-delivered-via-contact-forms-targe-2bdef3.html</link>
+      <pubDate>Tue, 26 Aug 2025 00:00:00 GMT</pubDate>
+      <description>MixShell Malware Delivered via Contact Forms Targets U.S. Supply Chain Manufacturers</description>
+    </item>
+    <item>
+      <title>Nissan confirms design studio data breach claimed by Qilin ransomware | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-26-nissan-confirms-design-studio-data-breach-claimed--8e36ed.html</link>
+      <pubDate>Tue, 26 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Nissan confirms design studio data breach claimed by Qilin ransomware</description>
+    </item>
+    <item>
+      <title>Spotify is adding DMs | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-26-spotify-is-adding-dms-7887fb.html</link>
+      <pubDate>Tue, 26 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Spotify is introducing a direct messaging feature that allows users to share music, podcast, and audiobook recommendations with each other without leaving the a</description>
+    </item>
+    <item>
+      <title>The best Labor Day sales for 2025: Save up to $500 on tech from Apple, Anker, Dyson, Shark and others | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-26-the-best-labor-day-sales-for-2025-save-up-to-500-o-1a52a2.html</link>
+      <pubDate>Tue, 26 Aug 2025 00:00:00 GMT</pubDate>
+      <description>The best Labor Day sales for 2025: Save up to $500 on tech from Apple, Anker, Dyson, Shark and others</description>
+    </item>
+    <item>
+      <title>Whistleblower claims DOGE uploaded Social Security data to unsecure cloud server | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-26-whistleblower-claims-doge-uploaded-social-security-808061.html</link>
+      <pubDate>Tue, 26 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Whistleblower claims DOGE uploaded Social Security data to unsecure cloud server</description>
+    </item>
+    <item>
+      <title>Aspire Rural Health System Data Breach Impacts Nearly 140,000 | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-25-aspire-rural-health-system-data-breach-impacts-nea-b928b3.html</link>
+      <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Aspire Rural Health System Data Breach Impacts Nearly 140,000</description>
+    </item>
+    <item>
+      <title>Auchan retailer data breach impacts hundreds of thousands of customers | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-25-auchan-retailer-data-breach-impacts-hundreds-of-th-aaaf69.html</link>
+      <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Auchan retailer data breach impacts hundreds of thousands of customers</description>
+    </item>
+    <item>
+      <title>Farmers Insurance data breach impacts 1.1M people after Salesforce attack | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-25-farmers-insurance-data-breach-impacts-11m-people-a-801242.html</link>
+      <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Farmers Insurance data breach impacts 1.1M people after Salesforce attack</description>
+    </item>
+    <item>
+      <title>Farmers Insurance Data Breach Impacts Over 1 Million People | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-25-farmers-insurance-data-breach-impacts-over-1-milli-811ea1.html</link>
+      <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Farmers Insurance Data Breach Impacts Over 1 Million People</description>
+    </item>
+    <item>
+      <title>FTC Chair Tells Tech Giants to Hold the Line on Encryption | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-25-ftc-chair-tells-tech-giants-to-hold-the-line-on-en-3f054c.html</link>
+      <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
+      <description>FTC Chair Tells Tech Giants to Hold the Line on Encryption</description>
+    </item>
+    <item>
+      <title>Google tests QR code verification for text messages | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-25-google-tests-qr-code-verification-for-text-message-78c7de.html</link>
+      <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Google tests QR code verification for text messages</description>
+    </item>
+    <item>
+      <title>Phishing Campaign Uses UpCrypter in Fake Voicemail Emails to Deliver RAT Payloads | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-25-phishing-campaign-uses-upcrypter-in-fake-voicemail-7b9ebb.html</link>
+      <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Phishing Campaign Uses UpCrypter in Fake Voicemail Emails to Deliver RAT Payloads</description>
+    </item>
+    <item>
+      <title>The best Labor Day sales for 2025: Get up to 50 percent off tech from Apple, Anker, Shark and others | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-25-the-best-labor-day-sales-for-2025-get-up-to-50-per-74392a.html</link>
+      <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
+      <description>The best Labor Day sales for 2025: Get up to 50 percent off tech from Apple, Anker, Shark and others</description>
+    </item>
+    <item>
+      <title>⚡ Weekly Recap: Password Manager Flaws, Apple 0-Day, Hidden AI Prompts, In-the-Wild Exploits &amp; More | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-25-weekly-recap-password-manager-flaws-apple-0-day-hi-558c18.html</link>
+      <pubDate>Mon, 25 Aug 2025 00:00:00 GMT</pubDate>
+      <description>⚡ Weekly Recap: Password Manager Flaws, Apple 0-Day, Hidden AI Prompts, In-the-Wild Exploits &amp; More</description>
+    </item>
+    <item>
+      <title>Malicious Go Module Poses as SSH Brute-Force Tool, Steals Credentials via Telegram Bot | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-24-malicious-go-module-poses-as-ssh-brute-force-tool--0b226f.html</link>
+      <pubDate>Sun, 24 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Malicious Go Module Poses as SSH Brute-Force Tool, Steals Credentials via Telegram Bot</description>
+    </item>
+    <item>
+      <title>The best Labor Day sales for 2025: Get up to 50 percent off tech from Apple, Anker, Shark and others | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-24-the-best-labor-day-sales-for-2025-get-up-to-50-per-74392a.html</link>
+      <pubDate>Sun, 24 Aug 2025 00:00:00 GMT</pubDate>
+      <description>The best Labor Day sales for 2025: Get up to 50 percent off tech from Apple, Anker, Shark and others</description>
+    </item>
+    <item>
+      <title>FTC warns tech giants not to bow to foreign pressure on encryption | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-23-ftc-warns-tech-giants-not-to-bow-to-foreign-pressu-ef2d60.html</link>
+      <pubDate>Sat, 23 Aug 2025 00:00:00 GMT</pubDate>
+      <description>FTC warns tech giants not to bow to foreign pressure on encryption</description>
+    </item>
+    <item>
+      <title>GeoServer Exploits, PolarEdge, and Gayfemboy Push Cybercrime Beyond Traditional Botnets | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-23-geoserver-exploits-polaredge-and-gayfemboy-push-cy-07fd5b.html</link>
+      <pubDate>Sat, 23 Aug 2025 00:00:00 GMT</pubDate>
+      <description>GeoServer Exploits, PolarEdge, and Gayfemboy Push Cybercrime Beyond Traditional Botnets</description>
+    </item>
+    <item>
+      <title>Large Interpol Cybercrime Crackdown in Africa Leads to the Arrest of Over 1,200 Suspects | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-22-large-interpol-cybercrime-crackdown-in-africa-lead-881f95.html</link>
+      <pubDate>Fri, 22 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Large Interpol Cybercrime Crackdown in Africa Leads to the Arrest of Over 1,200 Suspects</description>
+    </item>
+    <item>
+      <title>Massive anti-cybercrime operation leads to over 1,200 arrests in Africa | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-22-massive-anti-cybercrime-operation-leads-to-over-12-4cdb7d.html</link>
+      <pubDate>Fri, 22 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Massive anti-cybercrime operation leads to over 1,200 arrests in Africa</description>
+    </item>
     <item>
       <title>Major Password Breach Exposes User Data | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2025-08-21-password-breach-example-abc12345.html</link>
@@ -12,16 +168,16 @@
       <description>A recent password breach exposed user data at a major service. Learn what happened and how to protect your accounts with strong, unique passwords and MFA.</description>
     </item>
     <item>
-      <title>Password breach exposes millions of accounts | Password Monkey | Testing 123</title>
-      <link>https://passwordmonkey.org/news/2025-08-19-password-breach.html</link>
-      <pubDate>Wed, 20 Aug 2025 00:00:00 GMT</pubDate>
-      <description>A major password breach has exposed millions of accounts. Learn what happened and how to protect yourself.</description>
+      <title>SIM-Swapper, Scattered Spider Hacker Gets 10 Years | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-21-sim-swapper-scattered-spider-hacker-gets-10-years-cc2a9f.html</link>
+      <pubDate>Thu, 21 Aug 2025 00:00:00 GMT</pubDate>
+      <description>SIM-Swapper, Scattered Spider Hacker Gets 10 Years</description>
     </item>
     <item>
-      <title>test article | Password Monkey | Testing 123</title>
-      <link>https://passwordmonkey.org/news/2025-08-20-password-test1.html</link>
-      <pubDate>Wed, 20 Aug 2025 00:00:00 GMT</pubDate>
-      <description>A major password breach has exposed millions of accounts. Learn what happened and how to protect yourself.</description>
+      <title>Why Video Game Anti-Cheat Systems Are a Cybersecurity Goldmine | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-21-why-video-game-anti-cheat-systems-are-a-cybersecur-5af646.html</link>
+      <pubDate>Thu, 21 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Why Video Game Anti-Cheat Systems Are a Cybersecurity Goldmine</description>
     </item>
     <item>
       <title>Secure Password Strategies for 2025 | Password Monkey | Test</title>
@@ -36,10 +192,10 @@
       <description>Experts reveal the latest trends in strong password creation for 2025. Find out how to stay ahead of hackers.</description>
     </item>
     <item>
-      <title>New Password Security Threat Discovered | Password Monkey</title>
-      <link>https://passwordmonkey.org/news/2025-01-15-sample-article.html</link>
-      <pubDate>Wed, 15 Jan 2025 00:00:00 GMT</pubDate>
-      <description>Learn about the latest password security threat and how to protect your accounts with strong passwords and security best practices.</description>
+      <title>Micron Technology: China probes US chip maker for cybersecurity risks as tech tension escalates | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2023-04-04-micron-technology-china-probes-us-chip-maker-for-c-7ffbfa.html</link>
+      <pubDate>Tue, 04 Apr 2023 00:00:00 GMT</pubDate>
+      <description>Micron Technology: China probes US chip maker for cybersecurity risks as tech tension escalates</description>
     </item>
     <item>
       <title>[Article Title] | Password Monkey</title>

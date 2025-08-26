@@ -1,20 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://passwordmonkey.org/news/2025-08-26-cisa-warns-of-actively-exploited-git-code-executio-3e6df0.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-26-dslroot-proxies-and-the-threat-of-legal-botnets-8aab02.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-26-ftc-calls-on-tech-firms-to-resist-foreign-anti-enc-09aa79.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-26-healthcare-services-group-data-breach-impacts-6240-dd6527.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-26-hook-android-trojan-adds-ransomware-overlays-expan-d7fdfb.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-26-hundreds-of-thousands-affected-by-auchan-data-brea-636c7a.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-26-mixshell-malware-delivered-via-contact-forms-targe-2bdef3.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-26-nissan-confirms-design-studio-data-breach-claimed--8e36ed.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-26-spotify-is-adding-dms-7887fb.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-26-the-best-labor-day-sales-for-2025-save-up-to-500-o-1a52a2.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-26-whistleblower-claims-doge-uploaded-social-security-808061.html</loc>
+    <lastmod>2025-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-25-aspire-rural-health-system-data-breach-impacts-nea-b928b3.html</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-25-auchan-retailer-data-breach-impacts-hundreds-of-th-aaaf69.html</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-25-farmers-insurance-data-breach-impacts-11m-people-a-801242.html</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-25-farmers-insurance-data-breach-impacts-over-1-milli-811ea1.html</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-25-ftc-chair-tells-tech-giants-to-hold-the-line-on-en-3f054c.html</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-25-google-tests-qr-code-verification-for-text-message-78c7de.html</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-25-phishing-campaign-uses-upcrypter-in-fake-voicemail-7b9ebb.html</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-25-the-best-labor-day-sales-for-2025-get-up-to-50-per-74392a.html</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-25-weekly-recap-password-manager-flaws-apple-0-day-hi-558c18.html</loc>
+    <lastmod>2025-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-24-malicious-go-module-poses-as-ssh-brute-force-tool--0b226f.html</loc>
+    <lastmod>2025-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-24-the-best-labor-day-sales-for-2025-get-up-to-50-per-74392a.html</loc>
+    <lastmod>2025-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-23-ftc-warns-tech-giants-not-to-bow-to-foreign-pressu-ef2d60.html</loc>
+    <lastmod>2025-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-23-geoserver-exploits-polaredge-and-gayfemboy-push-cy-07fd5b.html</loc>
+    <lastmod>2025-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-22-large-interpol-cybercrime-crackdown-in-africa-lead-881f95.html</loc>
+    <lastmod>2025-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-08-22-massive-anti-cybercrime-operation-leads-to-over-12-4cdb7d.html</loc>
+    <lastmod>2025-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://passwordmonkey.org/news/2025-08-21-password-breach-example-abc12345.html</loc>
     <lastmod>2025-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://passwordmonkey.org/news/2025-08-19-password-breach.html</loc>
-    <lastmod>2025-08-20</lastmod>
+    <loc>https://passwordmonkey.org/news/2025-08-21-sim-swapper-scattered-spider-hacker-gets-10-years-cc2a9f.html</loc>
+    <lastmod>2025-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://passwordmonkey.org/news/2025-08-20-password-test1.html</loc>
-    <lastmod>2025-08-20</lastmod>
+    <loc>https://passwordmonkey.org/news/2025-08-21-why-video-game-anti-cheat-systems-are-a-cybersecur-5af646.html</loc>
+    <lastmod>2025-08-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -31,8 +187,8 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://passwordmonkey.org/news/2025-01-15-sample-article.html</loc>
-    <lastmod>2025-01-15</lastmod>
+    <loc>https://passwordmonkey.org/news/2023-04-04-micron-technology-china-probes-us-chip-maker-for-c-7ffbfa.html</loc>
+    <lastmod>2023-04-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
