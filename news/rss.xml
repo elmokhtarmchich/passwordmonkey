@@ -4,7 +4,7 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Wed, 27 Aug 2025 23:45:17 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 28 Aug 2025 05:45:14 GMT</lastBuildDate>
     <item>
       <title>&amp;#8216;Vibe-hacking&amp;#8217; is now a top AI threat | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2025-08-27-8216vibe-hacking8217-is-now-a-top-ai-threat-9c7383.html</link>
@@ -52,6 +52,12 @@
       <link>https://passwordmonkey.org/news/2025-08-27-someone-created-first-ai-powered-ransomware-using--6f13f4.html</link>
       <pubDate>Wed, 27 Aug 2025 00:00:00 GMT</pubDate>
       <description>Someone Created First AI-Powered Ransomware Using OpenAI</description>
+    </item>
+    <item>
+      <title>Someone Created the First AI-Powered Ransomware Using OpenAI&apos;s gpt-oss:20b Model | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-27-someone-created-the-first-ai-powered-ransomware-us-6f13f4.html</link>
+      <pubDate>Wed, 27 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Someone Created the First AI-Powered Ransomware Using OpenAI</description>
     </item>
     <item>
       <title>Storm-0501 hackers shift to ransomware attacks in the cloud | Password Monkey</title>
