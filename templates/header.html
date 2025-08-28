@@ -1,107 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Include main template header -->
-    <!--#include virtual="/templates/header.html" -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News - Password Monkey</title>
-</head>
-<body>
+    
+    <!-- Common Navigation -->
     <!--#include virtual="/templates/navigation.html" -->
     
-    <main class="news-container">
-        <h1>Latest News</h1>
-        <div class="articles-grid">
-            <!-- Articles will be dynamically inserted here by the build script -->
-        </div>
-    </main>
-
-    <!--#include virtual="/templates/footer.html" -->
-</body>
-</html>
-    <meta property="og:locale" content="en_US">
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://passwordmonkey.org/news/">
-    <meta name="twitter:title" content="Password Security News | Password Monkey">
-    <meta name="twitter:description" content="Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.">
-    <meta name="twitter:image" content="https://passwordmonkey.org/images/og-image.png">
-    
-    <!-- Additional SEO Meta Tags -->
-    <meta name="theme-color" content="#2563eb">
-    <meta name="msapplication-TileColor" content="#2563eb">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="PasswordMonkey News">
-    <meta name="application-name" content="PasswordMonkey News">
-    <meta name="format-detection" content="telephone=no">
-    
-    <!-- Structured Data - NewsPage Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "NewsPage",
-        "name": "Password Security News",
-        "description": "Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.",
-        "url": "https://passwordmonkey.org/news/",
-        "mainEntity": {
-            "@type": "ItemList",
-            "name": "Password Security News Articles",
-            "description": "Collection of password security and cybersecurity news articles"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "PasswordMonkey",
-            "url": "https://passwordmonkey.org/",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://passwordmonkey.org/images/site_logo.png"
-            }
-        },
-        "author": {
-            "@type": "Organization",
-            "name": "PasswordMonkey",
-            "url": "https://passwordmonkey.org/"
-        }
-    }
-    </script>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['"Open Sans"', 'sans-serif'],
-                    },
-                    colors: {
-                        'blue-600': '#2563eb',
-                        'blue-700': '#1d4ed8',
-                        'gray-50': '#f9fafb',
-                        'gray-200': '#e5e7eb',
-                        'gray-300': '#d1d5db',
-                        'gray-400': '#9ca3af',
-                        'gray-500': '#6b7280',
-                        'gray-600': '#4b5563',
-                        'gray-700': '#374151',
-                        'gray-800': '#1f2937',
-                    }
-                }
-            }
-        }
-    </script>
-    <link rel="shortcut icon" href="../favicon_io/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="../manifest.json">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../style.css">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9540362101494663"
-     crossorigin="anonymous"></script>
-    <script src="../script.js" defer></script>
-    <script src="news-aggregator.js" defer></script>
+    <!-- Page Specific Content -->
+    <!--#if expr="$PAGE_ID = news" -->
+    <link rel="alternate" type="application/rss+xml" title="Password Security News" href="/news/feed.xml">
+    <!--#endif -->
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 min-h-screen font-sans">
     <header class="bg-white shadow-md dark:bg-gray-800">

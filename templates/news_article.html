@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--#include virtual="/templates/header.html" -->
+    <title><!--#echo var="ARTICLE_TITLE" --> | Password Monkey News</title>
+    <meta name="description" content="<!--#echo var="ARTICLE_DESCRIPTION" -->">
+    <meta property="article:published_time" content="<!--#echo var="ARTICLE_DATE" -->">
+    <meta property="article:section" content="Password Security">
+</head>
+<body class="article-page">
+    <article class="news-article">
+        <header class="article-header">
+            <h1><!--#echo var="ARTICLE_TITLE" --></h1>
+            <div class="meta">
+                <time datetime="<!--#echo var="ARTICLE_DATE" -->">
+                    <!--#echo var="ARTICLE_DATE_FORMATTED" -->
+                </time>
+                <span class="reading-time">
+                    <!--#echo var="READING_TIME" --> min read
+                </span>
+            </div>
+        </header>
+
+        <div class="article-content">
+            <!--#echo var="ARTICLE_CONTENT" -->
+        </div>
+
+        <footer class="article-footer">
+            <div class="related-articles">
+                <!--#if expr="${RELATED_ARTICLES_1} != ''" -->
+                <section class="related-section-1">
+                    <!--#echo var="RELATED_ARTICLES_1" -->
+                </section>
+                <!--#endif -->
+                
+                <!--#if expr="${RELATED_ARTICLES_2} != ''" -->
+                <section class="related-section-2">
+                    <!--#echo var="RELATED_ARTICLES_2" -->
+                </section>
+                <!--#endif -->
+            </div>
+        </footer>
+    </article>
+    
+    <!--#include virtual="/templates/footer.html" -->
+</body>
+</html>
