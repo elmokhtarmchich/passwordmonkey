@@ -7,14 +7,62 @@
         </div>
     </header>
     
-    <!-- Article content goes here -->
+    <div class="article-content">
+        <!--#echo var="CONTENT" -->
+    </div>
     
-    <!-- Related Articles sections remain unchanged -->
-    <section class="related-articles-1">
-        <!-- ...existing code... -->
+    <!-- Related Articles sections -->
+    <section class="related-articles-1" class="mt-8">
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Related Articles</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <!--#if expr="$RELATED_1_TITLE != ''" -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+                <h3 class="text-lg font-semibold mb-2">
+                    <a href="<!--#echo var='RELATED_1_URL' -->" class="text-blue-600 hover:text-blue-800 dark:text-blue-400">
+                        <!--#echo var="RELATED_1_TITLE" -->
+                    </a>
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300"><!--#echo var="RELATED_1_EXCERPT" --></p>
+            </div>
+            <!--#endif -->
+            
+            <!--#if expr="$RELATED_2_TITLE != ''" -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+                <h3 class="text-lg font-semibold mb-2">
+                    <a href="<!--#echo var='RELATED_2_URL' -->" class="text-blue-600 hover:text-blue-800 dark:text-blue-400">
+                        <!--#echo var="RELATED_2_TITLE" -->
+                    </a>
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300"><!--#echo var="RELATED_2_EXCERPT" --></p>
+            </div>
+            <!--#endif -->
+        </div>
     </section>
     
-    <section class="related-articles-2">
-        <!-- ...existing code... -->
+    <section class="related-articles-2" class="mt-8">
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">More From Password Security</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <!--#if expr="$RELATED_3_TITLE != ''" -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+                <h3 class="text-lg font-semibold mb-2">
+                    <a href="<!--#echo var='RELATED_3_URL' -->" class="text-blue-600 hover:text-blue-800 dark:text-blue-400">
+                        <!--#echo var="RELATED_3_TITLE" -->
+                    </a>
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300"><!--#echo var="RELATED_3_EXCERPT" --></p>
+            </div>
+            <!--#endif -->
+            
+            <!--#if expr="$RELATED_4_TITLE != ''" -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+                <h3 class="text-lg font-semibold mb-2">
+                    <a href="<!--#echo var='RELATED_4_URL' -->" class="text-blue-600 hover:text-blue-800 dark:text-blue-400">
+                        <!--#echo var="RELATED_4_TITLE" -->
+                    </a>
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300"><!--#echo var="RELATED_4_EXCERPT" --></p>
+            </div>
+            <!--#endif -->
+        </div>
     </section>
 </article>
