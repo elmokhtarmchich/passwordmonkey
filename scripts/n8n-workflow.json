@@ -1,0 +1,130 @@
+{
+    "nodes": [
+        {
+            "parameters": {
+                "url": "https://passwordmonkey.org/news/",
+                "options": {}
+            },
+            "id": "1",
+            "name": "Fetch News Articles",
+            "type": "n8n-nodes-base.httprequest",
+            "typeVersion": 1,
+            "position": [
+                240,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "functionCode": "const wordsPerMinute = 200;\nconst wordCount = $input.first().content.split(/\\s+/).length;\nconst readingTime = Math.ceil(wordCount / wordsPerMinute);\nreturn {readingTime};"
+            },
+            "id": "2",
+            "name": "Calculate Reading Time",
+            "type": "n8n-nodes-base.function",
+            "typeVersion": 1,
+            "position": [
+                600,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "functionCode": "const date = new Date($input.first().date);\nreturn {\n  dateISO: date.toISOString().split('T')[0],\n  dateFormatted: date.toLocaleDateString('en-US', {\n    year: 'numeric',\n    month: 'long',\n    day: 'numeric'\n  })\n};"
+            },
+            "id": "3",
+            "name": "Format Article Date",
+            "type": "n8n-nodes-base.function",
+            "typeVersion": 1,
+            "position": [
+                600,
+                200
+            ]
+        },
+        {
+            "parameters": {
+                "functionCode": "const tags = $input.first().tags;\nconst allArticles = $node['Get All Articles'].json;\n\nconst related = allArticles\n  .filter(article => article.id !== $input.first().id)\n  .filter(article => article.tags.some(tag => tags.includes(tag)))\n  .slice(0, 4)\n  .map(article => ({\n    title: article.title,\n    url: article.url,\n    excerpt: article.excerpt\n  }));\n\nreturn {\n  related_1: related[0] || null,\n  related_2: related[1] || null,\n  related_3: related[2] || null,\n  related_4: related[3] || null\n};"
+            },
+            "id": "4",
+            "name": "Find Related Articles",
+            "type": "n8n-nodes-base.function",
+            "typeVersion": 1,
+            "position": [
+                600,
+                100
+            ]
+        },
+        {
+            "parameters": {
+                "functionCode": "const article = $input.first();\nconst template = $node['Get Template'].json;\n\nreturn {\n  content: template\n    .replace('<!--#echo var=\"TITLE\" -->', article.title)\n    .replace('<!--#echo var=\"DATE\" -->', article.dateISO)\n    .replace('<!--#echo var=\"DATE_FORMATTED\" -->', article.dateFormatted)\n    .replace('<!--#echo var=\"READING_TIME\" -->', article.readingTime)\n    .replace('<!--#echo var=\"CONTENT\" -->', article.content)\n    .replace('<!--#echo var=\"RELATED_1_TITLE\" -->', article.related_1?.title || '')\n    .replace('<!--#echo var=\"RELATED_1_URL\" -->', article.related_1?.url || '')\n    .replace('<!--#echo var=\"RELATED_1_EXCERPT\" -->', article.related_1?.excerpt || '')\n    // ... repeat for related 2-4\n};"
+            },
+            "id": "5",
+            "name": "Apply Article Template",
+            "type": "n8n-nodes-base.function",
+            "typeVersion": 1,
+            "position": [
+                800,
+                200
+            ]
+        },
+        {
+            "parameters": {
+                "url": "https://passwordmonkey.org/templates/article.html",
+                "options": {}
+            },
+            "id": "6",
+            "name": "Get Template",
+            "type": "n8n-nodes-base.httprequest",
+            "typeVersion": 1,
+            "position": [
+                400,
+                200
+            ]
+        }
+    ],
+    "connections": {
+        "1": {
+            "main": [
+                [
+                    {
+                        "node": "3",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "3": {
+            "main": [
+                [
+                    {
+                        "node": "4",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "4": {
+            "main": [
+                [
+                    {
+                        "node": "5",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "6": {
+            "main": [
+                [
+                    {
+                        "node": "2",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        }
+    }
+}

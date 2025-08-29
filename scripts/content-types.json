@@ -1,0 +1,20 @@
+{
+    "article": {
+        "fields": {
+            "title": { "type": "string", "required": true },
+            "content": { "type": "text", "required": true },
+            "date": { "type": "date", "required": true },
+            "tags": { "type": "array", "items": { "type": "string" } },
+            "excerpt": { "type": "text", "maxLength": 200 },
+            "featured": { "type": "boolean", "default": false },
+            "slug": { "type": "string", "required": true },
+            "seo": {
+                "type": "object",
+                "properties": {
+                    "metaTitle": { "type": "string" },
+                    "metaDescription": { "type": "string" }
+                }
+            }
+        }
+    }
+}
