@@ -4,7 +4,7 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Fri, 29 Aug 2025 15:45:20 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 29 Aug 2025 17:45:15 GMT</lastBuildDate>
     <item>
       <title>Click Studios Patches Passwordstate Authentication Bypass Vulnerability in Emergency Access Page | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2025-08-29-click-studios-patches-passwordstate-authentication-e4b067.html</link>
@@ -34,6 +34,12 @@
       <link>https://passwordmonkey.org/news/2025-08-29-transunion-data-breach-impacts-44-million-b6b86c.html</link>
       <pubDate>Fri, 29 Aug 2025 00:00:00 GMT</pubDate>
       <description>TransUnion Data Breach Impacts 4.4 Million</description>
+    </item>
+    <item>
+      <title>Webinar: Learn How to Unite Dev, Sec, and Ops Teams With One Shared Playbook | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-29-webinar-learn-how-to-unite-dev-sec-and-ops-teams-w-6c9e99.html</link>
+      <pubDate>Fri, 29 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Webinar: Learn How to Unite Dev, Sec, and Ops Teams With One Shared Playbook</description>
     </item>
     <item>
       <title>Hidden Vulnerabilities of Project Management Tools &amp; How FluentPro Backup Secures Them | Password Monkey</title>
