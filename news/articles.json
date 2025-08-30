@@ -1,0 +1,14 @@
+{
+  "articles": [
+    {
+      "id": "article-1",
+      "title": "Article Title",
+      "excerpt": "Article excerpt/description...",
+      "filename": "YYYY-MM-DD-article-slug-hash.html",
+      "publishDate": "2024-01-01T12:00:00Z", 
+      "addedDate": "2024-01-01T12:00:00Z",
+      "readingTime": 5,
+      "source": "Source Name"
+    }
+  ]
+}

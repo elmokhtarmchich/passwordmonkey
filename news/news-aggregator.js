@@ -360,7 +360,68 @@ document.addEventListener('DOMContentLoaded', () => {
     new NewsAggregator();
 });
 
+document.addEventListener('DOMContentLoaded', async () => {
+    const newsList = document.getElementById('news-list');
+    const template = document.getElementById('article-template');
+    const loadingState = document.getElementById('loading-state');
+    
+    try {
+        // Fetch article metadata
+        const response = await fetch('articles.json');
+        const data = await response.json();
+        
+        // Sort articles by addedDate descending (newest first)
+        const sortedArticles = data.articles.sort((a, b) => {
+            return new Date(b.addedDate) - new Date(a.addedDate);
+        });
+
+        // Clear loading state
+        loadingState.style.display = 'none';
+        
+        // Render articles
+        sortedArticles.forEach(article => {
+            const clone = template.content.cloneNode(true);
+            
+            // Set article title and link
+            const titleLink = clone.querySelector('h2 a');
+            titleLink.textContent = article.title;
+            titleLink.href = article.filename;
+            
+            // Set date
+            const dateEl = clone.querySelector('.article-date');
+            const date = new Date(article.publishDate);
+            dateEl.textContent = date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            
+            // Set reading time
+            const readingTimeEl = clone.querySelector('.article-reading-time');
+            readingTimeEl.textContent = `${article.readingTime} min read`;
+            
+            // Set excerpt
+            const excerptEl = clone.querySelector('.article-excerpt');
+            excerptEl.textContent = article.excerpt;
+            
+            // Set read more link
+            const readMoreLink = clone.querySelector('a[href="#"]');
+            readMoreLink.href = article.filename;
+            
+            newsList.appendChild(clone);
+        });
+        
+    } catch (error) {
+        console.error('Error loading articles:', error);
+        loadingState.innerHTML = `
+            <p class="text-red-600 dark:text-red-400">
+                Error loading articles. Please try again later.
+            </p>
+        `;
+    }
+});
+
 // Export for potential external use
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = NewsAggregator;
-} 
+}
