@@ -43,7 +43,8 @@ class NewsAggregator {
                     url: item.url || '#',
                     // Prefer `excerpt` if present, else use `description`
                     excerpt: (item.excerpt || item.description || '').toString().slice(0, 200),
-                    filename: item.filename || (item.url ? item.url.split('/').pop() : undefined)
+                    filename: item.filename || (item.url ? item.url.split('/').pop() : undefined),
+                    readingTime: item.readingTime || 5 // Default reading time
                 }));
             } else {
                 // Fallback: try to discover articles by checking common patterns
@@ -128,7 +129,7 @@ class NewsAggregator {
                     <time datetime="${article.date}">${displayDate}</time>
                     <span class="mx-2">•</span>
                     <i class="fas fa-clock mr-2"></i>
-                    <span>5 min read</span>
+                    <span>${article.readingTime} min read</span>
                 </div>
             </header>
             
@@ -361,54 +362,52 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const newsList = document.getElementById('news-list');
-    const template = document.getElementById('article-template');
-    const loadingState = document.getElementById('loading-state');
-    
-    try {
-        // Fetch article metadata
-        const response = await fetch('articles.json');
-        const data = await response.json();
+    // Update article template
+    const renderArticle = (article) => {
+        const template = document.getElementById('article-template');
+        const clone = template.content.cloneNode(true);
         
-        // Sort articles by addedDate descending (newest first)
-        const sortedArticles = data.articles.sort((a, b) => {
-            return new Date(b.addedDate) - new Date(a.addedDate);
+        // Set title and link
+        const titleLink = clone.querySelector('h2 a');
+        titleLink.textContent = article.title;
+        titleLink.href = article.url;
+        
+        // Set date
+        const dateEl = clone.querySelector('.article-date');
+        const date = new Date(article.date);
+        dateEl.textContent = date.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
         });
+        
+        // Set reading time (use default if not specified)
+        const readingTimeEl = clone.querySelector('.article-reading-time');
+        const readingTime = article.readingTime || 5;
+        readingTimeEl.textContent = `${readingTime} min read`;
+        
+        // Set excerpt
+        const excerptEl = clone.querySelector('.article-excerpt');
+        excerptEl.textContent = article.description;
+        
+        return clone;
+    };
 
-        // Clear loading state
+    try {
+        // Fetch articles
+        const response = await fetch('news-manifest.json');
+        const articles = await response.json();
+        
+        // Sort by date (newest first)
+        articles.sort((a, b) => new Date(b.date) - new Date(a.date));
+        
+        // Clear loading state and render articles
+        const newsList = document.getElementById('news-list');
+        const loadingState = document.getElementById('loading-state');
         loadingState.style.display = 'none';
         
-        // Render articles
-        sortedArticles.forEach(article => {
-            const clone = template.content.cloneNode(true);
-            
-            // Set article title and link
-            const titleLink = clone.querySelector('h2 a');
-            titleLink.textContent = article.title;
-            titleLink.href = article.filename;
-            
-            // Set date
-            const dateEl = clone.querySelector('.article-date');
-            const date = new Date(article.publishDate);
-            dateEl.textContent = date.toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-            });
-            
-            // Set reading time
-            const readingTimeEl = clone.querySelector('.article-reading-time');
-            readingTimeEl.textContent = `${article.readingTime} min read`;
-            
-            // Set excerpt
-            const excerptEl = clone.querySelector('.article-excerpt');
-            excerptEl.textContent = article.excerpt;
-            
-            // Set read more link
-            const readMoreLink = clone.querySelector('a[href="#"]');
-            readMoreLink.href = article.filename;
-            
-            newsList.appendChild(clone);
+        articles.forEach(article => {
+            newsList.appendChild(renderArticle(article));
         });
         
     } catch (error) {
