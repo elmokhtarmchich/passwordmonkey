@@ -1,7 +1,7 @@
 /**
  * PasswordMonkey News Aggregator
  * Automatically detects and displays news articles from the /news directory
- * Compatible with GitHub Pages and ready for n8n automation
+ * Uses readTime from manifest for each article
  */
 
 class NewsAggregator {
@@ -12,7 +12,6 @@ class NewsAggregator {
         this.currentPage = 1;
         this.allArticles = [];
         this.newsDirectory = '/news/';
-        
         this.init();
     }
 
@@ -28,26 +27,20 @@ class NewsAggregator {
     }
 
     async discoverArticles() {
-        // For GitHub Pages, we'll need to maintain a manifest file
-        // This approach allows for automation while working within static hosting constraints
         try {
-            const response = await fetch('/news/news-manifest.json');
+            const response = await fetch(`${this.newsDirectory}news-manifest.json`);
             if (response.ok) {
                 const manifest = await response.json();
-                // Support both array format and object with `articles` key
                 const rawArticles = Array.isArray(manifest) ? manifest : (manifest.articles || []);
-                // Normalize fields for rendering
                 this.allArticles = rawArticles.map(item => ({
                     title: item.title || '',
                     date: item.date || '',
                     url: item.url || '#',
-                    // Prefer `excerpt` if present, else use `description`
                     excerpt: (item.excerpt || item.description || '').toString().slice(0, 200),
                     filename: item.filename || (item.url ? item.url.split('/').pop() : undefined),
-                    readingTime: item.readingTime || 5 // Default reading time
+                    readingTime: item.readingTime || 5
                 }));
             } else {
-                // Fallback: try to discover articles by checking common patterns
                 await this.discoverArticlesFallback();
             }
         } catch (error) {
@@ -55,69 +48,37 @@ class NewsAggregator {
             await this.discoverArticlesFallback();
         }
 
-        // Sort articles by date (newest first)
         this.allArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
         this.hideLoadingState();
     }
 
     async discoverArticlesFallback() {
-        // Fallback method: try to discover articles by checking for common patterns
-        // This is less reliable but provides a backup option
-        const fallbackArticles = [
-            {
-                filename: '2025-01-15-sample-article.html',
-                title: 'New Password Security Threat Discovered',
-                date: '2025-01-15',
-                excerpt: 'Learn about the latest password security threat and how to protect your accounts with strong passwords and security best practices.',
-                url: '/news/2025-01-15-sample-article.html'
-            },
-            {
-                filename: '2025-08-20-password-breach.html',
-                title: 'Password breach exposes millions of accounts',
-                date: '2025-08-20',
-                excerpt: 'A major password breach has exposed millions of accounts. Learn what happened and how to protect yourself.',
-                url: '/news/2025-08-20-password-breach.html'
-            }
+        this.allArticles = [
+            { filename: '2025-01-15-sample.html', title: 'Sample Article', date: '2025-01-15', excerpt: 'Fallback excerpt...', url: '/news/2025-01-15-sample.html', readingTime: 5 },
+            { filename: '2025-08-20-password-breach.html', title: 'Password Breach', date: '2025-08-20', excerpt: 'Fallback excerpt...', url: '/news/2025-08-20-password-breach.html', readingTime: 6 }
         ];
-
-        this.allArticles = fallbackArticles;
     }
 
     renderNews() {
-        if (this.allArticles.length === 0) {
-            this.showNoArticles();
-            return;
-        }
-
-        const startIndex = (this.currentPage - 1) * this.articlesPerPage;
-        const endIndex = startIndex + this.articlesPerPage;
-        const currentArticles = this.allArticles.slice(startIndex, endIndex);
-
-        this.renderArticles(currentArticles);
+        if (!this.allArticles.length) return this.showNoArticles();
+        const start = (this.currentPage - 1) * this.articlesPerPage;
+        const end = start + this.articlesPerPage;
+        this.renderArticles(this.allArticles.slice(start, end));
         this.renderPagination();
         this.updatePageInfo();
-        this.hideLoadingState();
     }
 
     renderArticles(articles) {
         if (!this.newsContainer) return;
-
         this.newsContainer.innerHTML = '';
-
-        articles.forEach(article => {
-            const articleElement = this.createArticleCard(article);
-            this.newsContainer.appendChild(articleElement);
-        });
+        articles.forEach(article => this.newsContainer.appendChild(this.createArticleCard(article)));
     }
 
     createArticleCard(article) {
-        const articleElement = document.createElement('article');
-        articleElement.className = 'news-card bg-white rounded-lg shadow-md p-6 dark:bg-gray-800 hover:shadow-lg transition-all duration-300';
-        
-        // Format date for display
+        const articleEl = document.createElement('article');
+        articleEl.className = 'news-card bg-white rounded-lg shadow-md p-6 dark:bg-gray-800 hover:shadow-lg transition-all duration-300';
         const displayDate = this.formatDate(article.date);
-        
-        articleElement.innerHTML = `
+        articleEl.innerHTML = `
             <header class="mb-4">
                 <h2 class="text-xl font-bold text-gray-800 dark:text-gray-100 mb-2">
                     <a href="${article.url}" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
@@ -132,13 +93,11 @@ class NewsAggregator {
                     <span>${article.readingTime} min read</span>
                 </div>
             </header>
-            
             <div class="mb-4">
                 <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
                     ${this.escapeHtml(article.excerpt)}
                 </p>
             </div>
-            
             <footer class="flex items-center justify-between">
                 <a href="${article.url}" class="inline-flex items-center text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium transition-colors">
                     Read more 
@@ -147,280 +106,77 @@ class NewsAggregator {
                 ${article.filename ? `<span class="text-xs text-gray-500 dark:text-gray-400">${this.escapeHtml(article.filename)}</span>` : ''}
             </footer>
         `;
-
-        return articleElement;
+        return articleEl;
     }
 
     renderPagination() {
         if (!this.paginationContainer) return;
-
         const totalPages = Math.ceil(this.allArticles.length / this.articlesPerPage);
-        
-        if (totalPages <= 1) {
-            this.paginationContainer.innerHTML = '';
-            return;
+        if (totalPages <= 1) return this.paginationContainer.innerHTML = '';
+        let html = '<div class="flex items-center justify-center space-x-2">';
+        if (this.currentPage > 1) html += `<button class="pagination-btn" data-page="${this.currentPage - 1}">← Previous</button>`;
+        for (let i = Math.max(1, this.currentPage - 2); i <= Math.min(totalPages, this.currentPage + 2); i++) {
+            html += i === this.currentPage ? `<span class="current-page">${i}</span>` : `<button class="pagination-btn" data-page="${i}">${i}</button>`;
         }
-
-        let paginationHTML = '<div class="flex items-center justify-center space-x-2">';
-        
-        // Previous button
-        if (this.currentPage > 1) {
-            paginationHTML += `
-                <button class="pagination-btn px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400 dark:hover:bg-gray-700" 
-                        data-page="${this.currentPage - 1}">
-                    <i class="fas fa-chevron-left mr-1"></i> Previous
-                </button>
-            `;
-        }
-
-        // Page numbers
-        const startPage = Math.max(1, this.currentPage - 2);
-        const endPage = Math.min(totalPages, this.currentPage + 2);
-
-        for (let i = startPage; i <= endPage; i++) {
-            if (i === this.currentPage) {
-                paginationHTML += `
-                    <span class="px-3 py-2 text-sm font-medium text-blue-600 bg-blue-100 border border-blue-300 rounded-md dark:bg-blue-900 dark:border-blue-700 dark:text-blue-300">
-                        ${i}
-                    </span>
-                `;
-            } else {
-                paginationHTML += `
-                    <button class="pagination-btn px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400 dark:hover:bg-gray-700" 
-                            data-page="${i}">
-                        ${i}
-                    </button>
-                `;
-            }
-        }
-
-        // Next button
-        if (this.currentPage < totalPages) {
-            paginationHTML += `
-                <button class="pagination-btn px-3 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-400 dark:hover:bg-gray-700" 
-                        data-page="${this.currentPage + 1}">
-                    Next <i class="fas fa-chevron-right ml-1"></i>
-                </button>
-            `;
-        }
-
-        paginationHTML += '</div>';
-        this.paginationContainer.innerHTML = paginationHTML;
+        if (this.currentPage < totalPages) html += `<button class="pagination-btn" data-page="${this.currentPage + 1}">Next →</button>`;
+        html += '</div>';
+        this.paginationContainer.innerHTML = html;
     }
 
     updatePageInfo() {
-        const pageInfoElement = document.getElementById('page-info');
-        if (!pageInfoElement) return;
-
+        const info = document.getElementById('page-info');
+        if (!info) return;
         const totalPages = Math.ceil(this.allArticles.length / this.articlesPerPage);
         const startIndex = (this.currentPage - 1) * this.articlesPerPage + 1;
         const endIndex = Math.min(this.currentPage * this.articlesPerPage, this.allArticles.length);
-
-        pageInfoElement.innerHTML = `
-            <p class="text-sm text-gray-600 dark:text-gray-400">
-                Showing ${startIndex}-${endIndex} of ${this.allArticles.length} articles
-                ${totalPages > 1 ? `(Page ${this.currentPage} of ${totalPages})` : ''}
-            </p>
-        `;
+        info.innerHTML = `Showing ${startIndex}-${endIndex} of ${this.allArticles.length} articles${totalPages > 1 ? ` (Page ${this.currentPage} of ${totalPages})` : ''}`;
     }
 
     setupEventListeners() {
-        // Pagination event delegation
         if (this.paginationContainer) {
-            this.paginationContainer.addEventListener('click', (e) => {
-                if (e.target.classList.contains('pagination-btn')) {
-                    const page = parseInt(e.target.dataset.page);
-                    this.goToPage(page);
-                }
+            this.paginationContainer.addEventListener('click', e => {
+                if (e.target.classList.contains('pagination-btn')) this.goToPage(parseInt(e.target.dataset.page));
             });
         }
-
-        // Search functionality
         const searchInput = document.getElementById('news-search');
-        if (searchInput) {
-            searchInput.addEventListener('input', (e) => {
-                this.filterArticles(e.target.value);
-            });
-        }
+        if (searchInput) searchInput.addEventListener('input', e => this.filterArticles(e.target.value));
     }
 
     goToPage(page) {
         this.currentPage = page;
         this.renderNews();
-        
-        // Scroll to top of news section
-        const newsSection = document.getElementById('news-section');
-        if (newsSection) {
-            newsSection.scrollIntoView({ behavior: 'smooth' });
-        }
+        const section = document.getElementById('news-section');
+        if (section) section.scrollIntoView({ behavior: 'smooth' });
     }
 
-    filterArticles(searchTerm) {
-        if (!searchTerm.trim()) {
-            this.currentPage = 1;
-            this.renderNews();
-            return;
-        }
-
-        const filteredArticles = this.allArticles.filter(article => 
-            article.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            article.excerpt.toLowerCase().includes(searchTerm.toLowerCase())
-        );
-
-        this.renderFilteredArticles(filteredArticles);
+    filterArticles(term) {
+        if (!term.trim()) return this.renderNews();
+        const filtered = this.allArticles.filter(a => a.title.toLowerCase().includes(term.toLowerCase()) || a.excerpt.toLowerCase().includes(term.toLowerCase()));
+        this.renderFilteredArticles(filtered);
     }
 
-    renderFilteredArticles(filteredArticles) {
+    renderFilteredArticles(filtered) {
         if (!this.newsContainer) return;
-
         this.newsContainer.innerHTML = '';
-
-        if (filteredArticles.length === 0) {
-            this.newsContainer.innerHTML = `
-                <div class="text-center py-12">
-                    <i class="fas fa-search text-4xl text-gray-400 mb-4"></i>
-                    <p class="text-gray-600 dark:text-gray-400">No articles found matching "${document.getElementById('news-search').value}"</p>
-                    <button onclick="window.location.reload()" class="mt-4 text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
-                        Clear search
-                    </button>
-                </div>
-            `;
-            this.hideLoadingState();
+        if (!filtered.length) {
+            this.newsContainer.innerHTML = `<div class="text-center py-12">No articles match your search</div>`;
             return;
         }
-
-        filteredArticles.forEach(article => {
-            const articleElement = this.createArticleCard(article);
-            this.newsContainer.appendChild(articleElement);
-        });
-
-        // Hide pagination for filtered results
-        if (this.paginationContainer) {
-            this.paginationContainer.innerHTML = '';
-        }
-        this.hideLoadingState();
+        filtered.forEach(article => this.newsContainer.appendChild(this.createArticleCard(article)));
+        if (this.paginationContainer) this.paginationContainer.innerHTML = '';
     }
 
-    formatDate(dateString) {
-        try {
-            const date = new Date(dateString);
-            return date.toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-            });
-        } catch (error) {
-            return dateString;
-        }
+    formatDate(date) {
+        try { return new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }); } 
+        catch { return date; }
     }
 
-    escapeHtml(text) {
-        const div = document.createElement('div');
-        div.textContent = text;
-        return div.innerHTML;
-    }
-
-    showNoArticles() {
-        if (!this.newsContainer) return;
-
-        this.newsContainer.innerHTML = `
-            <div class="text-center py-12">
-                <i class="fas fa-newspaper text-4xl text-gray-400 mb-4"></i>
-                <p class="text-gray-600 dark:text-gray-400">No news articles available at the moment.</p>
-                <p class="text-gray-500 dark:text-gray-500 text-sm mt-2">Check back soon for updates!</p>
-            </div>
-        `;
-        this.hideLoadingState();
-    }
-
-    showError(message) {
-        if (!this.newsContainer) return;
-
-        this.newsContainer.innerHTML = `
-            <div class="text-center py-12">
-                <i class="fas fa-exclamation-triangle text-4xl text-red-400 mb-4"></i>
-                <p class="text-red-600 dark:text-red-400">${message}</p>
-                <button onclick="window.location.reload()" class="mt-4 text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">
-                    Try again
-                </button>
-            </div>
-        `;
-        this.hideLoadingState();
-    }
-
-    hideLoadingState() {
-        const loading = document.getElementById('loading-state');
-        if (loading) {
-            loading.style.display = 'none';
-        }
-    }
+    escapeHtml(text) { const div = document.createElement('div'); div.textContent = text; return div.innerHTML; }
+    showNoArticles() { if (!this.newsContainer) return; this.newsContainer.innerHTML = `<div class="text-center py-12">No articles available</div>`; }
+    showError(msg) { if (!this.newsContainer) return; this.newsContainer.innerHTML = `<div class="text-center py-12 text-red-600">${msg}</div>`; }
+    hideLoadingState() { const loading = document.getElementById('loading-state'); if (loading) loading.style.display = 'none'; }
 }
 
-// Initialize the news aggregator when the DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    new NewsAggregator();
-});
+document.addEventListener('DOMContentLoaded', () => new NewsAggregator());
 
-document.addEventListener('DOMContentLoaded', async () => {
-    // Update article template
-    const renderArticle = (article) => {
-        const template = document.getElementById('article-template');
-        const clone = template.content.cloneNode(true);
-        
-        // Set title and link
-        const titleLink = clone.querySelector('h2 a');
-        titleLink.textContent = article.title;
-        titleLink.href = article.url;
-        
-        // Set date
-        const dateEl = clone.querySelector('.article-date');
-        const date = new Date(article.date);
-        dateEl.textContent = date.toLocaleDateString('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-        });
-        
-        // Set reading time (use default if not specified)
-        const readingTimeEl = clone.querySelector('.article-reading-time');
-        const readingTime = article.readingTime || 5;
-        readingTimeEl.textContent = `${readingTime} min read`;
-        
-        // Set excerpt
-        const excerptEl = clone.querySelector('.article-excerpt');
-        excerptEl.textContent = article.description;
-        
-        return clone;
-    };
-
-    try {
-        // Fetch articles
-        const response = await fetch('news-manifest.json');
-        const articles = await response.json();
-        
-        // Sort by date (newest first)
-        articles.sort((a, b) => new Date(b.date) - new Date(a.date));
-        
-        // Clear loading state and render articles
-        const newsList = document.getElementById('news-list');
-        const loadingState = document.getElementById('loading-state');
-        loadingState.style.display = 'none';
-        
-        articles.forEach(article => {
-            newsList.appendChild(renderArticle(article));
-        });
-        
-    } catch (error) {
-        console.error('Error loading articles:', error);
-        loadingState.innerHTML = `
-            <p class="text-red-600 dark:text-red-400">
-                Error loading articles. Please try again later.
-            </p>
-        `;
-    }
-});
-
-// Export for potential external use
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = NewsAggregator;
-}
+if (typeof module !== 'undefined' && module.exports) module.exports = NewsAggregator;
