@@ -4,7 +4,13 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Sun, 31 Aug 2025 16:20:57 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 31 Aug 2025 16:21:32 GMT</lastBuildDate>
+    <item>
+      <title>Attackers Abuse Velociraptor Forensic Tool to Deploy Visual Studio Code for C2 Tunneling | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-08-30-attackers-abuse-velociraptor-forensic-tool-to-depl-009f61.html</link>
+      <pubDate>Sat, 30 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Attackers Abuse Velociraptor Forensic Tool to Deploy Visual Studio Code for C2 Tunneling</description>
+    </item>
     <item>
       <title>Click Studios Patches Passwordstate Authentication Bypass Vulnerability in Emergency Access Page | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2025-08-29-click-studios-patches-passwordstate-authentication-e4b067.html</link>
