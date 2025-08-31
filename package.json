@@ -7,5 +7,10 @@
   },
   "scripts": {
     "update-manifest": "node scripts/update-manifest.js"
-  }
+  },
+  "description": "--- title: PasswordMonkey emoji: 🐳 colorFrom: gray colorTo: pink sdk: static pinned: false tags:   - deepsite ---",
+  "main": "script.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
