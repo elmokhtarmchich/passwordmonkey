@@ -1,0 +1,11 @@
+{
+  "name": "passwordmonkey",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "jsdom": "^22.1.0"
+  },
+  "scripts": {
+    "update-manifest": "node scripts/update-manifest.js"
+  }
+}
