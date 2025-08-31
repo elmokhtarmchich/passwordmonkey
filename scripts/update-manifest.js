@@ -1,110 +1,93 @@
-// scripts/update-manifest.js
+#!/usr/bin/env node
 
-const fs = require("fs");
-const path = require("path");
-const { JSDOM } = require("jsdom");
+/**
+ * PasswordMonkey News Manifest Updater with readTime
+ * 
+ * Scans /news folder and updates news-manifest.json
+ */
 
-console.log("🚀 Starting PasswordMonkey News Manifest Update...");
+const fs = require('fs');
+const path = require('path');
 
-// Correct path to /news
-const newsDir = path.join(__dirname, "..", "news");
-const manifestPath = path.join(newsDir, "news-manifest.json");
+// Directory containing news HTML files
+const newsDir = path.join(__dirname, '../news');
+const manifestPath = path.join(newsDir, 'news-manifest.json');
 
-// Ensure directory exists
-if (!fs.existsSync(newsDir)) {
-  console.error("❌ News directory not found:", newsDir);
-  process.exit(1);
+// Utility: Estimate reading time from HTML content
+function estimateReadTime(htmlContent) {
+  const text = htmlContent.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+  const words = text.split(" ").length;
+  const minutes = Math.ceil(words / 200); // 200 words per minute
+  return `${minutes} min read`;
 }
 
-console.log("📁 Scanning directory:", newsDir);
-
-// Load or init manifest safely
-let manifest = { articles: [], lastUpdated: new Date().toISOString() };
-if (fs.existsSync(manifestPath)) {
-  try {
-    const parsed = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
-    manifest = {
-      articles: parsed.articles || [],
-      lastUpdated: parsed.lastUpdated || new Date().toISOString(),
-    };
-  } catch (err) {
-    console.warn("⚠️ Could not parse existing manifest, starting fresh.");
-  }
+// Utility: Extract title from HTML
+function extractTitle(html) {
+  const titleMatch = html.match(/<title>(.*?)<\/title>/i);
+  if (titleMatch) return titleMatch[1].replace(/\s*\|\s*PasswordMonkey.*$/i, '').trim();
+  return null;
 }
 
-// Get only *.html files, skip index.html and template
+// Utility: Extract meta description
+function extractMetaDescription(html) {
+  const descMatch = html.match(/<meta\s+name="description"\s+content="([^"]*)"/i);
+  return descMatch ? descMatch[1] : '';
+}
+
+// Read all HTML files in news directory
 const files = fs.readdirSync(newsDir)
-  .filter(f => f.endsWith(".html") && f !== "index.html" && f !== "article-template.html");
+  .filter(f => f.endsWith('.html') && f !== 'index.html' && f !== 'article-template.html');
 
-let processed = 0, newArticles = 0, updatedArticles = 0, errors = 0;
+const articles = [];
 
 files.forEach(file => {
   try {
-    const filePath = path.join(newsDir, file);
-    const html = fs.readFileSync(filePath, "utf8");
-    const dom = new JSDOM(html);
-    const doc = dom.window.document;
+    const html = fs.readFileSync(path.join(newsDir, file), 'utf8');
 
-    // Extract title/description
-    const title = doc.querySelector("title")?.textContent?.trim() || file;
-    const description = doc.querySelector("meta[name='description']")?.getAttribute("content") || "";
+    // Filename pattern: YYYY-MM-DD-title-id.html
+    const match = file.match(/^(\d{4}-\d{2}-\d{2})-(.+)-[a-z0-9]+\.html$/i);
+    if (!match) {
+      console.warn(`⚠️ Filename does not match pattern: ${file}`);
+      return;
+    }
 
-    // Extract metadata from filename
-    // e.g. "2025-08-29-click-studios-patches-passwordstate-authentication-e4b067.html"
-    const base = path.basename(file, ".html");
-    const parts = base.split("-");
-    const datePart = parts.slice(0, 3).join("-"); // YYYY-MM-DD
-    const id = parts[parts.length - 1];           // last piece = unique ID
-    const slug = parts.slice(3, -1).join("-");    // everything between date and ID
+    const datePart = match[1];
+    const slug = match[2];
 
-    const statsDate = fs.statSync(filePath).mtime.toISOString();
+    const title = extractTitle(html) || slug.replace(/-/g, ' ');
+    const description = extractMetaDescription(html);
+    const readTime = estimateReadTime(html);
 
-    const newArticle = {
-      id,
+    const stats = fs.statSync(path.join(newsDir, file));
+    const statsDate = stats.mtime.toISOString();
+
+    articles.push({
+      id: slug,
       file,
       slug,
       title,
       description,
       published: datePart,
       updated: statsDate,
-    };
+      readTime
+    });
 
-    // Check existing by id
-    const existing = manifest.articles.find(a => a.id === id);
-
-    if (existing) {
-      Object.assign(existing, newArticle);
-      updatedArticles++;
-    } else {
-      manifest.articles.push(newArticle);
-      newArticles++;
-    }
-
-    processed++;
   } catch (err) {
     console.error(`❌ Error processing ${file}:`, err.message);
-    errors++;
   }
 });
 
-// Update manifest metadata
-manifest.lastUpdated = new Date().toISOString();
+// Sort by published date descending
+articles.sort((a, b) => new Date(b.published) - new Date(a.published));
 
-// Save manifest
-fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
+// Write manifest
+const manifest = {
+  lastUpdated: new Date().toISOString(),
+  totalArticles: articles.length,
+  articles
+};
 
-console.log("💾 Manifest updated:", manifestPath);
+fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2), 'utf8');
 
-// Report
-console.log(`
-📊 Update Report:
-================
-📁 Total files scanned: ${files.length}
-✅ Successfully processed: ${processed}
-➕ New articles added: ${newArticles}
-🔄 Articles updated: ${updatedArticles}
-❌ Errors encountered: ${errors}
-📚 Total articles in manifest: ${manifest.articles.length}
-📅 Last updated: ${manifest.lastUpdated}
-✅ News manifest update completed successfully!
-`);
+console.log(`💾 Manifest updated: ${manifestPath}`);
+console.log(`📚 Total articles in manifest: ${articles.length}`);
