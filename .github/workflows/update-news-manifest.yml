@@ -24,10 +24,10 @@ jobs:
           node-version: 18
 
       - name: Generate news manifest
-        run: node news/update-manifest.js
+        run: node scripts/update-manifest.js
 
       - name: Generate sitemap.xml and rss.xml
-        run: node news/generate-news-xml.js
+        run: node scripts/generate-news-xml.js
 
       - name: Commit and push changes (if any)
         shell: bash
