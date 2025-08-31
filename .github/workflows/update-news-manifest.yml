@@ -23,6 +23,9 @@ jobs:
         with:
           node-version: 18
 
+      - name: Install dependencies   # 👈 ADD THIS STEP
+        run: npm ci
+
       - name: Generate news manifest
         run: node scripts/update-manifest.js
 
