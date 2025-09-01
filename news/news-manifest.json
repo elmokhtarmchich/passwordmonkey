@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2025-09-01T11:39:57.253Z",
-  "totalArticles": 58,
+  "lastUpdated": "2025-09-01T17:39:54.104Z",
+  "totalArticles": 60,
   "articles": [
     {
       "id": "scarcruft-uses-rokrat-malware-in-operation-hankook",
@@ -9,7 +9,7 @@
       "title": "ScarCruft Uses RokRAT Malware in Operation HanKook Phantom Targeting South Korean Academics | Password Monkey",
       "description": "ScarCruft Uses RokRAT Malware in Operation HanKook Phantom Targeting South Korean Academics",
       "published": "2025-09-01",
-      "updated": "2025-09-01T11:39:51.737Z",
+      "updated": "2025-09-01T17:39:49.750Z",
       "readTime": "2 min read"
     },
     {
@@ -19,8 +19,28 @@
       "title": "The best Labor Day sales for 2025: Get up to $500 off gear from Apple, Dyson, Shark, Sony and others | Password Monkey",
       "description": "The best Labor Day sales for 2025: Get up to $500 off gear from Apple, Dyson, Shark, Sony and others",
       "published": "2025-09-01",
-      "updated": "2025-09-01T11:39:51.737Z",
+      "updated": "2025-09-01T17:39:49.750Z",
       "readTime": "10 min read"
+    },
+    {
+      "id": "weekly-recap-whatsapp-0-day-docker-bug-salesforce-",
+      "file": "2025-09-01-weekly-recap-whatsapp-0-day-docker-bug-salesforce--6af14f.html",
+      "slug": "weekly-recap-whatsapp-0-day-docker-bug-salesforce-",
+      "title": "⚡ Weekly Recap: WhatsApp 0-Day, Docker Bug, Salesforce Breach, Fake CAPTCHAs, Spyware App & More | Password Monkey",
+      "description": "⚡ Weekly Recap: WhatsApp 0-Day, Docker Bug, Salesforce Breach, Fake CAPTCHAs, Spyware App & More",
+      "published": "2025-09-01",
+      "updated": "2025-09-01T17:39:49.751Z",
+      "readTime": "2 min read"
+    },
+    {
+      "id": "zscaler-data-breach-exposes-customer-info-after-sa",
+      "file": "2025-09-01-zscaler-data-breach-exposes-customer-info-after-sa-9e0589.html",
+      "slug": "zscaler-data-breach-exposes-customer-info-after-sa",
+      "title": "Zscaler data breach exposes customer info after Salesloft Drift compromise | Password Monkey",
+      "description": "Zscaler data breach exposes customer info after Salesloft Drift compromise",
+      "published": "2025-09-01",
+      "updated": "2025-09-01T17:39:49.751Z",
+      "readTime": "2 min read"
     },
     {
       "id": "get-up-to-77-percent-off-nordvpn-two-year-plans-fo",
@@ -29,7 +49,7 @@
       "title": "Get up to 77 percent off NordVPN two-year plans for Labor Day | Password Monkey",
       "description": "Get up to 77 percent off NordVPN two-year plans for Labor Day",
       "published": "2025-08-31",
-      "updated": "2025-09-01T11:39:51.737Z",
+      "updated": "2025-09-01T17:39:49.750Z",
       "readTime": "3 min read"
     },
     {
@@ -39,7 +59,7 @@
       "title": "The best Labor Day sales for 2025: Tech from Apple, Dyson, Sony and others is up to 50 percent off | Password Monkey",
       "description": "The best Labor Day sales for 2025: Tech from Apple, Dyson, Sony and others is up to 50 percent off",
       "published": "2025-08-31",
-      "updated": "2025-09-01T11:39:51.737Z",
+      "updated": "2025-09-01T17:39:49.750Z",
       "readTime": "10 min read"
     },
     {
@@ -49,7 +69,7 @@
       "title": "Attackers Abuse Velociraptor Forensic Tool to Deploy Visual Studio Code for C2 Tunneling | Password Monkey",
       "description": "Attackers Abuse Velociraptor Forensic Tool to Deploy Visual Studio Code for C2 Tunneling",
       "published": "2025-08-30",
-      "updated": "2025-09-01T11:39:51.737Z",
+      "updated": "2025-09-01T17:39:49.750Z",
       "readTime": "2 min read"
     },
     {
@@ -59,7 +79,7 @@
       "title": "Click Studios Patches Passwordstate Authentication Bypass Vulnerability in Emergency Access Page | Password Monkey",
       "description": "Click Studios Patches Passwordstate Authentication Bypass Vulnerability in Emergency Access Page",
       "published": "2025-08-29",
-      "updated": "2025-09-01T11:39:51.736Z",
+      "updated": "2025-09-01T17:39:49.749Z",
       "readTime": "2 min read"
     },
     {
@@ -69,7 +89,7 @@
       "title": "TamperedChef Malware Disguised as Fake PDF Editors Steals Credentials and Cookies | Password Monkey",
       "description": "TamperedChef Malware Disguised as Fake PDF Editors Steals Credentials and Cookies",
       "published": "2025-08-29",
-      "updated": "2025-09-01T11:39:51.736Z",
+      "updated": "2025-09-01T17:39:49.749Z",
       "readTime": "2 min read"
     },
     {
@@ -79,7 +99,7 @@
       "title": "The best Labor Day sales for 2025: Get up to 50 percent off gear from Apple, Dyson, Sony and others | Password Monkey",
       "description": "The best Labor Day sales for 2025: Get up to 50 percent off gear from Apple, Dyson, Sony and others",
       "published": "2025-08-29",
-      "updated": "2025-09-01T11:39:51.737Z",
+      "updated": "2025-09-01T17:39:49.750Z",
       "readTime": "9 min read"
     },
     {
@@ -89,7 +109,7 @@
       "title": "The best VPN deals: Get up to 77 percent off NordVPN, ProtonVPN, Surfshark and others | Password Monkey",
       "description": "The best VPN deals: Get up to 77 percent off NordVPN, ProtonVPN, Surfshark and others",
       "published": "2025-08-29",
-      "updated": "2025-09-01T11:39:51.737Z",
+      "updated": "2025-09-01T17:39:49.750Z",
       "readTime": "7 min read"
     },
     {
@@ -99,7 +119,7 @@
       "title": "TransUnion Data Breach Impacts 4.4 Million | Password Monkey",
       "description": "TransUnion Data Breach Impacts 4.4 Million",
       "published": "2025-08-29",
-      "updated": "2025-09-01T11:39:51.737Z",
+      "updated": "2025-09-01T17:39:49.750Z",
       "readTime": "2 min read"
     },
     {
@@ -109,7 +129,7 @@
       "title": "Webinar: Learn How to Unite Dev, Sec, and Ops Teams With One Shared Playbook | Password Monkey",
       "description": "Webinar: Learn How to Unite Dev, Sec, and Ops Teams With One Shared Playbook",
       "published": "2025-08-29",
-      "updated": "2025-09-01T11:39:51.737Z",
+      "updated": "2025-09-01T17:39:49.750Z",
       "readTime": "2 min read"
     },
     {
@@ -119,7 +139,7 @@
       "title": "Hidden Vulnerabilities of Project Management Tools & How FluentPro Backup Secures Them | Password Monkey",
       "description": "Hidden Vulnerabilities of Project Management Tools & How FluentPro Backup Secures Them",
       "published": "2025-08-28",
-      "updated": "2025-09-01T11:39:51.736Z",
+      "updated": "2025-09-01T17:39:49.749Z",
       "readTime": "2 min read"
     },
     {
@@ -129,7 +149,7 @@
       "title": "Passwordstate dev urges users to patch auth bypass vulnerability | Password Monkey",
       "description": "Passwordstate dev urges users to patch auth bypass vulnerability",
       "published": "2025-08-28",
-      "updated": "2025-09-01T11:39:51.736Z",
+      "updated": "2025-09-01T17:39:49.749Z",
       "readTime": "2 min read"
     },
     {
@@ -139,7 +159,7 @@
       "title": "Researchers Find VS Code Flaw Allowing Attackers to Republish Deleted Extensions Under Same Names | Password Monkey",
       "description": "Researchers Find VS Code Flaw Allowing Attackers to Republish Deleted Extensions Under Same Names",
       "published": "2025-08-28",
-      "updated": "2025-09-01T11:39:51.736Z",
+      "updated": "2025-09-01T17:39:49.749Z",
       "readTime": "2 min read"
     },
     {
@@ -149,7 +169,7 @@
       "title": "The best Labor Day sales for 2025: Get up to 50 percent off gear from Apple, Dyson, Sony and others | Password Monkey",
       "description": "The best Labor Day sales for 2025: Get up to 50 percent off gear from Apple, Dyson, Sony and others",
       "published": "2025-08-28",
-      "updated": "2025-09-01T11:39:51.736Z",
+      "updated": "2025-09-01T17:39:49.749Z",
       "readTime": "9 min read"
     },
     {
@@ -159,7 +179,7 @@
       "title": "TransUnion suffers data breach impacting over 4.4 million people | Password Monkey",
       "description": "TransUnion suffers data breach impacting over 4.4 million people",
       "published": "2025-08-28",
-      "updated": "2025-09-01T11:39:51.736Z",
+      "updated": "2025-09-01T17:39:49.749Z",
       "readTime": "2 min read"
     },
     {
@@ -169,7 +189,7 @@
       "title": "Webinar: Why Top Teams Are Prioritizing Code-to-Cloud Mapping in Our 2025 AppSec | Password Monkey",
       "description": "Webinar: Why Top Teams Are Prioritizing Code-to-Cloud Mapping in Our 2025 AppSec",
       "published": "2025-08-28",
-      "updated": "2025-09-01T11:39:51.736Z",
+      "updated": "2025-09-01T17:39:49.749Z",
       "readTime": "2 min read"
     },
     {
@@ -179,7 +199,7 @@
       "title": "&#8216;Vibe-hacking&#8217; is now a top AI threat | Password Monkey",
       "description": "",
       "published": "2025-08-27",
-      "updated": "2025-09-01T11:39:51.735Z",
+      "updated": "2025-09-01T17:39:49.748Z",
       "readTime": "2 min read"
     },
     {
@@ -189,7 +209,7 @@
       "title": "African Law Enforcement Agencies Nab Cybercrime Syndicates | Password Monkey",
       "description": "African Law Enforcement Agencies Nab Cybercrime Syndicates",
       "published": "2025-08-27",
-      "updated": "2025-09-01T11:39:51.735Z",
+      "updated": "2025-09-01T17:39:49.748Z",
       "readTime": "2 min read"
     },
     {
@@ -199,7 +219,7 @@
       "title": "Anthropic admits its AI is being used to conduct cybercrime | Password Monkey",
       "description": "Anthropic admits its AI is being used to conduct cybercrime",
       "published": "2025-08-27",
-      "updated": "2025-09-01T11:39:51.735Z",
+      "updated": "2025-09-01T17:39:49.748Z",
       "readTime": "3 min read"
     },
     {
@@ -209,7 +229,7 @@
       "title": "Blind Eagle’s Five Clusters Target Colombia Using RATs, Phishing Lures, and Dynamic DNS Infra | Password Monkey",
       "description": "Blind Eagle’s Five Clusters Target Colombia Using RATs, Phishing Lures, and Dynamic DNS Infra",
       "published": "2025-08-27",
-      "updated": "2025-09-01T11:39:51.735Z",
+      "updated": "2025-09-01T17:39:49.749Z",
       "readTime": "2 min read"
     },
     {
@@ -219,7 +239,7 @@
       "title": "Get two years of NordVPN access for up to 77 percent off | Password Monkey",
       "description": "Get two years of NordVPN access for up to 77 percent off",
       "published": "2025-08-27",
-      "updated": "2025-09-01T11:39:51.736Z",
+      "updated": "2025-09-01T17:39:49.749Z",
       "readTime": "3 min read"
     },
     {
@@ -229,7 +249,7 @@
       "title": "Healthcare Services Group data breach impacts 624,000 people | Password Monkey",
       "description": "Healthcare Services Group data breach impacts 624,000 people",
       "published": "2025-08-27",
-      "updated": "2025-09-01T11:39:51.736Z",
+      "updated": "2025-09-01T17:39:49.749Z",
       "readTime": "2 min read"
     },
     {
@@ -239,7 +259,7 @@
       "title": "Infostealers: The Silent Smash-and-Grab Driving Modern Cybercrime | Password Monkey",
       "description": "Infostealers: The Silent Smash-and-Grab Driving Modern Cybercrime",
       "published": "2025-08-27",
-      "updated": "2025-09-01T11:39:51.736Z",
+      "updated": "2025-09-01T17:39:49.749Z",
       "readTime": "2 min read"
     },
     {
@@ -249,7 +269,7 @@
       "title": "Someone Created First AI-Powered Ransomware Using OpenAI's gpt-oss:20b Model | Password Monkey",
       "description": "Someone Created First AI-Powered Ransomware Using OpenAI's gpt-oss:20b Model",
       "published": "2025-08-27",
-      "updated": "2025-09-01T11:39:51.736Z",
+      "updated": "2025-09-01T17:39:49.749Z",
       "readTime": "2 min read"
     },
     {
@@ -259,7 +279,7 @@
       "title": "Someone Created the First AI-Powered Ransomware Using OpenAI's gpt-oss:20b Model | Password Monkey",
       "description": "Someone Created the First AI-Powered Ransomware Using OpenAI's gpt-oss:20b Model",
       "published": "2025-08-27",
-      "updated": "2025-09-01T11:39:51.736Z",
+      "updated": "2025-09-01T17:39:49.749Z",
       "readTime": "2 min read"
     },
     {
@@ -269,7 +289,7 @@
       "title": "Storm-0501 hackers shift to ransomware attacks in the cloud | Password Monkey",
       "description": "Storm-0501 hackers shift to ransomware attacks in the cloud",
       "published": "2025-08-27",
-      "updated": "2025-09-01T11:39:51.736Z",
+      "updated": "2025-09-01T17:39:49.749Z",
       "readTime": "2 min read"
     },
     {
@@ -279,7 +299,7 @@
       "title": "The best Labor Day sales for 2025: Save up to $500 on tech from Apple, Anker, Dyson, Shark and others | Password Monkey",
       "description": "The best Labor Day sales for 2025: Save up to $500 on tech from Apple, Anker, Dyson, Shark and others",
       "published": "2025-08-27",
-      "updated": "2025-09-01T11:39:51.736Z",
+      "updated": "2025-09-01T17:39:49.749Z",
       "readTime": "9 min read"
     },
     {
@@ -289,7 +309,7 @@
       "title": "CISA warns of actively exploited Git code execution flaw | Password Monkey",
       "description": "CISA warns of actively exploited Git code execution flaw",
       "published": "2025-08-26",
-      "updated": "2025-09-01T11:39:51.735Z",
+      "updated": "2025-09-01T17:39:49.748Z",
       "readTime": "1 min read"
     },
     {
@@ -299,7 +319,7 @@
       "title": "DSLRoot, Proxies, and the Threat of ‘Legal Botnets’ | Password Monkey",
       "description": "DSLRoot, Proxies, and the Threat of ‘Legal Botnets’",
       "published": "2025-08-26",
-      "updated": "2025-09-01T11:39:51.735Z",
+      "updated": "2025-09-01T17:39:49.748Z",
       "readTime": "1 min read"
     },
     {
@@ -309,7 +329,7 @@
       "title": "FTC Calls on Tech Firms to Resist Foreign Anti-Encryption Demands | Password Monkey",
       "description": "FTC Calls on Tech Firms to Resist Foreign Anti-Encryption Demands",
       "published": "2025-08-26",
-      "updated": "2025-09-01T11:39:51.735Z",
+      "updated": "2025-09-01T17:39:49.748Z",
       "readTime": "1 min read"
     },
     {
@@ -319,7 +339,7 @@
       "title": "Healthcare Services Group Data Breach Impacts 624,000 | Password Monkey",
       "description": "Healthcare Services Group Data Breach Impacts 624,000",
       "published": "2025-08-26",
-      "updated": "2025-09-01T11:39:51.735Z",
+      "updated": "2025-09-01T17:39:49.748Z",
       "readTime": "1 min read"
     },
     {
@@ -329,7 +349,7 @@
       "title": "HOOK Android Trojan Adds Ransomware Overlays, Expands to 107 Remote Commands | Password Monkey",
       "description": "HOOK Android Trojan Adds Ransomware Overlays, Expands to 107 Remote Commands",
       "published": "2025-08-26",
-      "updated": "2025-09-01T11:39:51.735Z",
+      "updated": "2025-09-01T17:39:49.748Z",
       "readTime": "1 min read"
     },
     {
@@ -339,7 +359,7 @@
       "title": "Hundreds of Thousands Affected by Auchan Data Breach | Password Monkey",
       "description": "Hundreds of Thousands Affected by Auchan Data Breach",
       "published": "2025-08-26",
-      "updated": "2025-09-01T11:39:51.735Z",
+      "updated": "2025-09-01T17:39:49.748Z",
       "readTime": "1 min read"
     },
     {
@@ -349,7 +369,7 @@
       "title": "MixShell Malware Delivered via Contact Forms Targets U.S. Supply Chain Manufacturers | Password Monkey",
       "description": "MixShell Malware Delivered via Contact Forms Targets U.S. Supply Chain Manufacturers",
       "published": "2025-08-26",
-      "updated": "2025-09-01T11:39:51.735Z",
+      "updated": "2025-09-01T17:39:49.748Z",
       "readTime": "1 min read"
     },
     {
@@ -359,7 +379,7 @@
       "title": "Nissan confirms design studio data breach claimed by Qilin ransomware | Password Monkey",
       "description": "Nissan confirms design studio data breach claimed by Qilin ransomware",
       "published": "2025-08-26",
-      "updated": "2025-09-01T11:39:51.735Z",
+      "updated": "2025-09-01T17:39:49.748Z",
       "readTime": "1 min read"
     },
     {
@@ -369,7 +389,7 @@
       "title": "Spotify is adding DMs | Password Monkey",
       "description": "Spotify is introducing a direct messaging feature that allows users to share music, podcast, and audiobook recommendations with each other without leaving the a",
       "published": "2025-08-26",
-      "updated": "2025-09-01T11:39:51.735Z",
+      "updated": "2025-09-01T17:39:49.748Z",
       "readTime": "3 min read"
     },
     {
@@ -379,7 +399,7 @@
       "title": "The best Labor Day sales for 2025: Save up to $500 on tech from Apple, Anker, Dyson, Shark and others | Password Monkey",
       "description": "The best Labor Day sales for 2025: Save up to $500 on tech from Apple, Anker, Dyson, Shark and others",
       "published": "2025-08-26",
-      "updated": "2025-09-01T11:39:51.735Z",
+      "updated": "2025-09-01T17:39:49.748Z",
       "readTime": "9 min read"
     },
     {
@@ -389,7 +409,7 @@
       "title": "Whistleblower claims DOGE uploaded Social Security data to unsecure cloud server | Password Monkey",
       "description": "Whistleblower claims DOGE uploaded Social Security data to unsecure cloud server",
       "published": "2025-08-26",
-      "updated": "2025-09-01T11:39:51.735Z",
+      "updated": "2025-09-01T17:39:49.748Z",
       "readTime": "4 min read"
     },
     {
@@ -399,7 +419,7 @@
       "title": "Aspire Rural Health System Data Breach Impacts Nearly 140,000 | Password Monkey",
       "description": "Aspire Rural Health System Data Breach Impacts Nearly 140,000",
       "published": "2025-08-25",
-      "updated": "2025-09-01T11:39:51.734Z",
+      "updated": "2025-09-01T17:39:49.747Z",
       "readTime": "1 min read"
     },
     {
@@ -409,7 +429,7 @@
       "title": "Auchan retailer data breach impacts hundreds of thousands of customers | Password Monkey",
       "description": "Auchan retailer data breach impacts hundreds of thousands of customers",
       "published": "2025-08-25",
-      "updated": "2025-09-01T11:39:51.734Z",
+      "updated": "2025-09-01T17:39:49.747Z",
       "readTime": "1 min read"
     },
     {
@@ -419,7 +439,7 @@
       "title": "Farmers Insurance data breach impacts 1.1M people after Salesforce attack | Password Monkey",
       "description": "Farmers Insurance data breach impacts 1.1M people after Salesforce attack",
       "published": "2025-08-25",
-      "updated": "2025-09-01T11:39:51.734Z",
+      "updated": "2025-09-01T17:39:49.747Z",
       "readTime": "1 min read"
     },
     {
@@ -429,7 +449,7 @@
       "title": "Farmers Insurance Data Breach Impacts Over 1 Million People | Password Monkey",
       "description": "Farmers Insurance Data Breach Impacts Over 1 Million People",
       "published": "2025-08-25",
-      "updated": "2025-09-01T11:39:51.734Z",
+      "updated": "2025-09-01T17:39:49.748Z",
       "readTime": "1 min read"
     },
     {
@@ -439,7 +459,7 @@
       "title": "FTC Chair Tells Tech Giants to Hold the Line on Encryption | Password Monkey",
       "description": "FTC Chair Tells Tech Giants to Hold the Line on Encryption",
       "published": "2025-08-25",
-      "updated": "2025-09-01T11:39:51.735Z",
+      "updated": "2025-09-01T17:39:49.748Z",
       "readTime": "1 min read"
     },
     {
@@ -449,7 +469,7 @@
       "title": "Google tests QR code verification for text messages | Password Monkey",
       "description": "Google tests QR code verification for text messages",
       "published": "2025-08-25",
-      "updated": "2025-09-01T11:39:51.735Z",
+      "updated": "2025-09-01T17:39:49.748Z",
       "readTime": "2 min read"
     },
     {
@@ -459,7 +479,7 @@
       "title": "Phishing Campaign Uses UpCrypter in Fake Voicemail Emails to Deliver RAT Payloads | Password Monkey",
       "description": "Phishing Campaign Uses UpCrypter in Fake Voicemail Emails to Deliver RAT Payloads",
       "published": "2025-08-25",
-      "updated": "2025-09-01T11:39:51.735Z",
+      "updated": "2025-09-01T17:39:49.748Z",
       "readTime": "1 min read"
     },
     {
@@ -469,7 +489,7 @@
       "title": "The best Labor Day sales for 2025: Get up to 50 percent off tech from Apple, Anker, Shark and others | Password Monkey",
       "description": "The best Labor Day sales for 2025: Get up to 50 percent off tech from Apple, Anker, Shark and others",
       "published": "2025-08-25",
-      "updated": "2025-09-01T11:39:51.735Z",
+      "updated": "2025-09-01T17:39:49.748Z",
       "readTime": "8 min read"
     },
     {
@@ -479,7 +499,7 @@
       "title": "⚡ Weekly Recap: Password Manager Flaws, Apple 0-Day, Hidden AI Prompts, In-the-Wild Exploits & More | Password Monkey",
       "description": "⚡ Weekly Recap: Password Manager Flaws, Apple 0-Day, Hidden AI Prompts, In-the-Wild Exploits & More",
       "published": "2025-08-25",
-      "updated": "2025-09-01T11:39:51.735Z",
+      "updated": "2025-09-01T17:39:49.748Z",
       "readTime": "1 min read"
     },
     {
@@ -489,7 +509,7 @@
       "title": "Malicious Go Module Poses as SSH Brute-Force Tool, Steals Credentials via Telegram Bot | Password Monkey",
       "description": "Malicious Go Module Poses as SSH Brute-Force Tool, Steals Credentials via Telegram Bot",
       "published": "2025-08-24",
-      "updated": "2025-09-01T11:39:51.734Z",
+      "updated": "2025-09-01T17:39:49.747Z",
       "readTime": "1 min read"
     },
     {
@@ -499,7 +519,7 @@
       "title": "The best Labor Day sales for 2025: Get up to 50 percent off tech from Apple, Anker, Shark and others | Password Monkey",
       "description": "The best Labor Day sales for 2025: Get up to 50 percent off tech from Apple, Anker, Shark and others",
       "published": "2025-08-24",
-      "updated": "2025-09-01T11:39:51.734Z",
+      "updated": "2025-09-01T17:39:49.747Z",
       "readTime": "7 min read"
     },
     {
@@ -509,7 +529,7 @@
       "title": "FTC warns tech giants not to bow to foreign pressure on encryption | Password Monkey",
       "description": "FTC warns tech giants not to bow to foreign pressure on encryption",
       "published": "2025-08-23",
-      "updated": "2025-09-01T11:39:51.734Z",
+      "updated": "2025-09-01T17:39:49.747Z",
       "readTime": "1 min read"
     },
     {
@@ -519,7 +539,7 @@
       "title": "GeoServer Exploits, PolarEdge, and Gayfemboy Push Cybercrime Beyond Traditional Botnets | Password Monkey",
       "description": "GeoServer Exploits, PolarEdge, and Gayfemboy Push Cybercrime Beyond Traditional Botnets",
       "published": "2025-08-23",
-      "updated": "2025-09-01T11:39:51.734Z",
+      "updated": "2025-09-01T17:39:49.747Z",
       "readTime": "1 min read"
     },
     {
@@ -529,7 +549,7 @@
       "title": "Large Interpol Cybercrime Crackdown in Africa Leads to the Arrest of Over 1,200 Suspects | Password Monkey",
       "description": "Large Interpol Cybercrime Crackdown in Africa Leads to the Arrest of Over 1,200 Suspects",
       "published": "2025-08-22",
-      "updated": "2025-09-01T11:39:51.734Z",
+      "updated": "2025-09-01T17:39:49.747Z",
       "readTime": "1 min read"
     },
     {
@@ -539,7 +559,7 @@
       "title": "Massive anti-cybercrime operation leads to over 1,200 arrests in Africa | Password Monkey",
       "description": "Massive anti-cybercrime operation leads to over 1,200 arrests in Africa",
       "published": "2025-08-22",
-      "updated": "2025-09-01T11:39:51.734Z",
+      "updated": "2025-09-01T17:39:49.747Z",
       "readTime": "1 min read"
     },
     {
@@ -549,7 +569,7 @@
       "title": "SIM-Swapper, Scattered Spider Hacker Gets 10 Years | Password Monkey",
       "description": "SIM-Swapper, Scattered Spider Hacker Gets 10 Years",
       "published": "2025-08-21",
-      "updated": "2025-09-01T11:39:51.734Z",
+      "updated": "2025-09-01T17:39:49.747Z",
       "readTime": "1 min read"
     },
     {
@@ -559,7 +579,7 @@
       "title": "Why Video Game Anti-Cheat Systems Are a Cybersecurity Goldmine | Password Monkey",
       "description": "Why Video Game Anti-Cheat Systems Are a Cybersecurity Goldmine",
       "published": "2025-08-21",
-      "updated": "2025-09-01T11:39:51.734Z",
+      "updated": "2025-09-01T17:39:49.747Z",
       "readTime": "1 min read"
     },
     {
@@ -569,7 +589,7 @@
       "title": "Strong password trends in 2025 | Password Monkey | Testing 456",
       "description": "Experts reveal the latest trends in strong password creation for 2025. Find out how to stay ahead of hackers.",
       "published": "2025-08-10",
-      "updated": "2025-09-01T11:39:51.734Z",
+      "updated": "2025-09-01T17:39:49.747Z",
       "readTime": "1 min read"
     },
     {
@@ -579,7 +599,7 @@
       "title": "Micron Technology: China probes US chip maker for cybersecurity risks as tech tension escalates | Password Monkey",
       "description": "Micron Technology: China probes US chip maker for cybersecurity risks as tech tension escalates",
       "published": "2023-04-04",
-      "updated": "2025-09-01T11:39:51.734Z",
+      "updated": "2025-09-01T17:39:49.747Z",
       "readTime": "1 min read"
     }
   ]
