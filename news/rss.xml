@@ -4,7 +4,19 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Mon, 01 Sep 2025 17:39:54 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 01 Sep 2025 23:39:58 GMT</lastBuildDate>
+    <item>
+      <title>Android Droppers Now Deliver SMS Stealers and Spyware, Not Just Banking Trojans | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-09-01-android-droppers-now-deliver-sms-stealers-and-spyw-b0ca13.html</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 GMT</pubDate>
+      <description>Android Droppers Now Deliver SMS Stealers and Spyware, Not Just Banking Trojans</description>
+    </item>
+    <item>
+      <title>Google says reports of a major Gmail security issue are &apos;entirely false&apos; | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-09-01-google-says-reports-of-a-major-gmail-security-issu-565f83.html</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 GMT</pubDate>
+      <description>Google says reports of a major Gmail security issue are</description>
+    </item>
     <item>
       <title>ScarCruft Uses RokRAT Malware in Operation HanKook Phantom Targeting South Korean Academics | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2025-09-01-scarcruft-uses-rokrat-malware-in-operation-hankook-7125e4.html</link>
@@ -354,12 +366,6 @@
       <description>Why Video Game Anti-Cheat Systems Are a Cybersecurity Goldmine</description>
     </item>
     <item>
-      <title>Secure Password Strategies for 2025 | Password Monkey | Test</title>
-      <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
-      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
-      <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
-    </item>
-    <item>
       <title>Strong password trends in 2025 | Password Monkey | Testing 456</title>
       <link>https://passwordmonkey.org/news/2025-08-10-strong-password-trends-2025.html</link>
       <pubDate>Sun, 10 Aug 2025 00:00:00 GMT</pubDate>
@@ -376,6 +382,12 @@
       <link>https://passwordmonkey.org/news/article-template.html</link>
       <pubDate>Invalid Date</pubDate>
       <description>[Meta Description]</description>
+    </item>
+    <item>
+      <title>Secure Password Strategies for 2025 | Password Monkey | Test</title>
+      <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
     </item>
   </channel>
 </rss>
