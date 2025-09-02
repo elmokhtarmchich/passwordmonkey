@@ -4,7 +4,13 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Mon, 01 Sep 2025 23:39:58 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 02 Sep 2025 11:39:53 GMT</lastBuildDate>
+    <item>
+      <title>Ukrainian Network FDN3 Launches Massive Brute-Force Attacks on SSL VPN and RDP Devices | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2025-09-02-ukrainian-network-fdn3-launches-massive-brute-forc-2503b4.html</link>
+      <pubDate>Tue, 02 Sep 2025 00:00:00 GMT</pubDate>
+      <description>Ukrainian Network FDN3 Launches Massive Brute-Force Attacks on SSL VPN and RDP Devices</description>
+    </item>
     <item>
       <title>Android Droppers Now Deliver SMS Stealers and Spyware, Not Just Banking Trojans | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2025-09-01-android-droppers-now-deliver-sms-stealers-and-spyw-b0ca13.html</link>
@@ -366,18 +372,6 @@
       <description>Why Video Game Anti-Cheat Systems Are a Cybersecurity Goldmine</description>
     </item>
     <item>
-      <title>Strong password trends in 2025 | Password Monkey | Testing 456</title>
-      <link>https://passwordmonkey.org/news/2025-08-10-strong-password-trends-2025.html</link>
-      <pubDate>Sun, 10 Aug 2025 00:00:00 GMT</pubDate>
-      <description>Experts reveal the latest trends in strong password creation for 2025. Find out how to stay ahead of hackers.</description>
-    </item>
-    <item>
-      <title>Micron Technology: China probes US chip maker for cybersecurity risks as tech tension escalates | Password Monkey</title>
-      <link>https://passwordmonkey.org/news/2023-04-04-micron-technology-china-probes-us-chip-maker-for-c-7ffbfa.html</link>
-      <pubDate>Tue, 04 Apr 2023 00:00:00 GMT</pubDate>
-      <description>Micron Technology: China probes US chip maker for cybersecurity risks as tech tension escalates</description>
-    </item>
-    <item>
       <title>[Article Title] | Password Monkey</title>
       <link>https://passwordmonkey.org/news/article-template.html</link>
       <pubDate>Invalid Date</pubDate>
@@ -388,6 +382,18 @@
       <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
       <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
       <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
+    </item>
+    <item>
+      <title>Strong password trends in 2025 | Password Monkey | Testing 456</title>
+      <link>https://passwordmonkey.org/news/2025-08-10-strong-password-trends-2025.html</link>
+      <pubDate>Sun, 10 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Experts reveal the latest trends in strong password creation for 2025. Find out how to stay ahead of hackers.</description>
+    </item>
+    <item>
+      <title>Micron Technology: China probes US chip maker for cybersecurity risks as tech tension escalates | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2023-04-04-micron-technology-china-probes-us-chip-maker-for-c-7ffbfa.html</link>
+      <pubDate>Tue, 04 Apr 2023 00:00:00 GMT</pubDate>
+      <description>Micron Technology: China probes US chip maker for cybersecurity risks as tech tension escalates</description>
     </item>
   </channel>
 </rss>
