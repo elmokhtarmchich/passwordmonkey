@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://passwordmonkey.org/news/2025-09-03-iranian-hackers-exploit-100-embassy-email-accounts-6b038c.html</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-09-03-uae-to-implement-cyber-education-initiative-547b43.html</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2025-09-03-what-is-a-passkey-heres-how-to-set-up-and-use-them-055c10.html</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://passwordmonkey.org/news/2025-09-02-amazon-ends-shared-prime-free-shipping-outside-you-4ae4b3.html</loc>
     <lastmod>2025-09-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -403,18 +421,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://passwordmonkey.org/news/article-template.html</loc>
-    <lastmod>NaN-NaN-NaN</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://passwordmonkey.org/news/secure-password-strategies-2025.html</loc>
-    <lastmod>2025-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://passwordmonkey.org/news/2025-08-10-strong-password-trends-2025.html</loc>
     <lastmod>2025-08-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -423,6 +429,18 @@
   <url>
     <loc>https://passwordmonkey.org/news/2023-04-04-micron-technology-china-probes-us-chip-maker-for-c-7ffbfa.html</loc>
     <lastmod>2023-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/article-template.html</loc>
+    <lastmod>NaN-NaN-NaN</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/secure-password-strategies-2025.html</loc>
+    <lastmod>2025-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
