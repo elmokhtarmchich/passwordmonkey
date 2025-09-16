@@ -1,0 +1,7 @@
+title = "Gitleaks configuration for passwordmonkey"
+
+[allowlist]
+  description = "Allowlist for third-party libraries and known false positives."
+  paths = [
+    "js/qrcode.min.js",
+  ]
