@@ -1,0 +1,43 @@
+# Dependencies
+/node_modules
+
+# Build artifacts
+/build
+/dist
+
+# Environment variables
+.env
+.env.local
+.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# IDE and editor directories
+.idea/
+.vscode/
+
+# Secrets and credentials
+*.pem
+*.key
+*.p12
+*.crt
+*.pfx
+secret*
+credentials*
+database.yml
+.aws/
+.ssh/
+
+# Database files
+*.rdb
+*.sqlite
+
+# Coverage
+/coverage
