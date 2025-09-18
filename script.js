@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function setDarkMode(enabled) {
-        const isDark = document.body.classList.toggle('dark', enabled);
+        const isDark = document.documentElement.classList.toggle('dark', enabled);
         if (darkModeIcon) {
             darkModeIcon.classList.toggle('fa-moon', isDark);
             darkModeIcon.classList.toggle('fa-sun', !isDark);
@@ -241,12 +241,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     darkModeToggle.addEventListener('click', () => {
-        setDarkMode(!document.body.classList.contains('dark'));
+        setDarkMode(!document.documentElement.classList.contains('dark'));
     });
 
     // --- Initial Load ---
     const savedDark = localStorage.getItem('pm_dark');
-    setDarkMode(savedDark === null ? true : savedDark === '1');
+    setDarkMode(savedDark === '1');
 
     // Generate password only if on the main page
     if (document.getElementById('generate-btn')) {
