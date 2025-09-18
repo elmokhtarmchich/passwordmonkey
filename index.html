@@ -160,17 +160,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
     <script src="script.js" defer></script>
-</head>
+    </head>
 <body class="bg-gray-50 dark:bg-gray-900 min-h-screen font-sans">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXRRC7RB"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+    <style>
+        @font-face {
+            font-family: 'MatrixtypeDisplay';
+            src: url('fonts/MatrixtypeDisplay-9MyE5.ttf') format('truetype');
+        }
+        .title-font {
+            font-family: 'MatrixtypeDisplay', sans-serif;
+            color: #39FF14; /* Electric Green */
+        }
+    </style>
     <header class="bg-white shadow-md dark:bg-gray-800">
         <div class="container mx-auto px-4 py-6 flex justify-between items-center">
             <a href="index.html" class="flex items-center">
                 <i class="fas fa-lock text-blue-500 text-3xl mr-3"></i>
-                <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-100">PasswordMonkey</h1>
+                <h1 class="text-2xl font-bold title-font">PasswordMonkey</h1>
             </a>
             <div class="flex items-center">
                 <!-- Desktop Menu -->
@@ -414,29 +424,56 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </div>
 
-            <!-- Trusted By Section -->
+            <!-- FAQ Section -->
+            <div class="bg-white rounded-xl shadow-lg p-8 dark:bg-gray-800 mb-12">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 dark:text-gray-200 text-center">Frequently Asked Questions</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Is this password generator secure?</h3>
+                        <p class="text-gray-700 dark:text-gray-300">Yes, our password generator is completely secure. All password generation happens in your browser using cryptographically secure random number generation. We never see, store, or transmit your passwords.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">How long should my password be?</h3>
+                        <p class="text-gray-700 dark:text-gray-300">For maximum security, we recommend using passwords that are at least 12 characters long. Longer passwords are exponentially more secure against brute force attacks.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Should I use special characters?</h3>
+                        <p class="text-gray-700 dark:text-gray-300">Yes, including special characters (!@#$%^&*) in your passwords significantly increases their strength and makes them harder to crack.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Can I use the same password for multiple accounts?</h3>
+                        <p class="text-gray-700 dark:text-gray-300">No, you should never use the same password for multiple accounts. If one account is compromised, all your other accounts would be at risk. Use unique passwords for each account.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">How often should I change my passwords?</h3>
+                        <p class="text-gray-700 dark:text-gray-300">It's recommended to change your passwords every 3-6 months, or immediately if you suspect a security breach. Also change passwords if you've used them on compromised websites.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Scans Section -->
             <div class="mb-12">
-                <h2 class="text-2xl font-bold text-center text-gray-800 dark:text-gray-100 mb-8">Trusted By</h2>
+                <h2 class="text-2xl font-bold text-center text-gray-800 dark:text-gray-100 mb-8">Security Scans</h2>
                 <div class="flex flex-wrap justify-center items-center gap-8">
                     <!-- Norton -->
-                    <a href="https://safeweb.norton.com/report?url=passwordmonkey.org" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-blue-500 transition dark:text-gray-300 dark:hover:text-blue-400">
-                        Norton
+                    <a href="https://safeweb.norton.com/report?url=passwordmonkey.org" target="_blank" rel="noopener noreferrer">
+                        <img src="images/trustedby_norton-secure.png" alt="Norton" class="h-12">
                     </a>
                     <!-- Cloudflare -->
                     <a href="https://radar.cloudflare.com/scan/d1074124-c6d8-4a1f-ab1f-2b230e6dc974" target="_blank" rel="noopener noreferrer">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_logo.svg" alt="Cloudflare" class="h-12">
+                        <img src="images/trustedby_cloudflare-radar.png" alt="Cloudflare" class="h-12">
                     </a>
                     <!-- Sucuri -->
-                    <a href="https://sitecheck.sucuri.net/results/passwordmonkey.org" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-blue-500 transition dark:text-gray-300 dark:hover:text-blue-400">
-                        Sucuri
+                    <a href="https://sitecheck.sucuri.net/results/passwordmonkey.org" target="_blank" rel="noopener noreferrer">
+                        <img src="images/trustedby_securi.png" alt="Sucuri" class="h-12">
                     </a>
                     <!-- Trend Micro -->
                     <a href="https://global.sitesafety.trendmicro.com/result.php?https://passwordmonkey.org" target="_blank" rel="noopener noreferrer">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Trend_Micro_logo.svg" alt="Trend Micro" class="h-12">
+                        <img src="images/trustedby_Trendmicro.png" alt="Trend Micro" class="h-12">
                     </a>
                     <!-- Kaspersky -->
                     <a href="https://opentip.kaspersky.com/passwordmonkey.org/" target="_blank" rel="noopener noreferrer">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Kaspersky_logo.svg" alt="Kaspersky" class="h-12">
+                        <img src="images/trustedby_kaspersky.png" alt="Kaspersky" class="h-12">
                     </a>
                 </div>
             </div>
