@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- Initial Load ---
     const savedDark = localStorage.getItem('pm_dark');
-    setDarkMode(savedDark === '1');
+    setDarkMode(savedDark === null ? true : savedDark === '1');
 
     // Generate password only if on the main page
     if (document.getElementById('generate-btn')) {
