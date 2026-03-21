@@ -5,8 +5,163 @@
     font-style: normal;
 }
 
+/* Modern font stack with JetBrains Mono for code */
+* {
+    font-family: 'Inter', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
 body {
-    font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* JetBrains Mono for code and technical elements */
+.font-mono, code, pre, .password-display, .strength-text, [style*="font-family: monospace"] {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important;
+}
+
+/* Specific JetBrains Mono styling */
+#generated-password {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    /* Debug: Add a subtle indicator to verify font is applied */
+    text-shadow: 0 0 1px rgba(0,0,0,0.1);
+}
+
+#strength-text {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important;
+    font-weight: 600;
+    /* Debug: Add a subtle indicator to verify font is applied */
+    text-shadow: 0 0 1px rgba(0,0,0,0.1);
+}
+
+/* Debug: Force JetBrains Mono on all monospace elements */
+.font-mono, code, pre, [class*="font-"] {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important;
+}
+
+/* Navigation and menu font consistency */
+header, nav, .glass-box, header *, nav *, .glass-box * {
+    font-family: 'Inter', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+/* Force consistent fonts for all content (excluding buttons to avoid visibility issues) */
+body, main, section, div, p, h1, h2, h3, h4, h5, h6, span, a, label {
+    font-family: 'Inter', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+/* Softer text colors for better readability */
+body {
+    color: #4b5563 !important; /* Softer gray instead of pure black */
+}
+
+.dark body {
+    color: #d1d5db !important; /* Softer white instead of pure white */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #374151 !important; /* Softer heading color */
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    color: #e5e7eb !important; /* Softer heading color in dark mode */
+}
+
+.text-gray-800 {
+    color: #4b5563 !important; /* Softer gray */
+}
+
+.dark .text-gray-800 {
+    color: #d1d5db !important; /* Softer white */
+}
+
+.text-gray-600 {
+    color: #6b7280 !important; /* Softer gray */
+}
+
+.dark .text-gray-600 {
+    color: #9ca3af !important; /* Softer white */
+}
+
+.text-gray-700 {
+    color: #6b7280 !important; /* Softer gray */
+}
+
+.dark .text-gray-700 {
+    color: #9ca3af !important; /* Softer white */
+}
+
+.text-gray-300 {
+    color: #9ca3af !important; /* Softer white */
+}
+
+.dark .text-gray-300 {
+    color: #6b7280 !important; /* Softer gray */
+}
+
+/* Ensure buttons are visible and styled correctly */
+button, .copy-btn, #qr-code-btn, #generate-btn {
+    font-family: 'Inter', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+    display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Fix mobile menu button - respect Tailwind display utilities */
+#mobile-menu-btn {
+    font-family: 'Inter', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Respect Tailwind display classes for mobile menu button */
+@media (min-width: 768px) {
+    #mobile-menu-btn {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    #mobile-menu-btn {
+        display: inline-flex !important;
+    }
+}
+
+/* Fix Font Awesome icons visibility */
+i, .fas, .fa, .fa-solid, .fa-regular, .fa-bars, .fa-moon, .fa-sun, .fa-times, .fa-copy, .fa-qrcode, .fa-sync-alt, .fa-download, .fa-lock {
+    font-family: 'Font Awesome 6 Free', 'fa-solid-900', 'fa-regular-400' !important;
+    font-weight: 900 !important;
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Font Awesome brand icons (Twitter, Facebook, etc.) */
+.fab, .fa-brands, .fa-twitter, .fa-facebook {
+    font-family: 'Font Awesome 6 Brands', 'fa-brands-400' !important;
+    font-weight: 400 !important;
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Specific styling for form labels and checkbox text */
+.ml-3, label span, .text-gray-700, .text-gray-300, [class*="ml-"], label *, span[class*="text-"] {
+    font-family: 'Inter', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+/* JetBrains Mono exceptions (keep these as monospace) */
+#generated-password, #strength-text, .font-mono, code, pre, [style*="font-family: monospace"] {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important;
+}
+
+/* Sticky header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .slider::-webkit-slider-thumb {
@@ -17,6 +172,7 @@ body {
             border-radius: 50%;
             background: #3b82f6;
             cursor: pointer;
+            transition: background 0.3s ease;
         }
         
         .slider::-moz-range-thumb {
@@ -25,6 +181,57 @@ body {
             border-radius: 50%;
             background: #3b82f6;
             cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        /* Dynamic slider colors based on strength */
+        .strength-weak .slider::-webkit-slider-thumb {
+            background: #dc2626 !important; /* Red */
+        }
+        
+        .strength-weak .slider::-moz-range-thumb {
+            background: #dc2626 !important; /* Red */
+        }
+        
+        .strength-fair .slider::-webkit-slider-thumb {
+            background: #d97706 !important; /* Yellow */
+        }
+        
+        .strength-fair .slider::-moz-range-thumb {
+            background: #d97706 !important; /* Yellow */
+        }
+        
+        .strength-good .slider::-webkit-slider-thumb {
+            background: #2563eb !important; /* Blue */
+        }
+        
+        .strength-good .slider::-moz-range-thumb {
+            background: #2563eb !important; /* Blue */
+        }
+        
+        .strength-strong .slider::-webkit-slider-thumb {
+            background: #16a34a !important; /* Green */
+        }
+        
+        .strength-strong .slider::-moz-range-thumb {
+            background: #16a34a !important; /* Green */
+        }
+
+        /* Slider track colors */
+        .strength-weak .slider {
+            background: #fca5a5 !important; /* Light red */
+        }
+        
+        .strength-fair .slider {
+            background: #fcd34d !important; /* Light yellow */
+        }
+        
+        .strength-good .slider {
+            background: #93c5fd !important; /* Light blue */
+        }
+        
+        .strength-strong .slider {
+            background: #86efac !important; /* Light green */
         }
         
         .password-strength-meter {
@@ -54,18 +261,48 @@ body {
         
         /* Password strength colors */
         .strength-weak {
-            background-color: rgba(239, 68, 68, 0.1);
-            border-color: rgb(239, 68, 68);
+            background-color: rgba(239, 68, 68, 0.1) !important; /* red */
+            border-color: rgb(239, 68, 68) !important;
+            color: #dc2626 !important; /* red-600 */
         }
         
-        .strength-medium {
-            background-color: rgba(245, 158, 11, 0.1);
-            border-color: rgb(245, 158, 11);
+        .strength-fair {
+            background-color: rgba(245, 158, 11, 0.1) !important; /* yellow */
+            border-color: rgb(245, 158, 11) !important;
+            color: #d97706 !important; /* yellow-600 */
+        }
+        
+        .strength-good {
+            background-color: rgba(59, 130, 246, 0.1) !important; /* blue */
+            border-color: rgb(59, 130, 246) !important;
+            color: #2563eb !important; /* blue-600 */
         }
         
         .strength-strong {
-            background-color: rgba(34, 197, 94, 0.1);
-            border-color: rgb(34, 197, 94);
+            background-color: rgba(34, 197, 94, 0.1) !important; /* green */
+            border-color: rgb(34, 197, 94) !important;
+            color: #16a34a !important; /* green-600 */
+        }
+        
+        /* Specific strength text colors */
+        #strength-text.strength-weak {
+            color: #dc2626 !important;
+            background-color: rgba(239, 68, 68, 0.9) !important;
+        }
+        
+        #strength-text.strength-fair {
+            color: #d97706 !important;
+            background-color: rgba(245, 158, 11, 0.9) !important;
+        }
+        
+        #strength-text.strength-good {
+            color: #2563eb !important;
+            background-color: rgba(59, 130, 246, 0.9) !important;
+        }
+        
+        #strength-text.strength-strong {
+            color: #16a34a !important;
+            background-color: rgba(34, 197, 94, 0.9) !important;
         }
         
         #generated-password {
@@ -82,8 +319,8 @@ body {
   width: 11.875em;
   height: 7em;
   padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.074);
-  border: 1px solid rgba(255, 255, 255, 0.222);
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border-radius: 0.7rem;
@@ -94,11 +331,17 @@ body {
   align-items: center;
 }
 
+/* Dark mode styling for glass-box */
+.dark .glass-box {
+  background-color: rgba(255, 255, 255, 0.074);
+  border: 1px solid rgba(255, 255, 255, 0.222);
+}
+
 .glass-box .scan-title {
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.1em;
-  color: white;
+  color: white; /* Always white for contrast */
 }
 
 .glass-box:hover {

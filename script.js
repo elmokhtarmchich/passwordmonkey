@@ -1,6 +1,6 @@
 // Material Design 3 PasswordMonkey Script
 
-document.addEventListener('DOMContentLoaded', function() {
+function init() {
     // --- DOM Elements ---
     const lengthSlider = document.getElementById('password-length');
     const lengthValue = document.getElementById('length-value');
@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const generateBtn = document.getElementById('generate-btn');
     const generatedPasswordDiv = document.getElementById('generated-password');
     const passwordContainer = document.getElementById('password-container');
+    const passwordGenerator = document.getElementById('password-generator');
     const copyBtn = document.getElementById('copy-btn');
     const tooltip = document.getElementById('tooltip');
     const darkModeToggle = document.getElementById('dark-mode-toggle');
@@ -30,48 +31,51 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- Mobile Menu Toggle ---
     if (mobileMenuBtn) {
         mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            const isHidden = mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            
+            // Toggle icon between bars and times
+            if (isHidden) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
         });
     }
 
     // --- QR Code Modal ---
     if (qrCodeBtn) {
-        console.log('QR Code button found'); // Debug log
         qrCodeBtn.addEventListener('click', () => {
-            console.log('QR Code button clicked'); // Debug log
             const password = generatedPasswordDiv.textContent;
             
             if (password === 'Click Generate' || password === 'Select options') {
                 alert('Please generate a password first.');
                 return;
             }
-            
-            // Check if QRCode library is available
-            console.log('Checking QRCode library...'); // Debug log
-            console.log('typeof qrcode:', typeof qrcode); // Debug log
-            console.log('qrcode object:', qrcode); // Debug log
-            
-            if (typeof qrcode === 'undefined') {
-                console.error('QRCode library not loaded');
-                alert('QR Code library not available. Please refresh the page.');
+
+            // Check if QRCode.js library is available
+            if (typeof QRCode === 'undefined') {
+                console.error('QRCode.js library not loaded. Please include it in your HTML.');
+                alert('QR Code functionality is currently unavailable. Please try again later.');
                 return;
             }
             
             // Clear previous QR code
             qrCodeContainer.innerHTML = '';
             
-            console.log('Generating QR code for:', password); // Debug log
-            
-            // Generate new QR code using qrcode-generator library
+            // Generate new QR code using qrcode.js
             try {
-                const qr = qrcode(0, 'M');
-                qr.addData(password);
-                qr.make();
-                
-                const qrImage = qr.createImgTag(5, 2);
-                qrCodeContainer.innerHTML = qrImage;
-                
-                console.log('QR Code generated successfully'); // Debug log
+                const isDarkMode = document.documentElement.classList.contains('dark');
+                new QRCode(qrCodeContainer, {
+                    text: password,
+                    width: 200,
+                    height: 200,
+                    colorDark: isDarkMode ? '#ffffff' : '#000000',
+                    colorLight: isDarkMode ? '#1f2937' : '#ffffff', // Matches dark:bg-gray-800
+                    correctLevel: QRCode.CorrectLevel.H
+                });
             } catch (error) {
                 console.error('QR Code generation failed:', error);
                 qrCodeContainer.innerHTML = '<p class="text-red-500">Failed to generate QR code</p>';
@@ -79,8 +83,6 @@ document.addEventListener('DOMContentLoaded', function() {
             
             qrCodeModal.classList.remove('hidden');
         });
-    } else {
-        console.error('QR Code button not found'); // Debug log
     }
     
     if (closeQrModalBtn) {
@@ -114,6 +116,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // --- Service Worker Registration ---
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js');
+    }
+
     // --- Character Sets ---
     const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
@@ -143,61 +150,73 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         let password = '';
         if (charset.length > 0) {
+            const randomValues = new Uint32Array(length);
+            window.crypto.getRandomValues(randomValues);
             for (let i = 0; i < length; i++) {
-                const randomIndex = Math.floor(Math.random() * charset.length);
-                password += charset[randomIndex];
+                password += charset[randomValues[i] % charset.length];
             }
         }
         return password;
     }
 
     function calculateStrength(password) {
-        let strength = 0;
+        if (password === 'Click Generate' || password === 'Select options') return 0;
         if (!password) return 0;
-        const length = password.length;
-        strength += Math.min(length / 50 * 50, 50);
-        let varietyScore = 0;
-        if (/[A-Z]/.test(password)) varietyScore += 10;
-        if (/[a-z]/.test(password)) varietyScore += 10;
-        if (/[0-9]/.test(password)) varietyScore += 10;
-        if (/[^A-Za-z0-9]/.test(password)) varietyScore += 20;
-        strength += varietyScore;
-        return Math.min(strength, 100);
+        
+        // Calculate entropy based on character set size and length
+        let charsetSize = 0;
+        if (/[a-z]/.test(password)) charsetSize += 26;
+        if (/[A-Z]/.test(password)) charsetSize += 26;
+        if (/[0-9]/.test(password)) charsetSize += 10;
+        if (/[^A-Za-z0-9]/.test(password)) charsetSize += 32; // Approximate symbol count
+        
+        // Entropy = log2(charsetSize^length) = length * log2(charsetSize)
+        const entropy = password.length * Math.log2(charsetSize);
+        
+        return entropy;
     }
 
     function updateStrengthDisplay(password) {
-        const strength = calculateStrength(password);
+        if (!passwordContainer) return;
         
-        const baseClasses = ['bg-white', 'dark:bg-gray-600', 'border-gray-300', 'dark:border-gray-500'];
-        const weakClasses = ['bg-red-100', 'dark:bg-red-900', 'border-red-500'];
-        const mediumClasses = ['bg-yellow-100', 'dark:bg-yellow-900', 'border-yellow-500'];
-        const strongClasses = ['bg-green-100', 'dark:bg-green-900', 'border-green-500'];
+        const entropy = calculateStrength(password);
         
-        const weakText = ['text-red-400'];
-        const mediumText = ['text-yellow-400'];
-        const strongText = ['text-green-400'];
-
-        passwordContainer.classList.remove(...baseClasses, ...weakClasses, ...mediumClasses, ...strongClasses);
-        strengthText.classList.remove('text-red-400', 'text-yellow-400', 'text-green-400');
+        // Clear all classes first
+        passwordGenerator.classList.remove('strength-weak', 'strength-fair', 'strength-good', 'strength-strong');
+        passwordContainer.classList.remove('strength-weak', 'strength-fair', 'strength-good', 'strength-strong');
+        strengthText.classList.remove('strength-weak', 'strength-fair', 'strength-good', 'strength-strong');
         strengthText.textContent = '';
         strengthText.style.display = 'none';
 
-        if (strength === 0) {
-             passwordContainer.classList.add(...baseClasses);
-        } else if (strength < 30) {
-            passwordContainer.classList.add(...weakClasses);
+        if (entropy === 0) {
+            // No password - default state
+        } else if (entropy < 32) {
+            // Weak: Less than 32 bits of entropy
+            passwordGenerator.classList.add('strength-weak');
+            passwordContainer.classList.add('strength-weak');
             strengthText.textContent = 'Weak';
-            strengthText.classList.add(...weakText);
+            strengthText.classList.add('strength-weak');
             strengthText.style.display = 'inline';
-        } else if (strength < 70) {
-            passwordContainer.classList.add(...mediumClasses);
-            strengthText.textContent = 'Medium';
-            strengthText.classList.add(...mediumText);
+        } else if (entropy < 64) {
+            // Fair: 32-64 bits of entropy
+            passwordGenerator.classList.add('strength-fair');
+            passwordContainer.classList.add('strength-fair');
+            strengthText.textContent = 'Fair';
+            strengthText.classList.add('strength-fair');
+            strengthText.style.display = 'inline';
+        } else if (entropy < 128) {
+            // Good: 64-128 bits of entropy
+            passwordGenerator.classList.add('strength-good');
+            passwordContainer.classList.add('strength-good');
+            strengthText.textContent = 'Good';
+            strengthText.classList.add('strength-good');
             strengthText.style.display = 'inline';
         } else {
-            passwordContainer.classList.add(...strongClasses);
+            // Strong: 128+ bits of entropy
+            passwordGenerator.classList.add('strength-strong');
+            passwordContainer.classList.add('strength-strong');
             strengthText.textContent = 'Strong';
-            strengthText.classList.add(...strongText);
+            strengthText.classList.add('strength-strong');
             strengthText.style.display = 'inline';
         }
     }
@@ -209,46 +228,100 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function setDarkMode(enabled) {
-        const isDark = document.documentElement.classList.toggle('dark', enabled);
-        if (darkModeIcon) {
-            darkModeIcon.classList.toggle('fa-moon', isDark);
-            darkModeIcon.classList.toggle('fa-sun', !isDark);
+        const isDark = enabled;
+        if (isDark) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
         }
-        localStorage.setItem('pm_dark', isDark ? '1' : '0');
-        updateStrengthDisplay(generatedPasswordDiv.textContent);
+        try {
+            localStorage.setItem('pm_dark', isDark ? '1' : '0');
+        } catch (e) {
+            // Ignore localStorage errors (e.g. if disabled)
+        }
+
+        if (darkModeIcon) {
+            darkModeIcon.classList.remove('fa-moon', 'fa-sun');
+            darkModeIcon.classList.add(isDark ? 'fa-sun' : 'fa-moon');
+        }
+        
+        if (typeof updateStrengthDisplay === 'function' && generatedPasswordDiv) {
+            updateStrengthDisplay(generatedPasswordDiv.textContent);
+        }
+
+        // If QR modal is open, regenerate QR code with new colors
+        if (qrCodeModal && !qrCodeModal.classList.contains('hidden')) {
+            const password = generatedPasswordDiv.textContent;
+            if (password && password !== 'Click Generate' && password !== 'Select options') {
+                qrCodeContainer.innerHTML = '';
+                try {
+                    new QRCode(qrCodeContainer, {
+                        text: password,
+                        width: 200,
+                        height: 200,
+                        colorDark: isDark ? '#ffffff' : '#000000',
+                        colorLight: isDark ? '#1f2937' : '#ffffff',
+                        correctLevel: QRCode.CorrectLevel.H
+                    });
+                } catch (error) {
+                    console.error('QR Code regeneration failed:', error);
+                    qrCodeContainer.innerHTML = '<p class="text-red-500">Failed to regenerate QR code</p>';
+                }
+            }
+        }
     }
     
     // --- Event Listeners ---
     
     const allCheckboxes = [uppercaseCheckbox, lowercaseCheckbox, numbersCheckbox, symbolsCheckbox, excludeAmbiguousCheckbox, excludeSimilarCheckbox];
-    allCheckboxes.forEach(el => el.addEventListener('change', handleParameterChange));
-
-    lengthSlider.addEventListener('input', () => {
-        lengthValue.textContent = lengthSlider.value;
-        handleParameterChange();
+    allCheckboxes.forEach(el => {
+        if (el) el.addEventListener('change', handleParameterChange);
     });
-    
-    generateBtn.addEventListener('click', handleParameterChange);
 
-    copyBtn.addEventListener('click', () => {
-        const passText = generatedPasswordDiv.textContent;
-        if (passText && passText !== 'Click Generate' && passText !== 'Select options') {
-            navigator.clipboard.writeText(passText).then(() => {
-                tooltip.classList.add('tooltip-visible');
-                setTimeout(() => tooltip.classList.remove('tooltip-visible'), 2000);
-            });
+    if (lengthSlider) {
+        lengthSlider.addEventListener('input', () => {
+            lengthValue.textContent = lengthSlider.value;
+            handleParameterChange();
+        });
+    }
+    
+    if (generateBtn) {
+        generateBtn.addEventListener('click', handleParameterChange);
+    }
+
+    if (copyBtn) {
+        copyBtn.addEventListener('click', () => {
+            const passText = generatedPasswordDiv.textContent;
+            if (passText && passText !== 'Click Generate' && passText !== 'Select options') {
+                navigator.clipboard.writeText(passText).then(() => {
+                    tooltip.classList.add('tooltip-visible');
+                    setTimeout(() => tooltip.classList.remove('tooltip-visible'), 2000);
+                });
+            }
+        });
+    }
+
+    if (darkModeToggle) {
+        darkModeToggle.addEventListener('click', () => {
+            setDarkMode(!document.documentElement.classList.contains('dark'));
+        });
+    }
+
+    // --- Initial State Sync ---
+    // The inline script in index.html handles the class. Here we sync the icon.
+    const isInitiallyDark = document.documentElement.classList.contains('dark');
+    if (darkModeIcon) {
+        darkModeIcon.classList.remove('fa-moon', 'fa-sun');
+        darkModeIcon.classList.add(isInitiallyDark ? 'fa-sun' : 'fa-moon');
+    }
+
+    // --- System Preference Listener ---
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        if (localStorage.getItem('pm_dark') === null) {
+            setDarkMode(e.matches);
         }
     });
 
-    darkModeToggle.addEventListener('click', () => {
-        setDarkMode(!document.documentElement.classList.contains('dark'));
-    });
-
-    // --- Initial Load ---
-    const savedDark = localStorage.getItem('pm_dark');
-    setDarkMode(savedDark === null ? true : savedDark === '1');
-
-    // Generate password only if on the main page
     if (document.getElementById('generate-btn')) {
         handleParameterChange();
     }
@@ -265,5 +338,12 @@ document.addEventListener('DOMContentLoaded', function() {
       "https://facebook.com/yourpage"
     ]
   };
-  document.getElementById('jsonld-organization').textContent = JSON.stringify(orgJsonLd, null, 2);
-});
+  const jsonLdContainer = document.getElementById('jsonld-organization');
+  if (jsonLdContainer) jsonLdContainer.textContent = JSON.stringify(orgJsonLd, null, 2);
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+} else {
+    init();
+}

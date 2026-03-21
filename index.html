@@ -125,13 +125,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
     <script type="application/ld+json" id="jsonld-organization"></script>
     
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             darkMode: 'class',
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['"Open Sans"', 'sans-serif'],
+                        sans: ['Inter', 'Open Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', 'monospace'],
                     },
                     colors: {
                         'blue-600': '#2563eb',
@@ -150,17 +152,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
         }
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="./favicon_io/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9540362101494663"
      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <script>
+        // Initialize Dark Mode immediately to prevent flash
+        if (localStorage.getItem('pm_dark') === '1' || (!('pm_dark' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
     <script src="script.js" defer></script>
     </head>
 <body class="bg-gray-50 dark:bg-gray-900 min-h-screen font-sans">
@@ -201,8 +213,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <button id="dark-mode-toggle" class="ml-4 text-gray-600 dark:text-gray-200 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition" aria-label="Toggle dark mode">
                     <i id="dark-mode-icon" class="fas fa-moon text-2xl"></i>
                 </button>
-
-                <!-- Mobile Menu Button -->
                 <button id="mobile-menu-btn" class="ml-4 md:hidden text-gray-600 dark:text-gray-200 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
@@ -237,7 +247,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <!-- Password Generator Tool -->
-            <div class="bg-white rounded-xl shadow-lg p-8 dark:bg-gray-800 mb-8 md:mb-12">
+            <div id="password-generator" class="bg-white rounded-xl shadow-lg p-8 dark:bg-gray-800 mb-8 md:mb-12">
                 <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6 text-center">
                     Generate Your Secure Password
                 </h2>
@@ -246,10 +256,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="bg-gray-50 rounded-lg dark:bg-gray-700">
                             <div class="flex justify-between items-center mb-2">
                                 <span class="text-gray-700 font-medium dark:text-gray-300">Generated Password</span>
-                                <span id="strength-text" class="text-sm font-medium px-2 py-1 bg-black/50 rounded-lg"></span>
+                                <span id="strength-text" class="text-sm font-medium px-2 py-1 bg-black/50 rounded-lg text-yellow-400" style="font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important; font-weight: 600;"></span>
                             </div>
                             <div id="password-container" class="border rounded-md p-3 transition-colors duration-300">
-                                <div id="generated-password" class="text-lg font-mono break-all dark:text-gray-200">Click Generate</div>
+                                <div id="generated-password" class="text-lg font-mono break-all dark:text-gray-200" style="font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important; font-weight: 500; letter-spacing: 0.05em;">Click Generate</div>
                             </div>
                         </div>
                     </div>
