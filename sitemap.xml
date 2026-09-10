@@ -53,6 +53,7 @@
     </url>
     
 
+
     <!-- News Page -->
     <url>
         <loc>https://passwordmonkey.org/news/</loc>
@@ -60,4 +61,14 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
+=======
+    <!-- News Page -->
+    <url>
+        <loc>https://passwordmonkey.org/news/</loc>
+        <lastmod>2024-01-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+
 </urlset> 
