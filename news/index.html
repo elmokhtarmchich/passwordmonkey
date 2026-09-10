@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Include main template header -->
-    <!--#include virtual="/templates/header.html" -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News - Password Monkey</title>
-</head>
-<body>
-    <!--#include virtual="/templates/navigation.html" -->
+    <meta name="description" content="Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://passwordmonkey.org/news/">
     
-    <main class="news-container">
-        <h1>Latest News</h1>
-        <div class="articles-grid">
-            <!-- Articles will be dynamically inserted here by the build script -->
-        </div>
-    </main>
-
-    <!--#include virtual="/templates/footer.html" -->
-</body>
-</html>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://passwordmonkey.org/news/">
+    <meta property="og:title" content="Password Security News | Password Monkey">
+    <meta property="og:description" content="Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.">
+    <meta property="og:image" content="https://passwordmonkey.org/images/og-image.png">
     <meta property="og:locale" content="en_US">
     
     <!-- Twitter -->
@@ -42,6 +38,42 @@
         "@context": "https://schema.org",
         "@type": "NewsPage",
         "name": "Password Security News",
+        "description": "Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.",
+        "url": "https://passwordmonkey.org/news/",
+        "mainEntity": {
+            "@type": "ItemList",
+            "name": "Password Security News Articles",
+            "description": "Collection of password security and cybersecurity news articles"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "PasswordMonkey",
+            "url": "https://passwordmonkey.org/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://passwordmonkey.org/images/site_logo.png"
+            }
+        }
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!--#include virtual="/templates/navigation.html" -->
+    
+    <main class="news-container">
+        <h1>Latest News</h1>
+        <div class="articles-grid">
+            <!-- Articles will be dynamically inserted here by the build script -->
+        </div>
+    </main>
+
+    <!--#include virtual="/templates/footer.html" -->
+</body>
+</html>
         "description": "Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.",
         "url": "https://passwordmonkey.org/news/",
         "mainEntity": {
@@ -108,7 +140,7 @@
         <div class="container mx-auto px-4 py-6 flex justify-between items-center">
             <a href="../index.html" class="flex items-center">
                 <i class="fas fa-lock text-blue-500 text-3xl mr-3"></i>
-                <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-100">PasswordMonkey</h1>
+                <div class="text-2xl font-bold text-gray-800 dark:text-gray-100">PasswordMonkey</div>
             </a>
             <div class="flex items-center">
                 <!-- Desktop Menu -->
@@ -347,3 +379,4 @@
     </footer>
 </body>
 </html>
+
