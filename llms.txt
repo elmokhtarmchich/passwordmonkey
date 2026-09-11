@@ -4,6 +4,50 @@
 Site: PasswordMonkey - Free Online Password Generator
 URL: https://passwordmonkey.org
 Description: A free, secure, and privacy-focused password generator that creates cryptographically strong passwords directly in your browser.
+Last Updated: September 2026
+Version: 2.0
+
+# WebMCP Integration
+This site implements WebMCP (Web Model Context Protocol) for AI agent interaction. The following tools are registered and available:
+
+## Available WebMCP Tools
+
+### 1. generate_password
+Generate a cryptographically secure random password with customizable options.
+- **Parameters**: 
+  - length (integer, 4-50): Password length in characters (default: 16)
+  - includeUppercase (boolean): Include uppercase letters A-Z (default: true)
+  - includeLowercase (boolean): Include lowercase letters a-z (default: true)
+  - includeNumbers (boolean): Include numbers 0-9 (default: true)
+  - includeSymbols (boolean): Include special symbols !@#$%^&* (default: true)
+  - excludeAmbiguous (boolean): Exclude ambiguous characters (default: false)
+  - excludeSimilar (boolean): Exclude similar-looking characters (default: false)
+- **Returns**: JSON with password, strength, length, and options
+- **Annotation**: readOnlyHint: false, consequentialHint: false
+
+### 2. copy_password
+Copy the currently generated password to the clipboard.
+- **Parameters**: None
+- **Returns**: JSON with success status and message
+- **Annotation**: readOnlyHint: false, untrustedContentHint: true
+
+### 3. get_password_strength
+Get the strength analysis of a password including entropy calculation.
+- **Parameters**: password (string, required)
+- **Returns**: JSON with entropy, strength level, and recommendations
+- **Annotation**: readOnlyHint: true
+
+### 4. generate_qr_code
+Generate a QR code for password sharing.
+- **Parameters**: password (string, required)
+- **Returns**: JSON with QR code data URL
+- **Annotation**: readOnlyHint: false, untrustedContentHint: true
+
+### 5. validate_password_options
+Validate password generation options for security best practices.
+- **Parameters**: length (integer, required), options (object)
+- **Returns**: JSON with validation status, warnings, and recommendations
+- **Annotation**: readOnlyHint: true
 
 # Key Features
 - Generate passwords 4-50 characters long
@@ -15,6 +59,7 @@ Description: A free, secure, and privacy-focused password generator that creates
 - Dark/light mode support
 - No data storage or transmission
 - Progressive Web App (PWA) support
+- WebMCP integration for AI agents
 
 # Security & Privacy
 - All password generation happens client-side in your browser
@@ -33,6 +78,7 @@ Description: A free, secure, and privacy-focused password generator that creates
 - Developer and system administration
 - Freelancer and contractor account security
 - Educational and research purposes
+- AI agent interaction and automation
 
 # Technical Details
 - Built with vanilla JavaScript (no frameworks)
@@ -41,6 +87,9 @@ Description: A free, secure, and privacy-focused password generator that creates
 - Open source and free to use
 - No external dependencies for password generation
 - Uses modern web standards (Web Crypto API, Service Workers)
+- WebMCP API integration for agent interaction
+- Semantic HTML5 structure for accessibility
+- ARIA labels for screen readers
 
 # Password Generation Methods
 - Random character generation with configurable character sets
@@ -56,6 +105,7 @@ Description: A free, secure, and privacy-focused password generator that creates
 - Focused solely on password generation
 - Open source transparency
 - No premium features or limitations
+- AI-agent compatible via WebMCP
 
 # Limitations
 - No password storage or management
@@ -78,6 +128,7 @@ Description: A free, secure, and privacy-focused password generator that creates
 - Privacy Policy: /privacy.html
 - FAQ: /faq.html
 - Donate: /donate.html
+- WebMCP Documentation: https://developer.chrome.com/docs/ai/webmcp
 
 # Best Practices Promoted
 - Use passwords 12+ characters long
@@ -87,6 +138,7 @@ Description: A free, secure, and privacy-focused password generator that creates
 - Consider using a password manager for storage
 - Enable two-factor authentication when available
 - Regularly update passwords for critical accounts
+- Leverage AI agents for password management tasks
 
 # Target Audience
 - General internet users seeking password security
@@ -95,7 +147,27 @@ Description: A free, secure, and privacy-focused password generator that creates
 - Privacy-conscious individuals
 - Educational institutions and students
 - Anyone needing secure password generation
+- AI agents and automation systems
 
-# Last Updated
-Last Updated: January 2024
-Version: 1.0 
+# Accessibility Features
+- Full keyboard navigation support
+- Screen reader compatibility with ARIA labels
+- Semantic HTML structure
+- High contrast color scheme
+- Responsive design for all devices
+- Logical tab order for navigation
+
+# Structured Data
+This site uses JSON-LD structured data for:
+- WebApplication schema with features and ratings
+- FAQPage schema with common questions
+- Organization schema with social profiles
+- AggregateRating for user feedback
+
+# Agent Interaction Guidelines
+When interacting with this site via WebMCP:
+1. Always use the registered tools for password operations
+2. Respect the readOnlyHint and consequentialHint annotations
+3. Validate password options before generation for security
+4. Use the get_password_strength tool for security analysis
+5. The copy_password tool output should be handled with security awareness
