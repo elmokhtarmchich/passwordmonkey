@@ -45,7 +45,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="format-detection" content="telephone=no">
     
     <!-- Structured Data -->
-    <script type="application/ld+json">
+<script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebApplication",
@@ -64,13 +64,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             "Customizable password length (4-50 characters)",
             "Multiple character types (uppercase, lowercase, numbers, symbols)",
             "Exclude ambiguous and similar characters",
-            "Password strength indicator",
+            "Password strength indicator with entropy calculation",
             "Copy to clipboard functionality",
             "QR code generation for mobile sharing",
             "Dark/light mode support",
             "Mobile responsive design",
-            "No data storage or transmission"
+            "No data storage or transmission",
+            "WebMCP integration for AI agents",
+            "Progressive Web App (PWA) support"
         ],
+        "permissions": "geolocation, notifications",
+        "browserRequirements": "Chrome 150+ for WebMCP support",
         "author": {
             "@type": "Organization",
             "name": "PasswordMonkey",
@@ -87,7 +91,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             "ratingCount": "1250",
             "bestRating": "5",
             "worstRating": "1"
-        }
+        },
+        "softwareVersion": "2.0",
+        "dateModified": "2026-09-11",
+        "applicationSubCategory": "Password Generator",
+        "downloadUrl": "https://passwordmonkey.org/"
+    }
+    </script>
+    
+    <!-- WebMCP Tools Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "PasswordMonkey WebMCP Tools",
+        "description": "AI agent tools for password generation and management via WebMCP protocol",
+        "url": "https://passwordmonkey.org/",
+        "applicationCategory": "AIAgentTool",
+        "operatingSystem": "Web Browser",
+        "featureList": [
+            "generate_password tool",
+            "copy_password tool",
+            "get_password_strength tool",
+            "generate_qr_code tool",
+            "validate_password_options tool"
+        ],
+        "softwareRequirements": "Chrome 150+ with WebMCP origin trial",
+        "permissions": "clipboard-read, clipboard-write"
     }
     </script>
     
@@ -173,7 +203,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             document.documentElement.classList.remove('dark');
         }
     </script>
-    <script src="script.js" defer></script>
+<script src="script.js" defer></script>
+    <script src="webmcp-tools.js" defer></script>
+    <!-- Validation script for development/testing -->
+    <script src="validate-agentic.js"></script>
     </head>
 <body class="bg-gray-50 dark:bg-gray-900 min-h-screen font-sans">
 <!-- Google Tag Manager (noscript) -->
@@ -207,26 +240,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </nav>
 
                 <!-- Common Buttons -->
-                <button id="install-pwa-btn" class="hidden bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition ml-4" aria-label="Install App">
-                    <i class="fas fa-download mr-2"></i> Install
+<button id="install-pwa-btn" class="hidden bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition ml-4" aria-label="Install PasswordMonkey as a Progressive Web App">
+                    <i class="fas fa-download mr-2" aria-hidden="true"></i> Install
                 </button>
-                <button id="dark-mode-toggle" class="ml-4 text-gray-600 dark:text-gray-200 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition" aria-label="Toggle dark mode">
-                    <i id="dark-mode-icon" class="fas fa-moon text-2xl"></i>
+                <button id="dark-mode-toggle" class="ml-4 text-gray-600 dark:text-gray-200 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition" aria-label="Toggle dark mode" aria-pressed="false">
+                    <i id="dark-mode-icon" class="fas fa-moon text-2xl" aria-hidden="true"></i>
                 </button>
-                <button id="mobile-menu-btn" class="ml-4 md:hidden text-gray-600 dark:text-gray-200 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
-                    <i class="fas fa-bars text-2xl"></i>
+                <button id="mobile-menu-btn" class="ml-4 md:hidden text-gray-600 dark:text-gray-200 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
                 </button>
             </div>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 shadow-md">
-            <a href="/" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Home</a>
-            <a href="faq" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">FAQ</a>
-            <a href="about" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">About</a>
-            <a href="privacy" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Privacy</a>
-            <a href="donate" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Donate</a>
-            <a href="news/" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">News</a>
-        </div>
+<div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 shadow-md" aria-hidden="true">
+                    <a href="/" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Home</a>
+                    <a href="faq" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">FAQ</a>
+                    <a href="about" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">About</a>
+                    <a href="privacy" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Privacy</a>
+                    <a href="donate" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Donate</a>
+                    <a href="news/" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">News</a>
+                </div>
     </header>
     <main class="container mx-auto px-4 py-4 bg-gray-50 dark:bg-gray-900">
         <div class="max-w-4xl mx-auto">
@@ -264,56 +297,58 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </div>
                     <div class="mt-4 flex gap-4">
-                        <button id="generate-btn" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition duration-200 flex items-center justify-center">
-                            <i class="fas fa-sync-alt mr-2"></i> Generate Password
+<button id="generate-btn" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition duration-200 flex items-center justify-center" aria-label="Generate a new random password">
+                            <i class="fas fa-sync-alt mr-2" aria-hidden="true"></i> Generate Password
                         </button>
-                        <button id="copy-btn" class="copy-btn bg-gray-600 hover:bg-gray-700 text-white font-medium py-3 px-6 rounded-lg transition duration-200 flex items-center justify-center relative">
-                            <i class="fas fa-copy copy-icon"></i>
-                            <div id="tooltip" class="tooltip absolute -top-10 right-0 bg-gray-800 text-white text-xs px-2 py-1 rounded">
+                        <button id="copy-btn" class="copy-btn bg-gray-600 hover:bg-gray-700 text-white font-medium py-3 px-6 rounded-lg transition duration-200 flex items-center justify-center relative" aria-label="Copy generated password to clipboard" aria-pressed="false">
+                            <i class="fas fa-copy copy-icon" aria-hidden="true"></i>
+                            <span class="sr-only">Copy password</span>
+                            <div id="tooltip" class="tooltip absolute -top-10 right-0 bg-gray-800 text-white text-xs px-2 py-1 rounded" role="status" aria-live="polite">
                                 Copied!
                             </div>
                         </button>
-                        <button id="qr-code-btn" class="bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg transition duration-200 flex items-center justify-center">
-                            <i class="fas fa-qrcode"></i>
+                        <button id="qr-code-btn" class="bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg transition duration-200 flex items-center justify-center" aria-label="Generate QR code for current password">
+                            <i class="fas fa-qrcode" aria-hidden="true"></i>
+                            <span class="sr-only">Generate QR code</span>
                         </button>
                     </div>
-                    <div class="mt-4">
+<div class="mt-4">
                         <div class="flex justify-between items-center mb-2">
                             <label for="password-length" class="text-gray-700 font-medium dark:text-gray-300">Password Length</label>
-                            <span id="length-value" class="text-blue-600 font-bold dark:text-blue-400">12</span>
+                            <span id="length-value" class="text-blue-600 font-bold dark:text-blue-400" aria-live="polite" role="status">12</span>
                         </div>
-                        <input type="range" id="password-length" min="4" max="50" value="12" class="slider w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
+                        <input type="range" id="password-length" min="4" max="50" value="12" class="slider w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700" aria-label="Password length slider, 4 to 50 characters" aria-labelledby="password-length-label">
                     </div>
                     <div class="mt-4">
-                        <h3 class="text-gray-700 font-medium mb-2 dark:text-gray-300">Character Types</h3>
-                        <div class="space-y-2">
+                        <h3 id="character-types-heading" class="text-gray-700 font-medium mb-2 dark:text-gray-300">Character Types</h3>
+                        <div class="space-y-2" role="group" aria-labelledby="character-types-heading">
                             <label class="flex items-center">
-                                <input type="checkbox" id="uppercase" checked class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
+                                <input type="checkbox" id="uppercase" checked class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500" aria-describedby="uppercase-desc">
                                 <span class="ml-3 text-gray-700 dark:text-gray-300">Uppercase Letters (A-Z)</span>
                             </label>
                             <label class="flex items-center">
-                                <input type="checkbox" id="lowercase" checked class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
+                                <input type="checkbox" id="lowercase" checked class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500" aria-describedby="lowercase-desc">
                                 <span class="ml-3 text-gray-700 dark:text-gray-300">Lowercase Letters (a-z)</span>
                             </label>
                             <label class="flex items-center">
-                                <input type="checkbox" id="numbers" checked class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
+                                <input type="checkbox" id="numbers" checked class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500" aria-describedby="numbers-desc">
                                 <span class="ml-3 text-gray-700 dark:text-gray-300">Numbers (0-9)</span>
                             </label>
                             <label class="flex items-center">
-                                <input type="checkbox" id="symbols" checked class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
+                                <input type="checkbox" id="symbols" checked class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500" aria-describedby="symbols-desc">
                                 <span class="ml-3 text-gray-700 dark:text-gray-300">Symbols (!@#$%^&*)</span>
                             </label>
                         </div>
                     </div>
                     <div class="mt-4">
-                        <h3 class="text-gray-700 font-medium mb-2 dark:text-gray-300">Options</h3>
-                        <div class="space-y-3">
+                        <h3 id="options-heading" class="text-gray-700 font-medium mb-2 dark:text-gray-300">Options</h3>
+                        <div class="space-y-3" role="group" aria-labelledby="options-heading">
                             <label class="flex items-center">
-                                <input type="checkbox" id="exclude-ambiguous" class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
+                                <input type="checkbox" id="exclude-ambiguous" class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500" aria-describedby="exclude-ambiguous-desc">
                                 <span class="ml-3 text-gray-700 dark:text-gray-300">Exclude ambiguous characters (e.g., i, l, 1, |)</span>
                             </label>
                             <label class="flex items-center">
-                                <input type="checkbox" id="exclude-similar" class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
+                                <input type="checkbox" id="exclude-similar" class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500" aria-describedby="exclude-similar-desc">
                                 <span class="ml-3 text-gray-700 dark:text-gray-300">Exclude similar characters (e.g., 0, O, o)</span>
                             </label>
                         </div>
@@ -469,7 +504,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="grid md:grid-cols-2 gap-8">
                     <!-- NordVPN Card -->
                     <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
-                        <img src="images/nordvpn_logo.svg" alt="NordVPN Logo" class="h-12 mb-4">
+                        <img src="images/nordvpn_logo.svg" alt="NordVPN Logo" class="h-12 mb-4" width="48" height="18" loading="lazy">
                         <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">NordVPN - Secure VPN Service</h3>
                         <p class="text-gray-600 dark:text-gray-300 mb-4">
                             Protect your online privacy and secure your internet connection with a leading VPN service. Encrypt your data and hide your IP address.
@@ -481,7 +516,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                     <!-- NordPass Card -->
                     <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
-                        <img src="images/nordpass_logo.png" alt="NordPass Logo" class="h-12 mb-4">
+                        <img src="images/nordpass_logo.png" alt="NordPass Logo" class="h-12 mb-4" width="48" height="18" loading="lazy">
                         <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">NordPass - Password Manager</h3>
                         <p class="text-gray-600 dark:text-gray-300 mb-4">
                             Keep your passwords and sensitive data safe with a secure and easy-to-use password manager. Store and organize all your passwords securely.
@@ -526,27 +561,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="flex flex-wrap justify-center items-center gap-8">
                     <!-- Norton -->
                     <a href="https://safeweb.norton.com/report?url=passwordmonkey.org" target="_blank" rel="noopener noreferrer" class="glass-box">
-                        <img src="images/trustedby_norton-secure.png" alt="Norton" class="h-12">
+                        <img src="images/trustedby_norton-secure.png" alt="Norton" class="h-12" width="48" height="18" loading="lazy">
                         <span class="scan-title">Norton</span>
                     </a>
                     <!-- Cloudflare -->
                     <a href="https://radar.cloudflare.com/scan/d1074124-c6d8-4a1f-ab1f-2b230e6dc974" target="_blank" rel="noopener noreferrer" class="glass-box">
-                        <img src="images/trustedby_cloudflare-radar.png" alt="Cloudflare" class="h-12">
+                        <img src="images/trustedby_cloudflare-radar.png" alt="Cloudflare" class="h-12" width="48" height="18" loading="lazy">
                         <span class="scan-title">Cloudflare</span>
                     </a>
                     <!-- Sucuri -->
                     <a href="https://sitecheck.sucuri.net/results/passwordmonkey.org" target="_blank" rel="noopener noreferrer" class="glass-box">
-                        <img src="images/trustedby_securi.png" alt="Sucuri" class="h-12">
+                        <img src="images/trustedby_securi.png" alt="Sucuri" class="h-12" width="48" height="18" loading="lazy">
                         <span class="scan-title">Sucuri</span>
                     </a>
                     <!-- Trend Micro -->
                     <a href="https://global.sitesafety.trendmicro.com/result.php?https://passwordmonkey.org" target="_blank" rel="noopener noreferrer" class="glass-box">
-                        <img src="images/trustedby_Trendmicro.png" alt="Trend Micro" class="h-12">
+                        <img src="images/trustedby_Trendmicro.png" alt="Trend Micro" class="h-12" width="48" height="18" loading="lazy">
                         <span class="scan-title">Trend Micro</span>
                     </a>
                     <!-- Kaspersky -->
                     <a href="https://opentip.kaspersky.com/passwordmonkey.org/" target="_blank" rel="noopener noreferrer" class="glass-box">
-                        <img src="images/trustedby_kaspersky.png" alt="Kaspersky" class="h-12">
+                        <img src="images/trustedby_kaspersky.png" alt="Kaspersky" class="h-12" width="48" height="18" loading="lazy">
                         <span class="scan-title">Kaspersky</span>
                     </a>
                 </div>

@@ -325,7 +325,207 @@ function init() {
     if (document.getElementById('generate-btn')) {
         handleParameterChange();
     }
-    
+
+    // Expose API for WebMCP tools
+    window.passwordGeneratorAPI = {
+        generate: function(options = {}) {
+            // Temporarily override settings if provided
+            const originalLength = lengthSlider.value;
+            const originalUppercase = uppercaseCheckbox.checked;
+            const originalLowercase = lowercaseCheckbox.checked;
+            const originalNumbers = numbersCheckbox.checked;
+            const originalSymbols = symbolsCheckbox.checked;
+            const originalExcludeAmbiguous = excludeAmbiguousCheckbox.checked;
+            const originalExcludeSimilar = excludeSimilarCheckbox.checked;
+
+            if (options.length !== undefined) {
+                lengthSlider.value = options.length;
+                lengthValue.textContent = options.length;
+            }
+            if (options.includeUppercase !== undefined) {
+                uppercaseCheckbox.checked = options.includeUppercase;
+            }
+            if (options.includeLowercase !== undefined) {
+                lowercaseCheckbox.checked = options.includeLowercase;
+            }
+            if (options.includeNumbers !== undefined) {
+                numbersCheckbox.checked = options.includeNumbers;
+            }
+            if (options.includeSymbols !== undefined) {
+                symbolsCheckbox.checked = options.includeSymbols;
+            }
+            if (options.excludeAmbiguous !== undefined) {
+                excludeAmbiguousCheckbox.checked = options.excludeAmbiguous;
+            }
+            if (options.excludeSimilar !== undefined) {
+                excludeSimilarCheckbox.checked = options.excludeSimilar;
+            }
+
+            const password = generatePassword();
+            generatedPasswordDiv.textContent = password || 'Select options';
+            updateStrengthDisplay(password);
+
+            // Restore original settings
+            lengthSlider.value = originalLength;
+            lengthValue.textContent = originalLength;
+            uppercaseCheckbox.checked = originalUppercase;
+            lowercaseCheckbox.checked = originalLowercase;
+            numbersCheckbox.checked = originalNumbers;
+            symbolsCheckbox.checked = originalSymbols;
+            excludeAmbiguousCheckbox.checked = originalExcludeAmbiguous;
+            excludeSimilarCheckbox.checked = originalExcludeSimilar;
+
+            return JSON.stringify({
+                password: password,
+                strength: calculateStrength(password),
+                length: password.length,
+                options: {
+                    length: password.length,
+                    includeUppercase: /[A-Z]/.test(password),
+                    includeLowercase: /[a-z]/.test(password),
+                    includeNumbers: /[0-9]/.test(password),
+                    includeSymbols: /[^A-Za-z0-9]/.test(password)
+                }
+            });
+        },
+
+        copy: function() {
+            const passText = generatedPasswordDiv.textContent;
+            if (passText && passText !== 'Click Generate' && passText !== 'Select options') {
+                navigator.clipboard.writeText(passText).then(() => {
+                    if (tooltip) {
+                        tooltip.classList.add('tooltip-visible');
+                        setTimeout(() => tooltip.classList.remove('tooltip-visible'), 2000);
+                    }
+                });
+                return JSON.stringify({ success: true, message: 'Password copied to clipboard' });
+            }
+            return JSON.stringify({ success: false, message: 'No password to copy' });
+        },
+
+        calculateStrength: function(password) {
+            const entropy = calculateStrength(password);
+            let strength = 'Weak';
+            if (entropy >= 128) strength = 'Strong';
+            else if (entropy >= 64) strength = 'Good';
+            else if (entropy >= 32) strength = 'Fair';
+
+            return JSON.stringify({
+                password: password,
+                entropy: entropy,
+                strength: strength,
+                length: password.length,
+                recommendations: generateRecommendations(password, entropy)
+            });
+        },
+
+        generateQR: async function(password) {
+            return new Promise((resolve) => {
+                if (typeof QRCode === 'undefined') {
+                    resolve(JSON.stringify({ success: false, message: 'QR Code library not available' }));
+                    return;
+                }
+
+                const tempDiv = document.createElement('div');
+                document.body.appendChild(tempDiv);
+
+                try {
+                    new QRCode(tempDiv, {
+                        text: password,
+                        width: 200,
+                        height: 200,
+                        colorDark: '#000000',
+                        colorLight: '#ffffff',
+                        correctLevel: QRCode.CorrectLevel.H
+                    });
+
+                    const qrDataURL = tempDiv.querySelector('canvas').toDataURL();
+                    document.body.removeChild(tempDiv);
+
+                    resolve(JSON.stringify({
+                        success: true,
+                        qrDataURL: qrDataURL,
+                        message: 'QR code generated successfully'
+                    }));
+                } catch (error) {
+                    document.body.removeChild(tempDiv);
+                    resolve(JSON.stringify({ success: false, message: error.message }));
+                }
+            });
+        },
+
+        validateOptions: function(input) {
+            const { length, options } = input;
+            const warnings = [];
+            const recommendations = [];
+
+            if (length < 12) {
+                warnings.push('Password length is less than 12 characters, which may not be secure enough.');
+                recommendations.push('Use at least 12 characters for better security.');
+            }
+
+            if (length > 50) {
+                warnings.push('Password length exceeds 50 characters, which may be unnecessarily long.');
+            }
+
+            if (options) {
+                const enabledTypes = [
+                    options.uppercase,
+                    options.lowercase,
+                    options.numbers,
+                    options.symbols
+                ].filter(Boolean).length;
+
+                if (enabledTypes < 3) {
+                    warnings.push('Less than 3 character types enabled.');
+                    recommendations.push('Enable at least 3 character types for stronger passwords.');
+                }
+
+                if (enabledTypes === 0) {
+                    warnings.push('No character types enabled!');
+                    recommendations.push('At least one character type must be enabled.');
+                }
+            }
+
+            return JSON.stringify({
+                valid: warnings.length === 0,
+                warnings: warnings,
+                recommendations: recommendations,
+                assessedAt: new Date().toISOString()
+            });
+        }
+    };
+
+    // Helper function for strength recommendations
+    function generateRecommendations(password, entropy) {
+        const recommendations = [];
+
+        if (entropy < 32) {
+            recommendations.push('Password is weak. Increase length and character variety.');
+        }
+        if (password.length < 12) {
+            recommendations.push('Use at least 12 characters.');
+        }
+        if (!/[A-Z]/.test(password)) {
+            recommendations.push('Add uppercase letters.');
+        }
+        if (!/[a-z]/.test(password)) {
+            recommendations.push('Add lowercase letters.');
+        }
+        if (!/[0-9]/.test(password)) {
+            recommendations.push('Add numbers.');
+        }
+        if (!/[^A-Za-z0-9]/.test(password)) {
+            recommendations.push('Add special characters.');
+        }
+
+        if (recommendations.length === 0) {
+            recommendations.push('Password meets security best practices.');
+        }
+
+        return recommendations;
+    }
+
     // JSON-LD structured data
   const orgJsonLd = {
     "@context": "https://schema.org",
