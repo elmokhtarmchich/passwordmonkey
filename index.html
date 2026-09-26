@@ -160,8 +160,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9540362101494663"
      crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
@@ -180,440 +181,447 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXRRC7RB"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <style>
-        @font-face {
-            font-family: 'MatrixtypeDisplay';
-            src: url('fonts/MatrixtypeDisplay-9MyE5.ttf') format('truetype');
-        }
-        .title-font {
-            font-family: 'MatrixtypeDisplay', sans-serif;
-            color: #39FF14; /* Electric Green */
-        }
-    </style>
-    <header class="bg-white shadow-md dark:bg-gray-800">
-        <div class="container mx-auto px-4 py-5 flex justify-between items-center">
-            <a href="index.html" class="flex items-center">
-                <h1 class="text-xl font-bold title-font">PasswordMonkey<span class="bg-green-100 text-green-800 text-xs font-semibold ml-2 px-2 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">.org</span></h1>
-            </a>
-            <div class="flex items-center">
-                <!-- Desktop Menu -->
-                <nav class="hidden md:flex space-x-4 items-center">
-                    <a href="index.html" class="text-gray-600 hover:text-blue-500 transition dark:text-gray-300 dark:hover:text-blue-400">Home</a>
-                    <a href="/faq" class="text-gray-600 hover:text-blue-500 transition dark:text-gray-300 dark:hover:text-blue-400">FAQ</a>
-                    <a href="/about" class="text-gray-600 hover:text-blue-500 transition dark:text-gray-300 dark:hover:text-blue-400">About</a>
-                    <a href="/privacy" class="text-gray-600 hover:text-blue-500 transition dark:text-gray-300 dark:hover:text-blue-400">Privacy</a>
-                    <a href="/donate" class="text-gray-600 hover:text-blue-500 transition dark:text-gray-300 dark:hover:text-blue-400">Donate</a>
-                    <a href="/news/" class="text-gray-600 hover:text-blue-500 transition dark:text-gray-300 dark:hover:text-blue-400">News</a>
-                </nav>
 
-                <!-- Common Buttons -->
-                <button id="install-pwa-btn" class="hidden bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition ml-4" aria-label="Install App">
-                    <i class="fas fa-download mr-2"></i> Install
-                </button>
-                <button id="dark-mode-toggle" class="ml-4 text-gray-600 dark:text-gray-200 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition" aria-label="Toggle dark mode">
-                    <i id="dark-mode-icon" class="fas fa-moon text-2xl"></i>
-                </button>
-                <button id="mobile-menu-btn" class="ml-4 md:hidden text-gray-600 dark:text-gray-200 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
+<!-- SIDEBAR -->
+<aside class="sidebar" aria-label="Navigation">
+  <nav class="sidebar-nav" aria-label="Main navigation">
+    <a href="index.html" class="active" aria-current="page">
+      <span class="material-symbols-outlined" aria-hidden="true">home</span>
+      <span>Home</span>
+    </a>
+    <a href="/faq">
+      <span class="material-symbols-outlined" aria-hidden="true">help</span>
+      <span>FAQ</span>
+    </a>
+    <a href="/about">
+      <span class="material-symbols-outlined" aria-hidden="true">info</span>
+      <span>About</span>
+    </a>
+    <a href="/privacy">
+      <span class="material-symbols-outlined" aria-hidden="true">privacy_tip</span>
+      <span>Privacy</span>
+    </a>
+    <a href="/donate">
+      <span class="material-symbols-outlined" aria-hidden="true">volunteer_activism</span>
+      <span>Donate</span>
+    </a>
+    <a href="/news/">
+      <span class="material-symbols-outlined" aria-hidden="true">article</span>
+      <span>News</span>
+    </a>
+  </nav>
+  <div class="sidebar-actions">
+    <button id="install-pwa-btn" data-install-pwa-btn class="hidden" aria-label="Install App">
+      <span class="material-symbols-outlined" aria-hidden="true">download</span>
+      <span>Install</span>
+    </button>
+    <button id="dark-mode-toggle" data-dark-mode-toggle aria-label="Toggle dark mode">
+      <span id="dark-mode-icon" data-dark-mode-icon class="material-symbols-outlined" aria-hidden="true">dark_mode</span>
+      <span>Theme</span>
+    </button>
+  </div>
+</aside>
+
+<!-- RIGHT COLUMN -->
+<div class="content-wrapper">
+
+  <!-- Header (logo only; navigation lives in the sidebar) -->
+  <header class="content-header bg-white shadow-md dark:bg-gray-800">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="index.html" class="flex items-center">
+        <h1 class="text-xl font-bold title-font">PasswordMonkey<span class="bg-green-100 text-green-800 text-xs font-semibold ml-2 px-2 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">.org</span></h1>
+      </a>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-4 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-4xl mx-auto">
+        <!-- Hero Section -->
+        <div class="text-center mb-6 md:mb-8">
+            <h1 class="text-xl md:text-4xl lg:text-5xl font-bold text-gray-800 dark:text-gray-100 mb-3 md:mb-4">
+                Free Password Generator - Create Strong, Secure Passwords
+            </h1>
+            <p class="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto dark:text-gray-300 mb-4 md:mb-6">
+                Generate cryptographically secure, random passwords instantly. Our free password generator creates strong passwords that protect your online accounts from hackers and data breaches.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 text-sm text-gray-500 dark:text-gray-400">
+                <span class="flex items-center"><i class="fas fa-shield-alt mr-2"></i> 100% Secure</span>
+                <span class="flex items-center"><i class="fas fa-lock mr-2"></i> No Data Stored</span>
+                <span class="flex items-center"><i class="fas fa-bolt mr-2"></i> Instant Generation</span>
+                <span class="flex items-center"><i class="fas fa-mobile-alt mr-2"></i> Mobile Friendly</span>
             </div>
         </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 shadow-md">
-            <a href="index.html" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Home</a>
-            <a href="/faq" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">FAQ</a>
-            <a href="/about" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">About</a>
-            <a href="/privacy" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Privacy</a>
-            <a href="/donate" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Donate</a>
-            <a href="/news/" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">News</a>
-        </div>
-    </header>
-    <main class="container mx-auto px-4 py-4 bg-gray-50 dark:bg-gray-900">
-        <div class="max-w-4xl mx-auto">
-            <!-- Hero Section -->
-            <div class="text-center mb-6 md:mb-8">
-                <h1 class="text-xl md:text-4xl lg:text-5xl font-bold text-gray-800 dark:text-gray-100 mb-3 md:mb-4">
-                    Free Password Generator - Create Strong, Secure Passwords
-                </h1>
-                <p class="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto dark:text-gray-300 mb-4 md:mb-6">
-                    Generate cryptographically secure, random passwords instantly. Our free password generator creates strong passwords that protect your online accounts from hackers and data breaches.
-                </p>
-                <div class="flex flex-wrap justify-center gap-4 text-sm text-gray-500 dark:text-gray-400">
-                    <span class="flex items-center"><i class="fas fa-shield-alt mr-2"></i> 100% Secure</span>
-                    <span class="flex items-center"><i class="fas fa-lock mr-2"></i> No Data Stored</span>
-                    <span class="flex items-center"><i class="fas fa-bolt mr-2"></i> Instant Generation</span>
-                    <span class="flex items-center"><i class="fas fa-mobile-alt mr-2"></i> Mobile Friendly</span>
-                </div>
-            </div>
 
-            <!-- Password Generator Tool -->
-            <div id="password-generator" class="bg-white rounded-xl shadow-lg p-8 dark:bg-gray-800 mb-8 md:mb-12">
-                <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6 text-center">
-                    Generate Your Secure Password
-                </h2>
-                <div class="flex flex-col">
-                    <div class="w-full">
-                        <div class="bg-gray-50 rounded-lg dark:bg-gray-700">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="text-gray-700 font-medium dark:text-gray-300">Generated Password</span>
-                                <span id="strength-text" class="text-sm font-medium px-2 py-1 bg-black/50 rounded-lg text-yellow-400" style="font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important; font-weight: 600;"></span>
-                            </div>
-                            <div id="password-container" class="border rounded-md p-3 transition-colors duration-300">
-                                <div id="generated-password" class="text-lg font-mono break-all dark:text-gray-200" style="font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important; font-weight: 500; letter-spacing: 0.05em;">Click Generate</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-4 flex gap-4">
-                        <button id="generate-btn" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition duration-200 flex items-center justify-center">
-                            <i class="fas fa-sync-alt mr-2"></i> Generate Password
-                        </button>
-                        <button id="copy-btn" class="copy-btn bg-gray-600 hover:bg-gray-700 text-white font-medium py-3 px-6 rounded-lg transition duration-200 flex items-center justify-center relative">
-                            <i class="fas fa-copy copy-icon"></i>
-                            <div id="tooltip" class="tooltip absolute -top-10 right-0 bg-gray-800 text-white text-xs px-2 py-1 rounded">
-                                Copied!
-                            </div>
-                        </button>
-                        <button id="qr-code-btn" class="bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg transition duration-200 flex items-center justify-center">
-                            <i class="fas fa-qrcode"></i>
-                        </button>
-                    </div>
-                    <div class="mt-4">
+        <!-- Password Generator Tool -->
+        <div id="password-generator" class="bg-white rounded-xl shadow-lg p-8 dark:bg-gray-800 mb-8 md:mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6 text-center">
+                Generate Your Secure Password
+            </h2>
+            <div class="flex flex-col">
+                <div class="w-full">
+                    <div class="bg-gray-50 rounded-lg dark:bg-gray-700">
                         <div class="flex justify-between items-center mb-2">
-                            <label for="password-length" class="text-gray-700 font-medium dark:text-gray-300">Password Length</label>
-                            <span id="length-value" class="text-blue-600 font-bold dark:text-blue-400">12</span>
+                            <span class="text-gray-700 font-medium dark:text-gray-300">Generated Password</span>
+                            <span id="strength-text" class="text-sm font-medium px-2 py-1 bg-black/50 rounded-lg text-yellow-400" style="font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important; font-weight: 600;"></span>
                         </div>
-                        <input type="range" id="password-length" min="4" max="50" value="12" class="slider w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
-                    </div>
-                    <div class="mt-4">
-                        <h3 class="text-gray-700 font-medium mb-2 dark:text-gray-300">Character Types</h3>
-                        <div class="space-y-2">
-                            <label class="flex items-center">
-                                <input type="checkbox" id="uppercase" checked class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
-                                <span class="ml-3 text-gray-700 dark:text-gray-300">Uppercase Letters (A-Z)</span>
-                            </label>
-                            <label class="flex items-center">
-                                <input type="checkbox" id="lowercase" checked class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
-                                <span class="ml-3 text-gray-700 dark:text-gray-300">Lowercase Letters (a-z)</span>
-                            </label>
-                            <label class="flex items-center">
-                                <input type="checkbox" id="numbers" checked class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
-                                <span class="ml-3 text-gray-700 dark:text-gray-300">Numbers (0-9)</span>
-                            </label>
-                            <label class="flex items-center">
-                                <input type="checkbox" id="symbols" checked class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
-                                <span class="ml-3 text-gray-700 dark:text-gray-300">Symbols (!@#$%^&*)</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="mt-4">
-                        <h3 class="text-gray-700 font-medium mb-2 dark:text-gray-300">Options</h3>
-                        <div class="space-y-3">
-                            <label class="flex items-center">
-                                <input type="checkbox" id="exclude-ambiguous" class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
-                                <span class="ml-3 text-gray-700 dark:text-gray-300">Exclude ambiguous characters (e.g., i, l, 1, |)</span>
-                            </label>
-                            <label class="flex items-center">
-                                <input type="checkbox" id="exclude-similar" class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
-                                <span class="ml-3 text-gray-700 dark:text-gray-300">Exclude similar characters (e.g., 0, O, o)</span>
-                            </label>
+                        <div id="password-container" class="border rounded-md p-3 transition-colors duration-300">
+                            <div id="generated-password" class="text-lg font-mono break-all dark:text-gray-200" style="font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important; font-weight: 500; letter-spacing: 0.05em;">Click Generate</div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Password Security Guide -->
-            <div class="bg-blue-50 rounded-xl p-8 dark:bg-gray-800 mb-12">
-                <h2 class="text-2xl font-bold text-gray-800 mb-6 dark:text-gray-200">Password Security Best Practices</h2>
-                <p class="text-gray-600 dark:text-gray-300 mb-4 text-center">
-                    Learn more about password security in our comprehensive 
-                    <a href="/password-security-guide" class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline font-semibold">
-                        Password Security Guide
-                    </a>
-                </p>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-4 dark:text-gray-200">Creating Strong Passwords</h3>
-                        <ul class="space-y-3 text-gray-700 dark:text-gray-300">
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                                <span>Use at least 12 characters for maximum security</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                                <span>Include uppercase, lowercase, numbers, and symbols</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                                <span>Avoid personal information like names or birthdays</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                                <span>Use unique passwords for each account</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-4 dark:text-gray-200">Password Management Tips</h3>
-                        <ul class="space-y-3 text-gray-700 dark:text-gray-300">
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                                <span>Store passwords in a secure password manager</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                                <span>Enable two-factor authentication when available</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                                <span>Regularly update passwords, especially after breaches</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
-                                <span>Never share passwords via email or text</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- How It Works Section -->
-            <div class="bg-white rounded-xl shadow-lg p-8 dark:bg-gray-800 mb-12">
-                <h2 class="text-2xl font-bold text-gray-800 mb-6 dark:text-gray-200 text-center">How Our Password Generator Works</h2>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="text-center">
-                        <div class="bg-blue-100 dark:bg-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-random text-2xl text-blue-600 dark:text-blue-400"></i>
+                <div class="mt-4 flex gap-4">
+                    <button id="generate-btn" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition duration-200 flex items-center justify-center">
+                        <i class="fas fa-sync-alt mr-2"></i> Generate Password
+                    </button>
+                    <button id="copy-btn" class="copy-btn bg-gray-600 hover:bg-gray-700 text-white font-medium py-3 px-6 rounded-lg transition duration-200 flex items-center justify-center relative">
+                        <i class="fas fa-copy copy-icon"></i>
+                        <div id="tooltip" class="tooltip absolute -top-10 right-0 bg-gray-800 text-white text-xs px-2 py-1 rounded">
+                            Copied!
                         </div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Cryptographic Randomness</h3>
-                        <p class="text-gray-600 dark:text-gray-300">Our generator uses cryptographically secure random number generation to create truly random passwords that are impossible to predict.</p>
+                    </button>
+                    <button id="qr-code-btn" class="bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg transition duration-200 flex items-center justify-center">
+                        <i class="fas fa-qrcode"></i>
+                    </button>
+                </div>
+                <div class="mt-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <label for="password-length" class="text-gray-700 font-medium dark:text-gray-300">Password Length</label>
+                        <span id="length-value" class="text-blue-600 font-bold dark:text-blue-400">12</span>
                     </div>
-                    <div class="text-center">
-                        <div class="bg-green-100 dark:bg-green-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-shield-alt text-2xl text-green-600 dark:text-green-400"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Client-Side Security</h3>
-                        <p class="text-gray-600 dark:text-gray-300">All password generation happens in your browser. We never see, store, or transmit your passwords, ensuring complete privacy.</p>
+                    <input type="range" id="password-length" min="4" max="50" value="12" class="slider w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
+                </div>
+                <div class="mt-4">
+                    <h3 class="text-gray-700 font-medium mb-2 dark:text-gray-300">Character Types</h3>
+                    <div class="space-y-2">
+                        <label class="flex items-center">
+                            <input type="checkbox" id="uppercase" checked class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
+                            <span class="ml-3 text-gray-700 dark:text-gray-300">Uppercase Letters (A-Z)</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" id="lowercase" checked class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
+                            <span class="ml-3 text-gray-700 dark:text-gray-300">Lowercase Letters (a-z)</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" id="numbers" checked class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
+                            <span class="ml-3 text-gray-700 dark:text-gray-300">Numbers (0-9)</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" id="symbols" checked class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
+                            <span class="ml-3 text-gray-700 dark:text-gray-300">Symbols (!@#$%^&*)</span>
+                        </label>
                     </div>
-                    <div class="text-center">
-                        <div class="bg-purple-100 dark:bg-purple-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-cogs text-2xl text-purple-600 dark:text-purple-400"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Customizable Options</h3>
-                        <p class="text-gray-600 dark:text-gray-300">Choose password length, character types, and exclude confusing characters to create passwords that meet your specific requirements.</p>
+                </div>
+                <div class="mt-4">
+                    <h3 class="text-gray-700 font-medium mb-2 dark:text-gray-300">Options</h3>
+                    <div class="space-y-3">
+                        <label class="flex items-center">
+                            <input type="checkbox" id="exclude-ambiguous" class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
+                            <span class="ml-3 text-gray-700 dark:text-gray-300">Exclude ambiguous characters (e.g., i, l, 1, |)</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" id="exclude-similar" class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
+                            <span class="ml-3 text-gray-700 dark:text-gray-300">Exclude similar characters (e.g., 0, O, o)</span>
+                        </label>
                     </div>
                 </div>
             </div>
-
-            <!-- Password Strength Information -->
-            <div class="bg-gray-50 rounded-xl p-8 dark:bg-gray-800 mb-12">
-                <h2 class="text-2xl font-bold text-gray-800 mb-6 dark:text-gray-200">Understanding Password Strength</h2>
-                <div class="space-y-6">
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-3 dark:text-gray-200">What Makes a Password Strong?</h3>
-                        <p class="text-gray-700 dark:text-gray-300 mb-4">
-                            A strong password is one that is difficult for both humans and computers to guess. The strength of a password depends on several factors:
-                        </p>
-                        <ul class="space-y-2 text-gray-700 dark:text-gray-300">
-                            <li><strong>Length:</strong> Longer passwords are exponentially more secure</li>
-                            <li><strong>Complexity:</strong> Mix of uppercase, lowercase, numbers, and symbols</li>
-                            <li><strong>Randomness:</strong> Avoid patterns, sequences, or personal information</li>
-                            <li><strong>Uniqueness:</strong> Use different passwords for each account</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-3 dark:text-gray-200">Password Cracking Methods</h3>
-                        <p class="text-gray-700 dark:text-gray-300 mb-4">
-                            Hackers use various methods to crack passwords:
-                        </p>
-                        <ul class="space-y-2 text-gray-700 dark:text-gray-300">
-                            <li><strong>Dictionary Attacks:</strong> Trying common words and phrases</li>
-                            <li><strong>Brute Force:</strong> Trying every possible combination</li>
-                            <li><strong>Social Engineering:</strong> Using personal information</li>
-                            <li><strong>Rainbow Tables:</strong> Pre-computed password hashes</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ Section -->
-            <div class="bg-white rounded-xl shadow-lg p-8 dark:bg-gray-800 mb-12">
-                <h2 class="text-2xl font-bold text-gray-800 mb-6 dark:text-gray-200 text-center">Frequently Asked Questions</h2>
-                <div class="space-y-6">
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Is this password generator secure?</h3>
-                        <p class="text-gray-700 dark:text-gray-300">Yes, our password generator is completely secure. All password generation happens in your browser using cryptographically secure random number generation. We never see, store, or transmit your passwords.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">How long should my password be?</h3>
-                        <p class="text-gray-700 dark:text-gray-300">For maximum security, we recommend using passwords that are at least 12 characters long. Longer passwords are exponentially more secure against brute force attacks.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Should I use special characters?</h3>
-                        <p class="text-gray-700 dark:text-gray-300">Yes, including special characters (!@#$%^&*) in your passwords significantly increases their strength and makes them harder to crack.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Can I use the same password for multiple accounts?</h3>
-                        <p class="text-gray-700 dark:text-gray-300">No, you should never use the same password for multiple accounts. If one account is compromised, all your other accounts would be at risk. Use unique passwords for each account.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">How often should I change my passwords?</h3>
-                        <p class="text-gray-700 dark:text-gray-300">It's recommended to change your passwords every 3-6 months, or immediately if you suspect a security breach. Also change passwords if you've used them on compromised websites.</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Recommended Tools Section -->
-            <div class="mb-12">
-                <h2 class="text-2xl font-bold text-center text-gray-800 dark:text-gray-100 mb-8">Recommended Security Tools</h2>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <!-- NordVPN Card -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
-                        <img src="images/nordvpn_logo.svg" alt="NordVPN Logo" class="h-12 mb-4">
-                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">NordVPN - Secure VPN Service</h3>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">
-                            Protect your online privacy and secure your internet connection with a leading VPN service. Encrypt your data and hide your IP address.
-                        </p>
-                        <a href="https://go.nordvpn.net/aff_c?offer_id=15&aff_id=127935&url_id=902" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition">
-                            Get NordVPN
-                        </a>
-                    </div>
-
-                    <!-- NordPass Card -->
-                    <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
-                        <img src="images/nordpass_logo.png" alt="NordPass Logo" class="h-12 mb-4">
-                        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">NordPass - Password Manager</h3>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">
-                            Keep your passwords and sensitive data safe with a secure and easy-to-use password manager. Store and organize all your passwords securely.
-                        </p>
-                        <a href="https://go.nordpass.io/aff_c?offer_id=488&aff_id=127935&url_id=9356" target="_blank" rel="noopener noreferrer" class="bg-green-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg transition">
-                            Get NordPass
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FAQ Section -->
-            <div class="bg-white rounded-xl shadow-lg p-8 dark:bg-gray-800 mb-12">
-                <h2 class="text-2xl font-bold text-gray-800 mb-6 dark:text-gray-200 text-center">Frequently Asked Questions</h2>
-                <div class="space-y-6">
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Is this password generator secure?</h3>
-                        <p class="text-gray-700 dark:text-gray-300">Yes, our password generator is completely secure. All password generation happens in your browser using cryptographically secure random number generation. We never see, store, or transmit your passwords.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">How long should my password be?</h3>
-                        <p class="text-gray-700 dark:text-gray-300">For maximum security, we recommend using passwords that are at least 12 characters long. Longer passwords are exponentially more secure against brute force attacks.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Should I use special characters?</h3>
-                        <p class="text-gray-700 dark:text-gray-300">Yes, including special characters (!@#$%^&*) in your passwords significantly increases their strength and makes them harder to crack.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Can I use the same password for multiple accounts?</h3>
-                        <p class="text-gray-700 dark:text-gray-300">No, you should never use the same password for multiple accounts. If one account is compromised, all your other accounts would be at risk. Use unique passwords for each account.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">How often should I change my passwords?</h3>
-                        <p class="text-gray-700 dark:text-gray-300">It's recommended to change your passwords every 3-6 months, or immediately if you suspect a security breach. Also change passwords if you've used them on compromised websites.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Security Scans Section -->
-            <div class="mb-12">
-                <h2 class="text-2xl font-bold text-center text-gray-800 dark:text-gray-100 mb-8">Security Scans</h2>
-                <div class="flex flex-wrap justify-center items-center gap-8">
-                    <!-- Norton -->
-                    <a href="https://safeweb.norton.com/report?url=passwordmonkey.org" target="_blank" rel="noopener noreferrer" class="glass-box">
-                        <img src="images/trustedby_norton-secure.png" alt="Norton" class="h-12">
-                        <span class="scan-title">Norton</span>
-                    </a>
-                    <!-- Cloudflare -->
-                    <a href="https://radar.cloudflare.com/scan/d1074124-c6d8-4a1f-ab1f-2b230e6dc974" target="_blank" rel="noopener noreferrer" class="glass-box">
-                        <img src="images/trustedby_cloudflare-radar.png" alt="Cloudflare" class="h-12">
-                        <span class="scan-title">Cloudflare</span>
-                    </a>
-                    <!-- Sucuri -->
-                    <a href="https://sitecheck.sucuri.net/results/passwordmonkey.org" target="_blank" rel="noopener noreferrer" class="glass-box">
-                        <img src="images/trustedby_securi.png" alt="Sucuri" class="h-12">
-                        <span class="scan-title">Sucuri</span>
-                    </a>
-                    <!-- Trend Micro -->
-                    <a href="https://global.sitesafety.trendmicro.com/result.php?https://passwordmonkey.org" target="_blank" rel="noopener noreferrer" class="glass-box">
-                        <img src="images/trustedby_Trendmicro.png" alt="Trend Micro" class="h-12">
-                        <span class="scan-title">Trend Micro</span>
-                    </a>
-                    <!-- Kaspersky -->
-                    <a href="https://opentip.kaspersky.com/passwordmonkey.org/" target="_blank" rel="noopener noreferrer" class="glass-box">
-                        <img src="images/trustedby_kaspersky.png" alt="Kaspersky" class="h-12">
-                        <span class="scan-title">Kaspersky</span>
-                    </a>
-                </div>
-            </div>
-
         </div>
-    </main>
 
-    <!-- QR Code Modal -->
-    <div id="qr-code-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-        <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg w-full max-w-md mx-4">
-            <div class="flex justify-between items-center mb-4">
-                <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">QR Code</h3>
-                <button id="close-qr-modal-btn" class="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white">
-                    <i class="fas fa-times text-2xl"></i>
-                </button>
-            </div>
-            <p class="text-gray-600 dark:text-gray-300 mb-6 text-center">
-                Scan this QR code with your mobile device to copy the password.
+        <!-- Password Security Guide -->
+        <div class="bg-blue-50 rounded-xl p-8 dark:bg-gray-800 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 dark:text-gray-200">Password Security Best Practices</h2>
+            <p class="text-gray-600 dark:text-gray-300 mb-4 text-center">
+                Learn more about password security in our comprehensive
+                <a href="/password-security-guide" class="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline font-semibold">
+                    Password Security Guide
+                </a>
             </p>
-            <div class="flex justify-center mb-4">
-                <div id="qr-code-container" class="bg-white p-4 rounded-lg">
-                    <!-- QR code will be generated here -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 dark:text-gray-200">Creating Strong Passwords</h3>
+                    <ul class="space-y-3 text-gray-700 dark:text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Use at least 12 characters for maximum security</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Include uppercase, lowercase, numbers, and symbols</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Avoid personal information like names or birthdays</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Use unique passwords for each account</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 dark:text-gray-200">Password Management Tips</h3>
+                    <ul class="space-y-3 text-gray-700 dark:text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Store passwords in a secure password manager</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Enable two-factor authentication when available</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Regularly update passwords, especially after breaches</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-500 mt-1 mr-3"></i>
+                            <span>Never share passwords via email or text</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <p class="text-center text-xs text-gray-500 dark:text-gray-400">
-                <i class="fas fa-info-circle mr-1"></i> The QR code contains the generated password text.
+        </div>
+
+        <!-- How It Works Section -->
+        <div class="bg-white rounded-xl shadow-lg p-8 dark:bg-gray-800 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 dark:text-gray-200 text-center">How Our Password Generator Works</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 dark:bg-blue-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-random text-2xl text-blue-600 dark:text-blue-400"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Cryptographic Randomness</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Our generator uses cryptographically secure random number generation to create truly random passwords that are impossible to predict.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-100 dark:bg-green-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-2xl text-green-600 dark:text-green-400"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Client-Side Security</h3>
+                    <p class="text-gray-600 dark:text-gray-300">All password generation happens in your browser. We never see, store, or transmit your passwords, ensuring complete privacy.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 dark:bg-purple-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-cogs text-2xl text-purple-600 dark:text-purple-400"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Customizable Options</h3>
+                    <p class="text-gray-600 dark:text-gray-300">Choose password length, character types, and exclude confusing characters to create passwords that meet your specific requirements.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Password Strength Information -->
+        <div class="bg-gray-50 rounded-xl p-8 dark:bg-gray-800 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 dark:text-gray-200">Understanding Password Strength</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3 dark:text-gray-200">What Makes a Password Strong?</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">
+                        A strong password is one that is difficult for both humans and computers to guess. The strength of a password depends on several factors:
+                    </p>
+                    <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                        <li><strong>Length:</strong> Longer passwords are exponentially more secure</li>
+                        <li><strong>Complexity:</strong> Mix of uppercase, lowercase, numbers, and symbols</li>
+                        <li><strong>Randomness:</strong> Avoid patterns, sequences, or personal information</li>
+                        <li><strong>Uniqueness:</strong> Use different passwords for each account</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3 dark:text-gray-200">Password Cracking Methods</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">
+                        Hackers use various methods to crack passwords:
+                    </p>
+                    <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+                        <li><strong>Dictionary Attacks:</strong> Trying common words and phrases</li>
+                        <li><strong>Brute Force:</strong> Trying every possible combination</li>
+                        <li><strong>Social Engineering:</strong> Using personal information</li>
+                        <li><strong>Rainbow Tables:</strong> Pre-computed password hashes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="bg-white rounded-xl shadow-lg p-8 dark:bg-gray-800 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 dark:text-gray-200 text-center">Frequently Asked Questions</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Is this password generator secure?</h3>
+                    <p class="text-gray-700 dark:text-gray-300">Yes, our password generator is completely secure. All password generation happens in your browser using cryptographically secure random number generation. We never see, store, or transmit your passwords.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">How long should my password be?</h3>
+                    <p class="text-gray-700 dark:text-gray-300">For maximum security, we recommend using passwords that are at least 12 characters long. Longer passwords are exponentially more secure against brute force attacks.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Should I use special characters?</h3>
+                    <p class="text-gray-700 dark:text-gray-300">Yes, including special characters (!@#$%^&*) in your passwords significantly increases their strength and makes them harder to crack.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Can I use the same password for multiple accounts?</h3>
+                    <p class="text-gray-700 dark:text-gray-300">No, you should never use the same password for multiple accounts. If one account is compromised, all your other accounts would be at risk. Use unique passwords for each account.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">How often should I change my passwords?</h3>
+                    <p class="text-gray-700 dark:text-gray-300">It's recommended to change your passwords every 3-6 months, or immediately if you suspect a security breach. Also change passwords if you've used them on compromised websites.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Recommended Tools Section -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-center text-gray-800 dark:text-gray-100 mb-8">Recommended Security Tools</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- NordVPN Card -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
+                    <img src="images/nordvpn_logo.svg" alt="NordVPN Logo" class="h-12 mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">NordVPN - Secure VPN Service</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        Protect your online privacy and secure your internet connection with a leading VPN service. Encrypt your data and hide your IP address.
+                    </p>
+                    <a href="https://go.nordvpn.net/aff_c?offer_id=15&aff_id=127935&url_id=902" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition">
+                        Get NordVPN
+                    </a>
+                </div>
+
+                <!-- NordPass Card -->
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
+                    <img src="images/nordpass_logo.png" alt="NordPass Logo" class="h-12 mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">NordPass - Password Manager</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        Keep your passwords and sensitive data safe with a secure and easy-to-use password manager. Store and organize all your passwords securely.
+                    </p>
+                    <a href="https://go.nordpass.io/aff_c?offer_id=488&aff_id=127935&url_id=9356" target="_blank" rel="noopener noreferrer" class="bg-green-800 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-lg transition">
+                        Get NordPass
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="bg-white rounded-xl shadow-lg p-8 dark:bg-gray-800 mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 dark:text-gray-200 text-center">Frequently Asked Questions</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Is this password generator secure?</h3>
+                    <p class="text-gray-700 dark:text-gray-300">Yes, our password generator is completely secure. All password generation happens in your browser using cryptographically secure random number generation. We never see, store, or transmit your passwords.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">How long should my password be?</h3>
+                    <p class="text-gray-700 dark:text-gray-300">For maximum security, we recommend using passwords that are at least 12 characters long. Longer passwords are exponentially more secure against brute force attacks.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Should I use special characters?</h3>
+                    <p class="text-gray-700 dark:text-gray-300">Yes, including special characters (!@#$%^&*) in your passwords significantly increases their strength and makes them harder to crack.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Can I use the same password for multiple accounts?</h3>
+                    <p class="text-gray-700 dark:text-gray-300">No, you should never use the same password for multiple accounts. If one account is compromised, all your other accounts would be at risk. Use unique passwords for each account.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">How often should I change my passwords?</h3>
+                    <p class="text-gray-700 dark:text-gray-300">It's recommended to change your passwords every 3-6 months, or immediately if you suspect a security breach. Also change passwords if you've used them on compromised websites.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Security Scans Section -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-bold text-center text-gray-800 dark:text-gray-100 mb-8">Security Scans</h2>
+            <div class="flex flex-wrap justify-center items-center gap-8">
+                <!-- Norton -->
+                <a href="https://safeweb.norton.com/report?url=passwordmonkey.org" target="_blank" rel="noopener noreferrer" class="glass-box">
+                    <img src="images/trustedby_norton-secure.png" alt="Norton" class="h-12">
+                    <span class="scan-title">Norton</span>
+                </a>
+                <!-- Cloudflare -->
+                <a href="https://radar.cloudflare.com/scan/d1074124-c6d8-4a1f-ab1f-2b230e6dc974" target="_blank" rel="noopener noreferrer" class="glass-box">
+                    <img src="images/trustedby_cloudflare-radar.png" alt="Cloudflare" class="h-12">
+                    <span class="scan-title">Cloudflare</span>
+                </a>
+                <!-- Sucuri -->
+                <a href="https://sitecheck.sucuri.net/results/passwordmonkey.org" target="_blank" rel="noopener noreferrer" class="glass-box">
+                    <img src="images/trustedby_securi.png" alt="Sucuri" class="h-12">
+                    <span class="scan-title">Sucuri</span>
+                </a>
+                <!-- Trend Micro -->
+                <a href="https://global.sitesafety.trendmicro.com/result.php?https://passwordmonkey.org" target="_blank" rel="noopener noreferrer" class="glass-box">
+                    <img src="images/trustedby_Trendmicro.png" alt="Trend Micro" class="h-12">
+                    <span class="scan-title">Trend Micro</span>
+                </a>
+                <!-- Kaspersky -->
+                <a href="https://opentip.kaspersky.com/passwordmonkey.org/" target="_blank" rel="noopener noreferrer" class="glass-box">
+                    <img src="images/trustedby_kaspersky.png" alt="Kaspersky" class="h-12">
+                    <span class="scan-title">Kaspersky</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<!-- QR Code Modal -->
+<div id="qr-code-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg w-full max-w-md mx-4">
+        <div class="flex justify-between items-center mb-4">
+            <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">QR Code</h3>
+            <button id="close-qr-modal-btn" class="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+        </div>
+        <p class="text-gray-600 dark:text-gray-300 mb-6 text-center">
+            Scan this QR code with your mobile device to copy the password.
+        </p>
+        <div class="flex justify-center mb-4">
+            <div id="qr-code-container" class="bg-white p-4 rounded-lg">
+                <!-- QR code will be generated here -->
+            </div>
+        </div>
+        <p class="text-center text-xs text-gray-500 dark:text-gray-400">
+            <i class="fas fa-info-circle mr-1"></i> The QR code contains the generated password text.
+        </p>
+    </div>
+</div>
+
+<footer class="bg-gray-800 text-white py-12 dark:bg-black">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between">
+            <div class="mb-8 md:mb-0">
+                <div class="flex items-center mb-4">
+                    <h3 class="text-xl font-bold title-font">PasswordMonkey<span class="bg-green-100 text-green-800 text-xs font-semibold ml-2 px-2 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">.org</span></h3>
+                </div>
+                <p class="text-gray-400 max-w-xs">Creating strong passwords to protect your digital life.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Menu</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="/about" class="text-gray-400 hover:text-white transition">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/donate" class="text-gray-400 hover:text-white transition">Donate</a></li>
+                        <li><a href="/privacy" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 mb-4 md:mb-0">
+                &copy; 2024 PasswordMonkey. All rights reserved.
             </p>
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            </div>
         </div>
     </div>
+</footer>
 
-    <footer class="bg-gray-800 text-white py-12 dark:bg-black">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between">
-                <div class="mb-8 md:mb-0">
-                    <div class="flex items-center mb-4">
-                        <h3 class="text-xl font-bold title-font">PasswordMonkey<span class="bg-green-100 text-green-800 text-xs font-semibold ml-2 px-2 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">.org</span></h3>
-                    </div>
-                    <p class="text-gray-400 max-w-xs">Creating strong passwords to protect your digital life.</p>
-                </div>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
-                    <div>
-                        <h4 class="text-lg font-semibold mb-4">Menu</h4>
-                        <ul class="space-y-2">
-                            <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
-                            <li><a href="/about" class="text-gray-400 hover:text-white transition">About</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-semibold mb-4">Support</h4>
-                        <ul class="space-y-2">
-                            <li><a href="/donate" class="text-gray-400 hover:text-white transition">Donate</a></li>
-                            <li><a href="/privacy" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 mb-4 md:mb-0">
-                    &copy; 2024 PasswordMonkey. All rights reserved.
-                </p>
-                <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-white transition" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white transition" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+</div>
 </body>
 </html>

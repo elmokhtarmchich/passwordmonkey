@@ -16,34 +16,15 @@ function init() {
     const passwordGenerator = document.getElementById('password-generator');
     const copyBtn = document.getElementById('copy-btn');
     const tooltip = document.getElementById('tooltip');
-    const darkModeToggle = document.getElementById('dark-mode-toggle');
-    const darkModeIcon = document.getElementById('dark-mode-icon');
-    const installPwaBtn = document.getElementById('install-pwa-btn');
+    const darkModeToggles = Array.from(document.querySelectorAll('[data-dark-mode-toggle]'));
+    const darkModeIcons = Array.from(document.querySelectorAll('[data-dark-mode-icon]'));
+    const installPwaButtons = Array.from(document.querySelectorAll('[data-install-pwa-btn]'));
     const strengthText = document.getElementById('strength-text');
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
     const qrCodeBtn = document.getElementById('qr-code-btn');
     const qrCodeModal = document.getElementById('qr-code-modal');
     const closeQrModalBtn = document.getElementById('close-qr-modal-btn');
     const qrCodeContainer = document.getElementById('qr-code-container');
     let deferredPrompt;
-
-    // --- Mobile Menu Toggle ---
-    if (mobileMenuBtn) {
-        mobileMenuBtn.addEventListener('click', () => {
-            const isHidden = mobileMenu.classList.toggle('hidden');
-            const icon = mobileMenuBtn.querySelector('i');
-            
-            // Toggle icon between bars and times
-            if (isHidden) {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            } else {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            }
-        });
-    }
 
     // --- QR Code Modal ---
     if (qrCodeBtn) {
@@ -99,22 +80,25 @@ function init() {
     });
 
     // --- PWA Installation ---
-    window.addEventListener('beforeinstallprompt', (e) => {
-        e.preventDefault();
-        deferredPrompt = e;
-        installPwaBtn.classList.remove('hidden');
-    });
+    if (installPwaButtons.length > 0) {
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            installPwaButtons.forEach((button) => button.classList.remove('hidden'));
+        });
 
-    installPwaBtn.addEventListener('click', async () => {
-        if (deferredPrompt) {
-            deferredPrompt.prompt();
-            const { outcome } = await deferredPrompt.userChoice;
-            if (outcome === 'accepted') {
-                installPwaBtn.classList.add('hidden');
-            }
-            deferredPrompt = null;
-        }
-    });
+        installPwaButtons.forEach((button) => {
+            button.addEventListener('click', async () => {
+                if (!deferredPrompt) return;
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                if (outcome === 'accepted') {
+                    installPwaButtons.forEach((installButton) => installButton.classList.add('hidden'));
+                }
+                deferredPrompt = null;
+            });
+        });
+    }
 
     // --- Service Worker Registration ---
     if ('serviceWorker' in navigator) {
@@ -240,10 +224,9 @@ function init() {
             // Ignore localStorage errors (e.g. if disabled)
         }
 
-        if (darkModeIcon) {
-            darkModeIcon.classList.remove('fa-moon', 'fa-sun');
-            darkModeIcon.classList.add(isDark ? 'fa-sun' : 'fa-moon');
-        }
+        darkModeIcons.forEach((icon) => {
+            icon.textContent = isDark ? 'light_mode' : 'dark_mode';
+        });
         
         if (typeof updateStrengthDisplay === 'function' && generatedPasswordDiv) {
             updateStrengthDisplay(generatedPasswordDiv.textContent);
@@ -301,19 +284,18 @@ function init() {
         });
     }
 
-    if (darkModeToggle) {
-        darkModeToggle.addEventListener('click', () => {
+    darkModeToggles.forEach((toggle) => {
+        toggle.addEventListener('click', () => {
             setDarkMode(!document.documentElement.classList.contains('dark'));
         });
-    }
+    });
 
     // --- Initial State Sync ---
     // The inline script in index.html handles the class. Here we sync the icon.
     const isInitiallyDark = document.documentElement.classList.contains('dark');
-    if (darkModeIcon) {
-        darkModeIcon.classList.remove('fa-moon', 'fa-sun');
-        darkModeIcon.classList.add(isInitiallyDark ? 'fa-sun' : 'fa-moon');
-    }
+    darkModeIcons.forEach((icon) => {
+        icon.textContent = isInitiallyDark ? 'light_mode' : 'dark_mode';
+    });
 
     // --- System Preference Listener ---
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {

@@ -99,31 +99,22 @@ h1, h2, h3, h4, h5, h6 {
     color: #6b7280 !important; /* Softer gray */
 }
 
-/* Ensure buttons are visible and styled correctly */
-button, .copy-btn, #qr-code-btn, #generate-btn {
+/* Ensure generator buttons are visible and styled correctly */
+#generate-btn, .copy-btn, #qr-code-btn {
     font-family: 'Inter', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
     display: inline-flex !important;
     visibility: visible !important;
     opacity: 1 !important;
 }
 
-/* Fix mobile menu button - respect Tailwind display utilities */
-#mobile-menu-btn {
-    font-family: 'Inter', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-}
-
-/* Respect Tailwind display classes for mobile menu button */
-@media (min-width: 768px) {
-    #mobile-menu-btn {
-        display: none !important;
+/* Wrap generator action buttons on very small screens */
+@media (max-width: 360px) {
+    #password-generator .mt-4.flex.gap-4 {
+        flex-wrap: wrap;
     }
-}
-
-@media (max-width: 767px) {
-    #mobile-menu-btn {
-        display: inline-flex !important;
+    #password-generator .mt-4.flex.gap-4 > button {
+        flex: 1 1 100%;
+        min-width: 0;
     }
 }
 
