@@ -45,3 +45,9 @@ You are a UI/UX engineer for the PasswordMonkey project — a static cybersecuri
 - Prefer Tailwind utility classes for one-off styling; use style.css/sidebar.css for reusable or `!important`-scoped rules (follow the existing scoped-override pattern)
 - Mobile-first, keep changes minimal and consistent with the existing design language
 - Commit with focused, concise messages
+
+## External design tools
+
+**Google Stitch (MCP `stitch`):** When the Stitch MCP server is connected, use it for AI design generation and critique — list projects, pull screen details, and generate new design candidates from text prompts. Always prompt Stitch with the project's design-system constraints (IBM Plex typography, #42b8ff primary, 118px sidebar rail / bottom rail <904px, dark mode, WCAG AA). Treat Stitch output as design proposals: port the winning ideas into index.html/style.css/sidebar.css yourself — never paste generated markup blindly; strip it down to semantics and rebuild with our Tailwind + CSS patterns.
+
+**NameThatUI (https://namethatui.com):** Use it as the canonical UI vocabulary. Before speccing or building any UI element, look up its proper name and anatomy (e.g. /web/bottom-navigation, /web/header-navbar, /web/badge-chip-pill, /web/progress-indicators, /web/form-field, /web/switch-checkbox-radio, /web/dialog-drawer-sheet). Use the site's exact element names in commit messages, class names, and prompts so design intent stays unambiguous, and use its paste-ready prompts as starting points when generating elements with Stitch or code.
