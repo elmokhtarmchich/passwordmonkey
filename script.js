@@ -178,36 +178,51 @@ function init() {
             // Weak: Less than 32 bits of entropy
             passwordGenerator.classList.add('strength-weak');
             passwordContainer.classList.add('strength-weak');
-            strengthText.textContent = 'Weak';
+            strengthText.textContent = `${Math.round(entropy)}-bit • Weak`;
             strengthText.classList.add('strength-weak');
             strengthText.style.display = 'inline';
         } else if (entropy < 64) {
             // Fair: 32-64 bits of entropy
             passwordGenerator.classList.add('strength-fair');
             passwordContainer.classList.add('strength-fair');
-            strengthText.textContent = 'Fair';
+            strengthText.textContent = `${Math.round(entropy)}-bit • Fair`;
             strengthText.classList.add('strength-fair');
             strengthText.style.display = 'inline';
         } else if (entropy < 128) {
             // Good: 64-128 bits of entropy
             passwordGenerator.classList.add('strength-good');
             passwordContainer.classList.add('strength-good');
-            strengthText.textContent = 'Good';
+            strengthText.textContent = `${Math.round(entropy)}-bit • Good`;
             strengthText.classList.add('strength-good');
             strengthText.style.display = 'inline';
         } else {
             // Strong: 128+ bits of entropy
             passwordGenerator.classList.add('strength-strong');
             passwordContainer.classList.add('strength-strong');
-            strengthText.textContent = 'Strong';
+            strengthText.textContent = `${Math.round(entropy)}-bit • Strong`;
             strengthText.classList.add('strength-strong');
             strengthText.style.display = 'inline';
         }
     }
 
+    function renderColorCodedPassword(text) {
+        generatedPasswordDiv.innerHTML = '';
+        for (const char of text) {
+            const span = document.createElement('span');
+            span.textContent = char;
+            if (/[0-9]/.test(char)) {
+                span.style.color = '#fbbf24'; // amber digits
+            } else if (!/[A-Za-z0-9]/.test(char)) {
+                span.style.color = '#f472b6'; // pink symbols
+            }
+            // letters: no extra styling (inherit)
+            generatedPasswordDiv.appendChild(span);
+        }
+    }
+
     function handleParameterChange() {
         const password = generatePassword();
-        generatedPasswordDiv.textContent = password || 'Select options';
+        renderColorCodedPassword(password || 'Select options');
         updateStrengthDisplay(password);
     }
 
@@ -344,7 +359,7 @@ function init() {
             }
 
             const password = generatePassword();
-            generatedPasswordDiv.textContent = password || 'Select options';
+            renderColorCodedPassword(password || 'Select options');
             updateStrengthDisplay(password);
 
             // Restore original settings

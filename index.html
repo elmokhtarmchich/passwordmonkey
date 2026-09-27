@@ -248,11 +248,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p class="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto dark:text-gray-300 mb-4 md:mb-6">
                 Generate cryptographically secure, random passwords instantly. Our free password generator creates strong passwords that protect your online accounts from hackers and data breaches.
             </p>
-            <div class="flex flex-wrap justify-center gap-4 text-sm text-green-600 dark:text-green-400">
-                <span class="flex items-center"><i class="fas fa-shield-alt mr-2"></i> 100% Secure</span>
-                <span class="flex items-center"><i class="fas fa-lock mr-2"></i> No Data Stored</span>
-                <span class="flex items-center"><i class="fas fa-bolt mr-2"></i> Instant Generation</span>
-                <span class="flex items-center"><i class="fas fa-mobile-alt mr-2"></i> Mobile Friendly</span>
+            <div  class="flex flex-wrap justify-center gap-4">
+                <div class="flex items-start gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/60 px-4 py-3 text-left">
+                    <i class="fas fa-shield-alt mt-0.5 text-green-600 dark:text-green-400"></i>
+                    <span class="flex flex-col">
+                        <span class="block text-sm font-medium text-gray-800 dark:text-gray-100">100% Secure</span>
+                        <span class="block text-xs text-gray-500 dark:text-gray-400">Generated locally in your browser</span>
+                    </span>
+                </div>
+                <div class="flex items-start gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/60 px-4 py-3 text-left">
+                    <i class="fas fa-lock mt-0.5 text-green-600 dark:text-green-400"></i>
+                    <span class="flex flex-col">
+                        <span class="block text-sm font-medium text-gray-800 dark:text-gray-100">No Data Stored</span>
+                        <span class="block text-xs text-gray-500 dark:text-gray-400">Nothing leaves your device</span>
+                    </span>
+                </div>
+                <div class="flex items-start gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/60 px-4 py-3 text-left">
+                    <i class="fas fa-bolt mt-0.5 text-green-600 dark:text-green-400"></i>
+                    <span class="flex flex-col">
+                        <span class="block text-sm font-medium text-gray-800 dark:text-gray-100">Instant Generation</span>
+                        <span class="block text-xs text-gray-500 dark:text-gray-400">No network round-trip</span>
+                    </span>
+                </div>
+                <div class="flex items-start gap-3 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/60 px-4 py-3 text-left">
+                    <i class="fas fa-mobile-alt mt-0.5 text-green-600 dark:text-green-400"></i>
+                    <span class="flex flex-col">
+                        <span class="block text-sm font-medium text-gray-800 dark:text-gray-100">Mobile Friendly</span>
+                        <span class="block text-xs text-gray-500 dark:text-gray-400">Works on any screen</span>
+                    </span>
+                </div>
             </div>
         </div>
 
@@ -296,22 +320,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <div class="mt-4">
                     <h3 class="text-gray-700 font-medium mb-2 dark:text-gray-300">Character Types</h3>
-                    <div class="space-y-2">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
                         <label class="flex items-center">
                             <input type="checkbox" id="uppercase" checked class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
-                            <span class="ml-3 text-gray-700 dark:text-gray-300">Uppercase Letters (A-Z)</span>
+                            <span class="ml-3 flex flex-col">
+                                <span class="font-medium text-sm text-gray-700 dark:text-gray-300">Uppercase Letters</span>
+                                <span class="text-xs text-gray-500 dark:text-gray-400">A-Z</span>
+                            </span>
                         </label>
                         <label class="flex items-center">
                             <input type="checkbox" id="lowercase" checked class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
-                            <span class="ml-3 text-gray-700 dark:text-gray-300">Lowercase Letters (a-z)</span>
+                            <span class="ml-3 flex flex-col">
+                                <span class="font-medium text-sm text-gray-700 dark:text-gray-300">Lowercase Letters</span>
+                                <span class="text-xs text-gray-500 dark:text-gray-400">a-z</span>
+                            </span>
                         </label>
                         <label class="flex items-center">
                             <input type="checkbox" id="numbers" checked class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
-                            <span class="ml-3 text-gray-700 dark:text-gray-300">Numbers (0-9)</span>
+                            <span class="ml-3 flex flex-col">
+                                <span class="font-medium text-sm text-gray-700 dark:text-gray-300">Numbers</span>
+                                <span class="text-xs text-gray-500 dark:text-gray-400">0-9</span>
+                            </span>
                         </label>
                         <label class="flex items-center">
                             <input type="checkbox" id="symbols" checked class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
-                            <span class="ml-3 text-gray-700 dark:text-gray-300">Symbols (!@#$%^&*)</span>
+                            <span class="ml-3 flex flex-col">
+                                <span class="font-medium text-sm text-gray-700 dark:text-gray-300">Symbols</span>
+                                <span class="text-xs text-gray-500 dark:text-gray-400">!@#$%</span>
+                            </span>
                         </label>
                     </div>
                 </div>
