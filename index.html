@@ -228,6 +228,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- RIGHT COLUMN -->
 <div class="content-wrapper">
+  <!-- M3 Top App Bar (static, inside content column) -->
+  <header class="flex items-center justify-between gap-3 px-1 py-3 mb-2">
+    <div class="flex items-center gap-3">
+      <a href="index.html" class="flex items-center">
+        <div class="text-lg font-bold title-font">PasswordMonkey<span class="bg-green-100 text-green-800 text-xs font-semibold ml-2 px-2 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">.org</span></div>
+      </a>
+      <span class="hidden sm:inline-flex items-center gap-1.5 rounded-full bg-green-50 dark:bg-green-950/50 border border-green-200 dark:border-green-800 px-3 py-1 text-xs font-medium text-green-700 dark:text-green-300">
+        <span class="h-1.5 w-1.5 rounded-full bg-green-500"></span>
+        Zero-knowledge • runs in your browser
+      </span>
+    </div>
+    <div class="flex items-center gap-1">
+      <button type="button" data-dark-mode-toggle aria-label="Toggle dark mode" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+        <span class="material-symbols-outlined text-gray-600 dark:text-gray-300" data-dark-mode-icon aria-hidden="true">dark_mode</span>
+      </button>
+      <a href="https://github.com/elmokhtarmchich/passwordmonkey" target="_blank" rel="noopener" aria-label="GitHub repository" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+        <i class="fab fa-github text-gray-600 dark:text-gray-300"></i>
+      </a>
+    </div>
+  </header>
+
 
   <!-- Header (logo only; navigation lives in the sidebar) -->
   <header class="content-header bg-white shadow-md dark:bg-gray-800">
@@ -453,7 +474,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- Password Strength Information -->
         <div class="bg-gray-50 rounded-xl p-8 dark:bg-gray-800 mb-12">
             <h2 class="text-2xl font-bold text-gray-800 mb-6 dark:text-gray-200">Understanding Password Strength</h2>
-            <div class="space-y-6">
+            <div class="space-y-3">
                 <div>
                     <h3 class="text-lg font-semibold text-gray-800 mb-3 dark:text-gray-200">What Makes a Password Strong?</h3>
                     <p class="text-gray-700 dark:text-gray-300 mb-4">
@@ -484,27 +505,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- FAQ Section -->
         <div class="bg-white rounded-xl shadow-lg p-8 dark:bg-gray-800 mb-12">
             <h2 class="text-2xl font-bold text-gray-800 mb-6 dark:text-gray-200 text-center">Frequently Asked Questions</h2>
-            <div class="space-y-6">
-                <div>
-                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Is this password generator secure?</h3>
-                    <p class="text-gray-700 dark:text-gray-300">Yes, our password generator is completely secure. All password generation happens in your browser using cryptographically secure random number generation. We never see, store, or transmit your passwords.</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">How long should my password be?</h3>
-                    <p class="text-gray-700 dark:text-gray-300">For maximum security, we recommend using passwords that are at least 12 characters long. Longer passwords are exponentially more secure against brute force attacks.</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Should I use special characters?</h3>
-                    <p class="text-gray-700 dark:text-gray-300">Yes, including special characters (!@#$%^&*) in your passwords significantly increases their strength and makes them harder to crack.</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Can I use the same password for multiple accounts?</h3>
-                    <p class="text-gray-700 dark:text-gray-300">No, you should never use the same password for multiple accounts. If one account is compromised, all your other accounts would be at risk. Use unique passwords for each account.</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">How often should I change my passwords?</h3>
-                    <p class="text-gray-700 dark:text-gray-300">It's recommended to change your passwords every 3-6 months, or immediately if you suspect a security breach. Also change passwords if you've used them on compromised websites.</p>
-                </div>
+            <div class="space-y-3">
+                <details class="group border-b border-gray-200 dark:border-gray-700">
+                    <summary class="flex cursor-pointer items-center justify-between gap-4 py-4 text-left font-medium text-gray-900 dark:text-gray-100 list-none [&::-webkit-details-marker]:hidden">
+                        Is this password generator secure?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-gray-400">expand_more</span>
+                    </summary>
+                    <div class="pb-4 text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Yes, our password generator is completely secure. All password generation happens in your browser using cryptographically secure random number generation. We never see, store, or transmit your passwords.</div>
+                </details>
+                <details class="group border-b border-gray-200 dark:border-gray-700">
+                    <summary class="flex cursor-pointer items-center justify-between gap-4 py-4 text-left font-medium text-gray-900 dark:text-gray-100 list-none [&::-webkit-details-marker]:hidden">
+                        How long should my password be?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-gray-400">expand_more</span>
+                    </summary>
+                    <div class="pb-4 text-sm text-gray-600 dark:text-gray-300 leading-relaxed">For maximum security, we recommend using passwords that are at least 12 characters long. Longer passwords are exponentially more secure against brute force attacks.</div>
+                </details>
+                <details class="group border-b border-gray-200 dark:border-gray-700">
+                    <summary class="flex cursor-pointer items-center justify-between gap-4 py-4 text-left font-medium text-gray-900 dark:text-gray-100 list-none [&::-webkit-details-marker]:hidden">
+                        Should I use special characters?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-gray-400">expand_more</span>
+                    </summary>
+                    <div class="pb-4 text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Yes, including special characters (!@#$%^&*) in your passwords significantly increases their strength and makes them harder to crack.</div>
+                </details>
+                <details class="group border-b border-gray-200 dark:border-gray-700">
+                    <summary class="flex cursor-pointer items-center justify-between gap-4 py-4 text-left font-medium text-gray-900 dark:text-gray-100 list-none [&::-webkit-details-marker]:hidden">
+                        Can I use the same password for multiple accounts?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-gray-400">expand_more</span>
+                    </summary>
+                    <div class="pb-4 text-sm text-gray-600 dark:text-gray-300 leading-relaxed">No, you should never use the same password for multiple accounts. If one account is compromised, all your other accounts would be at risk. Use unique passwords for each account.</div>
+                </details>
+                <details class="group border-b border-gray-200 dark:border-gray-700">
+                    <summary class="flex cursor-pointer items-center justify-between gap-4 py-4 text-left font-medium text-gray-900 dark:text-gray-100 list-none [&::-webkit-details-marker]:hidden">
+                        How often should I change my passwords?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-gray-400">expand_more</span>
+                    </summary>
+                    <div class="pb-4 text-sm text-gray-600 dark:text-gray-300 leading-relaxed">It's recommended to change your passwords every 3-6 months, or immediately if you suspect a security breach. Also change passwords if you've used them on compromised websites.</div>
+                </details>
             </div>
         </div>
 
@@ -542,27 +578,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- FAQ Section -->
         <div class="bg-white rounded-xl shadow-lg p-8 dark:bg-gray-800 mb-12">
             <h2 class="text-2xl font-bold text-gray-800 mb-6 dark:text-gray-200 text-center">Frequently Asked Questions</h2>
-            <div class="space-y-6">
-                <div>
-                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Is this password generator secure?</h3>
-                    <p class="text-gray-700 dark:text-gray-300">Yes, our password generator is completely secure. All password generation happens in your browser using cryptographically secure random number generation. We never see, store, or transmit your passwords.</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">How long should my password be?</h3>
-                    <p class="text-gray-700 dark:text-gray-300">For maximum security, we recommend using passwords that are at least 12 characters long. Longer passwords are exponentially more secure against brute force attacks.</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Should I use special characters?</h3>
-                    <p class="text-gray-700 dark:text-gray-300">Yes, including special characters (!@#$%^&*) in your passwords significantly increases their strength and makes them harder to crack.</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">Can I use the same password for multiple accounts?</h3>
-                    <p class="text-gray-700 dark:text-gray-300">No, you should never use the same password for multiple accounts. If one account is compromised, all your other accounts would be at risk. Use unique passwords for each account.</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold text-gray-800 mb-2 dark:text-gray-200">How often should I change my passwords?</h3>
-                    <p class="text-gray-700 dark:text-gray-300">It's recommended to change your passwords every 3-6 months, or immediately if you suspect a security breach. Also change passwords if you've used them on compromised websites.</p>
-                </div>
+            <div class="space-y-3">
+                <details class="group border-b border-gray-200 dark:border-gray-700">
+                    <summary class="flex cursor-pointer items-center justify-between gap-4 py-4 text-left font-medium text-gray-900 dark:text-gray-100 list-none [&::-webkit-details-marker]:hidden">
+                        Is this password generator secure?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-gray-400">expand_more</span>
+                    </summary>
+                    <div class="pb-4 text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Yes, our password generator is completely secure. All password generation happens in your browser using cryptographically secure random number generation. We never see, store, or transmit your passwords.</div>
+                </details>
+                <details class="group border-b border-gray-200 dark:border-gray-700">
+                    <summary class="flex cursor-pointer items-center justify-between gap-4 py-4 text-left font-medium text-gray-900 dark:text-gray-100 list-none [&::-webkit-details-marker]:hidden">
+                        How long should my password be?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-gray-400">expand_more</span>
+                    </summary>
+                    <div class="pb-4 text-sm text-gray-600 dark:text-gray-300 leading-relaxed">For maximum security, we recommend using passwords that are at least 12 characters long. Longer passwords are exponentially more secure against brute force attacks.</div>
+                </details>
+                <details class="group border-b border-gray-200 dark:border-gray-700">
+                    <summary class="flex cursor-pointer items-center justify-between gap-4 py-4 text-left font-medium text-gray-900 dark:text-gray-100 list-none [&::-webkit-details-marker]:hidden">
+                        Should I use special characters?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-gray-400">expand_more</span>
+                    </summary>
+                    <div class="pb-4 text-sm text-gray-600 dark:text-gray-300 leading-relaxed">Yes, including special characters (!@#$%^&*) in your passwords significantly increases their strength and makes them harder to crack.</div>
+                </details>
+                <details class="group border-b border-gray-200 dark:border-gray-700">
+                    <summary class="flex cursor-pointer items-center justify-between gap-4 py-4 text-left font-medium text-gray-900 dark:text-gray-100 list-none [&::-webkit-details-marker]:hidden">
+                        Can I use the same password for multiple accounts?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-gray-400">expand_more</span>
+                    </summary>
+                    <div class="pb-4 text-sm text-gray-600 dark:text-gray-300 leading-relaxed">No, you should never use the same password for multiple accounts. If one account is compromised, all your other accounts would be at risk. Use unique passwords for each account.</div>
+                </details>
+                <details class="group border-b border-gray-200 dark:border-gray-700">
+                    <summary class="flex cursor-pointer items-center justify-between gap-4 py-4 text-left font-medium text-gray-900 dark:text-gray-100 list-none [&::-webkit-details-marker]:hidden">
+                        How often should I change my passwords?
+                        <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-gray-400">expand_more</span>
+                    </summary>
+                    <div class="pb-4 text-sm text-gray-600 dark:text-gray-300 leading-relaxed">It's recommended to change your passwords every 3-6 months, or immediately if you suspect a security breach. Also change passwords if you've used them on compromised websites.</div>
+                </details>
             </div>
         </div>
 
@@ -598,6 +649,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
 
+    </div>
+        <!-- M3 Donate CTA Banner -->
+        <section class="my-10 flex flex-col sm:flex-row items-center gap-4 rounded-2xl border border-sky-200 dark:border-sky-900 bg-sky-50 dark:bg-sky-950/40 px-6 py-6">
+            <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white dark:bg-gray-900 border border-sky-200 dark:border-sky-800"><i class="fas fa-heart text-rose-500"></i></span>
+            <div class="flex-1 text-center sm:text-left">
+                <h2 class="text-base font-semibold text-gray-900 dark:text-gray-100">Support open-source privacy tools</h2>
+                <p class="mt-1 text-sm text-gray-600 dark:text-gray-300">PasswordMonkey is free, ad-light, and runs entirely on your device. Donations keep the generators online and independent.</p>
+            </div>
+            <a href="/donate" class="inline-flex items-center gap-2 rounded-full bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-5 py-2.5 text-sm font-medium hover:opacity-90 transition">Donate<i class="fas fa-arrow-right text-xs"></i></a>
+        </section>
     </div>
 </main>
 
