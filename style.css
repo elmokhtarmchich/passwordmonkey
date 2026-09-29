@@ -182,6 +182,16 @@ i, .fas, .fa, .fa-solid, .fa-regular, .fa-bars, .fa-moon, .fa-sun, .fa-times, .f
     font-family: 'IBM Plex Mono', 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important;
 }
 
+/* Material Symbols icon font must win over span[class*="text-"] and header * font overrides */
+.material-symbols-outlined,
+span.material-symbols-outlined[class] {
+    font-family: 'Material Symbols Outlined', 'Material Symbols', sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal;
+    font-feature-settings: 'liga';
+    -webkit-font-feature-settings: 'liga';
+}
+
 /* Sticky header */
 header {
     position: sticky;
