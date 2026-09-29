@@ -123,6 +123,25 @@ h1, h2, h3, h4, h5, h6 {
     visibility: visible !important;
     opacity: 1 !important;
 }
+/* Wave 3: Full-width pill generate button */
+#generate-btn {
+    border-radius: 9999px;
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+    background: #42b8ff;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    transition: background 200ms cubic-bezier(0.2, 0, 0, 1), transform 200ms cubic-bezier(0.2, 0, 0, 1);
+}
+#generate-btn:hover {
+    background: #0284c7;
+}
+#generate-btn:focus-visible {
+    outline: 2px solid #42b8ff;
+    outline-offset: 2px;
+}
+
 
 /* Wrap generator action buttons on very small screens */
 @media (max-width: 360px) {
