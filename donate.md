@@ -23,7 +23,6 @@ Donations help cover:
 
 ### Other Ways to Contribute
 
-- Star our GitHub repository
 - Share PasswordMonkey with others
 - Contribute code or documentation
 - Report bugs or suggest improvements

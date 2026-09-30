@@ -7,8 +7,7 @@
     "description": "Free online password generator that creates strong, secure, random passwords instantly. No data stored, 100% private and secure.",
     "foundingDate": "2024",
     "sameAs": [
-        "https://twitter.com/passwordmonkey",
-        "https://github.com/passwordmonkey"
+        "https://twitter.com/passwordmonkey"
     ],
     "contactPoint": {
         "@type": "ContactPoint",

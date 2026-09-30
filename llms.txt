@@ -54,7 +54,6 @@ PasswordMonkey implements WebMCP for AI agent interaction. The following tools a
 
 - [NordVPN](https://go.nordvpn.net/aff_c?offer_id=15&aff_id=127935&url_id=902): Recommended VPN service for online privacy
 - [NordPass](https://go.nordpass.io/aff_c?offer_id=488&aff_id=127935&url_id=9356): Recommended password manager for secure password storage
-- [GitHub Repository](https://github.com/elmokhtarmchich/passwordmonkey): Source code and contribution information
 - [Chrome Lighthouse Agentic Browsing](https://developer.chrome.com/docs/lighthouse/agentic-browsing/scoring): Scoring criteria and audit details
 # Site Information
 Site: PasswordMonkey - Free Online Password Generator
