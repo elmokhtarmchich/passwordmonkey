@@ -16,6 +16,9 @@ function init() {
     const passwordGenerator = document.getElementById('password-generator');
     const copyBtn = document.getElementById('copy-btn');
     const tooltip = document.getElementById('tooltip');
+    const quickCopyBtn = document.getElementById('quick-copy-btn');
+    const quickCopyIcon = quickCopyBtn ? quickCopyBtn.querySelector('.material-symbols-outlined') : null;
+    let quickCopyTimer = null;
     const darkModeToggles = Array.from(document.querySelectorAll('[data-dark-mode-toggle]'));
     const darkModeIcons = Array.from(document.querySelectorAll('[data-dark-mode-icon]'));
     const installPwaButtons = Array.from(document.querySelectorAll('[data-install-pwa-btn]'));
@@ -299,6 +302,32 @@ function init() {
                     setTimeout(() => tooltip.classList.remove('tooltip-visible'), 2000);
                 });
             }
+        });
+    }
+
+    // --- Quick Copy Icon Button (top app bar) ---
+    if (quickCopyBtn) {
+        quickCopyBtn.addEventListener('click', () => {
+            const passText = generatedPasswordDiv.textContent;
+            if (!passText || passText === 'Click Generate' || passText === 'Select options') {
+                return;
+            }
+            navigator.clipboard.writeText(passText).then(() => {
+                if (quickCopyIcon) {
+                    quickCopyIcon.textContent = 'check';
+                    quickCopyIcon.classList.add('text-emerald-500');
+                }
+                if (quickCopyTimer) {
+                    clearTimeout(quickCopyTimer);
+                }
+                quickCopyTimer = setTimeout(() => {
+                    if (quickCopyIcon) {
+                        quickCopyIcon.textContent = 'content_copy';
+                        quickCopyIcon.classList.remove('text-emerald-500');
+                    }
+                    quickCopyTimer = null;
+                }, 1500);
+            });
         });
     }
 
