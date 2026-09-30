@@ -51,12 +51,12 @@ body {
 
 /* JetBrains Mono for code and technical elements */
 .font-mono, code, pre, .password-display, .strength-text, [style*="font-family: monospace"] {
-    font-family: 'IBM Plex Mono', 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important;
+    font-family: 'JetBrains Mono', 'IBM Plex Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important;
 }
 
 /* Specific JetBrains Mono styling */
 #generated-password {
-    font-family: 'IBM Plex Mono', 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important;
+    font-family: 'JetBrains Mono', 'IBM Plex Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important;
     font-weight: 500;
     letter-spacing: 0.05em;
     /* Debug: Add a subtle indicator to verify font is applied */
@@ -68,7 +68,7 @@ body {
     white-space: nowrap;
     font-size: 0.75rem;
     letter-spacing: 0.02em;
-    font-family: 'IBM Plex Mono', 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important;
+    font-family: 'JetBrains Mono', 'IBM Plex Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important;
     font-weight: 600;
     /* Debug: Add a subtle indicator to verify font is applied */
     text-shadow: 0 0 1px rgba(0,0,0,0.1);
@@ -76,7 +76,7 @@ body {
 
 /* Debug: Force JetBrains Mono on all monospace elements */
 .font-mono, code, pre {
-    font-family: 'IBM Plex Mono', 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important;
+    font-family: 'JetBrains Mono', 'IBM Plex Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important;
 }
 
 /* Navigation and menu font consistency */
@@ -201,7 +201,7 @@ i, .fas, .fa, .fa-solid, .fa-regular, .fa-bars, .fa-moon, .fa-sun, .fa-times, .f
 
 /* JetBrains Mono exceptions (keep these as monospace) */
 #generated-password, #strength-text, .font-mono, code, pre, [style*="font-family: monospace"] {
-    font-family: 'IBM Plex Mono', 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important;
+    font-family: 'JetBrains Mono', 'IBM Plex Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important;
 }
 
 /* Material Symbols icon font must win over span[class*="text-"] and header * font overrides */
