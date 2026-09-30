@@ -75,7 +75,7 @@ body {
 }
 
 /* Debug: Force JetBrains Mono on all monospace elements */
-.font-mono, code, pre, [class*="font-"] {
+.font-mono, code, pre {
     font-family: 'IBM Plex Mono', 'JetBrains Mono', 'Fira Code', 'Monaco', 'Consolas', 'Ubuntu Mono', monospace !important;
 }
 
