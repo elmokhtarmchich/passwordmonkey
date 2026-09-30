@@ -261,7 +261,7 @@ function init() {
                         width: 200,
                         height: 200,
                         colorDark: isDark ? '#ffffff' : '#000000',
-                        colorLight: isDark ? '#1f2937' : '#ffffff',
+                        colorLight: isDark ? '#242424' : '#ffffff',
                         correctLevel: QRCode.CorrectLevel.H
                     });
                 } catch (error) {
@@ -313,13 +313,6 @@ function init() {
     const isInitiallyDark = document.documentElement.classList.contains('dark');
     darkModeIcons.forEach((icon) => {
         icon.textContent = isInitiallyDark ? 'light_mode' : 'dark_mode';
-    });
-
-    // --- System Preference Listener ---
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-        if (localStorage.getItem('pm_dark') === null) {
-            setDarkMode(e.matches);
-        }
     });
 
     if (document.getElementById('generate-btn')) {
