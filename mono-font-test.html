@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mono Font Test &mdash; PasswordMonkey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    extend: {
+      colors: { canvas: "#181817", raised: "#202020", card: "#242424" },
+      fontFamily: { sans: ["Maax VIA", "IBM Plex Sans", "sans-serif"] }
+    }
+  };
+</script>
+<style>
+.sfmono{font-family:"SF Mono",Menlo,monospace}
+.jetbrains{font-family:"JetBrains Mono",monospace}
+.dejavu{font-family:"DejaVu Sans Mono",monospace}
+.roboto{font-family:"Roboto Mono",monospace}
+.plex{font-family:"IBM Plex Mono",monospace}
+@font-face{font-family:"DejaVu Sans Mono";src:url("https://cdn.jsdelivr.net/npm/dejavu-fonts-ttf@2.37.3/ttf/DejaVuSansMono.ttf") format("truetype");font-weight:400;font-display:swap}
+</style>
+</head>
+<body class="bg-canvas text-slate-300 min-h-screen p-6 md:p-10">
+<div class="max-w-4xl mx-auto">
+
+  <h1 class="text-xl font-bold text-slate-100">Monospace Font Test</h1>
+  <p class="text-xs text-slate-400">Temporary page &mdash; comparing candidates for the password display. Pick a winner.</p>
+
+  <div class="mt-6">
+
+    <div class="bg-card border border-[#333333] rounded-xl p-5 mb-4">
+      <div class="text-sm font-semibold text-slate-100">IBM Plex Mono <span class="text-xs font-normal text-slate-500">&mdash; current site font</span> <span class="mono-status text-xs text-slate-500 ml-2"></span></div>
+      <div data-sample data-name="IBM Plex Mono" data-web="1" class="plex text-2xl md:text-3xl tracking-wider text-slate-100 break-all mt-2">xK9#mQ2$vL8!pZ4@</div>
+      <div class="text-sm text-slate-400 mt-2 plex">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 !@#$%^&amp;*()_+-=[]{}|;:,.&lt;>?</div>
+      <pre class="text-xs text-slate-400 mt-2 plex">Entropy = L &times; log&#8322;(N)
+for (let i = 0; i &lt; length; i++) { pool[bytes[i] % pool.length] }</pre>
+    </div>
+
+    <div class="bg-card border border-[#333333] rounded-xl p-5 mb-4">
+      <div class="text-sm font-semibold text-slate-100">SF Mono <span class="text-xs font-normal text-slate-500">&mdash; system fallback on Windows (no webfont exists)</span> <span class="mono-status text-xs text-slate-500 ml-2"></span></div>
+      <div data-sample data-name="SF Mono" class="sfmono text-2xl md:text-3xl tracking-wider text-slate-100 break-all mt-2">xK9#mQ2$vL8!pZ4@</div>
+      <div class="text-sm text-slate-400 mt-2 sfmono">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 !@#$%^&amp;*()_+-=[]{}|;:,.&lt;>?</div>
+      <pre class="text-xs text-slate-400 mt-2 sfmono">Entropy = L &times; log&#8322;(N)
+for (let i = 0; i &lt; length; i++) { pool[bytes[i] % pool.length] }</pre>
+    </div>
+
+    <div class="bg-card border border-[#333333] rounded-xl p-5 mb-4">
+      <div class="text-sm font-semibold text-slate-100">JetBrains Mono <span class="mono-status text-xs text-slate-500 ml-2"></span></div>
+      <div data-sample data-name="JetBrains Mono" data-web="1" class="jetbrains text-2xl md:text-3xl tracking-wider text-slate-100 break-all mt-2">xK9#mQ2$vL8!pZ4@</div>
+      <div class="text-sm text-slate-400 mt-2 jetbrains">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 !@#$%^&amp;*()_+-=[]{}|;:,.&lt;>?</div>
+      <pre class="text-xs text-slate-400 mt-2 jetbrains">Entropy = L &times; log&#8322;(N)
+for (let i = 0; i &lt; length; i++) { pool[bytes[i] % pool.length] }</pre>
+    </div>
+
+    <div class="bg-card border border-[#333333] rounded-xl p-5 mb-4">
+      <div class="text-sm font-semibold text-slate-100">DejaVu Sans Mono <span class="text-xs font-normal text-slate-500">&mdash; via CDN webfont</span> <span class="mono-status text-xs text-slate-500 ml-2"></span></div>
+      <div data-sample data-name="DejaVu Sans Mono" data-web="1" class="dejavu text-2xl md:text-3xl tracking-wider text-slate-100 break-all mt-2">xK9#mQ2$vL8!pZ4@</div>
+      <div class="text-sm text-slate-400 mt-2 dejavu">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 !@#$%^&amp;*()_+-=[]{}|;:,.&lt;>?</div>
+      <pre class="text-xs text-slate-400 mt-2 dejavu">Entropy = L &times; log&#8322;(N)
+for (let i = 0; i &lt; length; i++) { pool[bytes[i] % pool.length] }</pre>
+    </div>
+
+    <div class="bg-card border border-[#333333] rounded-xl p-5 mb-4">
+      <div class="text-sm font-semibold text-slate-100">Roboto Mono <span class="mono-status text-xs text-slate-500 ml-2"></span></div>
+      <div data-sample data-name="Roboto Mono" data-web="1" class="roboto text-2xl md:text-3xl tracking-wider text-slate-100 break-all mt-2">xK9#mQ2$vL8!pZ4@</div>
+      <div class="text-sm text-slate-400 mt-2 roboto">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 !@#$%^&amp;*()_+-=[]{}|;:,.&lt;>?</div>
+      <pre class="text-xs text-slate-400 mt-2 roboto">Entropy = L &times; log&#8322;(N)
+for (let i = 0; i &lt; length; i++) { pool[bytes[i] % pool.length] }</pre>
+    </div>
+
+    <div class="bg-card border border-[#333333] rounded-xl p-5 mb-4">
+      <div class="text-sm font-semibold text-slate-100">System monospace baseline <span class="mono-status text-xs text-slate-500 ml-2"></span></div>
+      <div data-sample data-base="1" style="font-family:monospace" class="text-2xl md:text-3xl tracking-wider text-slate-100 break-all mt-2">xK9#mQ2$vL8!pZ4@</div>
+      <div style="font-family:monospace" class="text-sm text-slate-400 mt-2">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789 !@#$%^&amp;*()_+-=[]{}|;:,.&lt;>?</div>
+      <pre style="font-family:monospace" class="text-xs text-slate-400 mt-2">Entropy = L &times; log&#8322;(N)
+for (let i = 0; i &lt; length; i++) { pool[bytes[i] % pool.length] }</pre>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+document.fonts.ready.then(function () {
+  var SAMPLE = "xK9#mQ2$vL8!pZ4@";
+
+  function measureWidth(family) {
+    var s = document.createElement("span");
+    s.style.position = "absolute";
+    s.style.left = "-9999px";
+    s.style.top = "0";
+    s.style.whiteSpace = "pre";
+    s.style.fontSize = "24px";
+    s.style.fontFamily = family;
+    s.textContent = SAMPLE;
+    document.body.appendChild(s);
+    var w = s.getBoundingClientRect().width;
+    s.parentNode.removeChild(s);
+    return w;
+  }
+
+  var base = measureWidth("monospace");
+
+  Array.prototype.forEach.call(document.querySelectorAll("[data-sample]"), function (el) {
+    var status = el.parentNode.querySelector(".mono-status");
+    var stack = window.getComputedStyle(el).fontFamily;
+    var name = el.getAttribute("data-name");
+    var w = measureWidth(stack);
+    var differs = Math.abs(w - base) >= 1;
+    var text;
+    if (el.getAttribute("data-base")) {
+      text = "renders as: system monospace";
+    } else if (el.getAttribute("data-web")) {
+      var loaded = document.fonts.check("16px \"" + name + "\"");
+      text = (differs && loaded) ? ("renders as: " + name) : (name + " (fallback → system monospace)");
+    } else {
+      text = differs ? ("renders as: " + name) : (name + " (fallback → system monospace)");
+    }
+    status.textContent = text;
+  });
+});
+</script>
+</body>
+</html>
