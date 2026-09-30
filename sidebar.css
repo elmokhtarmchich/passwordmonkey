@@ -84,7 +84,7 @@
   gap: var(--sidebar-gap);
   color: var(--md-sys-color-on-surface);
   font-size: var(--sidebar-label-size);
-  font-family: 'IBM Plex Sans', 'Open Sans', 'Inter', system-ui, sans-serif;
+  font-family: 'Maax VIA', 'IBM Plex Sans', 'Open Sans', 'Inter', system-ui, sans-serif;
   text-decoration: none;
   border-radius: var(--sidebar-radius);
   transition: background 0.2s, color 0.2s;
@@ -129,7 +129,7 @@
   gap: var(--sidebar-gap);
   color: var(--md-sys-color-on-surface);
   font-size: var(--sidebar-label-size);
-  font-family: 'IBM Plex Sans', 'Open Sans', 'Inter', system-ui, sans-serif;
+  font-family: 'Maax VIA', 'IBM Plex Sans', 'Open Sans', 'Inter', system-ui, sans-serif;
   background: transparent; border: none;
   border-radius: var(--sidebar-radius);
   cursor: pointer; padding: 0 8px;
