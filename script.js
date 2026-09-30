@@ -211,11 +211,14 @@ function init() {
             const span = document.createElement('span');
             span.textContent = char;
             if (/[0-9]/.test(char)) {
-                span.style.color = '#fbbf24'; // amber digits
+                span.style.color = '#fcd34d'; // amber-300 digits
             } else if (!/[A-Za-z0-9]/.test(char)) {
-                span.style.color = '#f472b6'; // pink symbols
+                span.style.color = '#f472b6'; // pink-400 symbols
+            } else if (/[A-Z]/.test(char)) {
+                span.style.color = '#34d399'; // emerald-400 uppercase
+            } else {
+                span.style.color = '#7dd3fc'; // sky-300 lowercase
             }
-            // letters: no extra styling (inherit)
             generatedPasswordDiv.appendChild(span);
         }
     }
