@@ -105,7 +105,7 @@ function init() {
 
     // --- Service Worker Registration ---
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js');
+        navigator.serviceWorker.register('/service-worker.js');
     }
 
     // --- Character Sets ---

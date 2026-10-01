@@ -56,48 +56,7 @@
         }
     }
     </script>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
-    <!--#include virtual="/templates/navigation.html" -->
-    
-    <main class="news-container">
-        <h1>Latest News</h1>
-        <div class="articles-grid">
-            <!-- Articles will be dynamically inserted here by the build script -->
-        </div>
-    </main>
 
-    <!--#include virtual="/templates/footer.html" -->
-</body>
-</html>
-        "description": "Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.",
-        "url": "https://passwordmonkey.org/news/",
-        "mainEntity": {
-            "@type": "ItemList",
-            "name": "Password Security News Articles",
-            "description": "Collection of password security and cybersecurity news articles"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "PasswordMonkey",
-            "url": "https://passwordmonkey.org/",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://passwordmonkey.org/images/site_logo.png"
-            }
-        },
-        "author": {
-            "@type": "Organization",
-            "name": "PasswordMonkey",
-            "url": "https://passwordmonkey.org/"
-        }
-    }
-    </script>
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -105,9 +64,26 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['"Open Sans"', 'sans-serif'],
+                        sans: ['Maax VIA', 'IBM Plex Sans', 'Inter', 'Open Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'IBM Plex Mono', 'monospace'],
                     },
                     colors: {
+                        canvas: '#181817',
+                        raised: '#202020',
+                        card: '#242424',
+                        brand: {
+                            DEFAULT: '#42b8ff',
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#42b8ff',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
                         'blue-600': '#2563eb',
                         'blue-700': '#1d4ed8',
                         'gray-50': '#f9fafb',
@@ -118,67 +94,101 @@
                         'gray-600': '#4b5563',
                         'gray-700': '#374151',
                         'gray-800': '#1f2937',
+                        'gray-900': 'rgb(17 24 39)',
                     }
                 }
             }
         }
     </script>
+
+    <script>
+        // Initialize Dark Mode immediately to prevent flash (dark is the default when no preference is stored)
+        if (localStorage.getItem('pm_dark') === '1' || !('pm_dark' in localStorage)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="../fonts/maaxvia-400.otf" as="font" type="font/otf" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../sidebar.css">
     <link rel="shortcut icon" href="../favicon_io/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/svg+xml" href="../favicon_io/favicon.svg">
     <link rel="icon" type="image/png" sizes="96x96" href="../favicon_io/favicon-96x96.png">
     <link rel="manifest" href="../manifest.json">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9540362101494663"
      crossorigin="anonymous"></script>
     <script src="../script.js" defer></script>
     <script src="news-aggregator.js" defer></script>
 </head>
-<body class="bg-gray-50 dark:bg-gray-900 min-h-screen font-sans">
-    <header class="bg-white shadow-md dark:bg-gray-800">
-        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
-            <a href="../" class="flex items-center">
-                <i class="fas fa-lock text-blue-500 text-3xl mr-3"></i>
-                <div class="text-2xl font-bold text-gray-800 dark:text-gray-100">PasswordMonkey</div>
-            </a>
-            <div class="flex items-center">
-                <!-- Desktop Menu -->
-                <nav class="hidden md:flex space-x-4 items-center">
-                    <a href="../" class="text-gray-600 hover:text-blue-500 transition dark:text-gray-300 dark:hover:text-blue-400">Home</a>
-                    <a href="../faq" class="text-gray-600 hover:text-blue-500 transition dark:text-gray-300 dark:hover:text-blue-400">FAQ</a>
-                    <a href="../about" class="text-gray-600 hover:text-blue-500 transition dark:text-gray-300 dark:hover:text-blue-400">About</a>
-                    <a href="../privacy" class="text-gray-600 hover:text-blue-500 transition dark:text-gray-300 dark:hover:text-blue-400">Privacy</a>
-                    <a href="../donate" class="text-gray-600 hover:text-blue-500 transition dark:text-gray-300 dark:hover:text-blue-400">Donate</a>
-                    <a href="index.html" class="text-blue-600 font-semibold">News</a>
-                </nav>
+<body class="bg-gray-50 dark:bg-canvas min-h-screen font-sans">
+    <!--#include virtual="/templates/navigation.html" -->
 
-                <!-- Common Buttons -->
-                <button id="install-pwa-btn" class="hidden bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition ml-4" aria-label="Install App">
-                    <i class="fas fa-download mr-2"></i> Install
-                </button>
-                <button id="dark-mode-toggle" class="ml-4 text-gray-600 dark:text-gray-200 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition" aria-label="Toggle dark mode">
-                    <i id="dark-mode-icon" class="fas fa-moon text-2xl"></i>
-                </button>
+<aside class="sidebar" aria-label="Navigation">
+  <nav class="sidebar-nav" aria-label="Main navigation">
+    <a href="../">
+      <span class="material-symbols-outlined" aria-hidden="true">home</span>
+      <span>Home</span>
+    </a>
+    <a href="/faq">
+      <span class="material-symbols-outlined" aria-hidden="true">help</span>
+      <span>FAQ</span>
+    </a>
+    <a href="/about">
+      <span class="material-symbols-outlined" aria-hidden="true">info</span>
+      <span>About</span>
+    </a>
+    <a href="/privacy">
+      <span class="material-symbols-outlined" aria-hidden="true">privacy_tip</span>
+      <span>Privacy</span>
+    </a>
+    <a href="/donate">
+      <span class="material-symbols-outlined" aria-hidden="true">volunteer_activism</span>
+      <span>Donate</span>
+    </a>
+    <a href="/news/" class="active" aria-current="page">
+      <span class="material-symbols-outlined" aria-hidden="true">article</span>
+      <span>News</span>
+    </a>
+  </nav>
+  <div class="sidebar-actions">
+    <button id="install-pwa-btn" data-install-pwa-btn class="hidden" aria-label="Install App">
+      <span class="material-symbols-outlined" aria-hidden="true">download</span>
+      <span>Install</span>
+    </button>
+  </div>
+</aside>
 
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="ml-4 md:hidden text-gray-600 dark:text-gray-200 p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
-            </div>
+<!-- RIGHT COLUMN -->
+<div class="content-wrapper">
+  <!-- M3 Top App Bar (subpage variant: no quick-copy button) -->
+  <header class="sticky top-0 z-30 h-16 px-4 md:px-8 flex items-center justify-between bg-white dark:bg-raised backdrop-blur-md border-b border-neutral-200 dark:border-[#2e2e2e] transition-all">
+    <div class="flex items-center gap-3">
+      <a href="/" class="flex items-center gap-2">
+        <img src="../favicon_io/favicon-96x96.png" alt="PasswordMonkey logo" width="36" height="36" class="h-9 w-9 shrink-0">
+        <h1 class="text-base sm:text-lg font-bold title-font tracking-tight">PasswordMonkey<span class="hidden sm:inline-flex items-center bg-green-100 text-green-800 text-xs font-semibold ml-2 px-2 py-0.5 rounded-full dark:bg-green-200 dark:text-green-900">.org</span></h1>
+      </a>
+    </div>
+    <div class="flex items-center gap-2">
+      <button type="button" data-dark-mode-toggle aria-label="Toggle dark mode" class="p-2 text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white hover:bg-neutral-100 dark:hover:bg-[#2b2b2b] rounded-full transition-colors active:scale-95">
+        <span class="material-symbols-outlined text-xl" data-dark-mode-icon aria-hidden="true">dark_mode</span>
+      </button>
+    </div>
+  </header>
+
+    <main class="news-container">
+        <h1>Latest News</h1>
+        <div class="articles-grid">
+            <!-- Articles will be dynamically inserted here by the build script -->
         </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 shadow-md">
-            <a href="../" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Home</a>
-            <a href="../faq" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">FAQ</a>
-            <a href="../about" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">About</a>
-            <a href="../privacy" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Privacy</a>
-            <a href="../donate" class="block py-2 px-4 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700">Donate</a>
-            <a href="index.html" class="block py-2 px-4 text-sm text-blue-600 font-semibold bg-blue-50 dark:bg-blue-900/20">News</a>
-        </div>
-    </header>
+    </main>
 
-    <main class="container mx-auto px-4 py-8 bg-gray-50 dark:bg-gray-900">
+    <main class="container mx-auto px-4 py-8 bg-gray-50 dark:bg-canvas">
         <div class="max-w-6xl mx-auto">
             <!-- Breadcrumb Navigation -->
             <nav class="mb-6 text-sm text-gray-600 dark:text-gray-400">
@@ -201,7 +211,7 @@
 
             <!-- Search and Filter Section -->
             <section class="mb-8">
-                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+                <div class="bg-white dark:bg-card rounded-lg shadow-md p-6">
                     <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
                         <div class="flex-1 max-w-md">
                             <label for="news-search" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
@@ -212,7 +222,7 @@
                                     type="text" 
                                     id="news-search" 
                                     placeholder="Search for articles, keywords, or topics..."
-                                    class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100 dark:placeholder-gray-400"
+                                    class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-raised dark:border-[#454545] dark:text-gray-100 dark:placeholder-gray-400"
                                 >
                                 <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
                             </div>
@@ -242,7 +252,7 @@
                 <div id="news-list" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                     <!-- Article Template -->
                     <template id="article-template">
-                        <article class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+                        <article class="bg-white dark:bg-card rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                             <div class="p-6">
                                 <h2 class="text-xl font-bold text-gray-800 dark:text-gray-100 mb-2 line-clamp-2">
                                     <a href="#" class="hover:text-blue-600 dark:hover:text-blue-400"></a>
@@ -308,7 +318,7 @@
             <section class="mt-16">
                 <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6 text-center">Quick Links</h2>
                 <div class="grid md:grid-cols-3 gap-6">
-                    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
+                    <div class="bg-white dark:bg-card rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
                         <i class="fas fa-lock text-3xl text-blue-600 mb-4"></i>
                         <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Password Generator</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-4">Create strong, secure passwords instantly</p>
@@ -317,7 +327,7 @@
                         </a>
                     </div>
                     
-                    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
+                    <div class="bg-white dark:bg-card rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
                         <i class="fas fa-question-circle text-3xl text-blue-600 mb-4"></i>
                         <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Security FAQ</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-4">Get answers to common security questions</p>
@@ -326,7 +336,7 @@
                         </a>
                     </div>
                     
-                    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
+                    <div class="bg-white dark:bg-card rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow">
                         <i class="fas fa-book text-3xl text-blue-600 mb-4"></i>
                         <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">Security Guide</h3>
                         <p class="text-gray-600 dark:text-gray-400 mb-4">Learn password security best practices</p>
@@ -377,6 +387,7 @@
             </div>
         </div>
     </footer>
+    <!--#include virtual="/templates/footer.html" -->
+</div>
 </body>
 </html>
-
