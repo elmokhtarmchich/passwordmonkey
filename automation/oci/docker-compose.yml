@@ -1,0 +1,43 @@
+# PasswordMonkey n8n — Oracle Cloud Always Free VM (Ampere A1)
+# n8n binds to 127.0.0.1 only; reach the UI through the SSH tunnel (RUNBOOK.md, Part C).
+# State (SQLite DB + encrypted credentials) persists in the named volume below.
+
+services:
+  n8n:
+    image: ${N8N_IMAGE:-n8nio/n8n:latest}
+    container_name: n8n
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:5678:5678"
+    environment:
+      # Required — encrypts stored credentials at rest. Lives in .env (git-ignored).
+      - N8N_ENCRYPTION_KEY=${N8N_ENCRYPTION_KEY}
+      # Deny $env / process.env access inside nodes so workflow code cannot read the key above.
+      - N8N_BLOCK_ENV_ACCESS_IN_NODE=true
+      # Timezone that anchors the Cron trigger's "every 6 hours" schedule.
+      - GENERIC_TIMEZONE=${GENERIC_TIMEZONE:-Africa/Casablanca}
+      # UI is served on localhost via the SSH tunnel.
+      - N8N_HOST=localhost
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      # Run Code-node JavaScript in isolated task runners (recommended self-host hardening);
+      # toggleable from .env for troubleshooting.
+      - N8N_RUNNERS_ENABLED=${N8N_RUNNERS_ENABLED:-true}
+      # Keep session cookies HTTPS-only. localhost over the tunnel is a secure context in
+      # current browsers; set to false in .env only if login loops (see RUNBOOK.md).
+      - N8N_SECURE_COOKIE=${N8N_SECURE_COOKIE:-true}
+      # Disable n8n product telemetry.
+      - N8N_DIAGNOSTICS_ENABLED=false
+    # Cap container logs: the VM runs unattended and unbounded json-file logs
+    # would eventually fill the boot volume.
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    volumes:
+      - n8n_data:/home/node/.n8n
+
+volumes:
+  n8n_data:
+    name: n8n_data
