@@ -4,12 +4,18 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Thu, 08 Oct 2026 15:01:51 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 22:40:38 GMT</lastBuildDate>
     <item>
       <title>16 Malicious Firefox Extensions Pose as Rabby and OKX Wallets to Steal Recovery Phrases | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-08-16-malicious-firefox-extensions-pose-as-rabby-and--0a0a43.html</link>
       <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
       <description>Cybersecurity researchers have discovered a cluster of 16 malicious Mozilla Firefox extensions that are capable of stealing cryptocurrency wallet recovery phras</description>
+    </item>
+    <item>
+      <title>ARTEX AI Pentesting Tool Used in Data Theft Attacks on South Korean Financial Firms | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-08-artex-ai-pentesting-tool-used-in-data-theft-attack-50bd0e.html</link>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of a targeted campaign aimed at South Korean financial organizations that used an artificial intelligence (AI)</description>
     </item>
     <item>
       <title>Asos confirms breach of customer data after hackers send rogue app notification | Password Monkey</title>
@@ -22,6 +28,18 @@
       <link>https://passwordmonkey.org/news/2026-10-08-asos-links-data-breach-to-social-engineering-attac-e7ebdb.html</link>
       <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
       <description>ASOS is sending updates to affected customers about the cybersecurity incident it suffered earlier this week, confirming that hackers accessed some personal dat</description>
+    </item>
+    <item>
+      <title>FBI disrupts Chinese hacking tools used to breach critical infrastructure | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-08-fbi-disrupts-chinese-hacking-tools-used-to-breach--00e313.html</link>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The FBI has seized seven domains used by Chinese state-sponsored hackers known as Flax Typhoon to operate two hacking tools, MicroScan and FishHub, used in atta</description>
+    </item>
+    <item>
+      <title>FBI Says China-Linked Hackers Ran Portal Giving Third Parties Access to Stolen Emails | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-08-fbi-says-china-linked-hackers-ran-portal-giving-th-92f369.html</link>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Hackers tied to a Chinese cybersecurity company stole email from government organizations, law enforcement agencies, healthcare systems, and religious instituti</description>
     </item>
     <item>
       <title>OAuth grants pile up faster than you can review them. Here&apos;s how to keep up. | Password Monkey</title>
@@ -49,6 +67,18 @@ The post Rein Security Raises $25 Million to Guard A</description>
       <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
       <description>Critical and high-severity vulnerabilities could allow attackers to bypass authentication, execute arbitrary code, and elevate their privileges.
 The post SonicW</description>
+    </item>
+    <item>
+      <title>Two Latvian men arrested inside UK military base after breach | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-08-two-latvian-men-arrested-inside-uk-military-base-a-da0917.html</link>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Police say nothing so far suggests the incident at RAF Molesworth linked ​to events surrounding RAF Fairford last month.</description>
+    </item>
+    <item>
+      <title>UAC-0099 Targets Ukrainian Government Personnel With ASHVEIN RAT Hiding Commands in HTML | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-08-uac-0099-targets-ukrainian-government-personnel-wi-7624a7.html</link>
+      <pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The Russia-aligned threat actor known as UAC-0099 has been attributed to a previously undocumented .NET infostealer and remote access trojan (RAT) codenamed ASH</description>
     </item>
     <item>
       <title>Advantest Discloses Data Breach Months After Ransomware Attack | Password Monkey</title>
@@ -610,18 +640,6 @@ Cybersecurity is being reshaped by the expansion of cloud infrastructure, AI, di
       <description>Why Video Game Anti-Cheat Systems Are a Cybersecurity Goldmine</description>
     </item>
     <item>
-      <title>[Article Title] | Password Monkey</title>
-      <link>https://passwordmonkey.org/news/article-template.html</link>
-      <pubDate>Invalid Date</pubDate>
-      <description>[Meta Description]</description>
-    </item>
-    <item>
-      <title>Secure Password Strategies for 2025 | Password Monkey | Test</title>
-      <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
-      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
-      <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
-    </item>
-    <item>
       <title>Strong password trends in 2025 | Password Monkey | Testing 456</title>
       <link>https://passwordmonkey.org/news/2025-08-10-strong-password-trends-2025.html</link>
       <pubDate>Sun, 10 Aug 2025 00:00:00 GMT</pubDate>
@@ -644,6 +662,18 @@ Cybersecurity is being reshaped by the expansion of cloud infrastructure, AI, di
       <link>https://passwordmonkey.org/news/2022-08-29-tentacles-of-0ktapus-threat-group-victimize-130-fi-b4e51b.html</link>
       <pubDate>Mon, 29 Aug 2022 00:00:00 GMT</pubDate>
       <description>Over 130 companies tangled in sprawling phishing campaign that spoofed a multi-factor authentication system.</description>
+    </item>
+    <item>
+      <title>[Article Title] | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/article-template.html</link>
+      <pubDate>Invalid Date</pubDate>
+      <description>[Meta Description]</description>
+    </item>
+    <item>
+      <title>Secure Password Strategies for 2025 | Password Monkey | Test</title>
+      <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
     </item>
   </channel>
 </rss>

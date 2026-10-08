@@ -7,6 +7,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://passwordmonkey.org/news/2026-10-08-artex-ai-pentesting-tool-used-in-data-theft-attack-50bd0e.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://passwordmonkey.org/news/2026-10-08-asos-confirms-breach-of-customer-data-after-hacker-91bce0.html</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
@@ -14,6 +20,18 @@
   </url>
   <url>
     <loc>https://passwordmonkey.org/news/2026-10-08-asos-links-data-breach-to-social-engineering-attac-e7ebdb.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-10-08-fbi-disrupts-chinese-hacking-tools-used-to-breach--00e313.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-10-08-fbi-says-china-linked-hackers-ran-portal-giving-th-92f369.html</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -38,6 +56,18 @@
   </url>
   <url>
     <loc>https://passwordmonkey.org/news/2026-10-08-sonicwall-and-splunk-patch-critical-vulnerabilitie-b55507.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-10-08-two-latvian-men-arrested-inside-uk-military-base-a-da0917.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-10-08-uac-0099-targets-ukrainian-government-personnel-wi-7624a7.html</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -595,18 +625,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://passwordmonkey.org/news/article-template.html</loc>
-    <lastmod>NaN-NaN-NaN</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://passwordmonkey.org/news/secure-password-strategies-2025.html</loc>
-    <lastmod>2025-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://passwordmonkey.org/news/2025-08-10-strong-password-trends-2025.html</loc>
     <lastmod>2025-08-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -627,6 +645,18 @@
   <url>
     <loc>https://passwordmonkey.org/news/2022-08-29-tentacles-of-0ktapus-threat-group-victimize-130-fi-b4e51b.html</loc>
     <lastmod>2022-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/article-template.html</loc>
+    <lastmod>NaN-NaN-NaN</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/secure-password-strategies-2025.html</loc>
+    <lastmod>2025-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
