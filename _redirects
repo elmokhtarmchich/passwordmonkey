@@ -1,0 +1,7 @@
+# PasswordMonkey — Cloudflare Pages redirect rules (server-side 301s for known-bad URLs in the wild).
+# The root 404.html (hash-suffix recovery + News CTA) catches everything not enumerated here.
+# %E2%80%A6 below is the percent-encoded form of the ellipsis character (…) — cover both forms.
+
+/news/2026-10-08-sonicwall-%E2%80%A6-b55507.html /news/2026-10-08-sonicwall-and-splunk-patch-critical-vulnerabilitie-b55507.html 301
+/news/2026-10-08-sonicwall-…-b55507.html /news/2026-10-08-sonicwall-and-splunk-patch-critical-vulnerabilitie-b55507.html 301
+/news/2026-10-08-sonicwall-...-b55507.html /news/2026-10-08-sonicwall-and-splunk-patch-critical-vulnerabilitie-b55507.html 301
