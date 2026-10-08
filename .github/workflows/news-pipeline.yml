@@ -1,0 +1,40 @@
+﻿name: News Pipeline
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news-pipeline
+  cancel-in-progress: false
+
+jobs:
+  news-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run news pipeline
+        run: node automation/actions/news-pipeline.mjs
+
+      - name: Update manifest and XML feeds
+        run: |
+          node scripts/update-manifest.js
+          node scripts/generate-news-xml.js
+          git add news/
+          git diff --staged --quiet || git commit -m "chore(news): auto-update manifest and XML feeds"
+          git push origin HEAD:${{ github.ref_name }}
