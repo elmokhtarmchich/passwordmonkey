@@ -516,7 +516,9 @@ async function main() {
   console.log(`committed and pushed ${wouldCreate.length} article(s) to ${targetRef}`);
 }
 
-main().catch((err) => {
-  console.error("pipeline error:", err);
-  process.exit(1);
-});
+main()
+  .then(() => process.exit(0))
+  .catch((err) => {
+    console.error("pipeline error:", err);
+    process.exit(1);
+  });
