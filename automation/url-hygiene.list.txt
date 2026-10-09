@@ -6,3 +6,5 @@
 # Lines starting with # are ignored.
 
 https://passwordmonkey.org/news/2026-10-08-sonicwall-%E2%80%A6-b55507.html
+https://passwordmonkey.org/news/2026-10-08-sonicwall-splunkk-typo-b55507.html
+https://passwordmonkey.org/news/this-url-does-not-exist-test
