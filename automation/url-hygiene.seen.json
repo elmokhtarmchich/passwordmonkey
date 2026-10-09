@@ -3,15 +3,5 @@
     "action": "already-redirected",
     "first": "2026-10-09T11:54:54.356Z",
     "last": "2026-10-09T11:54:54.356Z"
-  },
-  "https://passwordmonkey.org/news/2026-10-08-sonicwall-splunkk-typo-b55507.html": {
-    "action": "redirected",
-    "first": "2026-10-09T14:01:41.745Z",
-    "last": "2026-10-09T14:01:41.745Z"
-  },
-  "https://passwordmonkey.org/news/this-url-does-not-exist-test": {
-    "action": "pinged-404",
-    "first": "2026-10-09T14:01:41.745Z",
-    "last": "2026-10-09T14:01:41.745Z"
   }
 }
