@@ -1,0 +1,8 @@
+# URL hygiene manual watch list - one absolute URL per line.
+# Processed by automation/actions/url-hygiene.mjs on every run (daily 07:00 UTC + manual dispatch).
+# Each URL is handled once: a recoverable /news/ path gets a 301 appended to _redirects,
+# every bad URL is pinged via IndexNow (Bing/Yandex/Naver/Seznam) so crawlers re-fetch it,
+# see the 301/404, and de-index it. History is kept in automation/url-hygiene.seen.json.
+# Lines starting with # are ignored.
+
+https://passwordmonkey.org/news/2026-10-08-sonicwall-%E2%80%A6-b55507.html
