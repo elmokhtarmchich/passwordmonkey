@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://passwordmonkey.org/news/2026-10-09-openai-doubles-down-on-decision-to-fire-three-ai-s-d55dd9.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-10-09-unpatched-ahsaycbs-vulnerabilities-exploited-in-th-ff63f5.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://passwordmonkey.org/news/2026-10-08-16-malicious-firefox-extensions-pose-as-rabby-and--0a0a43.html</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>

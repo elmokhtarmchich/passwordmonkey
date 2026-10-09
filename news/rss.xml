@@ -4,7 +4,20 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Fri, 09 Oct 2026 03:45:37 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 12:19:09 GMT</lastBuildDate>
+    <item>
+      <title>OpenAI doubles down on decision to fire three AI safety researchers | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-09-openai-doubles-down-on-decision-to-fire-three-ai-s-d55dd9.html</link>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>OpenAI is standing firm on its decision to fire three safety researchers after an investigation found they committed</description>
+    </item>
+    <item>
+      <title>Unpatched AhsayCBS Vulnerabilities Exploited in the Wild | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-09-unpatched-ahsaycbs-vulnerabilities-exploited-in-th-ff63f5.html</link>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The flaws, CVE-2026-105133 and CVE-2026-105134, allow attackers to bypass authentication and inject OS commands.
+The post Unpatched AhsayCBS Vulnerabilities Exp</description>
+    </item>
     <item>
       <title>16 Malicious Firefox Extensions Pose as Rabby and OKX Wallets to Steal Recovery Phrases | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-08-16-malicious-firefox-extensions-pose-as-rabby-and--0a0a43.html</link>
