@@ -99,3 +99,11 @@ body.kilo-home main article > a {
     font-family: var(--kilo-accent) !important;
     font-weight: 600 !important;
 }
+
+.title-font.title-font {
+    font-family: var(--kilo-display) !important;
+}
+
+.title-font.title-font > span {
+    font-family: var(--kilo-accent) !important;
+}
