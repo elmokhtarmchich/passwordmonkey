@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://passwordmonkey.org/news/2026-10-10-fbi-arrests-founder-of-ransomware-negotiation-firm-9d4120.html</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://passwordmonkey.org/news/2026-10-09-ai-scramble-drives-cybersecurity-mampa-boom-68addb.html</loc>
     <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -685,6 +691,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://passwordmonkey.org/news/article-template.html</loc>
+    <lastmod>NaN-NaN-NaN</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/secure-password-strategies-2025.html</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://passwordmonkey.org/news/2025-08-10-strong-password-trends-2025.html</loc>
     <lastmod>2025-08-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -705,18 +723,6 @@
   <url>
     <loc>https://passwordmonkey.org/news/2022-08-29-tentacles-of-0ktapus-threat-group-victimize-130-fi-b4e51b.html</loc>
     <lastmod>2022-08-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://passwordmonkey.org/news/article-template.html</loc>
-    <lastmod>NaN-NaN-NaN</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://passwordmonkey.org/news/secure-password-strategies-2025.html</loc>
-    <lastmod>2025-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
