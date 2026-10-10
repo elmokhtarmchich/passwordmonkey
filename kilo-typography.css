@@ -1,0 +1,101 @@
+:root {
+    --kilo-mono: 'JetBrains Mono', 'Geist Mono', 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', 'Consolas', monospace;
+    --kilo-display: 'Hanken Grotesk', 'Inter', 'Open Sans', -apple-system, 'Segoe UI', sans-serif;
+    --kilo-accent: 'Geist Mono', 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', 'Consolas', monospace;
+}
+
+* {
+    font-family: var(--kilo-mono) !important;
+}
+
+body, main, section, div, p, h1, h2, h3, h4, h5, h6, span, a, label, li, ol, ul, summary, button, article, details, footer, header, nav, aside {
+    font-family: var(--kilo-mono) !important;
+}
+
+.ml-3, label span, .text-gray-700, .text-gray-300, [class*="ml-"], label *, span[class*="text-"] {
+    font-family: var(--kilo-mono) !important;
+}
+
+header *, nav *, .glass-box * {
+    font-family: var(--kilo-mono) !important;
+}
+
+main p, main p[class], main p strong, main p em, main p b, main p small, main li, main li[class], main li span, main li span[class], main li strong, main li em, main li b, main li small, main summary, main summary[class], main summary strong, main details > div, main details > div[class], main details > div strong, main details > div em, main label, main label[class], main label span.font-medium, footer p, footer p[class], footer p strong, #qr-code-modal p {
+    font-family: var(--kilo-display) !important;
+}
+
+header nav a, header nav a[class], #mobile-menu a, #mobile-menu a[class], .sidebar-nav a, .sidebar-actions button {
+    font-family: var(--kilo-display) !important;
+}
+
+main h1, main h1[class] {
+    font-family: var(--kilo-accent) !important;
+    letter-spacing: -0.025em !important;
+}
+
+main h2, main h2[class] {
+    font-family: var(--kilo-mono) !important;
+    font-weight: 800 !important;
+}
+
+main section h3, main section h3[class] {
+    font-family: var(--kilo-mono) !important;
+    font-weight: 800 !important;
+}
+
+main h4, main h4[class], #qr-code-modal h3 {
+    font-family: var(--kilo-display) !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.025em !important;
+}
+
+span.font-mono, main li span.font-mono, code, pre, .glass-box .scan-title, #length-value, footer nav a {
+    font-family: var(--kilo-accent) !important;
+}
+
+main a[href="/donate"] {
+    font-family: var(--kilo-accent) !important;
+    letter-spacing: 0.05em !important;
+}
+
+body.kilo-home main h2 {
+    font-family: var(--kilo-accent) !important;
+    font-size: clamp(1.75rem, 5.4vw, 60px) !important;
+    font-weight: 500 !important;
+    line-height: 1.05 !important;
+    letter-spacing: -0.025em !important;
+}
+
+body.kilo-home main div[class*="uppercase"] {
+    font-family: var(--kilo-accent) !important;
+    font-weight: 700 !important;
+}
+
+body.kilo-home main article > a {
+    font-family: var(--kilo-accent) !important;
+    letter-spacing: 0.05em !important;
+}
+
+#generate-btn, #qr-code-btn, .copy-btn {
+    font-family: var(--kilo-accent) !important;
+}
+
+#generate-btn {
+    font-weight: 700 !important;
+    letter-spacing: 0.05em !important;
+}
+
+#qr-code-btn {
+    letter-spacing: 0.05em !important;
+}
+
+#generated-password {
+    font-family: var(--kilo-accent) !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.025em !important;
+}
+
+#strength-text {
+    font-family: var(--kilo-accent) !important;
+    font-weight: 600 !important;
+}

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pm-cache-v14';
+const CACHE_NAME = 'pm-cache-v15';
 const ASSETS = [
   '/',
   'index.html',
@@ -7,6 +7,7 @@ const ASSETS = [
   'donate.html',
   'password-security-guide.html',
   'style.css',
+  'kilo-typography.css',
   'script.js',
   'manifest.json',
   'fonts/OpenSans.ttf',
