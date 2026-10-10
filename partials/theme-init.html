@@ -1,0 +1,8 @@
+    <script>
+        // Initialize Dark Mode immediately to prevent flash (dark is the default when no preference is stored)
+        if (localStorage.getItem('pm_dark') === '1' || !('pm_dark' in localStorage)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>

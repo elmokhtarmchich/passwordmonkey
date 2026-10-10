@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Local development server for PasswordMonkey",
   "scripts": {
-    "start": "lite-server"
+    "start": "lite-server",
+    "build": "node scripts/build.mjs"
   },
   "devDependencies": {
     "lite-server": "^2.6.1"
