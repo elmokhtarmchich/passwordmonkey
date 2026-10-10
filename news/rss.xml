@@ -4,12 +4,60 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Fri, 09 Oct 2026 12:19:09 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 22:02:09 GMT</lastBuildDate>
+    <item>
+      <title>AI Scramble Drives Cybersecurity M&amp;amp;A Boom | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-09-ai-scramble-drives-cybersecurity-mampa-boom-68addb.html</link>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Welcome to another gangbuster year for strategic M&amp;A activity in cyber, with 117 deals announced in the latest quarter. What</description>
+    </item>
+    <item>
+      <title>ASOS Breach Reveals the Risks in Customer-Facing SaaS | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-09-asos-breach-reveals-the-risks-in-customer-facing-s-7d8a7b.html</link>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The attack on the British retailer shows that compromising a single identity can lead to much deeper penetration of the corporate network.</description>
+    </item>
+    <item>
+      <title>Attackers Exploit AhsayCBS Flaws to Deploy XMRig Miners Disguised as Microsoft Edge | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-09-attackers-exploit-ahsaycbs-flaws-to-deploy-xmrig-m-d33e86.html</link>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Threat actors have been observed exploiting two recently disclosed flaws in the AhsayCBS backup utility to seize control of affected devices and deploy web shel</description>
+    </item>
+    <item>
+      <title>Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-09-credential-stealing-github-actions-workflows-plant-bf8959.html</link>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of an ongoing credential-theft campaign that has compromised two high-profile open-source maintainer accounts t</description>
+    </item>
+    <item>
+      <title>FBI arrests another suspected ShinyHunters hacker after agency breach | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-09-fbi-arrests-another-suspected-shinyhunters-hacker--257855.html</link>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The FBI has arrested another suspected member of the ShinyHunters extortion group believed to be involved in the recent breach of FBI systems, Director Kash Pat</description>
+    </item>
+    <item>
+      <title>Flax Typhoon Exploits Five Flaws as CISA Sets October 11 Deadline for Federal Agencies | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-09-flax-typhoon-exploits-five-flaws-as-cisa-sets-octo-d96e6f.html</link>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added five security flaws to its Known Exploited Vulnerabilities (KEV) catalog, fol</description>
+    </item>
     <item>
       <title>OpenAI doubles down on decision to fire three AI safety researchers | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-09-openai-doubles-down-on-decision-to-fire-three-ai-s-d55dd9.html</link>
       <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
       <description>OpenAI is standing firm on its decision to fire three safety researchers after an investigation found they committed</description>
+    </item>
+    <item>
+      <title>P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-09-p7-darksword-ios-exploit-kit-adds-crypto-wallet-da-2d8b2a.html</link>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of a previously unseen variant of the DarkSword iOS exploit kit called P7 DarkSword.</description>
+    </item>
+    <item>
+      <title>Researchers Publish Working Exploit for Pre-Auth AnyDesk Linux Flaw That Gives Root Access | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-09-researchers-publish-working-exploit-for-pre-auth-a-b8e2f3.html</link>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Security researchers have published a full working exploit for a pre-authentication remote code execution flaw in AnyDesk Linux that gives attackers root access</description>
     </item>
     <item>
       <title>Unpatched AhsayCBS Vulnerabilities Exploited in the Wild | Password Monkey</title>
