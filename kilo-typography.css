@@ -1,6 +1,6 @@
 :root {
-    --kilo-mono: 'Geist Mono', 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', 'Consolas', monospace;
-    --kilo-display: 'Geist Mono', 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', 'Consolas', monospace;
+    --kilo-mono: 'JetBrains Mono', 'Geist Mono', 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', 'Consolas', monospace;
+    --kilo-display: 'Hanken Grotesk', 'Inter', 'Open Sans', -apple-system, 'Segoe UI', sans-serif;
     --kilo-accent: 'Geist Mono', 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', 'Consolas', monospace;
 }
 
