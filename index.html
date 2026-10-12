@@ -242,68 +242,76 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <span class="font-mono text-xs text-slate-400 dark:text-slate-500 font-medium">50</span>
           </div>
         </div>
-        <!-- Character Options Toggles (M3 Switches) -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <label class="flex items-center justify-between p-3.5 bg-neutral-50 dark:bg-raised rounded-lg border border-neutral-200 dark:border-[#333333] hover:border-sky-300 dark:hover:border-sky-700 cursor-pointer transition-colors">
-            <div class="flex flex-col">
-              <span class="font-medium text-sm text-slate-800 dark:text-slate-200">Uppercase Letters</span>
-              <span class="font-mono text-xs text-slate-500 dark:text-slate-400 tracking-wider">A-Z</span>
-            </div>
-            <div class="relative inline-flex items-center">
-              <input checked class="sr-only peer" id="uppercase" type="checkbox">
-              <div class="w-11 h-6 bg-slate-300 dark:bg-slate-600 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-sky-500"></div>
-            </div>
-          </label>
-          <label class="flex items-center justify-between p-3.5 bg-neutral-50 dark:bg-raised rounded-lg border border-neutral-200 dark:border-[#333333] hover:border-sky-300 dark:hover:border-sky-700 cursor-pointer transition-colors">
-            <div class="flex flex-col">
-              <span class="font-medium text-sm text-slate-800 dark:text-slate-200">Lowercase Letters</span>
-              <span class="font-mono text-xs text-slate-500 dark:text-slate-400 tracking-wider">a-z</span>
-            </div>
-            <div class="relative inline-flex items-center">
-              <input checked class="sr-only peer" id="lowercase" type="checkbox">
-              <div class="w-11 h-6 bg-slate-300 dark:bg-slate-600 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-sky-500"></div>
-            </div>
-          </label>
-          <label class="flex items-center justify-between p-3.5 bg-neutral-50 dark:bg-raised rounded-lg border border-neutral-200 dark:border-[#333333] hover:border-sky-300 dark:hover:border-sky-700 cursor-pointer transition-colors">
-            <div class="flex flex-col">
-              <span class="font-medium text-sm text-slate-800 dark:text-slate-200">Numbers</span>
-              <span class="font-mono text-xs text-slate-500 dark:text-slate-400 tracking-wider">0-9</span>
-            </div>
-            <div class="relative inline-flex items-center">
-              <input checked class="sr-only peer" id="numbers" type="checkbox">
-              <div class="w-11 h-6 bg-slate-300 dark:bg-slate-600 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-sky-500"></div>
-            </div>
-          </label>
-          <label class="flex items-center justify-between p-3.5 bg-neutral-50 dark:bg-raised rounded-lg border border-neutral-200 dark:border-[#333333] hover:border-sky-300 dark:hover:border-sky-700 cursor-pointer transition-colors">
-            <div class="flex flex-col">
-              <span class="font-medium text-sm text-slate-800 dark:text-slate-200">Special Symbols</span>
-              <span class="font-mono text-xs text-slate-500 dark:text-slate-400 tracking-wider">!@#$%^&amp;*()_+-=</span>
-            </div>
-            <div class="relative inline-flex items-center">
-              <input checked class="sr-only peer" id="symbols" type="checkbox">
-              <div class="w-11 h-6 bg-slate-300 dark:bg-slate-600 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-sky-500"></div>
-            </div>
-          </label>
-          <label class="flex items-center justify-between p-3.5 bg-neutral-50 dark:bg-raised rounded-lg border border-neutral-200 dark:border-[#333333] hover:border-sky-300 dark:hover:border-sky-700 cursor-pointer transition-colors">
-            <div class="flex flex-col">
-              <span class="font-medium text-sm text-slate-800 dark:text-slate-200">Exclude Ambiguous</span>
-              <span class="font-mono text-xs text-slate-500 dark:text-slate-400 tracking-wider">i l 1 | O 0</span>
-            </div>
-            <div class="relative inline-flex items-center">
-              <input class="sr-only peer" id="exclude-ambiguous" type="checkbox">
-              <div class="w-11 h-6 bg-slate-300 dark:bg-slate-600 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-sky-500"></div>
-            </div>
-          </label>
-          <label class="flex items-center justify-between p-3.5 bg-neutral-50 dark:bg-raised rounded-lg border border-neutral-200 dark:border-[#333333] hover:border-sky-300 dark:hover:border-sky-700 cursor-pointer transition-colors">
-            <div class="flex flex-col">
-              <span class="font-medium text-sm text-slate-800 dark:text-slate-200">Exclude Similar Characters</span>
-              <span class="font-mono text-xs text-slate-500 dark:text-slate-400 tracking-wider">0 O o l 1</span>
-            </div>
-            <div class="relative inline-flex items-center">
-              <input class="sr-only peer" id="exclude-similar" type="checkbox">
-              <div class="w-11 h-6 bg-slate-300 dark:bg-slate-600 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-sky-500"></div>
-            </div>
-          </label>
+        <!-- Character Options: Seamless 2x3 Tile Block -->
+        <div role="group" aria-label="Character options" class="bg-neutral-50 dark:bg-raised rounded-xl border border-neutral-200 dark:border-[#333333] overflow-hidden">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+            <!-- Tile 1: Uppercase -->
+            <label class="pw-tile relative flex items-center justify-between gap-3 p-4 cursor-pointer select-none border-b border-neutral-200 dark:border-[#333333] md:border-r">
+              <input checked class="sr-only" id="uppercase" type="checkbox">
+              <div class="pr-3 min-w-0">
+                <div class="tile-title text-xs sm:text-sm font-semibold">Uppercase Letters</div>
+                <div class="tile-sub font-mono text-xs mt-0.5">A-Z</div>
+              </div>
+              <div class="toggle-pill w-11 h-6 rounded-full p-0.5 flex items-center shrink-0">
+                <div class="toggle-knob w-5 h-5 bg-white rounded-full shadow-md"></div>
+              </div>
+            </label>
+            <!-- Tile 2: Lowercase -->
+            <label class="pw-tile relative flex items-center justify-between gap-3 p-4 cursor-pointer select-none border-b border-neutral-200 dark:border-[#333333] md:border-r">
+              <input checked class="sr-only" id="lowercase" type="checkbox">
+              <div class="pr-3 min-w-0">
+                <div class="tile-title text-xs sm:text-sm font-semibold">Lowercase Letters</div>
+                <div class="tile-sub font-mono text-xs mt-0.5">a-z</div>
+              </div>
+              <div class="toggle-pill w-11 h-6 rounded-full p-0.5 flex items-center shrink-0">
+                <div class="toggle-knob w-5 h-5 bg-white rounded-full shadow-md"></div>
+              </div>
+            </label>
+            <!-- Tile 3: Numbers -->
+            <label class="pw-tile relative flex items-center justify-between gap-3 p-4 cursor-pointer select-none border-b border-neutral-200 dark:border-[#333333]">
+              <input checked class="sr-only" id="numbers" type="checkbox">
+              <div class="pr-3 min-w-0">
+                <div class="tile-title text-xs sm:text-sm font-semibold">Numbers</div>
+                <div class="tile-sub font-mono text-xs mt-0.5">0-9</div>
+              </div>
+              <div class="toggle-pill w-11 h-6 rounded-full p-0.5 flex items-center shrink-0">
+                <div class="toggle-knob w-5 h-5 bg-white rounded-full shadow-md"></div>
+              </div>
+            </label>
+            <!-- Tile 4: Special Symbols -->
+            <label class="pw-tile relative flex items-center justify-between gap-3 p-4 cursor-pointer select-none border-b md:border-b-0 md:border-r border-neutral-200 dark:border-[#333333]">
+              <input checked class="sr-only" id="symbols" type="checkbox">
+              <div class="pr-3 min-w-0">
+                <div class="tile-title text-xs sm:text-sm font-semibold">Special Symbols</div>
+                <div class="tile-sub font-mono text-xs mt-0.5">!@#$%^&amp;*()_+-=</div>
+              </div>
+              <div class="toggle-pill w-11 h-6 rounded-full p-0.5 flex items-center shrink-0">
+                <div class="toggle-knob w-5 h-5 bg-white rounded-full shadow-md"></div>
+              </div>
+            </label>
+            <!-- Tile 5: Exclude Ambiguous -->
+            <label class="pw-tile relative flex items-center justify-between gap-3 p-4 cursor-pointer select-none border-b sm:border-b-0 md:border-r border-neutral-200 dark:border-[#333333]">
+              <input class="sr-only" id="exclude-ambiguous" type="checkbox">
+              <div class="pr-3 min-w-0">
+                <div class="tile-title text-xs sm:text-sm font-semibold">Exclude Ambiguous</div>
+                <div class="tile-sub font-mono text-xs mt-0.5">i l 1 | O 0</div>
+              </div>
+              <div class="toggle-pill w-11 h-6 rounded-full p-0.5 flex items-center shrink-0">
+                <div class="toggle-knob w-5 h-5 bg-white rounded-full shadow-md"></div>
+              </div>
+            </label>
+            <!-- Tile 6: Exclude Similar -->
+            <label class="pw-tile relative flex items-center justify-between gap-3 p-4 cursor-pointer select-none border-neutral-200 dark:border-[#333333]">
+              <input class="sr-only" id="exclude-similar" type="checkbox">
+              <div class="pr-3 min-w-0">
+                <div class="tile-title text-xs sm:text-sm font-semibold">Exclude Similar Characters</div>
+                <div class="tile-sub font-mono text-xs mt-0.5">0 O o l 1</div>
+              </div>
+              <div class="toggle-pill w-11 h-6 rounded-full p-0.5 flex items-center shrink-0">
+                <div class="toggle-knob w-5 h-5 bg-white rounded-full shadow-md"></div>
+              </div>
+            </label>
+          </div>
         </div>
         <!-- Primary Actions: Generate &amp; QR Code Button Pair -->
         <div class="pt-2 flex flex-col sm:flex-row gap-3">
