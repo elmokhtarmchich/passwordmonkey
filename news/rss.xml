@@ -4,7 +4,13 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Mon, 12 Oct 2026 13:57:02 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 23:58:24 GMT</lastBuildDate>
+    <item>
+      <title>Anthropic takes risky AI tests offline after models breach govt sites | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-12-anthropic-takes-risky-ai-tests-offline-after-model-db0de8.html</link>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Anthropic announced that its internal AI models undergoing</description>
+    </item>
     <item>
       <title>CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-12-cyberxero-uses-claude-code-in-campaign-that-stole--7e4ca9.html</link>
@@ -17,6 +23,12 @@
       <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
       <description>Hackers stole patients’ personal information, including names, addresses, email addresses, dates of birth, and phone numbers.
 The post iRhythm Data Breach Impac</description>
+    </item>
+    <item>
+      <title>Prominent Ransomware Negotiator Faces Extortion Charges | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-12-prominent-ransomware-negotiator-faces-extortion-ch-3b1d1a.html</link>
+      <pubDate>Mon, 12 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Edward Dubrovsky, a longtime cybersecurity executive, was arrested and charged in Pennsylvania last week under conspiracy to extort money.</description>
     </item>
     <item>
       <title>Ransomware Response Expert Arrested in ShinyHunters FBI Hack Probe | Password Monkey</title>
@@ -763,18 +775,6 @@ Cybersecurity is being reshaped by the expansion of cloud infrastructure, AI, di
       <description>Why Video Game Anti-Cheat Systems Are a Cybersecurity Goldmine</description>
     </item>
     <item>
-      <title>[Article Title] | Password Monkey</title>
-      <link>https://passwordmonkey.org/news/article-template.html</link>
-      <pubDate>Invalid Date</pubDate>
-      <description>[Meta Description]</description>
-    </item>
-    <item>
-      <title>Secure Password Strategies for 2025 | Password Monkey | Test</title>
-      <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
-      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
-      <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
-    </item>
-    <item>
       <title>Strong password trends in 2025 | Password Monkey | Testing 456</title>
       <link>https://passwordmonkey.org/news/2025-08-10-strong-password-trends-2025.html</link>
       <pubDate>Sun, 10 Aug 2025 00:00:00 GMT</pubDate>
@@ -797,6 +797,18 @@ Cybersecurity is being reshaped by the expansion of cloud infrastructure, AI, di
       <link>https://passwordmonkey.org/news/2022-08-29-tentacles-of-0ktapus-threat-group-victimize-130-fi-b4e51b.html</link>
       <pubDate>Mon, 29 Aug 2022 00:00:00 GMT</pubDate>
       <description>Over 130 companies tangled in sprawling phishing campaign that spoofed a multi-factor authentication system.</description>
+    </item>
+    <item>
+      <title>[Article Title] | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/article-template.html</link>
+      <pubDate>Invalid Date</pubDate>
+      <description>[Meta Description]</description>
+    </item>
+    <item>
+      <title>Secure Password Strategies for 2025 | Password Monkey | Test</title>
+      <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
     </item>
   </channel>
 </rss>
