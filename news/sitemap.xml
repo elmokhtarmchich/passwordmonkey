@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://passwordmonkey.org/news/2026-10-13-meta-says-hackers-took-code-personal-data-of-1500--31360d.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-10-13-tfg-london-cyberattack-disrupts-systems-at-hobbs-a-92637f.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-10-13-the-mfa-gaps-attackers-are-still-exploiting-f7a2a6.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-10-13-xandr-fined-a-record-86-million-for-relaying-grind-88ba1d.html</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://passwordmonkey.org/news/2026-10-12-anthropic-takes-risky-ai-tests-offline-after-model-db0de8.html</loc>
     <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
