@@ -101,9 +101,6 @@ body.kilo-home main article > a {
 }
 
 .title-font.title-font {
-    font-family: var(--kilo-display) !important;
-}
-
-.title-font.title-font > span {
-    font-family: var(--kilo-accent) !important;
+    font-family: 'MatrixtypeDisplay', sans-serif !important;
+    color: #39FF14 !important;
 }
