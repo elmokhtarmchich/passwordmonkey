@@ -4,8 +4,8 @@
   "description": "Generate strong, secure passwords instantly with PasswordMonkey. Free, open-source, and privacy-friendly password generator.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f9fafb",
-  "theme_color": "#2563eb",
+  "background_color": "#181817",
+  "theme_color": "#42b8ff",
   "icons": [
     {
       "src": "favicon_io/web-app-manifest-192x192.png",

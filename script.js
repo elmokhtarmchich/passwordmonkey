@@ -27,7 +27,37 @@ function init() {
     const qrCodeModal = document.getElementById('qr-code-modal');
     const closeQrModalBtn = document.getElementById('close-qr-modal-btn');
     const qrCodeContainer = document.getElementById('qr-code-container');
+    const toggleVisibilityBtn = document.getElementById('toggle-visibility-btn');
+    const showPasswordBtn = document.getElementById('show-password-btn');
+    let passwordHidden = false;
     let deferredPrompt;
+
+    function setPasswordHidden(hidden) {
+        passwordHidden = hidden;
+        if (generatedPasswordDiv) {
+            if (hidden) {
+                generatedPasswordDiv.classList.add('password-hidden');
+            } else {
+                generatedPasswordDiv.classList.remove('password-hidden');
+            }
+        }
+        if (toggleVisibilityBtn) {
+            toggleVisibilityBtn.setAttribute('aria-pressed', hidden ? 'true' : 'false');
+            const icon = toggleVisibilityBtn.querySelector('.material-symbols-outlined');
+            if (icon) {
+                icon.textContent = hidden ? 'visibility_off' : 'visibility';
+            }
+        }
+        if (showPasswordBtn) {
+            if (hidden) {
+                showPasswordBtn.classList.remove('hidden');
+                showPasswordBtn.classList.add('flex');
+            } else {
+                showPasswordBtn.classList.add('hidden');
+                showPasswordBtn.classList.remove('flex');
+            }
+        }
+    }
 
     // --- QR Code Modal ---
     if (qrCodeBtn) {
@@ -291,6 +321,18 @@ function init() {
     
     if (generateBtn) {
         generateBtn.addEventListener('click', handleParameterChange);
+    }
+
+    if (toggleVisibilityBtn) {
+        toggleVisibilityBtn.addEventListener('click', () => {
+            setPasswordHidden(!passwordHidden);
+        });
+    }
+
+    if (showPasswordBtn) {
+        showPasswordBtn.addEventListener('click', () => {
+            setPasswordHidden(false);
+        });
     }
 
     if (copyBtn) {

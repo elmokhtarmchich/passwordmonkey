@@ -80,11 +80,21 @@ _Last updated: 2026-10-14 — NEW (Session 16): ANTIGRAVITY TAKEOVER & PUSH COMP
 
 - [2026-10-14] Session 16 / ANTIGRAVITY TAKEOVER + REBASE & PUSH COMPLETE: Antigravity agent took control of the repository. Audited git status and background pipelines. Rebased local main onto origin/main (absorbing 9 automated news-pipeline Action commits cleanly, 0 conflicts); executed full build test (`node scripts/build.mjs` -> 214 files in dist/, 152 pages transformed, 768 includes resolved, zero errors); pushed 2 commits to origin/main (4d43216 old-news migration + 2f7e9cc brand wordmark restore). Local working tree clean and fully synchronized with remote.
 - [2026-10-14] Session 16 (cont.) / BUILD-5 HOUSEKEEPING & CLEANUP EXECUTED: (1) Updated footer copyright to 2026 in partials/footer.html (sitewide); (2) updated service-worker.js to pm-cache-v16, aligned ASSETS with dist/ (added sidebar.css, faq.html, favicon-96x96.png, MatrixtypeDisplay font; corrected nordpass_logo.svg -> nordpass_logo.png); (3) git rm tracked legacy debris: fix5.js, fix6.js, fix7.js, Exclude; (4) git rm obsolete templates/ directory (superseded by partials/); (5) verified build with node scripts/build.mjs (214 files -> dist/ green).
+- [2026-10-14] Session 17 / TASKS 1-4 COMPLETED & LOCALHOST VERIFIED:
+  (1) Password Hide-Blur & Quick QR Buttons (Task 1): added #toggle-visibility-btn eye button, #show-password-btn centered pill, and compact qr_code_2 icon button next to copy in index.html; added .password-hidden blur and typography in style.css; added passwordHidden state and setPasswordHidden() in script.js.
+  (2) Local Dev Server Flow (Task 2): created zero-dependency scripts/serve.mjs (static dist server with clean-URL routing matching Cloudflare Pages) and scripts/test-local.mjs (self-contained automated localhost test runner); updated package.json with "start", "preview", and "test" scripts.
+  (3) Theme Color & PWA Meta Alignment (Task 3): updated manifest.json to #181817 background and #42b8ff theme_color; aligned <meta name="theme-color"> and msapplication-TileColor to #42b8ff in index.html, news/index.html, news/article-template.html, and automation/actions/news-pipeline.mjs.
+  (4) Orphan Fonts Cleanup (Task 4): git rm fonts/Ubuntu-Regular.ttf and fonts/OpenSans.ttf (-884 KB); removed Open Sans @font-face from style.css; removed OpenSans.ttf from service-worker.js ASSETS.
+  (5) Verification: node scripts/build.mjs rebuilt 212 files -> dist/ cleanly; node scripts/test-local.mjs passed 8/8 automated integration probes against localhost.
 
 ## In Progress
-- Antigravity Full Handover (Session 16): Antigravity now managing repo; workspace rules and conventions aligned.
+- Antigravity Full Handover (Session 16-17): Antigravity managing repo; Tasks 1-4 complete and verified.
+- Task 5 (Retiring Kilo Worktrees): POSTPONED per user instruction (`/// don't, Not Yet`).
+- Password hide-blur option + QR icon button (Task 1 / Session 13): **COMPLETE AND TESTED**.
+- Dev server dist routing & npm test (Task 2): **COMPLETE AND TESTED**.
+- Theme color & PWA meta alignment (Task 3): **COMPLETE AND TESTED**.
+- Orphan font cleanup (Task 4): **COMPLETE**.
 - BUILD-5 housekeeping (Session 16): **COMPLETE** — debris removed, templates/ cleaned, SW cache v16 aligned, 2026 footer year live.
-- Password hide-blur option + QR icon button (Session 13): previously tested in prototype, confirmed not in main; ready to implement on request.
 - Old-news migration (Session 14): **COMPLETE AND LIVE** — all 82 news/*.html old->new-design migrations pushed (commit 4d43216); production deployed.
 - Brand wordmark restored (Session 15): **COMPLETE AND LIVE** — header/footer titles MatrixtypeDisplay + #39FF14 pushed (commit 2f7e9cc); production deployed.
 - Options-menu seamless-tile restyle (Session 12): **COMPLETE AND LIVE** — 4cdb593 (tile block) + divider-visibility follow-up both pushed; production auto-deployed.

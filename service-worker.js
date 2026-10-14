@@ -12,7 +12,6 @@ const ASSETS = [
   'kilo-typography.css',
   'script.js',
   'manifest.json',
-  'fonts/OpenSans.ttf',
   'fonts/MatrixtypeDisplay-9MyE5.ttf',
   'images/nordvpn_logo.svg',
   'images/nordpass_logo.png',

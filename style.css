@@ -1,11 +1,4 @@
 @font-face {
-    font-family: 'Open Sans';
-    src: url('fonts/OpenSans.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Maax VIA';
     src: url('fonts/maaxvia-400.otf') format('opentype');
     font-weight: 400;
@@ -542,4 +535,16 @@ input[type=range]::-moz-range-track {
 }
 .dark .pw-tile .toggle-pill {
     background-color: #3f3f3f;
+}
+
+/* Password visibility toggle (blur & show button) */
+#generated-password.password-hidden {
+    filter: blur(8px);
+    user-select: none;
+    -webkit-user-select: none;
+    pointer-events: none;
+}
+
+#show-password-btn {
+    font-family: var(--kilo-mono, 'JetBrains Mono', monospace);
 }
