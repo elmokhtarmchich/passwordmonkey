@@ -1,20 +1,24 @@
-const CACHE_NAME = 'pm-cache-v15';
+const CACHE_NAME = 'pm-cache-v16';
 const ASSETS = [
   '/',
   'index.html',
   'about.html',
+  'faq.html',
   'privacy.html',
   'donate.html',
   'password-security-guide.html',
   'style.css',
+  'sidebar.css',
   'kilo-typography.css',
   'script.js',
   'manifest.json',
   'fonts/OpenSans.ttf',
+  'fonts/MatrixtypeDisplay-9MyE5.ttf',
   'images/nordvpn_logo.svg',
-  'images/nordpass_logo.svg',
+  'images/nordpass_logo.png',
   'images/google_logo.svg',
   'favicon_io/favicon.ico',
+  'favicon_io/favicon-96x96.png',
   'favicon_io/apple-touch-icon.png',
   'favicon_io/android-chrome-192x192.png',
   'favicon_io/android-chrome-512x512.png'
