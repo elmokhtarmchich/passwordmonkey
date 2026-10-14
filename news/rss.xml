@@ -4,13 +4,61 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Wed, 14 Oct 2026 10:53:18 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 16:12:40 GMT</lastBuildDate>
+    <item>
+      <title>An AI Agent Found a Critical OTP Bypass in Production. The Attack Was the Easy Part. | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-14-an-ai-agent-found-a-critical-otp-bypass-in-product-7b712b.html</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The bug was simple: the login let you choose where your sign-in code went. Proving it on a live website was the hard part.
+
+TL;DR
+
+
+  During an authorized asses</description>
+    </item>
+    <item>
+      <title>Anthropic’s self-replicating AI warning is alarming deja vu | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-14-anthropics-self-replicating-ai-warning-is-alarming-3fcbdb.html</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Are legions of smart devices - fridges, ovens, vacuum cleaners, lawnmowers, security cameras, and TVs - conspiring to take over the internet? No. But they could</description>
+    </item>
+    <item>
+      <title>CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-14-cisa-urges-immediate-ivanti-connect-secure-updates-13d15f.html</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday urged organizations to take steps to immediately update their Ivanti Connect Secure</description>
+    </item>
+    <item>
+      <title>CISA warns admins to immediately fix Ivanti flaw exploited as zero-day | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-14-cisa-warns-admins-to-immediately-fix-ivanti-flaw-e-e05ffd.html</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) urged security teams to immediately patch an Ivanti Connect Secure (ICS) flaw exploited in zero</description>
+    </item>
     <item>
       <title>Citrix, Fortinet, Ivanti Patch 29 Vulnerabilities Across Their Products | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-14-citrix-fortinet-ivanti-patch-29-vulnerabilities-ac-283a88.html</link>
       <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
       <description>Critical-severity flaws could lead to authentication bypass, code execution, and sensitive authentication information leaks.
 The post Citrix, Fortinet, Ivanti P</description>
+    </item>
+    <item>
+      <title>Harmonic Security Raises $50 Million for Workforce AI Protection | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-14-harmonic-security-raises-50-million-for-workforce--13445d.html</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The cybersecurity startup plans to expand engineering and go-to-market teams in the US and UK.
+The post Harmonic Security Raises $50 Million for Workforce AI Pr</description>
+    </item>
+    <item>
+      <title>Hirudo Android Trojan Uses Patched Banking Apps to Bypass Their Built-In Security Checks | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-14-hirudo-android-trojan-uses-patched-banking-apps-to-a95ca0.html</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of a new Android banking trojan called Hirudo that works by replacing legitimate banking apps with purpose-buil</description>
+    </item>
+    <item>
+      <title>The Blind Spots of Agentic Pentesting and How to Close Them | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-14-the-blind-spots-of-agentic-pentesting-and-how-to-c-165173.html</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 GMT</pubDate>
+      <description>AI-powered penetration testing can uncover complex attack paths, but safety restrictions and network limitations leave many assets and vulnerabilities untested.</description>
     </item>
     <item>
       <title>Meta Says Hackers Took Code, Personal Data of 1,500 in GitHub Breach | Password Monkey</title>
@@ -807,18 +855,6 @@ Cybersecurity is being reshaped by the expansion of cloud infrastructure, AI, di
       <description>Why Video Game Anti-Cheat Systems Are a Cybersecurity Goldmine</description>
     </item>
     <item>
-      <title>[Article Title] | Password Monkey</title>
-      <link>https://passwordmonkey.org/news/article-template.html</link>
-      <pubDate>Invalid Date</pubDate>
-      <description>[Meta Description]</description>
-    </item>
-    <item>
-      <title>Secure Password Strategies for 2025 | Password Monkey | Test</title>
-      <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
-      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
-      <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
-    </item>
-    <item>
       <title>Strong password trends in 2025 | Password Monkey | Testing 456</title>
       <link>https://passwordmonkey.org/news/2025-08-10-strong-password-trends-2025.html</link>
       <pubDate>Sun, 10 Aug 2025 00:00:00 GMT</pubDate>
@@ -841,6 +877,18 @@ Cybersecurity is being reshaped by the expansion of cloud infrastructure, AI, di
       <link>https://passwordmonkey.org/news/2022-08-29-tentacles-of-0ktapus-threat-group-victimize-130-fi-b4e51b.html</link>
       <pubDate>Mon, 29 Aug 2022 00:00:00 GMT</pubDate>
       <description>Over 130 companies tangled in sprawling phishing campaign that spoofed a multi-factor authentication system.</description>
+    </item>
+    <item>
+      <title>[Article Title] | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/article-template.html</link>
+      <pubDate>Invalid Date</pubDate>
+      <description>[Meta Description]</description>
+    </item>
+    <item>
+      <title>Secure Password Strategies for 2025 | Password Monkey | Test</title>
+      <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
     </item>
   </channel>
 </rss>
