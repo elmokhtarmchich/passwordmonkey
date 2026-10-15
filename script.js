@@ -57,6 +57,11 @@ function init() {
                 showPasswordBtn.classList.remove('flex');
             }
         }
+        try {
+            localStorage.setItem('pm_hide_password', hidden ? '1' : '0');
+        } catch (e) {
+            // Ignore localStorage errors (e.g. if disabled)
+        }
     }
 
     // --- QR Code Modal ---
@@ -385,6 +390,17 @@ function init() {
     darkModeIcons.forEach((icon) => {
         icon.textContent = isInitiallyDark ? 'light_mode' : 'dark_mode';
     });
+
+    // Restore persisted hide/show preference (mirrors the pm_dark pattern)
+    if (toggleVisibilityBtn) {
+        try {
+            if (localStorage.getItem('pm_hide_password') === '1') {
+                setPasswordHidden(true);
+            }
+        } catch (e) {
+            // Ignore localStorage errors (e.g. if disabled)
+        }
+    }
 
     if (document.getElementById('generate-btn')) {
         handleParameterChange();
