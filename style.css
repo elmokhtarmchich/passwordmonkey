@@ -577,19 +577,20 @@ body.kilo-home::before {
 
 /* ISO film-grain mesh for info/instruction tiles - site palette (pure sky/blue family).
    ONE shared 8-layer stack; each theme owns its blend chain + strengths so the film
-   effect adapts to the mode: dark = deep brand glow over #242424
-   (overlay/soft-light/hard-light chain, full-strength modulators); light = airy
-   pastel washes over bg-white (multiply chain - the only family that keeps both the
-   grain and the tints visible on a light base). Tile base color stays Tailwind
+   effect adapts to the mode: dark = faint brand-blue breath over #242424
+   (overlay/soft-light/hard-light chain at 8-12% alpha); light = faint pastel mist over
+   bg-white (multiply chain - the only family that keeps both grain and tints visible
+   on a light base; 6-10% alpha). V3 READABILITY TUNE (user feedback): all colored
+   layers are low-alpha washes so the reading surface stays near the base color. Tile base color stays Tailwind
    bg-white / dark:bg-card. Layer order top-down: fractal-noise grain -> three
    modulating radials -> three normal-blend radial glows -> linear brand wash. */
 .pm-film-tile {
-    --pmf-mod: rgba(66, 184, 255, 0.18);
-    --pmf-brand: rgba(66, 184, 255, 0.10);
-    --pmf-sky: rgba(125, 211, 252, 0.22);
-    --pmf-deep: rgba(2, 132, 199, 0.12);
+    --pmf-mod: rgba(66, 184, 255, 0.08);
+    --pmf-brand: rgba(66, 184, 255, 0.06);
+    --pmf-sky: rgba(125, 211, 252, 0.10);
+    --pmf-deep: rgba(2, 132, 199, 0.06);
     background-image:
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='noise' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' seed='5' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.55'/%3E%3C/svg%3E"),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='noise' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' seed='5' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.40'/%3E%3C/svg%3E"),
         radial-gradient(84.83% 66.15% at 63.93% -2.12%, var(--pmf-mod) 0%, var(--pmf-mod) 30%, transparent 100%),
         radial-gradient(39.84% 82.09% at 45.86% 124.68%, var(--pmf-mod) 0%, var(--pmf-mod) 22%, transparent 100%),
         radial-gradient(67.11% 56.38% at 94.84% 13.35%, var(--pmf-mod) 0%, var(--pmf-mod) 25%, transparent 100%),
@@ -602,9 +603,9 @@ body.kilo-home::before {
     background-blend-mode: multiply, multiply, multiply, multiply, normal, normal, normal, normal;
 }
 .dark .pm-film-tile {
-    --pmf-mod: #42b8ff;
-    --pmf-brand: rgba(66, 184, 255, 0.35);
-    --pmf-sky: rgba(125, 211, 252, 0.28);
-    --pmf-deep: rgba(3, 105, 161, 0.38);
+    --pmf-mod: rgba(66, 184, 255, 0.10);
+    --pmf-brand: rgba(66, 184, 255, 0.10);
+    --pmf-sky: rgba(125, 211, 252, 0.08);
+    --pmf-deep: rgba(3, 105, 161, 0.12);
     background-blend-mode: overlay, soft-light, hard-light, overlay, normal, normal, normal, normal;
 }
