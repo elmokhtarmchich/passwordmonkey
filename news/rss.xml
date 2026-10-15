@@ -4,7 +4,27 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Thu, 15 Oct 2026 02:27:36 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 10:35:52 GMT</lastBuildDate>
+    <item>
+      <title>AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-15-ahsaycbs-flaws-exploited-to-deploy-web-shells-get--ab68bb.html</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Singapore-based Ahsay Backup has released security updates to address two security flaws in AhsayCBS that have been exploited by bad actors to drop web shells a</description>
+    </item>
+    <item>
+      <title>CenterPoint Energy Data Breach Impacts 1 Million Texans | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-15-centerpoint-energy-data-breach-impacts-1-million-t-642e21.html</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Personal information such as names, addresses, Social Security numbers, and driver’s license numbers was compromised.
+The post CenterPoint Energy Data Breach Im</description>
+    </item>
+    <item>
+      <title>CISO Conversations: James Robinson – Many Jobs, One Journey to Netskope CISO | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-15-ciso-conversations-james-robinson-many-jobs-one-jo-3b1f12.html</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <description>James Robinson never planned a cybersecurity career — seven companies and one deputy CISO role later, he leads security at Netskope.
+The post CISO Conversations</description>
+    </item>
     <item>
       <title>An AI Agent Found a Critical OTP Bypass in Production. The Attack Was the Easy Part. | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-14-an-ai-agent-found-a-critical-otp-bypass-in-product-7b712b.html</link>
@@ -861,18 +881,6 @@ Cybersecurity is being reshaped by the expansion of cloud infrastructure, AI, di
       <description>Why Video Game Anti-Cheat Systems Are a Cybersecurity Goldmine</description>
     </item>
     <item>
-      <title>[Article Title] | Password Monkey</title>
-      <link>https://passwordmonkey.org/news/article-template.html</link>
-      <pubDate>Invalid Date</pubDate>
-      <description>[Meta Description]</description>
-    </item>
-    <item>
-      <title>Secure Password Strategies for 2025 | Password Monkey</title>
-      <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
-      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
-      <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
-    </item>
-    <item>
       <title>Strong password trends in 2025 | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2025-08-10-strong-password-trends-2025.html</link>
       <pubDate>Sun, 10 Aug 2025 00:00:00 GMT</pubDate>
@@ -895,6 +903,18 @@ Cybersecurity is being reshaped by the expansion of cloud infrastructure, AI, di
       <link>https://passwordmonkey.org/news/2022-08-29-tentacles-of-0ktapus-threat-group-victimize-130-fi-b4e51b.html</link>
       <pubDate>Mon, 29 Aug 2022 00:00:00 GMT</pubDate>
       <description>Over 130 companies tangled in sprawling phishing campaign that spoofed a multi-factor authentication system.</description>
+    </item>
+    <item>
+      <title>[Article Title] | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/article-template.html</link>
+      <pubDate>Invalid Date</pubDate>
+      <description>[Meta Description]</description>
+    </item>
+    <item>
+      <title>Secure Password Strategies for 2025 | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
     </item>
   </channel>
 </rss>
