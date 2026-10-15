@@ -4,12 +4,18 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Thu, 15 Oct 2026 10:35:52 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 15:59:58 GMT</lastBuildDate>
     <item>
       <title>AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-15-ahsaycbs-flaws-exploited-to-deploy-web-shells-get--ab68bb.html</link>
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <description>Singapore-based Ahsay Backup has released security updates to address two security flaws in AhsayCBS that have been exploited by bad actors to drop web shells a</description>
+    </item>
+    <item>
+      <title>Benn Jordan on Flock, privacy, and the new surveillance backlash | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-15-benn-jordan-on-flock-privacy-and-the-new-surveilla-4b235d.html</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Today, I’m talking with Benn Jordan, musician, YouTuber, researcher, and investigative journalist. You might know Benn from those first two titles — he’s got a</description>
     </item>
     <item>
       <title>CenterPoint Energy Data Breach Impacts 1 Million Texans | Password Monkey</title>
@@ -881,6 +887,18 @@ Cybersecurity is being reshaped by the expansion of cloud infrastructure, AI, di
       <description>Why Video Game Anti-Cheat Systems Are a Cybersecurity Goldmine</description>
     </item>
     <item>
+      <title>[Article Title] | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/article-template.html</link>
+      <pubDate>Invalid Date</pubDate>
+      <description>[Meta Description]</description>
+    </item>
+    <item>
+      <title>Secure Password Strategies for 2025 | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
+    </item>
+    <item>
       <title>Strong password trends in 2025 | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2025-08-10-strong-password-trends-2025.html</link>
       <pubDate>Sun, 10 Aug 2025 00:00:00 GMT</pubDate>
@@ -903,18 +921,6 @@ Cybersecurity is being reshaped by the expansion of cloud infrastructure, AI, di
       <link>https://passwordmonkey.org/news/2022-08-29-tentacles-of-0ktapus-threat-group-victimize-130-fi-b4e51b.html</link>
       <pubDate>Mon, 29 Aug 2022 00:00:00 GMT</pubDate>
       <description>Over 130 companies tangled in sprawling phishing campaign that spoofed a multi-factor authentication system.</description>
-    </item>
-    <item>
-      <title>[Article Title] | Password Monkey</title>
-      <link>https://passwordmonkey.org/news/article-template.html</link>
-      <pubDate>Invalid Date</pubDate>
-      <description>[Meta Description]</description>
-    </item>
-    <item>
-      <title>Secure Password Strategies for 2025 | Password Monkey</title>
-      <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
-      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
-      <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
     </item>
   </channel>
 </rss>
