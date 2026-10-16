@@ -4,7 +4,7 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Thu, 15 Oct 2026 20:44:56 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 02:21:34 GMT</lastBuildDate>
     <item>
       <title>AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-15-ahsaycbs-flaws-exploited-to-deploy-web-shells-get--ab68bb.html</link>
@@ -30,6 +30,12 @@ The post CenterPoint Energy Data Breach Im</description>
       <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
       <description>James Robinson never planned a cybersecurity career — seven companies and one deputy CISO role later, he leads security at Netskope.
 The post CISO Conversations</description>
+    </item>
+    <item>
+      <title>SecTor 2026 Reveals a Rapidly Shifting Cybersecurity Landscape | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-15-sector-2026-reveals-a-rapidly-shifting-cybersecuri-0b81da.html</link>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The event closed in Toronto last week, with experts sharing critical perspectives on emerging risks, drawing record attendance and marking 22% growth.</description>
     </item>
     <item>
       <title>An AI Agent Found a Critical OTP Bypass in Production. The Attack Was the Easy Part. | Password Monkey</title>
