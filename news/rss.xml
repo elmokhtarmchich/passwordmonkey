@@ -4,12 +4,18 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Fri, 16 Oct 2026 15:48:25 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 20:17:16 GMT</lastBuildDate>
     <item>
       <title>Burger King Japan data breach exposes 11 million customer records | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-16-burger-king-japan-data-breach-exposes-11-million-c-27c670.html</link>
       <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
       <description>Burger King Japan, the Japanese subsidiary of global fast-food giant Burger King, disclosed a major data breach after attackers accessed a server containing 11.</description>
+    </item>
+    <item>
+      <title>UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-16-uat-11985-uses-fake-event-invites-to-target-taiwan-23e482.html</link>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) spear-phishing campaign that has targeted individuals affiliated with Ta</description>
     </item>
     <item>
       <title>AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches | Password Monkey</title>
@@ -899,18 +905,6 @@ Cybersecurity is being reshaped by the expansion of cloud infrastructure, AI, di
       <description>Why Video Game Anti-Cheat Systems Are a Cybersecurity Goldmine</description>
     </item>
     <item>
-      <title>[Article Title] | Password Monkey</title>
-      <link>https://passwordmonkey.org/news/article-template.html</link>
-      <pubDate>Invalid Date</pubDate>
-      <description>[Meta Description]</description>
-    </item>
-    <item>
-      <title>Secure Password Strategies for 2025 | Password Monkey</title>
-      <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
-      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
-      <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
-    </item>
-    <item>
       <title>Strong password trends in 2025 | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2025-08-10-strong-password-trends-2025.html</link>
       <pubDate>Sun, 10 Aug 2025 00:00:00 GMT</pubDate>
@@ -933,6 +927,18 @@ Cybersecurity is being reshaped by the expansion of cloud infrastructure, AI, di
       <link>https://passwordmonkey.org/news/2022-08-29-tentacles-of-0ktapus-threat-group-victimize-130-fi-b4e51b.html</link>
       <pubDate>Mon, 29 Aug 2022 00:00:00 GMT</pubDate>
       <description>Over 130 companies tangled in sprawling phishing campaign that spoofed a multi-factor authentication system.</description>
+    </item>
+    <item>
+      <title>[Article Title] | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/article-template.html</link>
+      <pubDate>Invalid Date</pubDate>
+      <description>[Meta Description]</description>
+    </item>
+    <item>
+      <title>Secure Password Strategies for 2025 | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
     </item>
   </channel>
 </rss>
