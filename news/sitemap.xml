@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://passwordmonkey.org/news/2026-10-16-burger-king-japan-data-breach-exposes-11-million-c-27c670.html</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://passwordmonkey.org/news/2026-10-15-ahsaycbs-flaws-exploited-to-deploy-web-shells-get--ab68bb.html</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
