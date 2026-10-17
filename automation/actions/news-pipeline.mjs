@@ -133,9 +133,9 @@ export function buildArticleHtml(item) {
     <meta property="og:url" content="https://passwordmonkey.org/news/${filename}">
     <meta property="og:title" content="${item.title}">
     <meta property="og:description" content="${description}">
-    <meta property="og:image" content="https://passwordmonkey.org/images/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+    <meta property="og:image" content="https://passwordmonkey.org/images/site_logo.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
     <meta property="og:site_name" content="PasswordMonkey">
     <meta property="og:locale" content="en_US">
     <meta property="article:published_time" content="${publishDateISO}">
@@ -146,7 +146,7 @@ export function buildArticleHtml(item) {
     <meta name="twitter:url" content="https://passwordmonkey.org/news/${filename}">
     <meta name="twitter:title" content="${item.title}">
     <meta name="twitter:description" content="${description}">
-    <meta name="twitter:image" content="https://passwordmonkey.org/images/og-image.png">
+    <meta name="twitter:image" content="https://passwordmonkey.org/images/site_logo.png">
 
     <!-- Additional SEO Meta Tags -->
     <meta name="theme-color" content="#42b8ff">
@@ -186,9 +186,9 @@ export function buildArticleHtml(item) {
         },
         "image": {
             "@type": "ImageObject",
-            "url": "https://passwordmonkey.org/images/og-image.png",
-            "width": 1200,
-            "height": 630
+            "url": "https://passwordmonkey.org/images/site_logo.png",
+            "width": 512,
+            "height": 512
         },
         "articleSection": "Password Security",
         "keywords": "password security, cybersecurity, data breach, password safety, digital security"
