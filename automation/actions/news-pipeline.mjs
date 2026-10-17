@@ -102,10 +102,37 @@ export function buildArticleHtml(item) {
   const slug = slugify(item.title).trim();
   const filename = `${publishDateYMD}-${slug}-${hash}.html`.trim();
 
-  const description = (item.summaryContent || item.description || item.title)
+  // Clean description: strip HTML, remove "The post ... appeared first on" suffix,
+  // ensure 120-160 char limit, no newlines
+  let rawDesc = (item.summaryContent || item.description || item.title || "")
     .replace(/<[^>]*>/g, "")
-    .substring(0, 160)
-    .replace(/\s+$/, "");
+    .replace(/\s+/g, " ")
+    .trim();
+
+  // Strip "The post ... appeared first on ..." suffix pattern
+  rawDesc = rawDesc.replace(/\s*The post .*?appeared first on .*?\.\s*$/i, "").trim();
+
+  let description = rawDesc.substring(0, 160).replace(/\s+$/, "");
+
+  // If too short (< 120 chars), append a standard suffix
+  if (description.length < 120) {
+    description = description + " Read more on PasswordMonkey for cybersecurity news and password security tips.";
+  }
+  description = description.substring(0, 160).replace(/\s+$/, "");
+
+  // Truncate title to keep total under 60 chars (including " | Password Monkey" suffix)
+  const titleSuffix = " | Password Monkey";
+  let title = item.title || "";
+  if (title.length + titleSuffix.length > 60) {
+    const maxTitleLen = Math.max(10, 60 - titleSuffix.length);
+    title = title.substring(0, maxTitleLen).replace(/\s+$/, "");
+    // Try to break at word boundary
+    const lastSpace = title.lastIndexOf(" ");
+    if (lastSpace > maxTitleLen - 15) {
+      title = title.substring(0, lastSpace);
+    }
+    title = title.trim() + "...";
+  }
 
   let bodyHtml = item.summaryContent || item.content || item.description || "";
   if (!bodyHtml.includes("<p>")) {
@@ -117,12 +144,25 @@ export function buildArticleHtml(item) {
 
 
 
+  let title = item.title || "";
+  // Truncate title to keep total under 60 chars (including " | Password Monkey" suffix)
+  const titleSuffix = " | Password Monkey";
+  if (title.length + titleSuffix.length > 60) {
+    const maxTitleLen = Math.max(10, 60 - titleSuffix.length);
+    title = title.substring(0, maxTitleLen).replace(/\s+$/, "");
+    // Try to break at word boundary
+    const lastSpace = title.lastIndexOf(" ");
+    if (lastSpace > maxTitleLen - 15) {
+      title = title.substring(0, lastSpace);
+    }
+    title = title.trim() + "...";
+  }
   const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${item.title} | Password Monkey</title>
+    <title>${title} ${titleSuffix}</title>
     <meta name="description" content="${description}">
     <meta name="date" content="${publishDateYMD}">
     <meta name="author" content="PasswordMonkey">
