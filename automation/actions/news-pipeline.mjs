@@ -142,21 +142,6 @@ export function buildArticleHtml(item) {
   const proxyBase = "https://www.passwordmonkey.org/rss?url=";
   const proxiedLink = proxyBase + encodeURIComponent(item.link);
 
-
-
-  let title = item.title || "";
-  // Truncate title to keep total under 60 chars (including " | Password Monkey" suffix)
-  const titleSuffix = " | Password Monkey";
-  if (title.length + titleSuffix.length > 60) {
-    const maxTitleLen = Math.max(10, 60 - titleSuffix.length);
-    title = title.substring(0, maxTitleLen).replace(/\s+$/, "");
-    // Try to break at word boundary
-    const lastSpace = title.lastIndexOf(" ");
-    if (lastSpace > maxTitleLen - 15) {
-      title = title.substring(0, lastSpace);
-    }
-    title = title.trim() + "...";
-  }
   const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
