@@ -545,16 +545,15 @@ input[type=range]::-moz-range-track {
     font-family: var(--kilo-mono, 'JetBrains Mono', monospace);
 }
 
-/* ================= BACKGROUND MESH + FILM-GRAIN TILES (Session 18, v3) ================= */
-/* Dot-mesh background applied to <main>. The #password-generator section is
+/* ================= BACKGROUND MESH + FILM-GRAIN TILES (Session 18, v4) ================= */
+/* Dot-mesh background applied to body. The #password-generator section is
    excluded by its opaque bg-white/dark:bg-card background. The mesh covers the
-   rest of <main> (hero, sections, gaps). Tailwind colors (bg-gray-50/dark:bg-canvas)
-   remain the page background. */
-main {
+   entire page. Tailwind colors (bg-gray-50/dark:bg-canvas) remain the page background. */
+body {
     position: relative;
     z-index: 0;
 }
-main::before {
+body::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -564,7 +563,7 @@ main::before {
     background-position: 0 0;
     pointer-events: none;
 }
-.dark main::before {
+.dark body::before {
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0.10) 1px, transparent 1.55px);
 }
 
