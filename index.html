@@ -670,21 +670,5 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!--@include partials/footer.html prefix=./ -->
 
 </div>
-
-<!-- Dot-mesh zone offset: start the background mesh below the generator section -->
-<script>
-(function () {
-    var gen = document.getElementById('password-generator');
-    if (!gen) return;
-    function sync() {
-        var top = Math.round(gen.getBoundingClientRect().bottom + window.scrollY);
-        document.documentElement.style.setProperty('--pm-mesh-top', top + 'px');
-    }
-    sync();
-    window.addEventListener('resize', sync);
-    window.addEventListener('load', sync);
-    if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
-})();
-</script>
 </body>
 </html>

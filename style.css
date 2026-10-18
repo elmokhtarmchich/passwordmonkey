@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
     font-family: 'Maax VIA';
     src: url('fonts/maaxvia-400.otf') format('opentype');
     font-weight: 400;
@@ -368,25 +368,21 @@ input[type=range]::-moz-range-track {
         
         /* Password strength colors */
         .strength-weak {
-            background-color: rgba(239, 68, 68, 0.1) !important; /* red */
             border-color: rgb(239, 68, 68) !important;
             color: #dc2626 !important; /* red-600 */
         }
         
         .strength-fair {
-            background-color: rgba(245, 158, 11, 0.1) !important; /* yellow */
             border-color: rgb(245, 158, 11) !important;
             color: #d97706 !important; /* yellow-600 */
         }
         
         .strength-good {
-            background-color: rgba(59, 130, 246, 0.1) !important; /* blue */
             border-color: rgb(59, 130, 246) !important;
             color: #2563eb !important; /* blue-600 */
         }
         
         .strength-strong {
-            background-color: rgba(34, 197, 94, 0.1) !important; /* green */
             border-color: rgb(34, 197, 94) !important;
             color: #16a34a !important; /* green-600 */
         }
@@ -549,29 +545,26 @@ input[type=range]::-moz-range-track {
     font-family: var(--kilo-mono, 'JetBrains Mono', monospace);
 }
 
-/* ================= BACKGROUND MESH + FILM-GRAIN TILES (Session 18, v2) ================= */
-/* Dot-mesh page background: a body::before zone that starts BELOW the password
-   generator section (offset fed by the inline script in index.html via --pm-mesh-top;
-   fallback 520px). The generator area stays clean; the Tailwind colors remain the
-   actual page background (bg-gray-50 / dark:bg-canvas). */
-body.kilo-home {
+/* ================= BACKGROUND MESH + FILM-GRAIN TILES (Session 18, v3) ================= */
+/* Dot-mesh background applied to <main>. The #password-generator section is
+   excluded by its opaque bg-white/dark:bg-card background. The mesh covers the
+   rest of <main> (hero, sections, gaps). Tailwind colors (bg-gray-50/dark:bg-canvas)
+   remain the page background. */
+main {
     position: relative;
     z-index: 0;
 }
-body.kilo-home::before {
+main::before {
     content: "";
     position: absolute;
-    left: 0;
-    right: 0;
-    top: var(--pm-mesh-top, 520px);
-    bottom: 0;
+    inset: 0;
     z-index: -1;
     background-image: radial-gradient(circle, rgba(15, 23, 42, 0.07) 1px, transparent 1.55px);
     background-size: 16px 16px;
     background-position: 0 0;
     pointer-events: none;
 }
-.dark body.kilo-home::before {
+.dark main::before {
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0.10) 1px, transparent 1.55px);
 }
 
@@ -608,4 +601,54 @@ body.kilo-home::before {
     --pmf-sky: rgba(125, 211, 252, 0.08);
     --pmf-deep: rgba(3, 105, 161, 0.12);
     background-blend-mode: overlay, soft-light, hard-light, overlay, normal, normal, normal, normal;
+}
+/* ---- News article term and company highlighting (NEWS-UX-2) ---- */
+.pm-term, .pm-co {
+    color: inherit;
+    text-decoration: underline dotted rgba(66, 184, 255, 0.85);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+    cursor: help;
+    position: relative;
+    transition: color 0.15s ease;
+}
+.pm-term:hover, .pm-term:focus-visible, .pm-co:hover, .pm-co:focus-visible {
+    color: #42b8ff;
+    text-decoration-style: solid;
+    outline: none;
+}
+.pm-term::after, .pm-co::after {
+    content: attr(data-def);
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 8px);
+    transform: translateX(-50%) translateY(4px);
+    display: block;
+    width: max-content;
+    max-width: 300px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #242424;
+    color: #f5f5f5;
+    border: 1px solid #3a3a3a;
+    font-size: 12.5px;
+    line-height: 1.5;
+    font-family: 'JetBrains Mono', 'IBM Plex Mono', monospace;
+    text-align: left;
+    white-space: normal;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 60;
+    transition: opacity 0.12s ease, transform 0.12s ease;
+}
+.pm-term:hover::after, .pm-term:focus-visible::after, .pm-co:hover::after, .pm-co:focus-visible::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+html.dark .pm-term::after, html.dark .pm-co::after {
+    background: #f5f5f5;
+    color: #181817;
+    border-color: #e5e7eb;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
