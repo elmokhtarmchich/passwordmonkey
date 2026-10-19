@@ -4,12 +4,36 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Mon, 19 Oct 2026 11:37:45 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 17:59:33 GMT</lastBuildDate>
+    <item>
+      <title>A hacker broke into John Deere and SharkNinja with an army of AI agents | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-19-a-hacker-broke-into-john-deere-and-sharkninja-with-c161d6.html</link>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <description>A hacker broke into more than 100 websites using an army of AI agents that mostly operated on their own, according to findings from the AI security firm Norforg</description>
+    </item>
+    <item>
+      <title>How HSBC’s Sharia fund invested millions in Israeli war-linked firms | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-19-how-hsbcs-sharia-fund-invested-millions-in-israeli-175412.html</link>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <description>HSBC bought $130m in shares in firms tied to Israel’s military, in breach of Islamic law compliance requirements.</description>
+    </item>
     <item>
       <title>OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-19-opencode-console-breach-may-have-exposed-openai-an-6dda7c.html</link>
       <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
       <description>An intruder reached a legacy system at OpenCode on the night of October 16 and may have exposed the third-party AI provider keys that users had saved in OpenCod</description>
+    </item>
+    <item>
+      <title>OpenCode hack exposes API keys amid AI distillation attacks | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-19-opencode-hack-exposes-api-keys-amid-ai-distillatio-60d2b6.html</link>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The open-source AI coding project OpenCode has notified a small number of users that API keys they used with external providers were exposed in a security breac</description>
+    </item>
+    <item>
+      <title>The Evolving Cybersecurity Lexicon: Vulnerability Discovery to Resilience | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-19-the-evolving-cybersecurity-lexicon-vulnerability-d-a48af4.html</link>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <description>An industry-wide laser focus on vulnerabilities has left cybersecurity teams without enough room to strategize for resilience.</description>
     </item>
     <item>
       <title>Unpatched Broadcom Wi-Fi Flaw Lets Attackers in Range Run Code as Root on Routers | Password Monkey</title>
