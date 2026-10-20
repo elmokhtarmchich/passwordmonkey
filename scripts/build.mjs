@@ -339,7 +339,7 @@ function enrichRelated(html, filename, entry, where) {
     const gridOpen = '<div class="grid md:grid-cols-2 gap-6">';
     const count = html.split(gridOpen).length - 1;
     if (count !== 1) {
-        throw new Error(${where}: related-articles grid matched  (expected exactly 1));
+        throw new Error(`${where}: related-articles grid matched ${count} (expected exactly 1)`);
     }
     const related = computeRelated(filename, entry.title || '', entry.description || '');
     if (related.length === 0) {
