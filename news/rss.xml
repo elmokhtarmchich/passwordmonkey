@@ -4,7 +4,7 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Tue, 20 Oct 2026 16:03:40 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 21:01:44 GMT</lastBuildDate>
     <item>
       <title>970,000 Medi-Cal Members Affected by Paradigm Healthcare Data Breach | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-20-970000-medi-cal-members-affected-by-paradigm-healt-a9c0ef.html</link>
@@ -19,6 +19,12 @@ The post 970,000 Medi-Cal</description>
       <description>CJIS v6.1 requires agencies to maintain strong authentication, account security, and audit controls while demonstrating ongoing compliance. Specops outlines fiv</description>
     </item>
     <item>
+      <title>Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-20-critical-fortisiem-flaw-gets-public-exploit-poc-fo-584d35.html</link>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Cybersecurity researchers have released a proof-of-concept (PoC) exploit for a recently patched critical security flaw impacting Fortinet FortiSIEM that could r</description>
+    </item>
+    <item>
       <title>Hackers Use Autonomous AI Agents to Breach Company Websites, Target Over 1,200 Sites | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-20-hackers-use-autonomous-ai-agents-to-breach-company-7e5477.html</link>
       <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
@@ -29,6 +35,18 @@ The post 970,000 Medi-Cal</description>
       <link>https://passwordmonkey.org/news/2026-10-20-hackers-use-new-romulus-clickfix-platform-to-deliv-41ada4.html</link>
       <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
       <description>Cybersecurity researchers have disclosed details of a ClickFix delivery platform called ROMULUS that</description>
+    </item>
+    <item>
+      <title>Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-20-qilin-and-inc-ransomware-groups-exploit-palo-alto--ea6b3d.html</link>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Palo Alto Networks has disclosed that it</description>
+    </item>
+    <item>
+      <title>Zeabur shutting down after second security breach in two months | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-20-zeabur-shutting-down-after-second-security-breach--3c3006.html</link>
+      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Development platform Zeabur has disclosed details of a cybersecurity incident in which an attacker used leaked internal credentials stored in plaintext to compr</description>
     </item>
     <item>
       <title>A hacker broke into John Deere and SharkNinja with an army of AI agents | Password Monkey</title>

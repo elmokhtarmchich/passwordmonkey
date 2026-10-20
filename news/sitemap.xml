@@ -13,6 +13,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://passwordmonkey.org/news/2026-10-20-critical-fortisiem-flaw-gets-public-exploit-poc-fo-584d35.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://passwordmonkey.org/news/2026-10-20-hackers-use-autonomous-ai-agents-to-breach-company-7e5477.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -20,6 +26,18 @@
   </url>
   <url>
     <loc>https://passwordmonkey.org/news/2026-10-20-hackers-use-new-romulus-clickfix-platform-to-deliv-41ada4.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-10-20-qilin-and-inc-ransomware-groups-exploit-palo-alto--ea6b3d.html</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-10-20-zeabur-shutting-down-after-second-security-breach--3c3006.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
