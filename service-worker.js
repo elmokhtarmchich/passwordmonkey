@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pm-cache-v16';
+const CACHE_NAME = 'pm-cache-v17';
 const ASSETS = [
   '/',
   'index.html',
@@ -43,19 +43,56 @@ self.addEventListener('activate', event => {
   self.clients.claim();
 });
 
-self.addEventListener('fetch', event => {
-    event.respondWith(
-        caches.match(event.request).then(cachedResponse => {
-            const fetchPromise = fetch(event.request).then(networkResponse => {
-                if (networkResponse.ok) {
-                    const cacheCopy = networkResponse.clone();
-                    caches.open(CACHE_NAME).then(cache => {
-                        cache.put(event.request, cacheCopy);
-                    });
-                }
-                return networkResponse;
-            });
-            return cachedResponse || fetchPromise;
-        })
+// Pages, everything under /news/, and the news manifest must never be served
+// one-load-behind (the old cache-first strategy caused stale news lists that
+// only a hard refresh could bypass). They get network-first with the cache
+// kept as the offline fallback. Static assets keep cache-first + background
+// revalidation (fast, rarely change).
+function mustServeFresh(request) {
+  if (request.mode === 'navigate') return true;
+  const url = new URL(request.url);
+  if (url.pathname === '/news/news-manifest.json') return true;
+  return url.pathname.startsWith('/news/');
+}
+
+function stash(event, response) {
+  if (response && response.ok && response.type === 'basic') {
+    const copy = response.clone();
+    caches.open(CACHE_NAME).then(cache => {
+      cache.put(event.request, copy);
+    });
+  }
+  return response;
+}
+
+function networkFirst(event) {
+  return fetch(event.request)
+    .then(response => {
+      stash(event, response);
+      return response;
+    })
+    .catch(() =>
+      caches.match(event.request).then(cached => cached || Response.error())
     );
-}); 
+}
+
+function cacheFirstWithUpdate(event) {
+  return caches.match(event.request).then(cached => {
+    const fetchPromise = fetch(event.request).then(response => {
+      stash(event, response);
+      return response;
+    });
+    return cached || fetchPromise;
+  });
+}
+
+self.addEventListener('fetch', event => {
+  if (event.request.method !== 'GET') return;
+  const url = new URL(event.request.url);
+  if (url.origin !== self.location.origin) return;
+  if (mustServeFresh(event.request)) {
+    event.respondWith(networkFirst(event));
+  } else {
+    event.respondWith(cacheFirstWithUpdate(event));
+  }
+});

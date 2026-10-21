@@ -28,7 +28,7 @@ class NewsAggregator {
 
     async discoverArticles() {
         try {
-            const response = await fetch(this.newsDirectory + 'news-manifest.json');
+            const response = await fetch(this.newsDirectory + 'news-manifest.json', { cache: 'no-cache' });
             if (!response.ok) throw new Error('Manifest not found');
             const manifest = await response.json();
             const rawArticles = manifest.articles || [];
