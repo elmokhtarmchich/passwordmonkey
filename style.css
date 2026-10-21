@@ -207,13 +207,11 @@ span.material-symbols-outlined[class] {
     -webkit-font-feature-settings: 'liga';
 }
 
-/* Sticky header */
-header {
+/* Sticky site topbar only — page, article and card <header> blocks scroll normally */
+.content-wrapper > header {
     position: sticky;
     top: 0;
-    z-index: 50;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    z-index: 30;
 }
 
 /* Wave 3: M3 Slider base styles */
