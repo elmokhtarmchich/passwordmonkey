@@ -4,7 +4,27 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Wed, 21 Oct 2026 02:36:25 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 10:52:08 GMT</lastBuildDate>
+    <item>
+      <title>CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-21-cisa-orders-federal-agencies-to-patch-exploited-pl-37c3e5.html</link>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, inc</description>
+    </item>
+    <item>
+      <title>CISA: SafePay ransomware hit over 600 critical infrastructure orgs | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-21-cisa-safepay-ransomware-hit-over-600-critical-infr-cdb08d.html</link>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The Cybersecurity and Infrastructure Security Agency (CISA) says the SafePay ransomware gang has breached over 600 critical infrastructure organizations worldwi</description>
+    </item>
+    <item>
+      <title>Hackers Hid Vasilek Backdoor in VMware Tools During 2-Year Russian Healthcare Intrusion | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-21-hackers-hid-vasilek-backdoor-in-vmware-tools-durin-8dbb0c.html</link>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+      <description>A Belarus-aligned hacktivist group spent nearly two years within the network of a Russian healthcare organization.
+
+According to a report published by Russian c</description>
+    </item>
     <item>
       <title>970,000 Medi-Cal Members Affected by Paradigm Healthcare Data Breach | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-20-970000-medi-cal-members-affected-by-paradigm-healt-a9c0ef.html</link>
