@@ -4,7 +4,19 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Wed, 21 Oct 2026 10:52:08 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 16:20:28 GMT</lastBuildDate>
+    <item>
+      <title>Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-21-attackers-hijacked-over-300-tor-exit-relays-to-int-bf7cf3.html</link>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Attackers took control of more than 300 Tor exit relays in early October and used them to redirect SSH connections to servers that stole login passwords, a rese</description>
+    </item>
+    <item>
+      <title>China-Aligned Bronze Sandcastle Abuses Sandboxie DLL Sideloading to Deploy Backdoors | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-21-china-aligned-bronze-sandcastle-abuses-sandboxie-d-5ff1dd.html</link>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of a previously undocumented China-aligned threat cluster known as Bronze Sandcastle that has been observed tar</description>
+    </item>
     <item>
       <title>CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-21-cisa-orders-federal-agencies-to-patch-exploited-pl-37c3e5.html</link>
@@ -24,6 +36,18 @@
       <description>A Belarus-aligned hacktivist group spent nearly two years within the network of a Russian healthcare organization.
 
 According to a report published by Russian c</description>
+    </item>
+    <item>
+      <title>Optiv Launches CyberBOT Cybersecurity Awareness Training Program | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-21-optiv-launches-cyberbot-cybersecurity-awareness-tr-56f9da.html</link>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Hands-on sessions provide educators, nonprofits, and community leaders with an accessible resource to foster year-round cyber awareness and build more resilient</description>
+    </item>
+    <item>
+      <title>Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-21-survey-finds-high-profile-executives-feel-untoucha-921857.html</link>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+      <description>360 Privacy finds more than 8 in 10 security and wealth professionals say cybersecurity and physical security can no longer be separated.</description>
     </item>
     <item>
       <title>970,000 Medi-Cal Members Affected by Paradigm Healthcare Data Breach | Password Monkey</title>
