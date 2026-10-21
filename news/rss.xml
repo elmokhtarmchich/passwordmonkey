@@ -4,7 +4,7 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Wed, 21 Oct 2026 16:20:28 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 21:03:16 GMT</lastBuildDate>
     <item>
       <title>Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-21-attackers-hijacked-over-300-tor-exit-relays-to-int-bf7cf3.html</link>
@@ -16,6 +16,12 @@
       <link>https://passwordmonkey.org/news/2026-10-21-china-aligned-bronze-sandcastle-abuses-sandboxie-d-5ff1dd.html</link>
       <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
       <description>Cybersecurity researchers have disclosed details of a previously undocumented China-aligned threat cluster known as Bronze Sandcastle that has been observed tar</description>
+    </item>
+    <item>
+      <title>CISA: Hackers chain Plex flaws in Plex2Shell attacks to breach servers | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-21-cisa-hackers-chain-plex-flaws-in-plex2shell-attack-a299ef.html</link>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning that attackers are actively exploiting four vulnerabilities in Plex Media Server. [.</description>
     </item>
     <item>
       <title>CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws | Password Monkey</title>
@@ -44,10 +50,29 @@ According to a report published by Russian c</description>
       <description>Hands-on sessions provide educators, nonprofits, and community leaders with an accessible resource to foster year-round cyber awareness and build more resilient</description>
     </item>
     <item>
+      <title>PHP: The three letters that shut down sites all over the internet today | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-21-php-the-three-letters-that-shut-down-sites-all-ove-be8716.html</link>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Two bugs found with AI are behind major issues today for 4chan, DeviantArt, Wikipedia, and the blog where the bar around the corner posts pictures of people</description>
+    </item>
+    <item>
+      <title>PHP2Shell Patches Land as First Exploitation Attempts Hit Sensors | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-21-php2shell-patches-land-as-first-exploitation-attem-d40bfd.html</link>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Several cybersecurity companies saw exploitation attempts of CVE-2026-109618 and CVE-2026-109619 before PHP released the patches.
+The post PHP2Shell Patches Lan</description>
+    </item>
+    <item>
       <title>Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-21-survey-finds-high-profile-executives-feel-untoucha-921857.html</link>
       <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
       <description>360 Privacy finds more than 8 in 10 security and wealth professionals say cybersecurity and physical security can no longer be separated.</description>
+    </item>
+    <item>
+      <title>The internet is having a very bad cybersecurity day | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-21-the-internet-is-having-a-very-bad-cybersecurity-da-532319.html</link>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
+      <description>From AI-discovered PHP vulnerabilities to flaws in Node.js and popular AI tool LiteLLM, cybersecurity teams have plenty to worry about this week.</description>
     </item>
     <item>
       <title>970,000 Medi-Cal Members Affected by Paradigm Healthcare Data Breach | Password Monkey</title>

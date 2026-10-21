@@ -13,6 +13,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://passwordmonkey.org/news/2026-10-21-cisa-hackers-chain-plex-flaws-in-plex2shell-attack-a299ef.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://passwordmonkey.org/news/2026-10-21-cisa-orders-federal-agencies-to-patch-exploited-pl-37c3e5.html</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -37,7 +43,25 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://passwordmonkey.org/news/2026-10-21-php-the-three-letters-that-shut-down-sites-all-ove-be8716.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-10-21-php2shell-patches-land-as-first-exploitation-attem-d40bfd.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://passwordmonkey.org/news/2026-10-21-survey-finds-high-profile-executives-feel-untoucha-921857.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-10-21-the-internet-is-having-a-very-bad-cybersecurity-da-532319.html</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
