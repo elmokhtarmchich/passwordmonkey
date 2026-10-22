@@ -594,9 +594,9 @@ body::before {
 }
 .dark .pm-film-tile {
     --pmf-mod: rgba(66, 184, 255, 0.10);
-    --pmf-brand: rgba(66, 184, 255, 0.10);
-    --pmf-sky: rgba(125, 211, 252, 0.08);
-    --pmf-deep: rgba(3, 105, 161, 0.12);
+    --pmf-brand: rgb(170 255 66 / 7%);
+    --pmf-sky: rgb(125 128 252 / 8%);
+    --pmf-deep: rgb(3 105 161 / 5%);
     background-blend-mode: overlay, soft-light, hard-light, overlay, normal, normal, normal, normal;
 }
 /* ---- News article term and company highlighting (NEWS-UX-2) ---- */
