@@ -4,13 +4,31 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Thu, 22 Oct 2026 16:19:53 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 20:59:49 GMT</lastBuildDate>
+    <item>
+      <title>1Password launches a way for AI agents to log in on your behalf without seeing your password | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-22-1password-launches-a-way-for-ai-agents-to-log-in-o-264af0.html</link>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The new feature allows agents to log into a customer</description>
+    </item>
     <item>
       <title>Bill Gates says to prepare for 20 years of ‘tumultuous’ AI disruption | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-22-bill-gates-says-to-prepare-for-20-years-of-tumultu-f790f5.html</link>
       <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
       <description>Today, I’m talking to Bill Gates, cofounder and former CEO of Microsoft and chairman of the Gates Foundation.
 You may have noticed Bill in the news more lately</description>
+    </item>
+    <item>
+      <title>Capcom confirms data breach affecting 11.7 million accounts | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-22-capcom-confirms-data-breach-affecting-117-million--1e6095.html</link>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Japanese gaming giant Capcom has confirmed that hackers breached its membership service, CAPCOM ID, exposing more than 11.7 million customer email addresses and</description>
+    </item>
+    <item>
+      <title>Chinese hackers spied on thousands of companies after breaching IT giant ConnectWise | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-22-chinese-hackers-spied-on-thousands-of-companies-af-6af0fd.html</link>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Microsoft points the blame for ConnectWise</description>
     </item>
     <item>
       <title>Cisco Patches 34 Vulnerabilities Across Multiple Products | Password Monkey</title>
@@ -32,6 +50,18 @@ The post Indurex Raise</description>
       <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
       <description>Two vulnerabilities found in the programming language PHP put enormous swaths of the internet in danger.
 By some accounts, up to 70 percent of websites use PHP</description>
+    </item>
+    <item>
+      <title>ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-22-threatsday-ai-secrets-leak-pingcap-source-theft-si-d99ba8.html</link>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
+      <description>This week has already been rough for cybersecurity. Critical PHP and GitLab RCE flaws, serious Linux security bugs, compromised eMudhra certificates, a Node.js</description>
+    </item>
+    <item>
+      <title>Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-22-two-cvss-90-linux-ksmbd-rce-flaws-disclosed-on-pub-7c53f7.html</link>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Linux servers running KSMBD, the kernel</description>
     </item>
     <item>
       <title>Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections | Password Monkey</title>
