@@ -4,13 +4,43 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Fri, 23 Oct 2026 10:44:26 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 16:09:31 GMT</lastBuildDate>
     <item>
       <title>11 Million Impacted by Capcom Data Breach | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-23-11-million-impacted-by-capcom-data-breach-a84146.html</link>
       <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
       <description>The hackers stole 11 million email addresses from CAPCOM ID and changed the login passwords for 196 accounts.
 The post 11 Million Impacted by Capcom Data Breach</description>
+    </item>
+    <item>
+      <title>Cyber Insurance&apos;s New Reality: Underwriting Isn&apos;t Enough | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-23-cyber-insurances-new-reality-underwriting-isnt-eno-55d5c1.html</link>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Rising AI, social engineering, and cloud risks are pushing carriers beyond risk transfer and deeper into cybersecurity itself.</description>
+    </item>
+    <item>
+      <title>Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-23-hackers-breach-enterprise-firewalls-and-vpns-expos-64b0ac.html</link>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of a large-scale campaign that has targeted exposed network edge devices such as Fortinet FortiGate and Palo Al</description>
+    </item>
+    <item>
+      <title>HPE patches eight max severity RCE and auth bypass AOS flaws | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-23-hpe-patches-eight-max-severity-rce-and-auth-bypass-690940.html</link>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Hewlett Packard Enterprise (HPE) released security updates to patch 72 vulnerabilities in the Aruba Operating System (ArubaOS), including eight maximum-severity</description>
+    </item>
+    <item>
+      <title>Lab testing giant Quest Diagnostics confirms patients’ personal and health data was compromised during breach | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-23-lab-testing-giant-quest-diagnostics-confirms-patie-16685f.html</link>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Quest is the latest in a series of healthcare technology companies that have been hacked in recent months.</description>
+    </item>
+    <item>
+      <title>Quest Diagnostics Data Breach Exposed ‘Certain Patient Records’ | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-23-quest-diagnostics-data-breach-exposed-certain-pati-4a6ee4.html</link>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
+      <description>In a regulatory filing, Quest Diagnostics reported unauthorized access to its Quanum Lab Services Manager, a platform where certain clients can place test order</description>
     </item>
     <item>
       <title>Quest Diagnostics Reports Cyber Breach Affecting ‘Certain Patient Records’ | Password Monkey</title>
