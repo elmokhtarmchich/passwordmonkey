@@ -4,7 +4,7 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Fri, 23 Oct 2026 16:09:31 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 20:49:31 GMT</lastBuildDate>
     <item>
       <title>11 Million Impacted by Capcom Data Breach | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-23-11-million-impacted-by-capcom-data-breach-a84146.html</link>
@@ -17,6 +17,12 @@ The post 11 Million Impacted by Capcom Data Breach</description>
       <link>https://passwordmonkey.org/news/2026-10-23-cyber-insurances-new-reality-underwriting-isnt-eno-55d5c1.html</link>
       <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
       <description>Rising AI, social engineering, and cloud risks are pushing carriers beyond risk transfer and deeper into cybersecurity itself.</description>
+    </item>
+    <item>
+      <title>Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-23-exposed-infrastructure-reveals-how-ransomware-affi-6fb95e.html</link>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Cybersecurity researchers have discovered an artificial intelligence (AI)-driven intrusion ecosystem run by affiliates of the INC and The Gentlemen ransomware g</description>
     </item>
     <item>
       <title>Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials | Password Monkey</title>
@@ -35,6 +41,12 @@ The post 11 Million Impacted by Capcom Data Breach</description>
       <link>https://passwordmonkey.org/news/2026-10-23-lab-testing-giant-quest-diagnostics-confirms-patie-16685f.html</link>
       <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
       <description>Quest is the latest in a series of healthcare technology companies that have been hacked in recent months.</description>
+    </item>
+    <item>
+      <title>Quest Diagnostics confirms data breach exposed patient records | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-23-quest-diagnostics-confirms-data-breach-exposed-pat-5d9f1f.html</link>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 GMT</pubDate>
+      <description>American clinical laboratory company Quest Diagnostics disclosed that patient records have been exposed after a threat actor gained unauthorized access to its Q</description>
     </item>
     <item>
       <title>Quest Diagnostics Data Breach Exposed ‘Certain Patient Records’ | Password Monkey</title>
