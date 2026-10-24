@@ -4,7 +4,13 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Sat, 24 Oct 2026 15:05:34 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 19:59:44 GMT</lastBuildDate>
+    <item>
+      <title>Capcom confirms data breach that affected 11.7 million users | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-24-capcom-confirms-data-breach-that-affected-117-mill-0ef367.html</link>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Capcom ID is still available to use, but users may see more phishing scam emails.</description>
+    </item>
     <item>
       <title>CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-24-cisa-flags-two-actively-exploited-critical-flaws-i-ad7396.html</link>
@@ -1221,18 +1227,6 @@ Cybersecurity is being reshaped by the expansion of cloud infrastructure, AI, di
       <description>Why Video Game Anti-Cheat Systems Are a Cybersecurity Goldmine</description>
     </item>
     <item>
-      <title>[Article Title] | Password Monkey</title>
-      <link>https://passwordmonkey.org/news/article-template.html</link>
-      <pubDate>Invalid Date</pubDate>
-      <description>[Meta Description]</description>
-    </item>
-    <item>
-      <title>Secure Password Strategies for 2025 | Password Monkey</title>
-      <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
-      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
-      <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
-    </item>
-    <item>
       <title>Strong password trends in 2025 | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2025-08-10-strong-password-trends-2025.html</link>
       <pubDate>Sun, 10 Aug 2025 00:00:00 GMT</pubDate>
@@ -1255,6 +1249,18 @@ Cybersecurity is being reshaped by the expansion of cloud infrastructure, AI, di
       <link>https://passwordmonkey.org/news/2022-08-29-tentacles-of-0ktapus-threat-group-victimize-130-fi-b4e51b.html</link>
       <pubDate>Mon, 29 Aug 2022 00:00:00 GMT</pubDate>
       <description>Over 130 companies tangled in sprawling phishing campaign that spoofed a multi-factor authentication system.</description>
+    </item>
+    <item>
+      <title>[Article Title] | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/article-template.html</link>
+      <pubDate>Invalid Date</pubDate>
+      <description>[Meta Description]</description>
+    </item>
+    <item>
+      <title>Secure Password Strategies for 2025 | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
     </item>
   </channel>
 </rss>
