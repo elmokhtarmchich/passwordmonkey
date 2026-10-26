@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://passwordmonkey.org/news/2026-10-26-10-software-security-practices-built-for-the-next--9d30cf.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-10-26-attackers-use-microsoft-teams-it-support-scams-to--4b8826.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://passwordmonkey.org/news/2026-10-26-microsoft-365-token-replay-attacks-compromise-97-a-399172.html</loc>
     <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -1201,18 +1213,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://passwordmonkey.org/news/article-template.html</loc>
-    <lastmod>NaN-NaN-NaN</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://passwordmonkey.org/news/secure-password-strategies-2025.html</loc>
-    <lastmod>2025-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://passwordmonkey.org/news/2025-08-10-strong-password-trends-2025.html</loc>
     <lastmod>2025-08-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -1233,6 +1233,18 @@
   <url>
     <loc>https://passwordmonkey.org/news/2022-08-29-tentacles-of-0ktapus-threat-group-victimize-130-fi-b4e51b.html</loc>
     <lastmod>2022-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/article-template.html</loc>
+    <lastmod>NaN-NaN-NaN</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/secure-password-strategies-2025.html</loc>
+    <lastmod>2025-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
