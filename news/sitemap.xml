@@ -25,6 +25,36 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://passwordmonkey.org/news/2026-10-27-hpe-patches-dozens-of-critical-flaws-in-networking-cf9205.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-10-27-japan-internet-giant-gmo-says-hackers-posted-stole-80ab2e.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-10-27-lazarus-abuses-south-korean-security-software-to-d-b434e7.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-10-27-unexplained-dreamhost-incident-prompts-email-ftp-p-e9165f.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-10-27-warp-discloses-breach-exposing-ai-agent-logs-user--7c53fd.html</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://passwordmonkey.org/news/2026-10-26-10-software-security-practices-built-for-the-next--9d30cf.html</loc>
     <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>

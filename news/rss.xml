@@ -4,7 +4,7 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Tue, 27 Oct 2026 11:17:59 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 17:04:10 GMT</lastBuildDate>
     <item>
       <title>CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-27-cisa-confirms-active-exploitation-of-two-php2shell-dc98d4.html</link>
@@ -29,6 +29,38 @@ The</description>
       <link>https://passwordmonkey.org/news/2026-10-27-energy-giant-engie-discloses-data-breach-affecting-92e474.html</link>
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>French energy giant ENGIE, one of the world</description>
+    </item>
+    <item>
+      <title>HPE Patches Dozens of Critical Flaws in Networking Products | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-27-hpe-patches-dozens-of-critical-flaws-in-networking-cf9205.html</link>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Eight max-severity security defects could lead to remote code execution and authentication bypass.
+The post HPE Patches Dozens of Critical Flaws in Networking P</description>
+    </item>
+    <item>
+      <title>Japan internet giant GMO says hackers posted stolen customer data | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-27-japan-internet-giant-gmo-says-hackers-posted-stole-80ab2e.html</link>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Japan</description>
+    </item>
+    <item>
+      <title>Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-27-lazarus-abuses-south-korean-security-software-to-d-b434e7.html</link>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The North Korea-linked Lazarus Group has been attributed to a cyber espionage campaign dubbed Operation FlashHole targeting at least three organizations in Sout</description>
+    </item>
+    <item>
+      <title>Unexplained DreamHost Incident Prompts Email, FTP Password Resets | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-27-unexplained-dreamhost-incident-prompts-email-ftp-p-e9165f.html</link>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The company says it reacted to an issue affecting some of its systems, including DreamHost webmail.
+The post Unexplained DreamHost Incident Prompts Email, FTP P</description>
+    </item>
+    <item>
+      <title>Warp discloses breach exposing AI agent logs, user telemetry data | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-27-warp-discloses-breach-exposing-ai-agent-logs-user--7c53fd.html</link>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Agent decision logs and telemetry data belonging to Warp agentic development environment users were exposed in an attack on a third-party vendor in the project</description>
     </item>
     <item>
       <title>10 Software Security Practices Built for the Next 250 Years | Password Monkey</title>
