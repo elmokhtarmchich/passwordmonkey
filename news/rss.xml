@@ -4,7 +4,13 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Tue, 27 Oct 2026 17:04:10 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 21:37:33 GMT</lastBuildDate>
+    <item>
+      <title>Beware the Slasher: AI Could Kill Off Cybersecurity Pros&apos; Skills | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-27-beware-the-slasher-ai-could-kill-off-cybersecurity-74bf10.html</link>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Nathan Hamiel outlines potential SecOps horror in the AI midst, as core technical capabilities go the way of reading an atlas or remembering phone numbers.</description>
+    </item>
     <item>
       <title>CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-27-cisa-confirms-active-exploitation-of-two-php2shell-dc98d4.html</link>
@@ -23,6 +29,12 @@
       <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
       <description>The University of New Mexico Health System told people not to show up at its main hospital in Albuquerque and canceled appointments at more than 30 clinics.
 The</description>
+    </item>
+    <item>
+      <title>CyberStrikeAI Uses 44 AI Agents to Automate Hacking Operations Against Japan Targets | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-27-cyberstrikeai-uses-44-ai-agents-to-automate-hackin-3f1af1.html</link>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of three cyber attacks targeting organizations in Japan in which artificial intelligence (AI) was a key element</description>
     </item>
     <item>
       <title>Energy giant ENGIE discloses data breach affecting customers | Password Monkey</title>
