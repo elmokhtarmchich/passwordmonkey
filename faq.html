@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Google Tag Manager -->
@@ -10,25 +10,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frequently Asked Questions | PasswordMonkey</title>
-    <meta name="description" content="Find answers to common questions about PasswordMonkey, password security, social media passwords, business use cases, and how to create strong memorable passwords.">
-    <meta name="keywords" content="password generator FAQ, password security questions, how to use password generator, are password generators safe, social media passwords, business passwords, memorable passwords, password generator comparison">
-    <link rel="canonical" href="https://passwordmonkey.org/faq">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://passwordmonkey.org/faq">
-    <meta property="og:title" content="FAQ - Frequently Asked Questions | PasswordMonkey">
-    <meta property="og:description" content="Find answers to common questions about PasswordMonkey, password security, and best practices for creating strong passwords.">
-    <meta property="og:image" content="https://passwordmonkey.org/images/og-image.png">
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:url" content="https://passwordmonkey.org/faq">
-    <meta property="og:title" content="FAQ - Frequently Asked Questions | PasswordMonkey">
-    <meta name="twitter:description" content="Find answers to common questions about PasswordMonkey, password security, and best practices for creating strong passwords.">
-    <meta name="twitter:image" content="https://passwordmonkey.org/images/og-image.png">
-    
+    <title>FAQ - PasswordMonkey</title>
+    <meta name="description" content="Frequently asked questions about PasswordMonkey, password safety, password managers, breaches, and passkeys.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -74,6 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
 
 <!--@include partials/theme-init.html -->
+
 <!--@include partials/head-assets.html prefix=./ -->
 </head>
 <body class="bg-gray-50 dark:bg-canvas min-h-screen font-sans">
@@ -86,382 +70,89 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="content-wrapper">
 <!--@include partials/topbar.html prefix=./ -->
 
-    <main class="container mx-auto px-4 py-8">
-        <div class="max-w-4xl mx-auto">
-            <article class="bg-white dark:bg-card rounded-xl shadow-lg p-8">
-                <header class="mb-8">
-                    <h1 class="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">
-                        Frequently Asked Questions
-                    </h1>
-                    <p class="text-xl text-gray-600 dark:text-gray-300">
-                        Find answers to common questions about PasswordMonkey, password security, and best practices.
-                    </p>
-                </header>
+    <main class="container mx-auto px-4 py-8 bg-gray-50 dark:bg-canvas">
+        <div class="max-w-4xl mx-auto article bg-white dark:bg-card rounded-xl shadow-lg p-8">
+            <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4">Frequently Asked Questions</h1>
+            <p class="text-gray-600 dark:text-gray-300 mb-2">Last reviewed: October 2026</p>
+            <input id="faq-search" type="search" placeholder="Search questions..." class="w-full mb-4 px-3 py-2 rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-card text-gray-800 dark:text-gray-100" />
+            <nav class="mb-6 flex flex-wrap gap-2">
+                <a href="#using" class="text-blue-600 hover:underline">Using the generator</a>
+                <a href="#saving" class="text-blue-600 hover:underline">Saving and reusing</a>
+                <a href="#losing" class="text-blue-600 hover:underline">Losing access</a>
+                <a href="#breach" class="text-blue-600 hover:underline">After a breach</a>
+                <a href="#beyond" class="text-blue-600 hover:underline">Beyond passwords</a>
+                <a href="#about" class="text-blue-600 hover:underline">About us</a>
+            </nav>
 
-                <!-- Table of Contents -->
-                <nav class="mb-8 p-6 bg-gray-50 dark:bg-raised rounded-lg">
-                    <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-4">Quick Navigation</h2>
-                    <div class="grid md:grid-cols-2 gap-2 text-sm">
-                        <a href="#how-to-use" class="text-blue-600 hover:underline dark:text-blue-400">🛠️ How to Use PasswordMonkey</a>
-                        <a href="#security-privacy" class="text-blue-600 hover:underline dark:text-blue-400">🛡️ Security & Privacy</a>
-                        <a href="#social-media" class="text-blue-600 hover:underline dark:text-blue-400">🌐 Social Media Passwords</a>
-                        <a href="#business-use" class="text-blue-600 hover:underline dark:text-blue-400">🏢 Business & Professional Use</a>
-                        <a href="#comparisons" class="text-blue-600 hover:underline dark:text-blue-400">⚖️ Comparisons with Other Tools</a>
-                        <a href="#memorable-passwords" class="text-blue-600 hover:underline dark:text-blue-400">🧠 Memorable Passwords</a>
-                    </div>
-                </nav>
+            <h2 id="using" class="text-2xl font-bold text-gray-800 dark:text-gray-100 mt-6 mb-3">Using the generator</h2>
+            <details id="faq-using-safe"><summary>Is it safe to use the PasswordMonkey generator?</summary><p><strong>Yes. All password generation happens in your browser using the Web Crypto API.</strong></p><p>PasswordMonkey never sees, stores, or transmits your passwords. Nothing leaves your device. Randomness comes from your device's hardware random number generator via crypto.getRandomValues().</p><p><a href="/guides/why-use-random-passwords/">Learn more about why use random passwords</a></p></details>
+            <details id="faq-saving-manager"><summary>Does PasswordMonkey store or see my passwords?</summary><p><strong>No. PasswordMonkey never receives your passwords.</strong></p><p>Generation is entirely local to your device. We don't log, store, or transmit generated passwords. No network request carries them.</p><p><a href="/guides/why-use-random-passwords/">Learn more about why use random passwords</a></p></details>
+            <details id="faq-length"><summary>How long should my password be?</summary><p><strong>Use 15 characters or more; 16 or more is recommended.</strong></p><p>NIST SP 800-63B-4 sets a 15-character minimum for single-factor passwords and allows at least 64. Longer passwords are exponentially harder to crack. If a site limits length, use the maximum it allows and a unique password for that site.</p><p><a href="/guides/why-use-random-passwords/">Learn more about why use random passwords</a></p></details>
+            <details id="faq-symbols"><summary>Do I need symbols in my password?</summary><p><strong>No. Length and uniqueness matter most; symbols are optional.</strong></p><p>NIST removed composition rules. You don't need mixed uppercase, lowercase, numbers, and symbols. A long password or passphrase works fine without symbols. If a site requires symbols, add them — but don't rely on them for strength.</p><p><a href="/guides/password-advice-that-changed/">Learn more about password advice that changed</a></p></details>
+            <details id="faq-limits"><summary>What if a site limits password length or rejects symbols?</summary><p><strong>Use the maximum length the site allows.</strong></p><p>If a site caps length or rejects symbols, generate the longest password it accepts using letters and numbers. Length still matters most. Pair it with a password manager so you don't have to remember it.</p><p><a href="/tools/passphrase-generator/">Learn more about passphrase generator</a></p></details>
+            <details id="faq-random-passphrase"><summary>Random password or passphrase?</summary><p><strong>Both work.</strong></p><p>A long random password and a passphrase of several random words are both strong. Store either in a password manager so you only need to remember one master password.</p><p><a href="/tools/passphrase-generator/">Learn more about passphrase generator</a></p></details>
+            <details id="faq-how-generate"><summary>How do I generate a password with PasswordMonkey?</summary><p><strong>Visit the site, set the length, choose character types, and click Generate.</strong></p><p>Set your desired length (4-50 characters), pick which character types to include, optionally exclude similar-looking characters, click "Generate Password," then use the copy button to copy to your clipboard.</p><p><a href="/">Learn more about the homepage generator</a></p></details>
+            <details id="faq-strength"><summary>What do the password strength indicators mean?</summary><p><strong>The indicator shows entropy in bits: weak (&lt;32), fair (32-64), good (64-128), strong (128+).</strong></p><p>PasswordMonkey calculates strength from the character set size and length. Higher entropy means harder to crack. Aim for 128+ bits for your most important accounts.</p><p><a href="/guides/why-use-random-passwords/">Learn more about why use random passwords</a></p></details>
+            <details id="faq-qr"><summary>Can I generate QR codes for my passwords?</summary><p><strong>Yes. Click the QR code icon after generating a password.</strong></p><p>The QR code encodes the password text so you can scan it with your mobile device. Only use this on your own trusted devices — the QR contains your password in plain sight.</p><p><a href="/">Learn more about the homepage generator</a></p></details>
+            <details id="faq-randomness"><summary>How does PasswordMonkey ensure password randomness?</summary><p><strong>Via the Web Crypto API's crypto.getRandomValues().</strong></p><p>This provides cryptographically secure random numbers from your device's hardware RNG — the same technology used by banks and security applications.</p><p><a href="/guides/password-advice-that-changed/">Learn more about password advice that changed</a></p></details>
+            <details id="faq-online-offline"><summary>What's the difference between online and offline password generators?</summary><p><strong>PasswordMonkey runs in your browser but processes locally like an offline tool.</strong></p><p>You get web convenience without server-side generation risks. All processing happens on your device; nothing is sent anywhere.</p><p><a href="/guides/why-use-random-passwords/">Learn more about why use random passwords</a></p></details>
 
-                <!-- FAQ Sections -->
-                <div class="space-y-8">
-                    <!-- How to Use Section -->
-                    <section id="how-to-use">
-                        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">
-                            🛠️ How to Use PasswordMonkey
-                        </h2>
-                        
-                        <div class="space-y-6">
-                            <div class="border-l-4 border-blue-500 pl-6">
-                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
-                                    How do I generate a password with PasswordMonkey?
-                                </h3>
-                                <p class="text-gray-700 dark:text-gray-300 mb-3">
-                                    Using PasswordMonkey is simple and secure:
-                                </p>
-                                <ol class="list-decimal list-inside space-y-2 text-gray-700 dark:text-gray-300">
-                                    <li>Visit <a href="/" class="text-blue-600 hover:underline">passwordmonkey.org</a></li>
-                                    <li>Set your desired password length (4-50 characters)</li>
-                                    <li>Choose which character types to include (uppercase, lowercase, numbers, symbols)</li>
-                                    <li>Optionally exclude similar-looking characters (0/O, 1/l)</li>
-                                    <li>Click "Generate Password" to create a new password</li>
-                                    <li>Use the copy button to copy the password to your clipboard</li>
-                                </ol>
-                            </div>
+            <h2 id="saving" class="text-2xl font-bold text-gray-800 dark:text-gray-100 mt-6 mb-3">Saving and reusing</h2>
+            <details id="faq-safe-use"><summary>Is PasswordMonkey safe to use?</summary><p><strong>Yes. All generation happens in your browser; nothing is stored or transmitted.</strong></p><p>Passwords are created locally via the Web Crypto API and never sent to our servers. The page uses GTM and AdSense for aggregate traffic measurement — neither sees your generated passwords.</p><p><a href="/guides/why-use-random-passwords/">Learn more about why use random passwords</a></p></details>
+            <details id="faq-where-save"><summary>Where should I save my passwords?</summary><p><strong>In a password manager.</strong></p><p>Use a browser-built-in manager or a dedicated password manager. Never store passwords in notes apps, spreadsheets, email to yourself, or screenshots — those aren't designed to protect secrets.</p><p><a href="/guides/where-to-save-passwords/">Learn more about where to save passwords</a></p></details>
+            <details id="faq-browser-save"><summary>Is it safe to save passwords in my browser?</summary><p><strong>Yes, browsers can save passwords.</strong></p><p>Browsers store encrypted credentials on your device. One caveat: entries are filed under the page's origin (passwordmonkey.org for this site), not under the target site the password is for.</p><p><a href="/guides/save-password-to-browser/">Learn more about saving passwords to browser</a></p></details>
+            <details id="faq-manager"><summary>What is a password manager?</summary><p><strong>An app that stores your passwords in an encrypted vault.</strong></p><p>You unlock it with one strong master password. The manager generates, saves, and autofills passwords for every site, so you never reuse passwords and never memorize dozens.</p><p><a href="/guides/where-to-save-passwords/">Learn more about where to save passwords</a></p></details>
+            <details id="faq-origin"><summary>Why does my browser file the entry under passwordmonkey.org?</summary><p><strong>Browsers save credentials under the page's origin.</strong></p><p>When you save a password while on passwordmonkey.org, the browser files it under our origin, not under the site the password is actually for. Browser credential storage is tied to the domain you're visiting when you save.</p><p><a href="/guides/save-password-to-browser/">Learn more about saving passwords to browser</a></p></details>
+            <details id="faq-reuse"><summary>Can I reuse a password?</summary><p><strong>No. Use a unique password for every account.</strong></p><p>If one account is compromised and you reused that password elsewhere, all those accounts are at risk. A password manager makes unique passwords practical by remembering them for you.</p><p><a href="/guides/why-use-random-passwords/">Learn more about why use random passwords</a></p></details>
+            <details id="faq-freelancers"><summary>How can freelancers and small businesses use PasswordMonkey?</summary><p><strong>Generate secure passwords for client accounts, admin accounts, and API keys.</strong></p><p>Use it for temporary access credentials, website admin accounts, and business social media. No account required; nothing is stored. Pair with a password manager for team credential sharing.</p><p><a href="/guides/where-to-save-passwords/">Learn more about where to save passwords</a></p></details>
+            <details id="faq-biz-length"><summary>What password length should businesses use?</summary><p><strong>Use at least 15 characters; 16 or more is recommended.</strong></p><p>NIST allows up to 64+ characters. Standard accounts: 16-20. Admin accounts: 20-25. Financial accounts: 25+. API keys: 32+. Longer is always fine.</p><p><a href="/guides/why-use-random-passwords/">Learn more about why use random passwords</a></p></details>
+            <details id="faq-compare"><summary>How does PasswordMonkey compare to LastPass, Dashlane, Bitwarden?</summary><p><strong>PasswordMonkey is free, needs no account, and stores nothing.</strong></p><p>LastPass/Dashlane/Bitwarden are password managers with storage and autofill. PasswordMonkey is a generator only — use it to create passwords, then save them in your manager of choice.</p><p><a href="/guides/where-to-save-passwords/">Learn more about where to save passwords</a></p></details>
 
-                            <div class="border-l-4 border-blue-500 pl-6">
-                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
-                                    What do the password strength indicators mean?
-                                </h3>
-                                <p class="text-gray-700 dark:text-gray-300">
-                                    PasswordMonkey shows real-time strength indicators based on entropy calculations:
-                                </p>
-                                <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 mt-2">
-                                    <li><span class="text-red-500 font-semibold">Weak:</span> Less than 32 bits of entropy</li>
-                                    <li><span class="text-yellow-500 font-semibold">Fair:</span> 32-64 bits of entropy</li>
-                                    <li><span class="text-blue-500 font-semibold">Good:</span> 64-128 bits of entropy</li>
-                                    <li><span class="text-green-500 font-semibold">Strong:</span> 128+ bits of entropy</li>
-                                </ul>
-                            </div>
+            <h2 id="losing" class="text-2xl font-bold text-gray-800 dark:text-gray-100 mt-6 mb-3">Losing access</h2>
+            <details id="faq-forgot"><summary>What if I forget a password?</summary><p><strong>Use the site's "forgot password" reset flow.</strong></p><p>Most sites reset by email. If you saved it in a password manager, check there first. Never reuse an old password when resetting — generate a new random one.</p><p><a href="/guides/lost-password-dont-panic/">Learn more about lost password don't panic</a></p></details>
+            <details id="faq-lost-phone"><summary>What if I lose my phone?</summary><p><strong>Use your password manager on another device, or your recovery codes.</strong></p><p>Install your manager on a new device and sign in with your master password. Keep recovery codes and your emergency kit safe (paper, locked drawer) so you can regain access.</p><p><a href="/tools/recovery-kit/">Learn more about recovery kit</a></p></details>
+            <details id="faq-forgot-master"><summary>What if I forget my password manager's master password?</summary><p><strong>It may be unrecoverable.</strong></p><p>Bitwarden cannot reset a forgotten master password. 1Password uses an Emergency Kit (Secret Key) and recovery codes. Apple needs a trusted device passcode, recovery contact, or recovery key. No "forgot master password" reset exists — that's the encryption's purpose.</p><p><a href="/tools/recovery-kit/">Learn more about recovery kit</a></p></details>
 
-                            <div class="border-l-4 border-blue-500 pl-6">
-                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
-                                    Can I generate QR codes for my passwords?
-                                </h3>
-                                <p class="text-gray-700 dark:text-gray-300">
-                                    Yes! PasswordMonkey includes QR code generation. After generating a password, click the QR code icon to create a scannable code. This is useful for quickly transferring passwords to mobile devices or sharing with team members securely.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
+            <h2 id="breach" class="text-2xl font-bold text-gray-800 dark:text-gray-100 mt-6 mb-3">After a breach</h2>
+            <details id="faq-exposed"><summary>How do I know if a password was exposed?</summary><p><strong>Chrome warns about exposed passwords; Edge has Password Monitor.</strong></p><p>Your password manager may also monitor for breaches and alert you if a saved password appears in a known breach. Act on those warnings promptly.</p><p><a href="/guides/lost-password-dont-panic/">Learn more about lost password don't panic</a></p></details>
+            <details id="faq-change-first"><summary>What do I change first after a breach?</summary><p><strong>Change the breached password first.</strong></p><p>Then change any other account where you reused the same password. NIST says change on evidence of compromise — not on a fixed schedule. Use unique random passwords going forward.</p><p><a href="/guides/lost-password-dont-panic/">Learn more about lost password don't panic</a></p></details>
 
-                    <!-- Security & Privacy Section -->
-                    <section id="security-privacy">
-                        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">
-                            🛡️ Security & Privacy
-                        </h2>
-                        
-                        <div class="space-y-6">
-                            <div class="border-l-4 border-green-500 pl-6">
-                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
-                                    Is PasswordMonkey safe to use?
-                                </h3>
-                                <p class="text-gray-700 dark:text-gray-300 mb-3">
-                                    <strong>Yes, PasswordMonkey is completely safe.</strong> Here's why:
-                                </p>
-                                <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
-                                    <li>All password generation happens in your browser using the Web Crypto API</li>
-                                    <li>No passwords are ever sent to our servers</li>
-                                    <li>No data is stored or logged anywhere</li>
-                                    <li>We don't use cookies or tracking technologies</li>
-                                    <li>The code is open source and transparent</li>
-                                </ul>
-                            </div>
+            <h2 id="beyond" class="text-2xl font-bold text-gray-800 dark:text-gray-100 mt-6 mb-3">Beyond passwords</h2>
+            <details id="faq-2fa"><summary>Do I need two-step verification?</summary><p><strong>Yes, where available.</strong></p><p>Two-step verification adds a second check beyond your password — an app code or security key. Even if your password is stolen, the second step protects your account.</p><p><a href="/guides/secure-your-first-5-accounts/">Learn more about secure your first 5 accounts</a></p></details>
+            <details id="faq-passkeys"><summary>What are passkeys, and do they replace passwords?</summary><p><strong>Passkeys are a password-free sign-in option supported by many platforms.</strong></p><p>They can replace passwords where offered. Passwords still work everywhere, so use passkeys where available and strong random passwords elsewhere.</p><p><a href="/guides/secure-your-first-5-accounts/">Learn more about secure your first 5 accounts</a></p></details>
 
-                            <div class="border-l-4 border-green-500 pl-6">
-                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
-                                    How does PasswordMonkey ensure password randomness?
-                                </h3>
-                                <p class="text-gray-700 dark:text-gray-300">
-                                    PasswordMonkey uses the Web Crypto API's <code>crypto.getRandomValues()</code> function, which provides cryptographically secure random numbers. This is the same technology used by banks and security applications. The randomness is generated by your device's hardware random number generator, ensuring true unpredictability.
-                                </p>
-                            </div>
-
-                            <div class="border-l-4 border-green-500 pl-6">
-                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
-                                    What's the difference between online and offline password generators?
-                                </h3>
-                                <p class="text-gray-700 dark:text-gray-300">
-                                    PasswordMonkey is technically an "online" tool since it runs in a web browser, but it functions like an offline generator because all processing happens locally on your device. This gives you the convenience of web access without the security risks of server-side generation.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Social Media Section -->
-                    <section id="social-media">
-                        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">
-                            🌐 Social Media Passwords
-                        </h2>
-                        
-                        <div class="space-y-6">
-                            <div class="border-l-4 border-purple-500 pl-6">
-                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
-                                    What are the best password practices for social media accounts?
-                                </h3>
-                                <p class="text-gray-700 dark:text-gray-300 mb-3">
-                                    Social media accounts are prime targets for hackers. Here are best practices:
-                                </p>
-                                <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
-                                    <li>Use passwords 16+ characters long for high-value accounts</li>
-                                    <li>Include all character types (uppercase, lowercase, numbers, symbols)</li>
-                                    <li>Use unique passwords for each platform</li>
-                                    <li>Enable two-factor authentication whenever possible</li>
-                                    <li>Regularly update passwords, especially after security incidents</li>
-                                </ul>
-                            </div>
-
-                            <div class="border-l-4 border-purple-500 pl-6">
-                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
-                                    Are there specific requirements for different social media platforms?
-                                </h3>
-                                <p class="text-gray-700 dark:text-gray-300">
-                                    Yes, different platforms have varying requirements:
-                                </p>
-                                <div class="grid md:grid-cols-2 gap-4 mt-3">
-                                    <div class="bg-gray-50 dark:bg-raised p-4 rounded">
-                                        <h4 class="font-semibold text-gray-800 dark:text-gray-200">Facebook</h4>
-                                        <p class="text-sm text-gray-600 dark:text-gray-400">Minimum 6 characters, no spaces</p>
-                                    </div>
-                                    <div class="bg-gray-50 dark:bg-raised p-4 rounded">
-                                        <h4 class="font-semibold text-gray-800 dark:text-gray-200">Instagram</h4>
-                                        <p class="text-sm text-gray-600 dark:text-gray-400">Minimum 6 characters</p>
-                                    </div>
-                                    <div class="bg-gray-50 dark:bg-raised p-4 rounded">
-                                        <h4 class="font-semibold text-gray-800 dark:text-gray-200">Twitter</h4>
-                                        <p class="text-sm text-gray-600 dark:text-gray-400">Minimum 8 characters</p>
-                                    </div>
-                                    <div class="bg-gray-50 dark:bg-raised p-4 rounded">
-                                        <h4 class="font-semibold text-gray-800 dark:text-gray-200">TikTok</h4>
-                                        <p class="text-sm text-gray-600 dark:text-gray-400">Minimum 8 characters</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Business Use Section -->
-                    <section id="business-use">
-                        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">
-                            🏢 Business & Professional Use
-                        </h2>
-                        
-                        <div class="space-y-6">
-                            <div class="border-l-4 border-orange-500 pl-6">
-                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
-                                    How can freelancers and small businesses use PasswordMonkey?
-                                </h3>
-                                <p class="text-gray-700 dark:text-gray-300 mb-3">
-                                    PasswordMonkey is excellent for business use cases:
-                                </p>
-                                <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
-                                    <li>Generate secure passwords for client accounts</li>
-                                    <li>Create temporary access credentials for team members</li>
-                                    <li>Secure admin accounts for websites and services</li>
-                                    <li>Generate API keys and access tokens</li>
-                                    <li>Create secure passwords for business social media accounts</li>
-                                </ul>
-                            </div>
-
-                            <div class="border-l-4 border-orange-500 pl-6">
-                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
-                                    What password length should businesses use?
-                                </h3>
-                                <p class="text-gray-700 dark:text-gray-300">
-                                    For business accounts, we recommend:
-                                </p>
-                                <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300 mt-2">
-                                    <li><strong>Standard accounts:</strong> 16-20 characters</li>
-                                    <li><strong>Admin accounts:</strong> 20-25 characters</li>
-                                    <li><strong>Financial accounts:</strong> 25+ characters</li>
-                                    <li><strong>API keys:</strong> 32+ characters</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Comparisons Section -->
-                    <section id="comparisons">
-                        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">
-                            ⚖️ Comparisons with Other Tools
-                        </h2>
-                        
-                        <div class="space-y-6">
-                            <div class="border-l-4 border-indigo-500 pl-6">
-                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
-                                    How does PasswordMonkey compare to LastPass, Dashlane, and Bitwarden?
-                                </h3>
-                                <div class="overflow-x-auto">
-                                    <table class="w-full border-collapse border border-gray-300 dark:border-[#454545] mt-3">
-                                        <thead>
-                                            <tr class="bg-gray-100 dark:bg-raised">
-                                                <th class="border border-gray-300 dark:border-[#454545] p-2 text-left">Feature</th>
-                                                <th class="border border-gray-300 dark:border-[#454545] p-2 text-left">PasswordMonkey</th>
-                                                <th class="border border-gray-300 dark:border-[#454545] p-2 text-left">LastPass/Dashlane</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="border border-gray-300 dark:border-[#454545] p-2">Cost</td>
-                                                <td class="border border-gray-300 dark:border-[#454545] p-2 text-green-600">Free</td>
-                                                <td class="border border-gray-300 dark:border-[#454545] p-2">Premium required</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="border border-gray-300 dark:border-[#454545] p-2">Account required</td>
-                                                <td class="border border-gray-300 dark:border-[#454545] p-2 text-green-600">No</td>
-                                                <td class="border border-gray-300 dark:border-[#454545] p-2">Yes</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="border border-gray-300 dark:border-[#454545] p-2">Password storage</td>
-                                                <td class="border border-gray-300 dark:border-[#454545] p-2">No</td>
-                                                <td class="border border-gray-300 dark:border-[#454545] p-2 text-green-600">Yes</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="border border-gray-300 dark:border-[#454545] p-2">Auto-fill</td>
-                                                <td class="border border-gray-300 dark:border-[#454545] p-2">No</td>
-                                                <td class="border border-gray-300 dark:border-[#454545] p-2 text-green-600">Yes</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="border border-gray-300 dark:border-[#454545] p-2">Privacy</td>
-                                                <td class="border border-gray-300 dark:border-[#454545] p-2 text-green-600">100% private</td>
-                                                <td class="border border-gray-300 dark:border-[#454545] p-2">Data stored</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- Memorable Passwords Section -->
-                    <section id="memorable-passwords">
-                        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">
-                            🧠 Memorable Passwords
-                        </h2>
-                        
-                        <div class="space-y-6">
-                            <div class="border-l-4 border-teal-500 pl-6">
-                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
-                                    How can I create memorable but secure passwords?
-                                </h3>
-                                <p class="text-gray-700 dark:text-gray-300 mb-3">
-                                    While PasswordMonkey generates random passwords, here are strategies for memorable passwords:
-                                </p>
-                                <ul class="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
-                                    <li><strong>Passphrase method:</strong> Use 4-6 random words (e.g., "correct-horse-battery-staple")</li>
-                                    <li><strong>Diceware:</strong> Use dice to select words from a predefined list</li>
-                                    <li><strong>Pattern method:</strong> Create a pattern and substitute characters</li>
-                                    <li><strong>Acronym method:</strong> Use the first letters of a memorable sentence</li>
-                                </ul>
-                            </div>
-
-                            <div class="border-l-4 border-teal-500 pl-6">
-                                <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-2">
-                                    Should I use memorable passwords or random passwords?
-                                </h3>
-                                <p class="text-gray-700 dark:text-gray-300">
-                                    For maximum security, use random passwords generated by tools like PasswordMonkey and store them in a password manager. However, if you need to remember passwords, use the passphrase method with 4-6 random words, which provides good security while remaining memorable.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-                <!-- Call to Action -->
-                <div class="mt-12 p-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-center">
-                    <h2 class="text-xl font-bold text-gray-800 dark:text-gray-100 mb-3">
-                        Ready to Generate Secure Passwords?
-                    </h2>
-                    <p class="text-gray-600 dark:text-gray-300 mb-4">
-                        Start creating strong, secure passwords right now with PasswordMonkey.
-                    </p>
-                    <a href="/" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition">
-                        <i class="fas fa-lock mr-2"></i>Generate Password Now
-                    </a>
-                </div>
-            </article>
+            <h2 id="about" class="text-2xl font-bold text-gray-800 dark:text-gray-100 mt-6 mb-3">About us</h2>
+            <details id="faq-affiliate"><summary>Are there affiliate links?</summary><p><strong>Yes. Some product links are affiliate links marked "sponsored."</strong></p><p>They're kept separate from educational content and help support the site. They never influence our security advice.</p><p><a href="/donate">Learn more about donate</a></p></details>
+            <details id="faq-money"><summary>How do you make money?</summary><p><strong>Through affiliate links and donations.</strong></p><p>Password generation itself is free and private. We don't sell your data or show your passwords to anyone.</p><p><a href="/donate">Learn more about donate</a></p></details>
+            <details id="faq-platform-reqs"><summary>Are there specific requirements for different social media platforms?</summary><p><strong>Platform minimums vary (for example, some require 6 or 8 characters).</strong></p><p>These platform-specific minimums are not in the NIST fact sheet — check each platform directly for current requirements. NIST's 15-character minimum is a safer baseline.</p><p><a href="/guides/why-use-random-passwords/">Learn more about why use random passwords</a></p></details>
+            <details id="faq-memorable"><summary>How can I create memorable but secure passwords?</summary><p><strong>Use a passphrase of several random words, or a random password stored in a manager.</strong></p><p>Both approaches work when the result is long and unique. A password manager removes the need to memorize anything except your master password.</p><p><a href="/tools/passphrase-generator/">Learn more about passphrase generator</a></p></details>
+            <details id="faq-mem-vs-random"><summary>Should I use memorable passwords or random passwords?</summary><p><strong>Random passwords are strongest when stored in a manager.</strong></p><p>Use random passwords for accounts you don't need to type from memory. Use passphrases only where you must remember the password yourself (like your manager's master password).</p><p><a href="/tools/passphrase-generator/">Learn more about passphrase generator</a></p></details>
+            <details id="faq-social"><summary>What are the best password practices for social media accounts?</summary><p><strong>Use 15+ characters for high-value accounts; unique per platform; enable two-step verification.</strong></p><p>Change only after a breach or suspicion — not on a fixed schedule. Length and uniqueness matter more than symbol requirements. Never reuse your email password elsewhere.</p><p><a href="/guides/secure-your-first-5-accounts/">Learn more about secure your first 5 accounts</a></p></details>
         </div>
     </main>
-
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "How do I generate a password with PasswordMonkey?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Visit passwordmonkey.org, set your desired password length (4-50 characters), choose which character types to include (uppercase, lowercase, numbers, symbols), optionally exclude similar-looking characters, click 'Generate Password', and use the copy button to copy the password to your clipboard."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Is PasswordMonkey safe to use?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, PasswordMonkey is completely safe. All password generation happens in your browser using the Web Crypto API. No passwords are ever sent to servers, no data is stored or logged, and we don't use cookies or tracking technologies."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are the best password practices for social media accounts?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Use passwords 16+ characters long for high-value accounts, include all character types (uppercase, lowercase, numbers, symbols), use unique passwords for each platform, enable two-factor authentication whenever possible, and regularly update passwords, especially after security incidents."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How can freelancers and small businesses use PasswordMonkey?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "PasswordMonkey is excellent for generating secure passwords for client accounts, creating temporary access credentials for team members, securing admin accounts for websites and services, generating API keys and access tokens, and creating secure passwords for business social media accounts."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How does PasswordMonkey compare to LastPass, Dashlane, and Bitwarden?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "PasswordMonkey is completely free with no account required and 100% private (no data storage). LastPass/Dashlane require premium subscriptions, accounts, and store your data. PasswordMonkey focuses solely on password generation while password managers include storage and auto-fill features."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How can I create memorable but secure passwords?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Use the passphrase method with 4-6 random words (e.g., 'correct-horse-battery-staple'), use diceware (dice to select words from a predefined list), create a pattern and substitute characters, or use acronyms from memorable sentences. For maximum security, use random passwords from PasswordMonkey stored in a password manager."
-                }
-            }
-        ]
-    }
-    </script>
 
 <!--@include partials/footer.html prefix=./ -->
 </div>
 
     <script src="script.js"></script>
+    <script>
+    (function(){
+      var search = document.getElementById('faq-search');
+      search.addEventListener('input', function(){
+        var q = search.value.toLowerCase();
+        document.querySelectorAll('details').forEach(function(d){
+          var text = d.textContent.toLowerCase();
+          d.style.display = text.indexOf(q) !== -1 ? '' : 'none';
+        });
+      });
+      if (window.location.hash) {
+        var el = document.querySelector(window.location.hash);
+        if (el && el.tagName === 'DETAILS') { el.open = true; el.scrollIntoView(); }
+      }
+    })();
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is it safe to use the PasswordMonkey generator?","acceptedAnswer":{"@type":"Answer","text":"Yes. All password generation happens in your browser using the Web Crypto API. PasswordMonkey never sees, stores, or transmits your passwords. Nothing leaves your device. Randomness comes from your device's hardware random number generator via crypto.getRandomValues()."}},{"@type":"Question","name":"Does PasswordMonkey store or see my passwords?","acceptedAnswer":{"@type":"Answer","text":"No. PasswordMonkey never receives your passwords. Generation is entirely local to your device. We don't log, store, or transmit generated passwords. No network request carries them."}},{"@type":"Question","name":"How long should my password be?","acceptedAnswer":{"@type":"Answer","text":"Use 15 characters or more; 16 or more is recommended. NIST SP 800-63B-4 sets a 15-character minimum for single-factor passwords and allows at least 64. Longer passwords are exponentially harder to crack. If a site limits length, use the maximum it allows and a unique password for that site."}},{"@type":"Question","name":"Do I need symbols in my password?","acceptedAnswer":{"@type":"Answer","text":"No. Length and uniqueness matter most; symbols are optional. NIST removed composition rules. You don't need mixed uppercase, lowercase, numbers, and symbols. A long password or passphrase works fine without symbols. If a site requires symbols, add them — but don't rely on them for strength."}},{"@type":"Question","name":"What if a site limits password length or rejects symbols?","acceptedAnswer":{"@type":"Answer","text":"Use the maximum length the site allows. If a site caps length or rejects symbols, generate the longest password it accepts using letters and numbers. Length still matters most. Pair it with a password manager so you don't have to remember it."}},{"@type":"Question","name":"Random password or passphrase?","acceptedAnswer":{"@type":"Answer","text":"Both work. A long random password and a passphrase of several random words are both strong. Store either in a password manager so you only need to remember one master password."}},{"@type":"Question","name":"How do I generate a password with PasswordMonkey?","acceptedAnswer":{"@type":"Answer","text":"Visit the site, set the length, choose character types, and click Generate. Set your desired length (4-50 characters), pick which character types to include, optionally exclude similar-looking characters, click \"Generate Password,\" then use the copy button to copy to your clipboard."}},{"@type":"Question","name":"What do the password strength indicators mean?","acceptedAnswer":{"@type":"Answer","text":"The indicator shows entropy in bits: weak (<32), fair (32-64), good (64-128), strong (128+). PasswordMonkey calculates strength from the character set size and length. Higher entropy means harder to crack. Aim for 128+ bits for your most important accounts."}},{"@type":"Question","name":"Can I generate QR codes for my passwords?","acceptedAnswer":{"@type":"Answer","text":"Yes. Click the QR code icon after generating a password. The QR code encodes the password text so you can scan it with your mobile device. Only use this on your own trusted devices — the QR contains your password in plain sight."}},{"@type":"Question","name":"How does PasswordMonkey ensure password randomness?","acceptedAnswer":{"@type":"Answer","text":"Via the Web Crypto API's crypto.getRandomValues(). This provides cryptographically secure random numbers from your device's hardware RNG — the same technology used by banks and security applications."}},{"@type":"Question","name":"What's the difference between online and offline password generators?","acceptedAnswer":{"@type":"Answer","text":"PasswordMonkey runs in your browser but processes locally like an offline tool. You get web convenience without server-side generation risks. All processing happens on your device; nothing is sent anywhere."}},{"@type":"Question","name":"Is PasswordMonkey safe to use?","acceptedAnswer":{"@type":"Answer","text":"Yes. All generation happens in your browser; nothing is stored or transmitted. Passwords are created locally via the Web Crypto API and never sent to our servers. The page uses GTM and AdSense for aggregate traffic measurement — neither sees your generated passwords."}},{"@type":"Question","name":"Where should I save my passwords?","acceptedAnswer":{"@type":"Answer","text":"In a password manager. Use a browser-built-in manager or a dedicated password manager. Never store passwords in notes apps, spreadsheets, email to yourself, or screenshots — those aren't designed to protect secrets."}},{"@type":"Question","name":"Is it safe to save passwords in my browser?","acceptedAnswer":{"@type":"Answer","text":"Yes, browsers can save passwords. Browsers store encrypted credentials on your device. One caveat: entries are filed under the page's origin (passwordmonkey.org for this site), not under the target site the password is for."}},{"@type":"Question","name":"What is a password manager?","acceptedAnswer":{"@type":"Answer","text":"An app that stores your passwords in an encrypted vault. You unlock it with one strong master password. The manager generates, saves, and autofills passwords for every site, so you never reuse passwords and never memorize dozens."}},{"@type":"Question","name":"Why does my browser file the entry under passwordmonkey.org?","acceptedAnswer":{"@type":"Answer","text":"Browsers save credentials under the page's origin. When you save a password while on passwordmonkey.org, the browser files it under our origin, not under the site the password is actually for. Browser credential storage is tied to the domain you're visiting when you save."}},{"@type":"Question","name":"Can I reuse a password?","acceptedAnswer":{"@type":"Answer","text":"No. Use a unique password for every account. If one account is compromised and you reused that password elsewhere, all those accounts are at risk. A password manager makes unique passwords practical by remembering them for you."}},{"@type":"Question","name":"How can freelancers and small businesses use PasswordMonkey?","acceptedAnswer":{"@type":"Answer","text":"Generate secure passwords for client accounts, admin accounts, and API keys. Use it for temporary access credentials, website admin accounts, and business social media. No account required; nothing is stored. Pair with a password manager for team credential sharing."}},{"@type":"Question","name":"What password length should businesses use?","acceptedAnswer":{"@type":"Answer","text":"Use at least 15 characters; 16 or more is recommended. NIST allows up to 64+ characters. Standard accounts: 16-20. Admin accounts: 20-25. Financial accounts: 25+. API keys: 32+. Longer is always fine."}},{"@type":"Question","name":"How does PasswordMonkey compare to LastPass, Dashlane, Bitwarden?","acceptedAnswer":{"@type":"Answer","text":"PasswordMonkey is free, needs no account, and stores nothing. LastPass/Dashlane/Bitwarden are password managers with storage and autofill. PasswordMonkey is a generator only — use it to create passwords, then save them in your manager of choice."}},{"@type":"Question","name":"What if I forget a password?","acceptedAnswer":{"@type":"Answer","text":"Use the site's \"forgot password\" reset flow. Most sites reset by email. If you saved it in a password manager, check there first. Never reuse an old password when resetting — generate a new random one."}},{"@type":"Question","name":"What if I lose my phone?","acceptedAnswer":{"@type":"Answer","text":"Use your password manager on another device, or your recovery codes. Install your manager on a new device and sign in with your master password. Keep recovery codes and your emergency kit safe (paper, locked drawer) so you can regain access."}},{"@type":"Question","name":"What if I forget my password manager's master password?","acceptedAnswer":{"@type":"Answer","text":"It may be unrecoverable. Bitwarden cannot reset a forgotten master password. 1Password uses an Emergency Kit (Secret Key) and recovery codes. Apple needs a trusted device passcode, recovery contact, or recovery key. No \"forgot master password\" reset exists — that's the encryption's purpose."}},{"@type":"Question","name":"How do I know if a password was exposed?","acceptedAnswer":{"@type":"Answer","text":"Chrome warns about exposed passwords; Edge has Password Monitor. Your password manager may also monitor for breaches and alert you if a saved password appears in a known breach. Act on those warnings promptly."}},{"@type":"Question","name":"What do I change first after a breach?","acceptedAnswer":{"@type":"Answer","text":"Change the breached password first. Then change any other account where you reused the same password. NIST says change on evidence of compromise — not on a fixed schedule. Use unique random passwords going forward."}},{"@type":"Question","name":"Do I need two-step verification?","acceptedAnswer":{"@type":"Answer","text":"Yes, where available. Two-step verification adds a second check beyond your password — an app code or security key. Even if your password is stolen, the second step protects your account."}},{"@type":"Question","name":"What are passkeys, and do they replace passwords?","acceptedAnswer":{"@type":"Answer","text":"Passkeys are a password-free sign-in option supported by many platforms. They can replace passwords where offered. Passwords still work everywhere, so use passkeys where available and strong random passwords elsewhere."}},{"@type":"Question","name":"Are there affiliate links?","acceptedAnswer":{"@type":"Answer","text":"Yes. Some product links are affiliate links marked \"sponsored.\" They're kept separate from educational content and help support the site. They never influence our security advice."}},{"@type":"Question","name":"How do you make money?","acceptedAnswer":{"@type":"Answer","text":"Through affiliate links and donations. Password generation itself is free and private. We don't sell your data or show your passwords to anyone."}},{"@type":"Question","name":"Are there specific requirements for different social media platforms?","acceptedAnswer":{"@type":"Answer","text":"Platform minimums vary (for example, some require 6 or 8 characters). These platform-specific minimums are not in the NIST fact sheet — check each platform directly for current requirements. NIST's 15-character minimum is a safer baseline."}},{"@type":"Question","name":"How can I create memorable but secure passwords?","acceptedAnswer":{"@type":"Answer","text":"Use a passphrase of several random words, or a random password stored in a manager. Both approaches work when the result is long and unique. A password manager removes the need to memorize anything except your master password."}},{"@type":"Question","name":"Should I use memorable passwords or random passwords?","acceptedAnswer":{"@type":"Answer","text":"Random passwords are strongest when stored in a manager. Use random passwords for accounts you don't need to type from memory. Use passphrases only where you must remember the password yourself (like your manager's master password)."}},{"@type":"Question","name":"What are the best password practices for social media accounts?","acceptedAnswer":{"@type":"Answer","text":"Use 15+ characters for high-value accounts; unique per platform; enable two-step verification. Change only after a breach or suspicion — not on a fixed schedule. Length and uniqueness matter more than symbol requirements. Never reuse your email password elsewhere."}}]}
+    </script>
 </body>
 </html>

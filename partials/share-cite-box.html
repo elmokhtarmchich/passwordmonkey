@@ -1,0 +1,16 @@
+<div class="mt-12 p-6 rounded-xl border border-slate-200 dark:border-[#333333] bg-white dark:bg-card">
+  <h3 class="font-bold text-lg text-slate-900 dark:text-slate-100 mb-3">Share or cite this page</h3>
+  <div class="flex flex-col sm:flex-row gap-3">
+    <input type="text" id="share-cite-url" readonly class="flex-1 px-3 py-2 rounded-lg border border-slate-300 dark:border-[#333333] bg-slate-50 dark:bg-raised text-sm font-mono text-slate-700 dark:text-slate-200">
+    <button type="button" id="share-cite-copy" class="px-4 py-2 rounded-lg bg-sky-600 hover:bg-sky-500 text-white font-semibold text-sm transition">Copy URL</button>
+  </div>
+  <p class="mt-3 text-sm text-slate-600 dark:text-slate-400"><a href="https://passwordmonkey.org/" class="text-sky-600 dark:text-sky-400 hover:underline font-semibold">PasswordMonkey</a> — a free, private, browser-based password generator</p>
+</div>
+<script>
+(function(){
+  var inp = document.getElementById('share-cite-url');
+  if (inp) inp.value = window.location.href;
+  var btn = document.getElementById('share-cite-copy');
+  if (btn) btn.addEventListener('click', function(){ navigator.clipboard.writeText(inp.value); btn.textContent='Copied!'; setTimeout(function(){btn.textContent='Copy URL';},1500); });
+})();
+</script>

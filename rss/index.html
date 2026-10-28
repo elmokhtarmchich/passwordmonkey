@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Leaving PasswordMonkey</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/kilo-typography.css">
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+        .exit-card {
+            max-width: 640px;
+            width: 100%;
+            padding: 2rem;
+            border-radius: 1rem;
+            background: var(--card-bg, #1f1f1f);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+            text-align: center;
+        }
+        .exit-card h1 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .exit-card p {
+            margin-bottom: 1.5rem;
+            color: var(--muted, #a0a0a0);
+            word-break: break-word;
+        }
+        .exit-card a {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            background: #39ff14;
+            color: #000;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .exit-card a:hover {
+            background: #32e012;
+        }
+        .exit-card .domain {
+            color: #39ff14;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="dark">
+    <main class="exit-card">
+        <h1>You're leaving PasswordMonkey</h1>
+        <p>You are being redirected to an external news source:<br><span class="domain" id="target-domain">—</span></p>
+        <p id="target-url" style="font-size:0.875rem;"></p>
+        <a id="continue-link" href="/">Continue to source</a>
+    </main>
+    <script>
+        (function() {
+            var params = new URLSearchParams(window.location.search);
+            var target = params.get('url');
+            var link = document.getElementById('continue-link');
+            var domainEl = document.getElementById('target-domain');
+            var urlEl = document.getElementById('target-url');
+            if (target && /^https?:\/\//i.test(target)) {
+                try {
+                    var u = new URL(target);
+                    domainEl.textContent = u.hostname;
+                    urlEl.textContent = target;
+                    link.href = target;
+                } catch (e) {
+                    link.href = '/';
+                    domainEl.textContent = 'unknown destination';
+                }
+            } else {
+                link.href = '/news/';
+                domainEl.textContent = 'unknown destination';
+            }
+        })();
+    </script>
+</body>
+</html>

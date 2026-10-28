@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>Save-to-Browser Test Lab - PasswordMonkey</title>
+<style>
+/* Minimal inline CSS only — no external files */
+body { font-family: system-ui, -apple-system, sans-serif; padding: 20px; max-width: 800px; margin: 0 auto; line-height: 1.5; }
+.banner { border: 1px solid #333; padding: 10px; margin-bottom: 20px; background: #f5f5f5; }
+.variant { border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; border-radius: 6px; }
+button { padding: 8px 16px; margin-right: 10px; cursor: pointer; }
+#results { white-space: pre-wrap; background: #f0f0f0; padding: 10px; border-radius: 4px; margin-top: 20px; }
+#export { margin-top: 10px; }
+</style>
+</head>
+<body>
+<h1>Save-to-Browser Test Lab</h1>
+<p>This page tests navigator.credentials.store across browsers. No network requests are made. No data is stored.</p>
+
+<div class="banner" id="browser-banner">
+  <strong>Browser:</strong> <span id="browser-family">detecting...</span><br>
+  <strong>PasswordCredential support:</strong> <span id="pc-support">detecting...</span>
+</div>
+
+<!-- Variant 1: navigator.credentials.store -->
+<div class="variant">
+<h3>Variant 1: navigator.credentials.store()</h3>
+<button id="btn-v1">Test Variant 1</button>
+<p id="v1-result"></p>
+</div>
+
+<!-- Variant 2: visible form + preventDefault + history.replaceState + remove form -->
+<div class="variant">
+<h3>Variant 2: Form + preventDefault + replaceState + remove</h3>
+<form id="form-v2">
+  <label>Username: <input type="text" autocomplete="username"></label><br>
+  <label>Password: <input type="password" autocomplete="new-password"></label><br>
+  <button type="submit">Submit</button>
+</form>
+<p id="v2-result"></p>
+</div>
+
+<!-- Variant 3: same form, same-document fragment navigation -->
+<div class="variant">
+<h3>Variant 3: Form + fragment navigation</h3>
+<form id="form-v3">
+  <label>Username: <input type="text" autocomplete="username"></label><br>
+  <label>Password: <input type="password" autocomplete="new-password"></label><br>
+  <button type="submit">Submit</button>
+</form>
+<p id="v3-result"></p>
+</div>
+
+<!-- Variant 4: same form into hidden about:blank iframe -->
+<div class="variant">
+<h3>Variant 4: Form into about:blank iframe</h3>
+<iframe id="iframe-v4" src="about:blank" style="display:none"></iframe>
+<button id="btn-v4">Test Variant 4</button>
+<p id="v4-result"></p>
+</div>
+
+<!-- Results recorder -->
+<div class="variant">
+<h3>Results Recorder</h3>
+<p>Tick what you observed:</p>
+<label><input type="checkbox" class="obs" data-field="prompt"> Prompt shown</label><br>
+<label><input type="checkbox" class="obs" data-field="saved"> Saved</label><br>
+<label><input type="checkbox" class="obs" data-field="visible"> Visible in manager</label><br>
+<label><input type="checkbox" class="obs" data-field="autofill"> Autofilled on revisit</label><br>
+<button id="btn-export">Export as Markdown</button>
+<pre id="export-output"></pre>
+</div>
+
+<script>
+(function(){
+  // Browser detection
+  var ua = navigator.userAgent;
+  var family = 'Unknown';
+  if (ua.match(/Chrome|Chromium|CriOS/) && !ua.match(/Edge/)) family = 'Chrome';
+  else if (ua.match(/Edge/)) family = 'Edge';
+  else if (ua.match(/Firefox/)) family = 'Firefox';
+  else if (ua.match(/Safari/) && !ua.match(/Chrome/)) family = 'Safari';
+  else if (ua.match(/Opera|OPR/)) family = 'Opera';
+  else if (ua.match(/Brave/)) family = 'Brave';
+  else if (ua.match(/SamsungInternet/)) family = 'Samsung Internet';
+  document.getElementById('browser-family').textContent = family;
+  document.getElementById('pc-support').textContent = !!window.PasswordCredential;
+
+  var results = {};
+
+  // Variant 1: navigator.credentials.store
+  document.getElementById('btn-v1').addEventListener('click', function(){
+    if (!window.PasswordCredential) {
+      document.getElementById('v1-result').textContent = 'PasswordCredential not supported in this browser.';
+      return;
+    }
+    var cred = new PasswordCredential({
+      id: 'testuser',
+      password: 'TestPass123!',
+      name: 'Test User'
+    });
+    navigator.credentials.store(cred).then(function(){
+      document.getElementById('v1-result').textContent = 'Stored successfully.';
+      results.v1 = 'stored';
+    }).catch(function(err){
+      document.getElementById('v1-result').textContent = 'Error: ' + err.message;
+      results.v1 = 'error: ' + err.message;
+    });
+  });
+
+  // Variant 2: visible form + preventDefault + history.replaceState + remove form
+  document.getElementById('form-v2').addEventListener('submit', function(e){
+    e.preventDefault();
+    history.replaceState(null, '', '#v2-submitted');
+    var form = document.getElementById('form-v2');
+    form.remove();
+    document.getElementById('v2-result').textContent = 'Form submitted, removed from DOM.';
+    results.v2 = 'submitted-and-removed';
+  });
+
+  // Variant 3: same form, same-document fragment navigation
+  document.getElementById('form-v3').addEventListener('submit', function(e){
+    e.preventDefault();
+    history.replaceState(null, '', '#v3-submitted');
+    document.getElementById('v3-result').textContent = 'Form submitted, fragment navigation used.';
+    results.v3 = 'fragment-navigation';
+  });
+
+  // Variant 4: form into hidden about:blank iframe
+  document.getElementById('btn-v4').addEventListener('click', function(){
+    var iframe = document.getElementById('iframe-v4');
+    var doc = iframe.contentDocument || iframe.contentWindow.document;
+    doc.open();
+    doc.write('<html><body><form id="f4"><input type="text" autocomplete="username" value="testuser"><input type="password" autocomplete="new-password" value="TestPass123!"><button type="submit">Submit</button></form></body></html>');
+    doc.close();
+    doc.getElementById('f4').addEventListener('submit', function(e){
+      e.preventDefault();
+      document.getElementById('v4-result').textContent = 'Iframe form submitted.';
+      results.v4 = 'iframe-submitted';
+    });
+    // Auto-submit
+    setTimeout(function(){
+      doc.getElementById('f4').requestSubmit ? doc.getElementById('f4').requestSubmit() : doc.getElementById('f4').dispatchEvent(new Event('submit', {cancelable: true}));
+    }, 100);
+  });
+
+  // Results recorder
+  var obs = document.querySelectorAll('.obs');
+  obs.forEach(function(el){
+    el.addEventListener('change', function(){
+      results[el.dataset.field] = el.checked;
+    });
+  });
+
+  // Export as Markdown (in memory only, no storage)
+  document.getElementById('btn-export').addEventListener('click', function(){
+    var md = '# Save-to-Browser Test Results\n\n';
+    md += '- Browser: ' + document.getElementById('browser-family').textContent + '\n';
+    md += '- PasswordCredential: ' + document.getElementById('pc-support').textContent + '\n\n';
+    md += '| Variant | Result |\n|---------|--------|\n';
+    Object.keys(results).forEach(function(k){
+      md += '| ' + k + ' | ' + results[k] + ' |\n';
+    });
+    document.getElementById('export-output').textContent = md;
+  });
+})();
+</script>
+</body>
+</html>
