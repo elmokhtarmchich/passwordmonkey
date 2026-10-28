@@ -4,7 +4,7 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Wed, 28 Oct 2026 11:52:22 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 17:40:49 GMT</lastBuildDate>
     <item>
       <title>Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-28-adobe-commerce-polyshell-attacks-breach-hundreds-o-5977b4.html</link>
@@ -24,10 +24,46 @@
       <description>On Tuesday, the US Cybersecurity and Infrastructure Security Agency (CISA) confirmed that hackers have begun exploiting a critical Brotli vulnerability known as</description>
     </item>
     <item>
+      <title>Even after PHP2Shell, blast radius matters more than a CVSS score | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-28-even-after-php2shell-blast-radius-matters-more-tha-d79cee.html</link>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>PHP2Shell shows how quickly attackers can exploit critical vulnerabilities, often before organizations have time to patch. Token Security explains why limiting</description>
+    </item>
+    <item>
+      <title>Fake PS5 emulators on GitHub are spreading password-stealing malware | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-28-fake-ps5-emulators-on-github-are-spreading-passwor-946b5a.html</link>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>This is according to the threat research arm of NordVPN.</description>
+    </item>
+    <item>
       <title>Japan&apos;s GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-28-japans-gmo-offers-1-million-bounty-to-catch-hacker-546293.html</link>
       <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
       <description>Japan</description>
+    </item>
+    <item>
+      <title>Microsoft urges Entra ID admins to migrate users to passkeys | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-28-microsoft-urges-entra-id-admins-to-migrate-users-t-a7b8cf.html</link>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Microsoft again asked Entra ID administrators to migrate users to phishing-resistant methods to avoid sign-in disruptions before it retires SMS and voice authen</description>
+    </item>
+    <item>
+      <title>PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-28-php2shell-attack-roots-25-servers-breaches-us-gove-257599.html</link>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of what appears to be an artificial intelligence (AI)-assisted attack orchestrated by a suspected China-nexus t</description>
+    </item>
+    <item>
+      <title>Sony ISP subsidiary data breach exposes 2.5 million customer records | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-28-sony-isp-subsidiary-data-breach-exposes-25-million-cfdef3.html</link>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Sony Network Communications has confirmed a data breach that compromised approximately 2.5 million records containing current and former customers</description>
+    </item>
+    <item>
+      <title>Wazuh and AI for Enhanced SOC Workflows | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-28-wazuh-and-ai-for-enhanced-soc-workflows-be06f9.html</link>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Artificial Intelligence (AI) has become one of this decade</description>
     </item>
     <item>
       <title>Bank of America kindly asks that you don’t share your banking password with your AI assistant | Password Monkey</title>
@@ -1362,18 +1398,6 @@ Cybersecurity is being reshaped by the expansion of cloud infrastructure, AI, di
       <description>Why Video Game Anti-Cheat Systems Are a Cybersecurity Goldmine</description>
     </item>
     <item>
-      <title>[Article Title] | Password Monkey</title>
-      <link>https://passwordmonkey.org/news/article-template.html</link>
-      <pubDate>Invalid Date</pubDate>
-      <description>[Meta Description]</description>
-    </item>
-    <item>
-      <title>Secure Password Strategies for 2025 | Password Monkey</title>
-      <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
-      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
-      <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
-    </item>
-    <item>
       <title>Strong password trends in 2025 | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2025-08-10-strong-password-trends-2025.html</link>
       <pubDate>Sun, 10 Aug 2025 00:00:00 GMT</pubDate>
@@ -1396,6 +1420,18 @@ Cybersecurity is being reshaped by the expansion of cloud infrastructure, AI, di
       <link>https://passwordmonkey.org/news/2022-08-29-tentacles-of-0ktapus-threat-group-victimize-130-fi-b4e51b.html</link>
       <pubDate>Mon, 29 Aug 2022 00:00:00 GMT</pubDate>
       <description>Over 130 companies tangled in sprawling phishing campaign that spoofed a multi-factor authentication system.</description>
+    </item>
+    <item>
+      <title>[Article Title] | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/article-template.html</link>
+      <pubDate>Invalid Date</pubDate>
+      <description>[Meta Description]</description>
+    </item>
+    <item>
+      <title>Secure Password Strategies for 2025 | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
     </item>
   </channel>
 </rss>
