@@ -1,4 +1,4 @@
-﻿import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs';
+import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -27,6 +27,7 @@ const ROOT_FILES = [
     'seo.json',
     'service-worker.js',
     'sitemap.xml',
+    'sitemap_index.xml',
     'style.css',
     'sidebar.css',
     'kilo-typography.css',
@@ -36,9 +37,10 @@ const ROOT_FILES = [
     'yandex_e8438f6f6907ddd1.html',
     'ahrefs_1de5b65148f02f6b479edaf4c598a1ed31c1ae272b87831fc6f5a6400025bf4c',
     '_redirects',
+    'lab/save-test.html',
 ];
 
-const DIRS = ['favicon_io', 'fonts', 'images', 'js', 'news'];
+const DIRS = ['favicon_io', 'fonts', 'images', 'js', 'news', 'rss', 'guides', 'tools'];
 
 const MARKER_RE = /<!--@include\s+([^\s>]+)((?:\s+[a-zA-Z][\w-]*=(?:"[^"]*"|[^\s>]+))*)\s*-->/g;
 const GUARD_RE = /<!--@if\s+([a-zA-Z][\w-]*)-->([\s\S]*?)<!--@endif-->/g;

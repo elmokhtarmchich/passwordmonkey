@@ -172,10 +172,19 @@ function init() {
         }
         let password = '';
         if (charset.length > 0) {
+            const charsetLen = charset.length;
+            const range = 0x100000000; // 2^32
+            const threshold = range - (range % charsetLen); // reject values >= threshold
             const randomValues = new Uint32Array(length);
             window.crypto.getRandomValues(randomValues);
+            const redraw = new Uint32Array(1);
             for (let i = 0; i < length; i++) {
-                password += charset[randomValues[i] % charset.length];
+                let val = randomValues[i];
+                while (val >= threshold) {
+                    window.crypto.getRandomValues(redraw);
+                    val = redraw[0];
+                }
+                password += charset[val % charsetLen];
             }
         }
         return password;

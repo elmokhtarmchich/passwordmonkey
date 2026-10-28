@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recovery Kit - PasswordMonkey</title>
+<meta name="description" content="Printable recovery kit checklist. Fill in by hand. Never type passwords or secrets here.">
+<link rel="canonical" href="https://passwordmonkey.org/tools/recovery-kit/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://passwordmonkey.org/tools/recovery-kit/">
+<meta property="og:title" content="Recovery Kit - PasswordMonkey">
+<meta property="og:description" content="Printable recovery kit checklist. Fill in by hand. Never type passwords or secrets here.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        darkMode: 'class',
+        theme: {
+            extend: {
+                fontFamily: {
+                    sans: ['Maax VIA', 'IBM Plex Sans', 'Inter', 'Open Sans', 'sans-serif'],
+                    mono: ['JetBrains Mono', 'IBM Plex Mono', 'monospace'],
+                },
+                colors: {
+                    canvas: '#181817',
+                    raised: '#202020',
+                    card: '#242424',
+                    brand: {
+                        DEFAULT: '#42b8ff',
+                        50: '#f0f9ff',
+                        100: '#e0f2fe',
+                        200: '#bae6fd',
+                        300: '#7dd3fc',
+                        400: '#38bdf8',
+                        500: '#42b8ff',
+                        600: '#0284c7',
+                        700: '#0369a1',
+                        800: '#075985',
+                        900: '#0c4a6e',
+                    },
+                    'blue-600': '#2563eb',
+                    'blue-700': '#1d4ed8',
+                    'gray-50': '#f9fafb',
+                    'gray-200': '#e5e7eb',
+                    'gray-300': '#d1d5db',
+                    'gray-400': '#9ca3af',
+                    'gray-500': '#6b7280',
+                    'gray-600': '#4b5563',
+                    'gray-700': '#374151',
+                    'gray-800': '#1f2937',
+                    'gray-900': 'rgb(17 24 39)',
+                }
+            }
+        }
+    }
+</script>
+<!--@include partials/theme-init.html -->
+<!--@include partials/head-assets.html prefix=../ -->
+<style>
+    @media print {
+        body { background: white !important; color: black !important; }
+        .no-print { display: none !important; }
+        .print-break { page-break-before: always; }
+    }
+</style>
+</head>
+<body class="bg-gray-50 dark:bg-canvas min-h-screen font-sans">
+<!--@include partials/sidebar.html active=none -->
+<div class="content-wrapper">
+<!--@include partials/topbar.html prefix=../ -->
+<main class="container mx-auto px-4 py-8">
+    <div class="max-w-lg mx-auto article bg-white dark:bg-card rounded-xl shadow-lg p-8">
+        <nav class="mb-6 text-sm text-gray-500 dark:text-gray-400">
+            <a href="/">Home</a> &rsaquo; <a href="/tools/">Tools</a> &rsaquo; <span>Recovery Kit</span>
+        </nav>
+        <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-2">Recovery Kit</h1>
+        <p class="text-gray-600 dark:text-gray-300 mb-6">Print this page and fill it in by hand. Never type any passwords or secrets into this form.</p>
+
+        <div class="no-print mb-6">
+            <button id="print-btn" class="bg-sky-600 hover:bg-sky-500 text-white px-4 py-2 rounded">Print this kit</button>
+        </div>
+
+        <div class="print-break mb-8">
+            <h2 class="text-2xl font-bold mb-4">My Recovery Kit</h2>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">Date reviewed: ______________</p>
+
+            <div class="space-y-4">
+                <div class="border-b pb-2">
+                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email recovery codes location</label>
+                    <div class="h-8 border border-gray-300 dark:border-gray-600 rounded"></div>
+                </div>
+                <div class="border-b pb-2">
+                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">2FA backup codes location</label>
+                    <div class="h-8 border border-gray-300 dark:border-gray-600 rounded"></div>
+                </div>
+                <div class="border-b pb-2">
+                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Trusted contact (name & phone)</label>
+                    <div class="h-8 border border-gray-300 dark:border-gray-600 rounded"></div>
+                </div>
+                <div class="border-b pb-2">
+                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Phone carrier PIN / port protection</label>
+                    <div class="h-8 border border-gray-300 dark:border-gray-600 rounded"></div>
+                </div>
+                <div class="border-b pb-2">
+                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Password manager emergency kit location</label>
+                    <div class="h-8 border border-gray-300 dark:border-gray-600 rounded"></div>
+                </div>
+                <div class="border-b pb-2">
+                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Device passcodes reminder</label>
+                    <div class="h-8 border border-gray-300 dark:border-gray-600 rounded"></div>
+                </div>
+                <div class="border-b pb-2">
+                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Date last reviewed</label>
+                    <div class="h-8 border border-gray-300 dark:border-gray-600 rounded"></div>
+                </div>
+            </div>
+
+            <div class="mt-6 p-3 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded text-yellow-800 dark:text-yellow-200 text-sm">
+                <strong>Warning:</strong> This kit stores recovery information locations only. Never write down your passwords, master password, or secret keys here. If this paper is lost or stolen, anyone could find your accounts.
+            </div>
+        </div>
+    </div>
+</main>
+<!--@include partials/footer.html prefix=../ -->
+<script src="../script.js" defer></script>
+<script>
+    // Print button handler — client-side only, no storage, no form submission.
+    document.getElementById('print-btn').addEventListener('click', function () {
+        window.print();
+    });
+</script>
+        <!-- Share or cite this page -->
+        <!--@include partials/share-cite-box.html prefix=../ -->
+
+</div>
+</body>
+</html>

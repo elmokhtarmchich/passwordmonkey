@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Advice That Changed - PasswordMonkey</title>
+    <meta name="description" content="Plain-language explanation of how password advice evolved: NIST now recommends length over complexity, and change-on-breach over scheduled changes.">
+    <link rel="canonical" href="https://passwordmonkey.org/guides/password-advice-that-changed/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://passwordmonkey.org/guides/password-advice-that-changed/">
+    <meta property="og:title" content="Password Advice That Changed - PasswordMonkey">
+    <meta property="og:description" content="Plain-language explanation of how password advice evolved: NIST now recommends length over complexity, and change-on-breach over scheduled changes.">
+    <meta property="og:image" content="https://passwordmonkey.org/images/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://passwordmonkey.org/guides/password-advice-that-changed/">
+    <meta name="twitter:title" content="Password Advice That Changed - PasswordMonkey">
+    <meta name="twitter:description" content="Plain-language explanation of how password advice evolved: NIST now recommends length over complexity, and change-on-breach over scheduled changes.">
+    <meta name="twitter:image" content="https://passwordmonkey.org/images/og-image.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Maax VIA', 'IBM Plex Sans', 'Inter', 'Open Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'IBM Plex Mono', 'monospace'],
+                    },
+                    colors: {
+                        canvas: '#181817',
+                        raised: '#202020',
+                        card: '#242424',
+                        brand: {
+                            DEFAULT: '#42b8ff',
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#42b8ff',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        'blue-600': '#2563eb',
+                        'blue-700': '#1d4ed8',
+                        'gray-50': '#f9fafb',
+                        'gray-200': '#e5e7eb',
+                        'gray-300': '#d1d5db',
+                        'gray-400': '#9ca3af',
+                        'gray-500': '#6b7280',
+                        'gray-600': '#4b5563',
+                        'gray-700': '#374151',
+                        'gray-800': '#1f2937',
+                        'gray-900': 'rgb(17 24 39)',
+                    }
+                }
+            }
+        }
+    </script>
+    <!--@include partials/theme-init.html -->
+    <!--@include partials/head-assets.html prefix=../../ -->
+</head>
+<body class="bg-gray-50 dark:bg-canvas min-h-screen font-sans">
+<!--@include partials/sidebar.html active=guides -->
+<div class="content-wrapper">
+<!--@include partials/topbar.html prefix=../../ -->
+<main class="container mx-auto px-4 py-8">
+    <div class="max-w-4xl mx-auto article bg-white dark:bg-card rounded-xl shadow-lg p-8">
+        <nav class="mb-6 text-sm text-gray-500 dark:text-gray-400">
+            <a href="/">Home</a> &rsaquo; <a href="/guides/">Guides</a> &rsaquo; <span>Password Advice That Changed</span>
+        </nav>
+        <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4">Password Advice That Changed</h1>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">Last updated: October 2026</p>
+        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">Old password advice said: change every 90 days, use symbols, mix character types. Modern guidance from NIST says otherwise.</p>
+        
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">What changed</h2>
+        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
+            <li>No forced periodic change: change on evidence of compromise, not on a schedule</li>
+            <li>No composition rules: symbols and mixed character types are not required</li>
+            <li>Length matters most: 15-character minimum, 64+ allowed</li>
+            <li>Password managers and paste must be allowed</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">What stayed the same</h2>
+        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
+            <li>Use unique passwords for every account</li>
+            <li>Longer passwords are exponentially harder to crack</li>
+            <li>Randomness matters: avoid patterns and personal information</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Sources</h2>
+        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
+            <li>[NIST SP 800-63B-4 URL] — NEEDS URL (user to supply)</li>
+            <li>[NCSC password guidance URL] — NEEDS URL (user to supply)</li>
+            <li>NIST SP 800-63B-4 (final Aug 2025) - digital identity guidelines</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Related guides</h2>
+        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+            <li><a href="/guides/" class="text-blue-600 hover:underline">The Complete Guide to Password Safety (hub)</a></li>
+            <li><a href="/" class="text-blue-600 hover:underline">Password generator</a></li>
+            <li><a href="/faq/" class="text-blue-600 hover:underline">Frequently asked questions</a></li>
+            <li><a href="/guides/secure-your-first-5-accounts/" class="text-blue-600 hover:underline">Secure Your First 5 Accounts</a></li>
+            <li><a href="/guides/why-use-random-passwords/" class="text-blue-600 hover:underline">Why Use Random Passwords</a></li>
+        </ul>        <!-- Share or cite this page -->
+        <!--@include partials/share-cite-box.html prefix=../../ -->
+
+
+        
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Password Advice That Changed",
+            "description": "Plain-language explanation of how password advice evolved: NIST now recommends length over complexity, and change-on-breach over scheduled changes.",
+            "author": {"@type": "Organization", "name": "PasswordMonkey"},
+            "publisher": {"@type": "Organization", "name": "PasswordMonkey"},
+            "datePublished": "2026-10-01",
+            "dateModified": "2026-10-28"
+        }
+        </script>        <!-- Share or cite this page -->
+        <!--@include partials/share-cite-box.html prefix=../../ -->
+
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://passwordmonkey.org/"},
+                {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://passwordmonkey.org/guides/"},
+                {"@type": "ListItem", "position": 3, "name": "Password Advice That Changed", "item": "https://passwordmonkey.org/guides/password-advice-that-changed/"}
+            ]
+        }
+        </script>
+    </div>
+</main>
+<!--@include partials/footer.html prefix=../../ -->
+<script src="../../script.js" defer></script>
+</div>
+</body>
+</html>

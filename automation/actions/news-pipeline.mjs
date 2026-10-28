@@ -112,7 +112,7 @@ export function buildArticleHtml(item) {
     bodyHtml = `<p>${bodyHtml}</p>`;
   }
 
-  const proxyBase = "https://www.passwordmonkey.org/rss?url=";
+  const proxyBase = "https://passwordmonkey.org/rss?url=";
   const proxiedLink = proxyBase + encodeURIComponent(item.link);
 
 
@@ -307,7 +307,7 @@ export function buildArticleHtml(item) {
 
                         <!-- Source/Reference if applicable -->
                         <div class="text-sm text-gray-600 dark:text-gray-400">
-                            Source: <a href="${proxiedLink}" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">${item.source}</a>
+                            Source: <a href="${proxiedLink}" target="_blank" rel="nofollow noopener" class="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300">${item.source}</a>
                         </div>
                     </div>
                 </footer>
