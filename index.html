@@ -110,6 +110,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "No. Length and uniqueness matter most, not symbols. A long random password or passphrase works fine without special characters. If a site requires symbols, add them \u2014 but don\u0027t rely on them for strength."
+                },
+            {
+                "@type": "Question",
+                "name": "Can I use the same password for multiple accounts?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No, you should never use the same password for multiple accounts. If one account is compromised, all your other accounts would be at risk. Use unique passwords for each account."
+                },
+            {
+                "@type": "Question",
+                "name": "How often should I change my passwords?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Only change a password if you suspect a breach or it was exposed. There\u0027s no benefit to changing on a fixed schedule like every 3-6 months. Use a unique password for every account so one compromise doesn\u0027t spread."
+                },
+            {
+                "@type": "Question",
+                "name": "Does PasswordMonkey store or see my passwords?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. PasswordMonkey never receives your passwords. Generation is entirely local to your device. We don\u0027t log, store, or transmit generated passwords. No network request carries them."
                 }
             }
         ]
@@ -616,6 +637,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </summary>
           <div class="mt-3 pt-3 border-t border-slate-100 dark:border-[#2e2e2e] text-sm text-slate-600 dark:text-slate-400 leading-relaxed">Only change a password if you suspect a breach or it was exposed. There's no benefit to changing on a fixed schedule like every 3-6 months. Use a unique password for every account so one compromise doesn't spread.</div>
         </details>
+        <details id="faq-home-store" class="group bg-white dark:bg-card rounded-xl border border-slate-200 dark:border-[#333333] p-5 open:ring-1 open:ring-sky-200 dark:open:ring-sky-900 transition-all [&amp;_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between gap-4 cursor-pointer list-none select-none font-semibold text-slate-900 dark:text-slate-100 text-sm md:text-base">
+            <span>Does PasswordMonkey store or see my passwords?</span>
+            <span class="material-symbols-outlined text-slate-400 dark:text-slate-500 group-open:rotate-180 transition-transform duration-200">expand_more</span>
+          </summary>
+          <div class="mt-3 pt-3 border-t border-slate-100 dark:border-[#2e2e2e] text-sm text-slate-600 dark:text-slate-400 leading-relaxed">No. PasswordMonkey never receives your passwords. Generation is entirely local to your device. We don't log, store, or transmit generated passwords. No network request carries them.</div>
+        </details>
+      </div>
+      <div class="text-center mt-6">
+        <a href="/faq/" class="text-sky-600 dark:text-sky-400 hover:underline font-medium">See all questions &rarr;</a>
       </div>
     </section>
 

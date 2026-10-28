@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Your Password? Don't Panic - PasswordMonkey</title>
+    <meta name="description" content="Calm step-by-step recovery for forgotten passwords, lost devices, forgotten master passwords, and breached credentials.">
+    <link rel="canonical" href="https://passwordmonkey.org/guides/lost-password-dont-panic/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://passwordmonkey.org/guides/lost-password-dont-panic/">
+    <meta property="og:title" content="Lost Your Password? Don't Panic - PasswordMonkey">
+    <meta property="og:description" content="Calm step-by-step recovery for forgotten passwords, lost devices, forgotten master passwords, and breached credentials.">
+    <meta property="og:image" content="https://passwordmonkey.org/images/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://passwordmonkey.org/guides/lost-password-dont-panic/">
+    <meta name="twitter:title" content="Lost Your Password? Don't Panic - PasswordMonkey">
+    <meta name="twitter:description" content="Calm step-by-step recovery for forgotten passwords, lost devices, forgotten master passwords, and breached credentials.">
+    <meta name="twitter:image" content="https://passwordmonkey.org/images/og-image.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Maax VIA', 'IBM Plex Sans', 'Inter', 'Open Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'IBM Plex Mono', 'monospace'],
+                    },
+                    colors: {
+                        canvas: '#181817',
+                        raised: '#202020',
+                        card: '#242424',
+                        brand: {
+                            DEFAULT: '#42b8ff',
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#42b8ff',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        'blue-600': '#2563eb',
+                        'blue-700': '#1d4ed8',
+                        'gray-50': '#f9fafb',
+                        'gray-200': '#e5e7eb',
+                        'gray-300': '#d1d5db',
+                        'gray-400': '#9ca3af',
+                        'gray-500': '#6b7280',
+                        'gray-600': '#4b5563',
+                        'gray-700': '#374151',
+                        'gray-800': '#1f2937',
+                        'gray-900': 'rgb(17 24 39)',
+                    }
+                }
+            }
+        }
+    </script>
+    <!--@include partials/theme-init.html -->
+    <!--@include partials/head-assets.html prefix=../../ -->
+</head>
+<body class="bg-gray-50 dark:bg-canvas min-h-screen font-sans">
+<!--@include partials/sidebar.html active=guides -->
+<div class="content-wrapper">
+<!--@include partials/topbar.html prefix=../../ -->
+<main class="container mx-auto px-4 py-8">
+    <div class="max-w-4xl mx-auto article bg-white dark:bg-card rounded-xl shadow-lg p-8">
+        <nav class="mb-6 text-sm text-gray-500 dark:text-gray-400">
+            <a href="/">Home</a> &rsaquo; <a href="/guides/">Guides</a> &rsaquo; <span>Lost Your Password? Don't Panic</span>
+        </nav>
+        <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4">Lost Your Password? Don't Panic</h1>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">Last updated: October 2026</p>
+        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">Losing access to an account is stressful, but there's almost always a way back. Here's what to do, step by step.</p>
+        
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Forgot one site password</h2>
+        <ol class="list-decimal list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
+            <li>Use the site's "forgot password" reset flow (usually by email)</li>
+            <li>If you saved it in a password manager, check there first</li>
+            <li>Never reuse an old password when resetting — generate a new random one</li>
+        </ol>
+        
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Lost your device</h2>
+        <ol class="list-decimal list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
+            <li>Use your password manager on another device</li>
+            <li>Sign in with your master password</li>
+            <li>Use recovery codes or your emergency kit to regain access</li>
+        </ol>
+        
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Forgot your password manager's master password</h2>
+        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
+            <li>It may be unrecoverable — that's the point of the encryption</li>
+            <li>Bitwarden cannot reset a forgotten master password</li>
+            <li>1Password uses an Emergency Kit (Secret Key) and recovery codes</li>
+            <li>Apple needs a trusted device passcode, recovery contact, or recovery key</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Your password was found in a breach</h2>
+        <ol class="list-decimal list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
+            <li>Change the breached password first</li>
+            <li>Change any other account where you reused the same password</li>
+            <li>NIST says change on evidence of compromise — not on a fixed schedule</li>
+        </ol>
+        
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Be prepared</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-6"><a href="/tools/recovery-kit/" class="text-blue-600 hover:underline">Link to the Recovery Kit tool</a> — Print it out and fill it in by hand. Never store passwords in it — only locations of recovery information.</p>
+        
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Sources</h2>
+        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
+            <li>NIST SP 800-63B-4 (final Aug 2025) - change on evidence of compromise</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Related guides</h2>
+        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+            <li><a href="/guides/" class="text-blue-600 hover:underline">The Complete Guide to Password Safety (hub)</a></li>
+            <li><a href="/" class="text-blue-600 hover:underline">Password generator</a></li>
+            <li><a href="/faq/" class="text-blue-600 hover:underline">Frequently asked questions</a></li>
+            <li><a href="/guides/save-password-to-browser/" class="text-blue-600 hover:underline">Save Passwords to Your Browser</a></li>
+            <li><a href="/guides/secure-your-first-5-accounts/" class="text-blue-600 hover:underline">Secure Your First 5 Accounts</a></li>
+        </ul>        <!-- Share or cite this page -->
+        <!--@include partials/share-cite-box.html prefix=../../ -->
+
+
+        
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Lost Your Password? Don't Panic",
+            "description": "Calm step-by-step recovery for forgotten passwords, lost devices, forgotten master passwords, and breached credentials.",
+            "author": {"@type": "Organization", "name": "PasswordMonkey"},
+            "publisher": {"@type": "Organization", "name": "PasswordMonkey"},
+            "datePublished": "2026-10-01",
+            "dateModified": "2026-10-28"
+        }
+        </script>        <!-- Share or cite this page -->
+        <!--@include partials/share-cite-box.html prefix=../../ -->
+
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://passwordmonkey.org/"},
+                {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://passwordmonkey.org/guides/"},
+                {"@type": "ListItem", "position": 3, "name": "Lost Your Password? Don't Panic", "item": "https://passwordmonkey.org/guides/lost-password-dont-panic/"}
+            ]
+        }
+        </script>
+    </div>
+</main>
+<!--@include partials/footer.html prefix=../../ -->
+<script src="../../script.js" defer></script>
+</div>
+</body>
+</html>
