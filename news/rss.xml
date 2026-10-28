@@ -4,7 +4,7 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Wed, 28 Oct 2026 19:52:53 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 22:01:38 GMT</lastBuildDate>
     <item>
       <title>Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-28-adobe-commerce-polyshell-attacks-breach-hundreds-o-5977b4.html</link>
@@ -34,6 +34,18 @@
       <link>https://passwordmonkey.org/news/2026-10-28-fake-ps5-emulators-on-github-are-spreading-passwor-946b5a.html</link>
       <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
       <description>This is according to the threat research arm of NordVPN.</description>
+    </item>
+    <item>
+      <title>Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-28-google-launches-gemini-4-carbon-with-a-significant-7b5653.html</link>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Google has released its latest frontier model, Gemini 4 Carbon, offering</description>
+    </item>
+    <item>
+      <title>Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-28-hackers-target-critical-oracle-e-business-suite-rc-f83598.html</link>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused</description>
     </item>
     <item>
       <title>Japan&apos;s GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach | Password Monkey</title>
@@ -1398,6 +1410,18 @@ Cybersecurity is being reshaped by the expansion of cloud infrastructure, AI, di
       <description>Why Video Game Anti-Cheat Systems Are a Cybersecurity Goldmine</description>
     </item>
     <item>
+      <title>[Article Title] | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/article-template.html</link>
+      <pubDate>Invalid Date</pubDate>
+      <description>[Meta Description]</description>
+    </item>
+    <item>
+      <title>Secure Password Strategies for 2025 | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
+    </item>
+    <item>
       <title>Strong password trends in 2025 | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2025-08-10-strong-password-trends-2025.html</link>
       <pubDate>Sun, 10 Aug 2025 00:00:00 GMT</pubDate>
@@ -1420,18 +1444,6 @@ Cybersecurity is being reshaped by the expansion of cloud infrastructure, AI, di
       <link>https://passwordmonkey.org/news/2022-08-29-tentacles-of-0ktapus-threat-group-victimize-130-fi-b4e51b.html</link>
       <pubDate>Mon, 29 Aug 2022 00:00:00 GMT</pubDate>
       <description>Over 130 companies tangled in sprawling phishing campaign that spoofed a multi-factor authentication system.</description>
-    </item>
-    <item>
-      <title>[Article Title] | Password Monkey</title>
-      <link>https://passwordmonkey.org/news/article-template.html</link>
-      <pubDate>Invalid Date</pubDate>
-      <description>[Meta Description]</description>
-    </item>
-    <item>
-      <title>Secure Password Strategies for 2025 | Password Monkey</title>
-      <link>https://passwordmonkey.org/news/secure-password-strategies-2025.html</link>
-      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
-      <description>Learn the top secure password strategies for 2025 to protect your accounts from breaches and hackers.</description>
     </item>
   </channel>
 </rss>
