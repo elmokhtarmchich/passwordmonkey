@@ -1,4 +1,21 @@
 {
   "version": 1,
-  "articles": {}
+  "articles": {
+    "2026-10-28-hackers-target-critical-oracle-e-business-suite-rc-f83598.html": {
+      "status": "pending",
+      "discoveredAt": "2026-10-28T22:01:36.508Z",
+      "published": "2026-10-28",
+      "source": "thehackernews.com",
+      "title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
+      "description": "Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber.\n\nThe vulnerability in question is CVE-2026-101767 (CVSS score: 9.8) , a case of improper authentication in the Oracle Application Object Library of Oracle E-Business Suite. It was patched by Oracle last week as part of its Critical"
+    },
+    "2026-10-28-google-launches-gemini-4-carbon-with-a-significant-7b5653.html": {
+      "status": "pending",
+      "discoveredAt": "2026-10-28T22:01:36.508Z",
+      "published": "2026-10-28",
+      "source": "theverge.com",
+      "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+      "description": "Google has released its latest frontier model, Gemini 4 Carbon, offering \"significant gains\" in coding, agentic tasks, and cybersecurity. In an announcement on Wednesday, Google highlights Carbon's top spot on the Artificial Analysis Intelligence Index (v5.0) benchmark, with Claude Opus 5.5 and GPT-6 Astra trailing behind.\nThe new Gemini 4 Carbon model offers improvements over Argon, which Google released earlier this month. It's currently only available to a select group of cybersecurity defense companies, but it will eventually expand to other partners in its Fairwind Program.\nThe company says Carbon reflects the \"pace at which we're pus …\nRead the full story at The Verge."
+    }
+  }
 }
