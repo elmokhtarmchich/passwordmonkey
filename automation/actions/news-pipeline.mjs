@@ -348,7 +348,9 @@ export function buildArticleHtml(item) {
 }
 
 import { existsSync } from "node:fs";
-import { execSync } from "node:child_process";
+import { execFileSync, execSync } from "node:child_process";
+
+const facebookQueuePath = path.join(repoRoot, "automation", "facebook-queue.json");
 // Main flow (port of the n8n nodes after "Generate HTML1"):
 // fetch all feeds -> normalize -> keyword filter -> reading time + date format
 // -> build article HTML -> duplicate check vs news/ tree -> dry-run report
@@ -403,7 +405,7 @@ async function main() {
       console.log(`skipped (exists): ${built.filename}`);
       skipped.push(built.filename);
     } else {
-      wouldCreate.push({ filename: built.filename, html: built.html });
+      wouldCreate.push({ filename: built.filename, html: built.html, item });
     }
   }
 
@@ -432,8 +434,30 @@ async function main() {
     return;
   }
 
-  const relativePaths = wouldCreate.map((f) => `news/${f.filename}`).join(" ");
-  execSync(`git add ${relativePaths}`);
+  let facebookQueue = { version: 1, articles: {} };
+  try {
+    facebookQueue = JSON.parse(await fs.readFile(facebookQueuePath, "utf8"));
+  } catch (error) {
+    if (error.code !== "ENOENT") throw error;
+  }
+  if (!facebookQueue || typeof facebookQueue !== "object") facebookQueue = { version: 1, articles: {} };
+  if (!facebookQueue.articles || typeof facebookQueue.articles !== "object") facebookQueue.articles = {};
+
+  const discoveredAt = new Date().toISOString();
+  for (const f of wouldCreate) {
+    facebookQueue.articles[f.filename] = {
+      status: "pending",
+      discoveredAt,
+      published: f.item.dateISO,
+      source: f.item.source,
+      title: f.item.title || "",
+      description: f.item.description || ""
+    };
+  }
+  await fs.writeFile(facebookQueuePath, `${JSON.stringify(facebookQueue, null, 2)}\n`, "utf8");
+
+  const relativePaths = wouldCreate.map((f) => `news/${f.filename}`);
+  execFileSync("git", ["add", "--", ...relativePaths, "automation/facebook-queue.json"]);
   const commitMessage = `chore(news): add ${wouldCreate.length} article(s) via RSS pipeline`;
   execSync(
     `git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "${commitMessage}"`
