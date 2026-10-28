@@ -1,20 +1,20 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lost Your Password? Don't Panic - PasswordMonkey</title>
-    <meta name="description" content="Calm step-by-step recovery for forgotten passwords, lost devices, forgotten master passwords, and breached credentials.">
+    <meta name="description" content="Calm step-by-step recovery for forgot password, lost account access, and breaches.">
     <link rel="canonical" href="https://passwordmonkey.org/guides/lost-password-dont-panic/">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://passwordmonkey.org/guides/lost-password-dont-panic/">
     <meta property="og:title" content="Lost Your Password? Don't Panic - PasswordMonkey">
-    <meta property="og:description" content="Calm step-by-step recovery for forgotten passwords, lost devices, forgotten master passwords, and breached credentials.">
+    <meta property="og:description" content="Calm step-by-step recovery for forgot password, lost account access, and breaches.">
     <meta property="og:image" content="https://passwordmonkey.org/images/og-image.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://passwordmonkey.org/guides/lost-password-dont-panic/">
     <meta name="twitter:title" content="Lost Your Password? Don't Panic - PasswordMonkey">
-    <meta name="twitter:description" content="Calm step-by-step recovery for forgotten passwords, lost devices, forgotten master passwords, and breached credentials.">
+    <meta name="twitter:description" content="Calm step-by-step recovery for forgot password, lost account access, and breaches.">
     <meta name="twitter:image" content="https://passwordmonkey.org/images/og-image.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -30,30 +30,10 @@
                         canvas: '#181817',
                         raised: '#202020',
                         card: '#242424',
-                        brand: {
-                            DEFAULT: '#42b8ff',
-                            50: '#f0f9ff',
-                            100: '#e0f2fe',
-                            200: '#bae6fd',
-                            300: '#7dd3fc',
-                            400: '#38bdf8',
-                            500: '#42b8ff',
-                            600: '#0284c7',
-                            700: '#0369a1',
-                            800: '#075985',
-                            900: '#0c4a6e',
-                        },
-                        'blue-600': '#2563eb',
-                        'blue-700': '#1d4ed8',
-                        'gray-50': '#f9fafb',
-                        'gray-200': '#e5e7eb',
-                        'gray-300': '#d1d5db',
-                        'gray-400': '#9ca3af',
-                        'gray-500': '#6b7280',
-                        'gray-600': '#4b5563',
-                        'gray-700': '#374151',
-                        'gray-800': '#1f2937',
-                        'gray-900': 'rgb(17 24 39)',
+                        brand: { DEFAULT: '#42b8ff', 50: '#f0f9ff', 100: '#e0f2fe', 200: '#bae6fd', 300: '#7dd3fc', 400: '#38bdf8', 500: '#42b8ff', 600: '#0284c7', 700: '#0369a1', 800: '#075985', 900: '#0c4a6e' },
+                        'blue-600': '#2563eb', 'blue-700': '#1d4ed8',
+                        'gray-50': '#f9fafb', 'gray-200': '#e5e7eb', 'gray-300': '#d1d5db', 'gray-400': '#9ca3af',
+                        'gray-500': '#6b7280', 'gray-600': '#4b5563', 'gray-700': '#374151', 'gray-800': '#1f2937', 'gray-900': 'rgb(17 24 39)'
                     }
                 }
             }
@@ -73,72 +53,83 @@
         </nav>
         <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4">Lost Your Password? Don't Panic</h1>
         <p class="text-gray-600 dark:text-gray-300 mb-4">Last updated: October 2026</p>
-        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">Losing access to an account is stressful, but there's almost always a way back. Here's what to do, step by step.</p>
         
-        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Forgot one site password</h2>
-        <ol class="list-decimal list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
-            <li>Use the site's "forgot password" reset flow (usually by email)</li>
-            <li>If you saved it in a password manager, check there first</li>
-            <li>Never reuse an old password when resetting — generate a new random one</li>
+        <p class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">Losing access to an account is stressful, but there's almost always a way back. Most sites have recovery options, and password managers have safety nets. Here's what to do, step by step, for each situation — calm, practical guidance to help you regain access without making things worse.</p>
+
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4 mt-8">Forgot one site password</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">If you just forgot the password for a single account, follow these steps in order:</p>
+        <ol class="list-decimal pl-6 mb-6 space-y-2 text-gray-700 dark:text-gray-300">
+            <li><strong>Use the site's reset flow:</strong> Look for "Forgot password" or "Reset password" on the sign-in page. Most sites will send a reset link or code to the email on file.</li>
+            <li><strong>Check your password manager first:</strong> Before resetting, search for the site in your password manager. You might have saved it and just need to sign in there.</li>
+            <li><strong>Generate a new, strong password:</strong> Never reuse an old password when resetting. Use a unique, random password — you can create one with the <a href="/" class="text-brand hover:underline">PasswordMonkey generator</a>.</li>
+            <li><strong>Store it safely:</strong> Save the new password in your password manager right away so you don't lose it again.</li>
         </ol>
-        
-        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Lost your device</h2>
-        <ol class="list-decimal list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
-            <li>Use your password manager on another device</li>
-            <li>Sign in with your master password</li>
-            <li>Use recovery codes or your emergency kit to regain access</li>
+
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4 mt-8">Lost your device</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">If the device you normally use is lost or stolen, you can still recover access if you're prepared:</p>
+        <ol class="list-decimal pl-6 mb-6 space-y-2 text-gray-700 dark:text-gray-300">
+            <li><strong>Use another device:</strong> Sign in to your password manager from a different phone, tablet, or computer you have access to.</li>
+            <li><strong>Sign in with your master password:</strong> Use your password manager's master password to unlock your vault and access all saved logins.</li>
+            <li><strong>Use recovery options:</strong> If you can't sign in on the new device, use your recovery codes, emergency kit, or emergency access as set up in advance.</li>
+            <li><strong>Remove the lost device:</strong> If possible, sign out of or remove the lost device from your password manager's trusted devices list and any accounts where it's still logged in.</li>
         </ol>
-        
-        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Forgot your password manager's master password</h2>
-        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
-            <li>It may be unrecoverable — that's the point of the encryption</li>
-            <li>Bitwarden cannot reset a forgotten master password</li>
-            <li>1Password uses an Emergency Kit (Secret Key) and recovery codes</li>
-            <li>Apple needs a trusted device passcode, recovery contact, or recovery key</li>
+
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4 mt-8">Forgot your password manager's master password</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">For most password managers, the master password cannot be reset. This is by design — it's what encrypts your vault.</p>
+        <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700 dark:text-gray-300">
+            <li><strong>It may be unrecoverable:</strong> If you have no recovery method set up, there is often no way for the provider to restore your vault. That's the point of strong encryption.</li>
+            <li><strong>Bitwarden:</strong> There is no master password reset. Premium users can set up <strong>Emergency Access</strong> to allow a trusted contact to request access with a waiting period.</li>
+            <li><strong>1Password:</strong> Keep your <strong>Emergency Kit</strong> (which includes your Secret Key) in a safe place. Recovery codes can also help depending on your setup.</li>
+            <li><strong>Apple iCloud Keychain:</strong> Access depends on a trusted device passcode, recovery contact, or recovery key. Without those, recovery may not be possible.</li>
+            <li><strong>Prepare now:</strong> Before you need it, set up recovery options and store your recovery information safely. There is no universal "forgot master password" reset.</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4 mt-8">Your password was found in a breach</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">If you learn a password has been exposed in a data breach, act quickly and precisely:</p>
+        <ol class="list-decimal pl-6 mb-6 space-y-2 text-gray-700 dark:text-gray-300">
+            <li><strong>Change the breached password first:</strong> Update it on the affected site immediately with a new, unique, random password.</li>
+            <li><strong>Check for reuse:</strong> Change any other account where you used the same password. Attackers will try reused passwords across sites.</li>
+            <li><strong>Change on evidence of compromise:</strong> Follow NIST guidance — change passwords when there's evidence of compromise, not on an arbitrary fixed schedule.</li>
+            <li><strong>Go unique going forward:</strong> Use unique, random passwords for every account and store them in a password manager.</li>
+        </ol>
+
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4 mt-8">Be prepared</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">A little preparation now saves a lot of stress later:</p>
+        <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700 dark:text-gray-300">
+            <li><strong>Print a Recovery Kit:</strong> Use our <a href="/tools/recovery-kit/" class="text-brand hover:underline">PasswordMonkey Recovery Kit tool</a> to generate a blank kit, then print it and fill it in by hand.</li>
+            <li><strong>Only record locations:</strong> Never store actual passwords in your printed Recovery Kit. Only record where to find recovery information (emergency contacts, kit locations, recovery codes storage).</li>
+            <li><strong>Store it safely:</strong> Keep your printed kit in a secure, known location — think a locked drawer or safe, not taped to your monitor.</li>
+            <li><strong>Review regularly:</strong> Update your kit when you change devices, switch password managers, or update recovery contacts.</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4 mt-8">Sources</h2>
+        <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700 dark:text-gray-300">
+            <li>NIST SP 800-63B-4 (final, August 2025) — change passwords on evidence of compromise, not on a fixed schedule.</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4 mt-8">Related guides</h2>
+        <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700 dark:text-gray-300">
+            <li><a href="/guides/" class="text-brand hover:underline">PasswordMonkey Guides hub</a> — Browse all password security guides in one place.</li>
+            <li><a href="/" class="text-brand hover:underline">Random Password Generator</a> — Create strong, unique passwords instantly.</li>
+            <li><a href="/faq/" class="text-brand hover:underline">Frequently Asked Questions</a> — Answers to common password security questions.</li>
+            <li><a href="/guides/save-password-to-browser/" class="text-brand hover:underline">How to save passwords in your browser</a> — Learn when browser saving helps and its limits.</li>
+            <li><a href="/guides/secure-your-first-5-accounts/" class="text-brand hover:underline">Secure your first 5 accounts</a> — A prioritized checklist to lock down critical accounts.</li>
         </ul>
         
-        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Your password was found in a breach</h2>
-        <ol class="list-decimal list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
-            <li>Change the breached password first</li>
-            <li>Change any other account where you reused the same password</li>
-            <li>NIST says change on evidence of compromise — not on a fixed schedule</li>
-        </ol>
-        
-        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Be prepared</h2>
-        <p class="text-gray-700 dark:text-gray-300 mb-6"><a href="/tools/recovery-kit/" class="text-blue-600 hover:underline">Link to the Recovery Kit tool</a> — Print it out and fill it in by hand. Never store passwords in it — only locations of recovery information.</p>
-        
-        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Sources</h2>
-        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
-            <li>NIST SP 800-63B-4 (final Aug 2025) - change on evidence of compromise</li>
-        </ul>
-        
-        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Related guides</h2>
-        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
-            <li><a href="/guides/" class="text-blue-600 hover:underline">The Complete Guide to Password Safety (hub)</a></li>
-            <li><a href="/" class="text-blue-600 hover:underline">Password generator</a></li>
-            <li><a href="/faq/" class="text-blue-600 hover:underline">Frequently asked questions</a></li>
-            <li><a href="/guides/save-password-to-browser/" class="text-blue-600 hover:underline">Save Passwords to Your Browser</a></li>
-            <li><a href="/guides/secure-your-first-5-accounts/" class="text-blue-600 hover:underline">Secure Your First 5 Accounts</a></li>
-        </ul>        <!-- Share or cite this page -->
         <!--@include partials/share-cite-box.html prefix=../../ -->
-
-
         
         <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Lost Your Password? Don't Panic",
-            "description": "Calm step-by-step recovery for forgotten passwords, lost devices, forgotten master passwords, and breached credentials.",
+            "description": "Calm step-by-step recovery for forgot password, lost account access, and breaches.",
             "author": {"@type": "Organization", "name": "PasswordMonkey"},
             "publisher": {"@type": "Organization", "name": "PasswordMonkey"},
             "datePublished": "2026-10-01",
             "dateModified": "2026-10-28"
         }
-        </script>        <!-- Share or cite this page -->
-        <!--@include partials/share-cite-box.html prefix=../../ -->
-
-
+        </script>
         <script type="application/ld+json">
         {
             "@context": "https://schema.org",

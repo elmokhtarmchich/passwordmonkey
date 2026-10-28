@@ -67,36 +67,70 @@
 <div class="content-wrapper">
 <!--@include partials/topbar.html prefix=../../ -->
 <main class="container mx-auto px-4 py-8">
-    <div class="max-w-4xl mx-auto article bg-white dark:bg-card rounded-xl shadow-lg p-8">
+    ﻿    <div class="max-w-4xl mx-auto article bg-white dark:bg-card rounded-xl shadow-lg p-8">
         <nav class="mb-6 text-sm text-gray-500 dark:text-gray-400">
             <a href="/">Home</a> &rsaquo; <a href="/guides/">Guides</a> &rsaquo; <span>Password Advice That Changed</span>
         </nav>
         <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4">Password Advice That Changed</h1>
         <p class="text-gray-600 dark:text-gray-300 mb-4">Last updated: October 2026</p>
-        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">Old password advice said: change every 90 days, use symbols, mix character types. Modern guidance from NIST says otherwise.</p>
-        
+        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">Old password advice said: change every 90 days, use symbols, mix character types. Modern guidance from NIST says otherwise. This guide explains what changed, what stayed the same, and why — so you can follow current best practices instead of outdated rules.</p>
+
         <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">What changed</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">Modern standards like NIST SP 800-63B-4 rewrote the rules. The old checklist approach is gone. Here is what replaced it:</p>
         <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
-            <li>No forced periodic change: change on evidence of compromise, not on a schedule</li>
-            <li>No composition rules: symbols and mixed character types are not required</li>
-            <li>Length matters most: 15-character minimum, 64+ allowed</li>
-            <li>Password managers and paste must be allowed</li>
+            <li><strong>No forced periodic change:</strong> change on evidence of compromise, not on a schedule. Research shows forced changes lead to weaker passwords, because people make small, predictable edits.</li>
+            <li><strong>No composition rules:</strong> symbols and mixed character types are not required. Length and uniqueness matter most. A long random phrase beats a short clever one.</li>
+            <li><strong>Length matters most:</strong> 15-character minimum, 64+ allowed. Longer passwords are exponentially harder to crack, far more than adding a symbol.</li>
+            <li><strong>Password managers and paste must be allowed:</strong> sites should not block password managers or paste. Blocking them pushes users toward reuse.</li>
+            <li><strong>Screen against common and breached passwords:</strong> check new passwords against lists of known-compromised passwords and reject matches.</li>
         </ul>
-        
+
         <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">What stayed the same</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">Some fundamentals never changed. The core goals of password security remain:</p>
         <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
-            <li>Use unique passwords for every account</li>
-            <li>Longer passwords are exponentially harder to crack</li>
-            <li>Randomness matters: avoid patterns and personal information</li>
+            <li>Use unique passwords for every account, so one breach does not spread.</li>
+            <li>Longer passwords are exponentially harder to crack — length is still king.</li>
+            <li>Randomness matters: avoid patterns and personal information that attackers can guess.</li>
+            <li>Store passwords in a password manager instead of your memory or a notebook.</li>
         </ul>
-        
+
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Old advice vs new advice</h2>
+        <div class="overflow-x-auto mb-6">
+            <table class="w-full text-left text-gray-700 dark:text-gray-300 border-collapse">
+                <thead>
+                    <tr class="border-b border-gray-200 dark:border-gray-700">
+                        <th class="py-2 pr-4 font-semibold">Old advice</th>
+                        <th class="py-2 font-semibold">New advice (NIST SP 800-63B-4)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-gray-200 dark:border-gray-700"><td class="py-2 pr-4">Change every 3-6 months</td><td class="py-2">Change only on evidence of compromise</td></tr>
+                    <tr class="border-b border-gray-200 dark:border-gray-700"><td class="py-2 pr-4">Require symbols, uppercase, numbers</td><td class="py-2">No composition rules; length and uniqueness matter most</td></tr>
+                    <tr class="border-b border-gray-200 dark:border-gray-700"><td class="py-2 pr-4">Minimum 8-12 characters</td><td class="py-2">Minimum 15 characters, allow 64+</td></tr>
+                    <tr><td class="py-2 pr-4">Memorize all your passwords</td><td class="py-2">Use a password manager</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Why the change</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">The shift came from research, not opinion. Forced periodic changes led to weaker passwords — people made small, predictable changes like "Password1" to "Password2". Composition rules did not significantly improve strength; length did. Password managers made unique passwords practical, so memorization was no longer the bottleneck. NIST SP 800-63B-4, finalized in August 2025, reflects this modern research and is now the baseline for digital identity guidance.</p>
+
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">What this means for you</h2>
+        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
+            <li>Use 15+ characters; 16 or more is recommended.</li>
+            <li>Use unique passwords for every account.</li>
+            <li>Store them in a password manager.</li>
+            <li>Change a password only if you suspect a breach, not on a schedule.</li>
+            <li>Symbols are optional — do not let a site's weak rules force you into a shorter password.</li>
+        </ul>
+
         <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Sources</h2>
         <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
-            <li>[NIST SP 800-63B-4 URL] — NEEDS URL (user to supply)</li>
-            <li>[NCSC password guidance URL] — NEEDS URL (user to supply)</li>
-            <li>NIST SP 800-63B-4 (final Aug 2025) - digital identity guidelines</li>
+            <li><a href="[NEEDS URL]" class="text-blue-600 hover:underline">NIST SP 800-63B-4</a> — [NEEDS URL] (user to supply)</li>
+            <li><a href="[NEEDS URL]" class="text-blue-600 hover:underline">NCSC password guidance</a> — [NEEDS URL] (user to supply)</li>
+            <li>NIST SP 800-63B-4 (final Aug 2025) — digital identity guidelines</li>
         </ul>
-        
+
         <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Related guides</h2>
         <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
             <li><a href="/guides/" class="text-blue-600 hover:underline">The Complete Guide to Password Safety (hub)</a></li>
@@ -108,8 +142,7 @@
         <!--@include partials/share-cite-box.html prefix=../../ -->
 
 
-        
-        <script type="application/ld+json">
+                <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "Article",
@@ -121,7 +154,6 @@
             "dateModified": "2026-10-28"
         }
         </script>        <!-- Share or cite this page -->
-        <!--@include partials/share-cite-box.html prefix=../../ -->
 
 
         <script type="application/ld+json">

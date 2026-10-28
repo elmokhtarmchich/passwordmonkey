@@ -4,60 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why Use Random Passwords - PasswordMonkey</title>
-    <meta name="description" content="Understand why random passwords protect your accounts better than reused ones. Covers the three fears and how to choose length.">
+    <meta name="description" content="Learn why random passwords protect your accounts. Unique, randomly generated passwords stop breaches from cascading across your online life.">
     <link rel="canonical" href="https://passwordmonkey.org/guides/why-use-random-passwords/">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://passwordmonkey.org/guides/why-use-random-passwords/">
     <meta property="og:title" content="Why Use Random Passwords - PasswordMonkey">
-    <meta property="og:description" content="Understand why random passwords protect your accounts better than reused ones. Covers the three fears and how to choose length.">
+    <meta property="og:description" content="Learn why random passwords protect your accounts. Unique, randomly generated passwords stop breaches from cascading across your online life.">
     <meta property="og:image" content="https://passwordmonkey.org/images/og-image.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://passwordmonkey.org/guides/why-use-random-passwords/">
     <meta name="twitter:title" content="Why Use Random Passwords - PasswordMonkey">
-    <meta name="twitter:description" content="Understand why random passwords protect your accounts better than reused ones. Covers the three fears and how to choose length.">
+    <meta name="twitter:description" content="Learn why random passwords protect your accounts. Unique, randomly generated passwords stop breaches from cascading across your online life.">
     <meta name="twitter:image" content="https://passwordmonkey.org/images/og-image.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Maax VIA', 'IBM Plex Sans', 'Inter', 'Open Sans', 'sans-serif'],
-                        mono: ['JetBrains Mono', 'IBM Plex Mono', 'monospace'],
-                    },
-                    colors: {
-                        canvas: '#181817',
-                        raised: '#202020',
-                        card: '#242424',
-                        brand: {
-                            DEFAULT: '#42b8ff',
-                            50: '#f0f9ff',
-                            100: '#e0f2fe',
-                            200: '#bae6fd',
-                            300: '#7dd3fc',
-                            400: '#38bdf8',
-                            500: '#42b8ff',
-                            600: '#0284c7',
-                            700: '#0369a1',
-                            800: '#075985',
-                            900: '#0c4a6e',
-                        },
-                        'blue-600': '#2563eb',
-                        'blue-700': '#1d4ed8',
-                        'gray-50': '#f9fafb',
-                        'gray-200': '#e5e7eb',
-                        'gray-300': '#d1d5db',
-                        'gray-400': '#9ca3af',
-                        'gray-500': '#6b7280',
-                        'gray-600': '#4b5563',
-                        'gray-700': '#374151',
-                        'gray-800': '#1f2937',
-                        'gray-900': 'rgb(17 24 39)',
-                    }
-                }
-            }
-        }
+        tailwind.config = { darkMode: 'class' };
     </script>
     <!--@include partials/theme-init.html -->
     <!--@include partials/head-assets.html prefix=../../ -->
@@ -73,39 +34,55 @@
         </nav>
         <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4">Why Use Random Passwords</h1>
         <p class="text-gray-600 dark:text-gray-300 mb-4">Last updated: October 2026</p>
-        
-        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">Reused passwords are the biggest risk to your online accounts. If one site is breached, every account using that password is at risk. Random passwords break that chain.</p>
-        
+
+        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">Reused passwords are the biggest risk to your online accounts. If one site is breached, every account using that password is at risk. Random passwords break that chain — when each account has a unique, randomly generated password, a breach at one site cannot cascade to your other accounts.</p>
+
         <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">The three fears people have</h2>
-        
+
         <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2">Where does my password live?</h3>
-        <p class="text-gray-700 dark:text-gray-300 mb-4">In your password manager, encrypted. Not on our servers. Not in the cloud unprotected.</p>
-        
+        <p class="text-gray-700 dark:text-gray-300 mb-4">Your passwords live in your password manager, encrypted. PasswordMonkey never sees, stores, or transmits your passwords. Generation happens in your browser using the Web Crypto API. Nothing leaves your device. [NEEDS SOURCE]</p>
+
         <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2">What if it gets hacked?</h3>
-        <p class="text-gray-700 dark:text-gray-300 mb-4">One strong stored password is safer than many weak reused ones. A breach of one account doesn't cascade when passwords are unique.</p>
-        
+        <p class="text-gray-700 dark:text-gray-300 mb-4">One strong stored password is safer than many weak reused ones. A breach of one account doesn't cascade when passwords are unique. Your password manager encrypts your vault, so your data stays protected even if the service is attacked.</p>
+
         <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-2">What if I lose access?</h3>
-        <p class="text-gray-700 dark:text-gray-300 mb-6">Recovery options exist: password reset flows, recovery codes, emergency kits, trusted contacts.</p>
-        
+        <p class="text-gray-700 dark:text-gray-300 mb-6">Recovery options exist: password reset flows, recovery codes, emergency kits, and trusted contacts. Losing access is stressful, but there's almost always a way back. Keep recovery codes somewhere safe and separate from your manager.</p>
+
         <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">One strong stored password vs reused weak ones</h2>
         <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-4">
-            <li>Reusing one password across sites means one breach = all accounts compromised</li>
-            <li>A random password stored in a manager means you only need to protect one thing: your manager</li>
-            <li>Length matters most: 15 characters minimum, 16 or more recommended</li>
+            <li>Reusing one password across sites means one breach equals all accounts compromised.</li>
+            <li>A random password stored in a manager means you only need to protect one thing: your manager.</li>
+            <li>Length matters most: 15 characters minimum, 16 or more recommended.</li>
         </ul>
-        <p class="text-gray-700 dark:text-gray-300 mb-6">Generate strong random passwords with the <a href="/" class="text-blue-600 hover:underline">PasswordMonkey generator</a>.</p>
-        
+        <p class="text-gray-700 dark:text-gray-300 mb-6">A random password in a manager beats a memorable one you reuse everywhere. Generate strong random passwords with the <a href="/" class="text-blue-600 hover:underline">PasswordMonkey generator</a>.</p>
+
         <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Do you need symbols?</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-6">No. Length and uniqueness matter most; symbols are optional. NIST SP 800-63B-4 removed composition rules. A long random password or passphrase works fine without symbols. If a site requires symbols, add them — but don't rely on them for strength.</p>
+
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Random password or passphrase?</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-6">Both work. A long random password and a passphrase of several random words are both strong. Store either in a password manager so you only need to remember one master password.</p>
+
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">How long should my password be?</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-6">Use 15 characters or more; 16 or more is recommended. NIST SP 800-63B-4 sets a 15-character minimum for single-factor passwords and allows at least 64. Longer passwords are exponentially harder to crack. If a site limits length, use the maximum it allows and a unique password for that site.</p>
+
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Entropy explained simply</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-6">Password strength is measured in entropy (bits). Weak: under 32 bits. Fair: 32-64. Good: 64-128. Strong: 128+. Higher entropy means harder to crack. Aim for 128+ bits for your most important accounts.</p>
+
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Common myths about passwords</h2>
         <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
-            <li>No. Length and uniqueness matter most. Symbols are optional.</li>
-            <li>NIST SP 800-63B-4 removed composition rules</li>
+            <li>Myth: "I need to change my password every 90 days." Fact: Change only on evidence of compromise, not on a schedule.</li>
+            <li>Myth: "Symbols make my password strong." Fact: Length and uniqueness matter most.</li>
+            <li>Myth: "I can remember all my passwords." Fact: Use a password manager.</li>
         </ul>
-        
+
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Generate strong random passwords</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-6">Ready to try? Use the <a href="/" class="text-blue-600 hover:underline">PasswordMonkey password generator</a> to create strong random passwords in seconds.</p>
+
         <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Sources</h2>
         <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
             <li>NIST SP 800-63B-4 (final Aug 2025) - digital identity guidelines</li>
         </ul>
-        
+
         <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Related guides</h2>
         <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
             <li><a href="/guides/" class="text-blue-600 hover:underline">The Complete Guide to Password Safety (hub)</a></li>
@@ -113,31 +90,22 @@
             <li><a href="/faq/" class="text-blue-600 hover:underline">Frequently asked questions</a></li>
             <li><a href="/guides/where-to-save-passwords/" class="text-blue-600 hover:underline">Where to Save Your Passwords</a></li>
             <li><a href="/guides/save-password-to-browser/" class="text-blue-600 hover:underline">Save Passwords to Your Browser</a></li>
-        </ul>        <!-- Share or cite this page -->
+        </ul>
+
         <!--@include partials/share-cite-box.html prefix=../../ -->
 
-
-        
         <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Why Use Random Passwords",
-            "description": "Understand why random passwords protect your accounts better than reused ones. Covers the three fears and how to choose length.",
-            "author": {
-                "@type": "Organization",
-                "name": "PasswordMonkey"
-            },
-            "publisher": {
-                "@type": "Organization",
-                "name": "PasswordMonkey"
-            },
+            "description": "Learn why random passwords protect your accounts.",
+            "author": {"@type": "Organization", "name": "PasswordMonkey"},
+            "publisher": {"@type": "Organization", "name": "PasswordMonkey"},
             "datePublished": "2026-10-01",
             "dateModified": "2026-10-28"
         }
-        </script>        <!-- Share or cite this page -->
-        <!--@include partials/share-cite-box.html prefix=../../ -->
-
+        </script>
 
         <script type="application/ld+json">
         {

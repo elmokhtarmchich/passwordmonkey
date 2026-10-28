@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secure Your First 5 Accounts - PasswordMonkey</title>
-    <meta name="description" content="A step-by-step ladder: secure your email, bank, phone carrier, cloud, and social accounts first. With 2FA and passkeys.">
+    <meta name="description" content="Secure your email, bank, phone carrier, cloud, and social accounts first. A simple ladder with two-step verification and passkeys.">
     <link rel="canonical" href="https://passwordmonkey.org/guides/secure-your-first-5-accounts/">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://passwordmonkey.org/guides/secure-your-first-5-accounts/">
     <meta property="og:title" content="Secure Your First 5 Accounts - PasswordMonkey">
-    <meta property="og:description" content="A step-by-step ladder: secure your email, bank, phone carrier, cloud, and social accounts first. With 2FA and passkeys.">
+    <meta property="og:description" content="Secure your email, bank, phone carrier, cloud, and social accounts first. A simple ladder with two-step verification and passkeys.">
     <meta property="og:image" content="https://passwordmonkey.org/images/og-image.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://passwordmonkey.org/guides/secure-your-first-5-accounts/">
     <meta name="twitter:title" content="Secure Your First 5 Accounts - PasswordMonkey">
-    <meta name="twitter:description" content="A step-by-step ladder: secure your email, bank, phone carrier, cloud, and social accounts first. With 2FA and passkeys.">
+    <meta name="twitter:description" content="Secure your email, bank, phone carrier, cloud, and social accounts first. A simple ladder with two-step verification and passkeys.">
     <meta name="twitter:image" content="https://passwordmonkey.org/images/og-image.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -73,48 +73,64 @@
         </nav>
         <h1 class="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-4">Secure Your First 5 Accounts</h1>
         <p class="text-gray-600 dark:text-gray-300 mb-4">Last updated: October 2026</p>
-        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">Don't change every password at once. Start with these five, in order. Change each as you next log in — not all at once.</p>
-        
+        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">Don't change every password at once. Start with these five, in order. Change each as you next log in — not all at once. This ladder approach makes security manageable. You build momentum one login at a time, and each step protects the ones that follow.</p>
+
         <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">The ladder</h2>
-        <ol class="list-decimal list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
-            <li>Email — it resets every other account, so protect it first</li>
-            <li>Bank — your money</li>
-            <li>Phone carrier — SMS-based 2FA goes to your number</li>
-            <li>Main cloud account — device backups and sync</li>
-            <li>Main social account — your digital identity</li>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">Work through these accounts in order. Each one is a gateway to the rest, so protecting the top of the ladder first keeps everything below it safe.</p>
+        <ol class="list-decimal list-inside text-gray-700 dark:text-gray-300 space-y-3 mb-6">
+            <li><strong>Email — it resets every other account, so protect it first.</strong> Your email is the gateway. Most sites send reset links to your email, so if someone controls your email, they control everything. Use a long, unique password and turn on two-step verification.</li>
+            <li><strong>Bank — your money.</strong> Protect your financial accounts with strong, unique passwords. A bank breach can drain savings fast, so this is your second priority after email.</li>
+            <li><strong>Phone carrier — SMS-based two-step verification goes to your number.</strong> Protect your carrier account with a PIN and port protection. If someone ports your number, they can intercept your text codes.</li>
+            <li><strong>Main cloud account — device backups and sync.</strong> Your cloud account holds photos, documents, and device backups. Lock it down so a thief cannot reach your files or restore your phone.</li>
+            <li><strong>Main social account — your digital identity.</strong> Your social accounts connect to many other services. Securing them stops impersonation and blocks a path into linked apps.</li>
         </ol>
-        
+        <p class="text-gray-700 dark:text-gray-300 mb-6">Start at the top. Each account protects the ones below it. Work down the list one at a time, changing a password only when you next log in.</p>
+
         <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Change as you go</h2>
         <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
             <li>Change each password when you next log in to that account</li>
             <li>Use 15+ characters (16 or more recommended)</li>
             <li>Store each in your password manager</li>
+            <li>Don't try to do all five in one day — one per login is fine</li>
+            <li>Let your password manager generate the new password so it is random and unique</li>
         </ul>
-        
+
         <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Two-step verification and passkeys</h2>
         <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
-            <li>Enable 2FA on every account that offers it</li>
-            <li>Passkeys can replace passwords where supported — they're phishing-resistant</li>
-            <li>Passwords still work everywhere; use passkeys where available [NEEDS SOURCE for platform support]</li>
+            <li>Enable two-step verification on every account that offers it</li>
+            <li>Two-step verification adds a second check beyond your password — an app code or security key</li>
+            <li>Even if your password is stolen, the second step protects your account</li>
+            <li>Passkeys can replace passwords where supported — they're phishing-resistant [NEEDS SOURCE for platform support]</li>
+            <li>Passwords still work everywhere; use passkeys where available and strong random passwords elsewhere</li>
+            <li>Prefer an authenticator app or security key over SMS when you can</li>
         </ul>
-        
+
         <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">On-device checklist</h2>
-        <ul class="list-none text-gray-700 dark:text-gray-300 space-y-2 mb-4">
-            <li><input type="checkbox" disabled> Email password changed (15+ chars, stored in manager)</li>
-            <li><input type="checkbox" disabled> Bank password changed (15+ chars, stored in manager)</li>
-            <li><input type="checkbox" disabled> Phone carrier account secured (PIN, port protection)</li>
-            <li><input type="checkbox" disabled> Main cloud account secured (recovery contact/key set up)</li>
-            <li><input type="checkbox" disabled> Main social account secured (2FA enabled)</li>
-            <li><input type="checkbox" disabled> 2FA enabled on all 5 accounts</li>
-            <li><input type="checkbox" disabled> Recovery kit printed and stored safely</li>
+        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">This checklist stores only tick states in localStorage under the key "pm-secure-5-checklist". It never stores any passwords or secrets.</p>
+        <ul class="list-none text-gray-700 dark:text-gray-300 space-y-2 mb-6">
+            <li><input type="checkbox" data-pm-check="1"> Email password changed (15+ chars, stored in manager)</li>
+            <li><input type="checkbox" data-pm-check="2"> Bank password changed (15+ chars, stored in manager)</li>
+            <li><input type="checkbox" data-pm-check="3"> Phone carrier account secured (PIN, port protection)</li>
+            <li><input type="checkbox" data-pm-check="4"> Main cloud account secured (recovery contact/key set up)</li>
+            <li><input type="checkbox" data-pm-check="5"> Main social account secured (two-step verification enabled)</li>
+            <li><input type="checkbox" data-pm-check="6"> Two-step verification enabled on all 5 accounts</li>
+            <li><input type="checkbox" data-pm-check="7"> Recovery kit printed and stored safely</li>
         </ul>
-        <p class="text-sm text-gray-600 dark:text-gray-400 mb-6">Note: This checklist stores only tick states in localStorage under the key "pm-secure-5-checklist". It never stores any passwords or secrets.</p>
-        
+
+        <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Why this order</h2>
+        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
+            <li>Your email is the gateway — most sites send reset links to your email, so if someone controls your email, they control everything</li>
+            <li>Your bank protects your money</li>
+            <li>Your phone carrier controls your phone number, which may receive SMS codes</li>
+            <li>Your cloud account holds device backups and sync</li>
+            <li>Your social account is your digital identity</li>
+        </ul>
+
         <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Sources</h2>
         <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 mb-6">
-            <li>NIST SP 800-63B-4 (final Aug 2025) - digital identity guidelines</li>
+            <li>NIST SP 800-63B-4 (final Aug 2025)</li>
         </ul>
-        
+
         <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">Related guides</h2>
         <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
             <li><a href="/guides/" class="text-blue-600 hover:underline">The Complete Guide to Password Safety (hub)</a></li>
@@ -122,25 +138,22 @@
             <li><a href="/faq/" class="text-blue-600 hover:underline">Frequently asked questions</a></li>
             <li><a href="/guides/lost-password-dont-panic/" class="text-blue-600 hover:underline">Lost Your Password? Don't Panic</a></li>
             <li><a href="/guides/password-advice-that-changed/" class="text-blue-600 hover:underline">Password Advice That Changed</a></li>
-        </ul>        <!-- Share or cite this page -->
+        </ul>
         <!--@include partials/share-cite-box.html prefix=../../ -->
 
 
-        
         <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Secure Your First 5 Accounts",
-            "description": "A step-by-step ladder: secure your email, bank, phone carrier, cloud, and social accounts first. With 2FA and passkeys.",
+            "description": "Secure your email, bank, phone carrier, cloud, and social accounts first. A simple ladder with two-step verification and passkeys.",
             "author": {"@type": "Organization", "name": "PasswordMonkey"},
             "publisher": {"@type": "Organization", "name": "PasswordMonkey"},
             "datePublished": "2026-10-01",
             "dateModified": "2026-10-28"
         }
-        </script>        <!-- Share or cite this page -->
-        <!--@include partials/share-cite-box.html prefix=../../ -->
-
+        </script>
 
         <script type="application/ld+json">
         {
