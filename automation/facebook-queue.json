@@ -16,6 +16,14 @@
       "source": "theverge.com",
       "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
       "description": "Google has released its latest frontier model, Gemini 4 Carbon, offering \"significant gains\" in coding, agentic tasks, and cybersecurity. In an announcement on Wednesday, Google highlights Carbon's top spot on the Artificial Analysis Intelligence Index (v5.0) benchmark, with Claude Opus 5.5 and GPT-6 Astra trailing behind.\nThe new Gemini 4 Carbon model offers improvements over Argon, which Google released earlier this month. It's currently only available to a select group of cybersecurity defense companies, but it will eventually expand to other partners in its Fairwind Program.\nThe company says Carbon reflects the \"pace at which we're pus …\nRead the full story at The Verge."
+    },
+    "2026-10-28-a-hacker-stole-more-than-40000-dhs-employee-record-b6ad05.html": {
+      "status": "pending",
+      "discoveredAt": "2026-10-29T03:36:09.625Z",
+      "published": "2026-10-28",
+      "source": "theverge.com",
+      "title": "A hacker stole more than 40,000 DHS employee records",
+      "description": "A hacker stole a trove of personal information from the Department of Homeland Security (DHS).  The breach exposes the names, job titles, phone numbers, email addresses, and office locations of more than 41,000 employees, including those in US Immigration and Customs Enforcement (ICE) and Customs and Border Protection (CBP), according to TechCrunch and Wired. The data also linked the agencies to specific surveillance tools.\nAs reported by TechCrunch, a hacker known as \"Department of Peace\" gained access to the data through Okta, an identity and access management service used by the DHS. Around 21,000 records pertain to CBP employees, and ne …\nRead the full story at The Verge."
     }
   }
 }
