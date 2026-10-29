@@ -4,7 +4,7 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Thu, 29 Oct 2026 11:59:16 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 18:10:31 GMT</lastBuildDate>
     <item>
       <title>AI has come for Arizona’s water | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-29-ai-has-come-for-arizonas-water-d62a8f.html</link>
@@ -12,10 +12,35 @@
       <description>A hulking gray giant rises from the desert. Inside, engineers create the force behind our phones and computers and appliances, our streaming services and search</description>
     </item>
     <item>
+      <title>Anthropic is asking Wall Street to believe in AGI | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-29-anthropic-is-asking-wall-street-to-believe-in-agi-3a6444.html</link>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Today on Decoder, I’m joined by Joey Brookhart, an analyst at the chip and AI research firm SemiAnalysis, to help me dig into the story inside the numbers of th</description>
+    </item>
+    <item>
       <title>China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-29-china-linked-hackers-exploited-vmware-esx-zero-day-48f467.html</link>
       <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
       <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a security flaw impacting Broadcom VMware ESX to its Known Exploited Vulnera</description>
+    </item>
+    <item>
+      <title>CISA warns of Fragnesia Linux flaw chained in PHP2Shell attacks | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-29-cisa-warns-of-fragnesia-linux-flaw-chained-in-php2-3e13be.html</link>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies to patch a high-severity Linux kernel privilege escalation bug that att</description>
+    </item>
+    <item>
+      <title>Google Touts Powerful Cybersecurity Capabilities in Gemini 4 Carbon Model | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-29-google-touts-powerful-cybersecurity-capabilities-i-88b7f3.html</link>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Google’s new frontier model scored 88.2% on SEC-bench Pro and is rolling out first to vetted cyber defenders via its Fairwind Program.
+The post Google Touts Pow</description>
+    </item>
+    <item>
+      <title>Google&apos;s Gemini 4 Carbon Leads Benchmarks for Finding, Exploiting, and Patching Vulnerabilities | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-29-googles-gemini-4-carbon-leads-benchmarks-for-findi-17b1ed.html</link>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Google on Wednesday took the wraps off Gemini 4 Carbon, its latest frontier model with state-of-the-art cybersecurity and long-horizon capabilities.</description>
     </item>
     <item>
       <title>Google&apos;s Gemini 4 Carbon promises &apos;significant leap&apos; in AI coding and cybersecurity | Password Monkey</title>
@@ -31,6 +56,18 @@
 The post HHS Filing Puts iRhythm Data Brea</description>
     </item>
     <item>
+      <title>Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-29-mistral-releases-weights-for-its-trillion-paramete-b138df.html</link>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Mistral says its new model can afford organizations a kind of control over its cyber defenses that closed models can</description>
+    </item>
+    <item>
+      <title>Mistral Says Its AI Model ‘Le Chonk’ Has Leapfrogged China in the Open-Weight Race | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-29-mistral-says-its-ai-model-le-chonk-has-leapfrogged-514622.html</link>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The French AI lab claims its latest release matches or outperforms even the best models from DeepSeek and Z.ai in coding and cybersecurity.</description>
+    </item>
+    <item>
       <title>A hacker stole more than 40,000 DHS employee records | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-28-a-hacker-stole-more-than-40000-dhs-employee-record-b6ad05.html</link>
       <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
@@ -41,6 +78,12 @@ The post HHS Filing Puts iRhythm Data Brea</description>
       <link>https://passwordmonkey.org/news/2026-10-28-adobe-commerce-polyshell-attacks-breach-hundreds-o-5977b4.html</link>
       <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
       <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added two vulnerabilities impacting Adobe Commerce and Magento, and Google</description>
+    </item>
+    <item>
+      <title>AI Takes Root in Hospital Corridors, Raises Security Stakes | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-28-ai-takes-root-in-hospital-corridors-raises-securit-2ca4d3.html</link>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Artificial intelligence (AI) is everywhere in healthcare, from doctors’ intake forms to cancer screenings. But in some cases, life-and-death uses are outpacing</description>
     </item>
     <item>
       <title>American Organizations Under Attack: Skyw4lker Device Code Phishing Campaign Exposed | Password Monkey</title>
