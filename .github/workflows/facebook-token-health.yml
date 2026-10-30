@@ -1,0 +1,41 @@
+name: Facebook Token Health Check
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-token:
+    runs-on: ubuntu-latest
+    env:
+      FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+      FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
+      FACEBOOK_GRAPH_VERSION: v26.0
+    steps:
+      - name: Check Page access token with Meta
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ -z "$FACEBOOK_PAGE_ID" || -z "$FACEBOOK_PAGE_ACCESS_TOKEN" ]]; then
+            echo "Required Facebook secrets are missing."
+            exit 1
+          fi
+
+          response="$(curl --fail-with-body --silent --show-error --get \
+            "https://graph.facebook.com/${FACEBOOK_GRAPH_VERSION}/${FACEBOOK_PAGE_ID}" \
+            --header "Authorization: Bearer ${FACEBOOK_PAGE_ACCESS_TOKEN}" \
+            --data-urlencode "fields=id,name")"
+
+          returned_id="$(jq -r '.id // empty' <<<"$response")"
+          if [[ "$returned_id" != "$FACEBOOK_PAGE_ID" ]]; then
+            echo "Meta returned an unexpected Page ID or an invalid token response."
+            exit 1
+          fi
+
+          page_name="$(jq -r '.name // "PasswordMonkey"' <<<"$response")"
+          echo "Facebook Page token is valid for: ${page_name} (${returned_id})."

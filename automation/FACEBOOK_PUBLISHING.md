@@ -20,6 +20,10 @@ Never commit the token or put it in workflow output.
 - Successful entries are marked `published` and recorded in `facebook-published.json`.
 - Automatic runs publish live; manual runs default to `dry_run=true`.
 
+## Token health monitoring
+
+The **Facebook Token Health Check** workflow runs every Monday at 09:00 UTC and can also be started manually. It makes a read-only request for the configured Page ID, so it does not publish or modify Facebook content. A failed run means the Page token is missing, expired, revoked, or no longer authorized for the configured Page and should be replaced before the next publishing run.
+
 ## Manual test
 
 Run **Facebook News Publisher** manually with `dry_run=true` and `post_limit=1` to preview the next queued article. The limit is always enforced at one article per run.
