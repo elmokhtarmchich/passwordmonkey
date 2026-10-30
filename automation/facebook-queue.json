@@ -186,6 +186,38 @@
       "source": "thehackernews.com",
       "title": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
       "description": "Cryptocurrency giant Binance said on Thursday that a \"security incident\" on its platform has impacted about $6.3 billion worth of assets.\n\nThe world's biggest cryptocurrency exchange said nearly $3 billion of those assets have been frozen on-chain so far. \n\nTether and Circle said they have frozen more than 1.567 billion USDT and 800 million USDC related to the incident, respectively. The"
+    },
+    "2026-10-30-official-claude-code-extension-on-cursor-marketpla-4b5322.html": {
+      "status": "pending",
+      "discoveredAt": "2026-10-30T17:29:20.057Z",
+      "published": "2026-10-30",
+      "source": "thehackernews.com",
+      "title": "Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor",
+      "description": "Cybersecurity researchers have disclosed that a trojanized version of Anthropic's official Claude Code extension was distributed through the Cursor Marketplace as a legitimate update, attempting to install a persistent SSH backdoor on affected systems.\n\nThe malicious update, version 2.1.313, was distributed under the extension's legitimate publisher identity, prompting Cursor to temporarily shut"
+    },
+    "2026-10-30-in-other-news-anthropic-breach-dispute-uefi-flaw-h-bf3b29.html": {
+      "status": "pending",
+      "discoveredAt": "2026-10-30T17:29:20.057Z",
+      "published": "2026-10-30",
+      "source": "securityweek.com",
+      "title": "In Other News: Anthropic Breach Dispute, UEFI Flaw Hits Most Servers, Cloudflare AI Data Leak",
+      "description": "Noteworthy stories that might have slipped under the radar: Iran eyed in military freezer hacks, Copenhagen University breach, AI-powered malware.\nThe post In Other News: Anthropic Breach Dispute, UEFI Flaw Hits Most Servers, Cloudflare AI Data Leak appeared first on SecurityWeek."
+    },
+    "2026-10-30-cisa-says-max-severity-gitlab-flaw-now-exploited-i-651570.html": {
+      "status": "pending",
+      "discoveredAt": "2026-10-30T17:29:20.057Z",
+      "published": "2026-10-30",
+      "source": "bleepingcomputer.com",
+      "title": "CISA says max severity GitLab flaw now exploited in the wild",
+      "description": "Attackers have started exploiting a maximum-severity GitLab vulnerability patched earlier this month, according to the US Cybersecurity and Infrastructure Security Agency (CISA). [...]"
+    },
+    "2026-10-30-north-korean-hackers-blamed-for-stealing-record-63-511021.html": {
+      "status": "pending",
+      "discoveredAt": "2026-10-30T17:29:20.057Z",
+      "published": "2026-10-30",
+      "source": "techcrunch.com",
+      "title": "North Korean hackers blamed for stealing record $6.3B in Binance breach",
+      "description": "Hackers working for North Korea are suspected of hacking a Binance employee's laptop, which allowed the theft of billions in crypto."
     }
   }
 }
