@@ -12,12 +12,16 @@
       "postId": "1392578940603197_122107973115514487"
     },
     "2026-10-28-google-launches-gemini-4-carbon-with-a-significant-7b5653.html": {
-      "status": "pending",
+      "status": "rejected",
       "discoveredAt": "2026-10-28T22:01:36.508Z",
       "published": "2026-10-28",
       "source": "theverge.com",
       "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
-      "description": "Google has released its latest frontier model, Gemini 4 Carbon, offering \"significant gains\" in coding, agentic tasks, and cybersecurity. In an announcement on Wednesday, Google highlights Carbon's top spot on the Artificial Analysis Intelligence Index (v5.0) benchmark, with Claude Opus 5.5 and GPT-6 Astra trailing behind.\nThe new Gemini 4 Carbon model offers improvements over Argon, which Google released earlier this month. It's currently only available to a select group of cybersecurity defense companies, but it will eventually expand to other partners in its Fairwind Program.\nThe company says Carbon reflects the \"pace at which we're pus …\nRead the full story at The Verge."
+      "description": "Google has released its latest frontier model, Gemini 4 Carbon, offering \"significant gains\" in coding, agentic tasks, and cybersecurity. In an announcement on Wednesday, Google highlights Carbon's top spot on the Artificial Analysis Intelligence Index (v5.0) benchmark, with Claude Opus 5.5 and GPT-6 Astra trailing behind.\nThe new Gemini 4 Carbon model offers improvements over Argon, which Google released earlier this month. It's currently only available to a select group of cybersecurity defense companies, but it will eventually expand to other partners in its Fairwind Program.\nThe company says Carbon reflects the \"pace at which we're pus …\nRead the full story at The Verge.",
+      "rejectedAt": "2026-10-30T03:39:15.687Z",
+      "rejectionReasons": [
+        "description length is invalid"
+      ]
     },
     "2026-10-28-a-hacker-stole-more-than-40000-dhs-employee-record-b6ad05.html": {
       "status": "pending",
