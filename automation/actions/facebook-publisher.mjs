@@ -83,11 +83,11 @@ async function validateEntry(file, entry) {
   }
 
   if (html) {
-    const expectedUrl = articleUrl(file);
+    const expectedUrls = new Set([articleUrl(file), `https://passwordmonkey.org/news/${file}`]);
     const ogUrl = html.match(/<meta\s+property=["']og:url["']\s+content=["']([^"']+)["']/i)?.[1];
     const title = decodeEntities(entry.title || html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]).replace(/\s*\|\s*Password Monkey\s*$/i, "");
     const description = decodeEntities(entry.description || html.match(/<meta\s+name=["']description["']\s+content=["']([^"']*)["']/i)?.[1]);
-    if (!ogUrl || ogUrl !== expectedUrl) errors.push("canonical Facebook URL does not match article");
+    if (!ogUrl || !expectedUrls.has(ogUrl)) errors.push("canonical Facebook URL does not match article");
     if (title.length < 10 || title.length > 180) errors.push("title length is invalid");
     if (description.length < 20 || description.length > 500) errors.push("description length is invalid");
     if (/related article title|brief description of the related article|passwordmonkey news/i.test(`${title} ${description}`)) {
