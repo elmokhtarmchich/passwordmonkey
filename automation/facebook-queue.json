@@ -46,12 +46,14 @@
       "postId": "1392578940603197_122108283807514487"
     },
     "2026-10-29-hhs-filing-puts-irhythm-data-breach-toll-at-82-mil-62e358.html": {
-      "status": "pending",
+      "status": "published",
       "discoveredAt": "2026-10-29T11:59:14.833Z",
       "published": "2026-10-29",
       "source": "securityweek.com",
       "title": "HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million",
-      "description": "Hackers stole personal information and iRhythm account and device data from third-party-hosted business applications.\nThe post HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million appeared first on SecurityWeek."
+      "description": "Hackers stole personal information and iRhythm account and device data from third-party-hosted business applications.\nThe post HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million appeared first on SecurityWeek.",
+      "publishedAt": "2026-10-30T21:49:01.521Z",
+      "postId": "1392578940603197_122108307027514487"
     },
     "2026-10-29-ai-has-come-for-arizonas-water-d62a8f.html": {
       "status": "pending",
