@@ -4,7 +4,7 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Thu, 29 Oct 2026 18:10:31 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 03:39:01 GMT</lastBuildDate>
     <item>
       <title>AI has come for Arizona’s water | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-29-ai-has-come-for-arizonas-water-d62a8f.html</link>
@@ -16,6 +16,12 @@
       <link>https://passwordmonkey.org/news/2026-10-29-anthropic-is-asking-wall-street-to-believe-in-agi-3a6444.html</link>
       <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
       <description>Today on Decoder, I’m joined by Joey Brookhart, an analyst at the chip and AI research firm SemiAnalysis, to help me dig into the story inside the numbers of th</description>
+    </item>
+    <item>
+      <title>Binance probes potential $5.8 billion crypto-theft hack | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-29-binance-probes-potential-58-billion-crypto-theft-h-84f3cb.html</link>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Cryptocurrency exchange Binance is investigating a potential security breach involving up to $5.8 billion in digital assets, in what could become the largest cr</description>
     </item>
     <item>
       <title>China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility | Password Monkey</title>
@@ -49,11 +55,23 @@ The post Google Touts Pow</description>
       <description>Google</description>
     </item>
     <item>
+      <title>Hackers exploit Cisco SD-WAN flaw to deploy custom KeyDrift malware | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-29-hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-45dcc2.html</link>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>A newly identified advanced persistent threat (APT) group tracked as UAT-11473 was observed exploiting CVE-2026-20127, an authentication-bypass flaw in Cisco Ca</description>
+    </item>
+    <item>
       <title>HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-29-hhs-filing-puts-irhythm-data-breach-toll-at-82-mil-62e358.html</link>
       <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
       <description>Hackers stole personal information and iRhythm account and device data from third-party-hosted business applications.
 The post HHS Filing Puts iRhythm Data Brea</description>
+    </item>
+    <item>
+      <title>Japan Airlines suffers third-party data breach exposing passenger info | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-29-japan-airlines-suffers-third-party-data-breach-exp-96442c.html</link>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Japan Airlines (JAL) has announced that a data breach at Amadeus</description>
     </item>
     <item>
       <title>Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity | Password Monkey</title>
@@ -66,6 +84,18 @@ The post HHS Filing Puts iRhythm Data Brea</description>
       <link>https://passwordmonkey.org/news/2026-10-29-mistral-says-its-ai-model-le-chonk-has-leapfrogged-514622.html</link>
       <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
       <description>The French AI lab claims its latest release matches or outperforms even the best models from DeepSeek and Z.ai in coding and cybersecurity.</description>
+    </item>
+    <item>
+      <title>Polymarket halts trading after crypto-draining script breach, $2.5M traced | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-29-polymarket-halts-trading-after-crypto-draining-scr-c57f0a.html</link>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Prediction market platform Polymarket temporarily suspended trading on Thursday after hackers compromised a third-party service to distribute cryptocurrency-dra</description>
+    </item>
+    <item>
+      <title>Rethinking Cybersecurity Awareness in the AI Era | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-29-rethinking-cybersecurity-awareness-in-the-ai-era-1a817c.html</link>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 GMT</pubDate>
+      <description>This installment of the Reporters</description>
     </item>
     <item>
       <title>A hacker stole more than 40,000 DHS employee records | Password Monkey</title>
