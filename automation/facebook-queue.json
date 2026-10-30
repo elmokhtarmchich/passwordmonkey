@@ -158,6 +158,30 @@
       "source": "darkreading.com",
       "title": "Rethinking Cybersecurity Awareness in the AI Era",
       "description": "This installment of the Reporters' Notebook video series discusses some of the trends and topics from Cybersecurity Awareness Month, from using AI for better training to educating next-generation workforces on modern risks and emerging threats."
+    },
+    "2026-10-30-official-claude-code-vs-code-extension-compromised-4b5322.html": {
+      "status": "pending",
+      "discoveredAt": "2026-10-30T11:53:43.526Z",
+      "published": "2026-10-30",
+      "source": "thehackernews.com",
+      "title": "Official Claude Code VS Code Extension Compromised to Install Persistent SSH Backdoor",
+      "description": "Cybersecurity researchers have disclosed that the official Anthropic Claude Code extension was compromised on the Open VSX registry to install a persistent SSH backdoor on infected hosts.\n\nThe issue has since been traced to the compromise of the Cursor Marketplace, prompting the AI coding platform Cursor to briefly take down the service to remove the malware.\n\n\"We identified a security incident"
+    },
+    "2026-10-30-cisa-adds-actively-exploited-gitlab-rce-and-cisco--8927f2.html": {
+      "status": "pending",
+      "discoveredAt": "2026-10-30T11:53:43.526Z",
+      "published": "2026-10-30",
+      "source": "thehackernews.com",
+      "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+      "description": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-97229 (CVSS score: 10.0) - An integer overflow or wraparound vulnerability in GitLab Community Edition and Enterprise"
+    },
+    "2026-10-30-binance-suffers-security-breach-affecting-63-billi-d563e9.html": {
+      "status": "pending",
+      "discoveredAt": "2026-10-30T11:53:43.526Z",
+      "published": "2026-10-30",
+      "source": "thehackernews.com",
+      "title": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
+      "description": "Cryptocurrency giant Binance said on Thursday that a \"security incident\" on its platform has impacted about $6.3 billion worth of assets.\n\nThe world's biggest cryptocurrency exchange said nearly $3 billion of those assets have been frozen on-chain so far. \n\nTether and Circle said they have frozen more than 1.567 billion USDT and 800 million USDC related to the incident, respectively. The"
     }
   }
 }
