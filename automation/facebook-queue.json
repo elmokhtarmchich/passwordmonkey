@@ -36,12 +36,14 @@
       ]
     },
     "2026-10-29-china-linked-hackers-exploited-vmware-esx-zero-day-48f467.html": {
-      "status": "pending",
+      "status": "published",
       "discoveredAt": "2026-10-29T11:59:14.833Z",
       "published": "2026-10-29",
       "source": "thehackernews.com",
       "title": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility",
-      "description": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a security flaw impacting Broadcom VMware ESX to its Known Exploited Vulnerabilities (KEV) catalog, after CrowdStrike revealed that it had been weaponized by a China-nexus threat actor known as Warp Panda in attacks targeting the U.S. legal sector.\n\nThe vulnerability in question is CVE-2026-41709 (CVSS score:"
+      "description": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a security flaw impacting Broadcom VMware ESX to its Known Exploited Vulnerabilities (KEV) catalog, after CrowdStrike revealed that it had been weaponized by a China-nexus threat actor known as Warp Panda in attacks targeting the U.S. legal sector.\n\nThe vulnerability in question is CVE-2026-41709 (CVSS score:",
+      "publishedAt": "2026-10-30T20:10:03.948Z",
+      "postId": "1392578940603197_122108283807514487"
     },
     "2026-10-29-hhs-filing-puts-irhythm-data-breach-toll-at-82-mil-62e358.html": {
       "status": "pending",
