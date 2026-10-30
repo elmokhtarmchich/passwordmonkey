@@ -4,7 +4,7 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Fri, 30 Oct 2026 11:53:45 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 17:29:21 GMT</lastBuildDate>
     <item>
       <title>Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-10-30-binance-suffers-security-breach-affecting-63-billi-d563e9.html</link>
@@ -16,6 +16,31 @@
       <link>https://passwordmonkey.org/news/2026-10-30-cisa-adds-actively-exploited-gitlab-rce-and-cisco--8927f2.html</link>
       <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
       <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited</description>
+    </item>
+    <item>
+      <title>CISA says max severity GitLab flaw now exploited in the wild | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-30-cisa-says-max-severity-gitlab-flaw-now-exploited-i-651570.html</link>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Attackers have started exploiting a maximum-severity GitLab vulnerability patched earlier this month, according to the US Cybersecurity and Infrastructure Secur</description>
+    </item>
+    <item>
+      <title>In Other News: Anthropic Breach Dispute, UEFI Flaw Hits Most Servers, Cloudflare AI Data Leak | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-30-in-other-news-anthropic-breach-dispute-uefi-flaw-h-bf3b29.html</link>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Noteworthy stories that might have slipped under the radar: Iran eyed in military freezer hacks, Copenhagen University breach, AI-powered malware.
+The post In O</description>
+    </item>
+    <item>
+      <title>North Korean hackers blamed for stealing record $6.3B in Binance breach | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-30-north-korean-hackers-blamed-for-stealing-record-63-511021.html</link>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Hackers working for North Korea are suspected of hacking a Binance employee</description>
+    </item>
+    <item>
+      <title>Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-10-30-official-claude-code-extension-on-cursor-marketpla-4b5322.html</link>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed that a trojanized version of Anthropic</description>
     </item>
     <item>
       <title>Official Claude Code VS Code Extension Compromised to Install Persistent SSH Backdoor | Password Monkey</title>
