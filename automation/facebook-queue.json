@@ -2,12 +2,14 @@
   "version": 1,
   "articles": {
     "2026-10-28-hackers-target-critical-oracle-e-business-suite-rc-f83598.html": {
-      "status": "pending",
+      "status": "published",
       "discoveredAt": "2026-10-28T22:01:36.508Z",
       "published": "2026-10-28",
       "source": "thehackernews.com",
       "title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
-      "description": "Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber.\n\nThe vulnerability in question is CVE-2026-101767 (CVSS score: 9.8) , a case of improper authentication in the Oracle Application Object Library of Oracle E-Business Suite. It was patched by Oracle last week as part of its Critical"
+      "description": "Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber.\n\nThe vulnerability in question is CVE-2026-101767 (CVSS score: 9.8) , a case of improper authentication in the Oracle Application Object Library of Oracle E-Business Suite. It was patched by Oracle last week as part of its Critical",
+      "publishedAt": "2026-10-30T02:35:14.443Z",
+      "postId": "1392578940603197_122107973115514487"
     },
     "2026-10-28-google-launches-gemini-4-carbon-with-a-significant-7b5653.html": {
       "status": "pending",
