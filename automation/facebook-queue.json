@@ -68,12 +68,14 @@
       ]
     },
     "2026-10-29-googles-gemini-4-carbon-promises-significant-leap--ae3269.html": {
-      "status": "pending",
+      "status": "published",
       "discoveredAt": "2026-10-29T11:59:14.833Z",
       "published": "2026-10-29",
       "source": "engadget.com",
       "title": "Google's Gemini 4 Carbon promises 'significant leap' in AI coding and cybersecurity",
-      "description": "Google's latest Gemini 4 Carbon AI model boasts top benchmark scores in areas like cybersecurity and coding."
+      "description": "Google's latest Gemini 4 Carbon AI model boasts top benchmark scores in areas like cybersecurity and coding.",
+      "publishedAt": "2026-10-31T11:27:18.032Z",
+      "postId": "1392578940603197_122108511159514487"
     },
     "2026-10-29-googles-gemini-4-carbon-leads-benchmarks-for-findi-17b1ed.html": {
       "status": "pending",
