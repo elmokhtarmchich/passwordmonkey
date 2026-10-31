@@ -222,6 +222,14 @@
       "source": "techcrunch.com",
       "title": "North Korean hackers blamed for stealing record $6.3B in Binance breach",
       "description": "Hackers working for North Korea are suspected of hacking a Binance employee's laptop, which allowed the theft of billions in crypto."
+    },
+    "2026-10-30-applebees-exposed-customers-personal-data-after-le-fd5da6.html": {
+      "status": "pending",
+      "discoveredAt": "2026-10-31T03:23:35.925Z",
+      "published": "2026-10-30",
+      "source": "techcrunch.com",
+      "title": "Applebee’s exposed customers’ personal data after leaving database password in app",
+      "description": "EXCLUSIVE: A security researcher discovered the hardcoded credential in Applebee's app, allowing unrestricted access to customers' personal data."
     }
   }
 }
