@@ -78,12 +78,14 @@
       "postId": "1392578940603197_122108511159514487"
     },
     "2026-10-29-googles-gemini-4-carbon-leads-benchmarks-for-findi-17b1ed.html": {
-      "status": "pending",
+      "status": "published",
       "discoveredAt": "2026-10-29T18:10:29.052Z",
       "published": "2026-10-29",
       "source": "thehackernews.com",
       "title": "Google's Gemini 4 Carbon Leads Benchmarks for Finding, Exploiting, and Patching Vulnerabilities",
-      "description": "Google on Wednesday took the wraps off Gemini 4 Carbon, its latest frontier model with state-of-the-art cybersecurity and long-horizon capabilities.\n\n\"It shows significant gains across coding and agentic tasks as well as across key capabilities critical for cybersecurity defense, landing a firm lead in SEC-bench Pro (88.2%) for finding vulnerabilities, ExploitGym (54.8%) for exploitation, and"
+      "description": "Google on Wednesday took the wraps off Gemini 4 Carbon, its latest frontier model with state-of-the-art cybersecurity and long-horizon capabilities.\n\n\"It shows significant gains across coding and agentic tasks as well as across key capabilities critical for cybersecurity defense, landing a firm lead in SEC-bench Pro (88.2%) for finding vulnerabilities, ExploitGym (54.8%) for exploitation, and",
+      "publishedAt": "2026-10-31T16:34:06.173Z",
+      "postId": "1392578940603197_122108593833514487"
     },
     "2026-10-29-google-touts-powerful-cybersecurity-capabilities-i-88b7f3.html": {
       "status": "pending",
