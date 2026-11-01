@@ -282,6 +282,14 @@
       "source": "bleepingcomputer.com",
       "title": "Northflank security breach leads to abuse of customers' AI API keys",
       "description": "Cloud application hosting platform Northflank is warning customers to rotate all credentials and secrets stored on its platform after a security breach led to unauthorized use of customers' AI API keys. [...]"
+    },
+    "2026-11-01-netamloader-malware-targets-government-windows-10--4432f1.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-01T12:22:08.895Z",
+      "published": "2026-11-01",
+      "source": "thehackernews.com",
+      "title": "NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection",
+      "description": "Cybersecurity researchers have disclosed details of what has been described as a \"highly sophisticated infection chain\" targeting government organizations in Asia.\n\nThe activity, detailed by Kaspersky this week, targeted a custom Windows 10 build used exclusively by government entities in Asia and involves the deployment of a previously undocumented .NET assembly-loading framework codenamed"
     }
   }
 }
