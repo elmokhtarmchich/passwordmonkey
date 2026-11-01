@@ -118,12 +118,14 @@
       "postId": "1392578940603197_122108860995514487"
     },
     "2026-10-29-mistral-releases-weights-for-its-trillion-paramete-b138df.html": {
-      "status": "pending",
+      "status": "published",
       "discoveredAt": "2026-10-29T18:10:29.052Z",
       "published": "2026-10-29",
       "source": "techcrunch.com",
       "title": "Mistral releases weights for its trillion-parameter AI model, targeting cybersecurity",
-      "description": "Mistral says its new model can afford organizations a kind of control over its cyber defenses that closed models can't."
+      "description": "Mistral says its new model can afford organizations a kind of control over its cyber defenses that closed models can't.",
+      "publishedAt": "2026-11-01T21:30:37.734Z",
+      "postId": "1392578940603197_122108983023514487"
     },
     "2026-10-29-mistral-says-its-ai-model-le-chonk-has-leapfrogged-514622.html": {
       "status": "pending",
