@@ -44,7 +44,9 @@ function toRfc1123(date) {
 }
 
 function toYmd(date) {
+	if (!date) return null;
 	const d = new Date(date);
+	if (isNaN(d.getTime())) return null; // Invalid date
 	const y = d.getFullYear();
 	const m = String(d.getMonth() + 1).padStart(2, '0');
 	const day = String(d.getDate()).padStart(2, '0');
@@ -110,7 +112,8 @@ function main() {
 
 	const files = fs.readdirSync(newsDir)
 		.filter(f => f.toLowerCase().endsWith('.html'))
-		.filter(f => f.toLowerCase() !== 'index.html');
+		.filter(f => f.toLowerCase() !== 'index.html')
+		.filter(f => f.toLowerCase() !== 'article-template.html');
 
 	const items = files.map(filename => {
 		const fullPath = path.join(newsDir, filename);
@@ -119,11 +122,16 @@ function main() {
 		const title = extractTitle(html);
 		const description = extractMetaContent(html, 'description') || extractFirstParagraph(html) || '';
 		let date = extractMetaContent(html, 'date');
-		if (!date) date = toYmd(stat.mtime);
+		if (!date) date = stat.mtime;
+	const dateStr = toYmd(date);
+	if (!dateStr) {
+		console.warn(`Invalid date for ${filename}, using file modification time`);
+		date = stat.mtime;
+	}
 		return {
 			title,
 			description,
-			date: toYmd(date),
+			date: toYmd(date) || toYmd(stat.mtime),
 			pubDate: toRfc1123(date),
 			url: `${NEWS_PATH}${filename}`
 		};
