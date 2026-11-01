@@ -108,12 +108,14 @@
       "postId": "1392578940603197_122108731947514487"
     },
     "2026-10-28-ai-takes-root-in-hospital-corridors-raises-securit-2ca4d3.html": {
-      "status": "pending",
+      "status": "published",
       "discoveredAt": "2026-10-29T18:10:29.052Z",
       "published": "2026-10-28",
       "source": "darkreading.com",
       "title": "AI Takes Root in Hospital Corridors, Raises Security Stakes",
-      "description": "Artificial intelligence (AI) is everywhere in healthcare, from doctors’ intake forms to cancer screenings. But in some cases, life-and-death uses are outpacing cybersecurity."
+      "description": "Artificial intelligence (AI) is everywhere in healthcare, from doctors’ intake forms to cancer screenings. But in some cases, life-and-death uses are outpacing cybersecurity.",
+      "publishedAt": "2026-11-01T12:22:29.250Z",
+      "postId": "1392578940603197_122108860995514487"
     },
     "2026-10-29-mistral-releases-weights-for-its-trillion-paramete-b138df.html": {
       "status": "pending",
