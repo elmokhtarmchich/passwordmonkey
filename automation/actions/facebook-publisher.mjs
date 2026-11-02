@@ -44,9 +44,9 @@ function articleMessage(entry, html) {
   return summary ? `🛡️ ${title}\n\n${summary}` : `🛡️ ${title}`;
 }
 
-async function getArticleImage(html) {
+function getArticleImage(html) {
   // Extract og:image meta tag
-  const ogImage = html.match(/<meta\s+property=["']og:image["']\s+content=["']([^"']+)["']/i)?.[1];
+  const ogImage = html.match(/<meta\s+property=["'og:image["']\s+content=["']([^"']+)["']/i)?.[1];
 
   if (ogImage && isValidImageUrl(ogImage)) {
     return ogImage;
@@ -162,9 +162,16 @@ async function publish(entry, html, file) {
     access_token: pageAccessToken
   });
 
-  // Add image URL to the post if available
+  // Add image to the post if available
   if (imageUrl) {
-    body.append("attached_media[0]", JSON.stringify({ media_fbid: await getMediaId(imageUrl) }));
+    const mediaFbid = await getMediaId(imageUrl);
+    if (mediaFbid) {
+      body.append("attached_media[0]", JSON.stringify({ media_fbid }));
+    } else {
+      console.warn(`⚠️ No media_fbid returned, post will be created without image`);
+    }
+  } else {
+    console.log(`🖼️ No image URL, post will be text-only`);
   }
 
   const response = await fetch(endpoint, { method: "POST", body });
@@ -176,7 +183,7 @@ async function publish(entry, html, file) {
   return payload.id || payload.post_id || "unknown";
 }
 
-async function getMediaId(imageUrl) {
+function getMediaId(imageUrl) {
   // Debug: log what we received
   console.log(`🔍 getMediaId received:`, imageUrl);
   console.log(`🔍 Type:`, typeof imageUrl);
