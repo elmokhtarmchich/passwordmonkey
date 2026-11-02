@@ -177,6 +177,10 @@ async function publish(entry, html, file) {
 }
 
 async function getMediaId(imageUrl) {
+  // Debug: log what we received
+  console.log(`🔍 getMediaId received:`, imageUrl);
+  console.log(`🔍 Type:`, typeof imageUrl);
+
   // Upload the image to Facebook Graph API and get back a media_fbid
   const uploadEndpoint = `https://graph.facebook.com/${apiVersion}/${encodeURIComponent(pageId)}/photos`;
 
