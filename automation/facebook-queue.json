@@ -128,12 +128,14 @@
       "postId": "1392578940603197_122108983023514487"
     },
     "2026-10-29-mistral-says-its-ai-model-le-chonk-has-leapfrogged-514622.html": {
-      "status": "pending",
+      "status": "published",
       "discoveredAt": "2026-10-29T18:10:29.052Z",
       "published": "2026-10-29",
       "source": "wired.com",
       "title": "Mistral Says Its AI Model ‘Le Chonk’ Has Leapfrogged China in the Open-Weight Race",
-      "description": "The French AI lab claims its latest release matches or outperforms even the best models from DeepSeek and Z.ai in coding and cybersecurity."
+      "description": "The French AI lab claims its latest release matches or outperforms even the best models from DeepSeek and Z.ai in coding and cybersecurity.",
+      "publishedAt": "2026-11-02T03:32:11.761Z",
+      "postId": "1392578940603197_122109041127514487"
     },
     "2026-10-29-anthropic-is-asking-wall-street-to-believe-in-agi-3a6444.html": {
       "status": "pending",
