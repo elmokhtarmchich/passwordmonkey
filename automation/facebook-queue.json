@@ -210,12 +210,14 @@
       "postId": "1392578940603197_122109341271514487"
     },
     "2026-10-30-cisa-adds-actively-exploited-gitlab-rce-and-cisco--8927f2.html": {
-      "status": "pending",
+      "status": "published",
       "discoveredAt": "2026-10-30T11:53:43.526Z",
       "published": "2026-10-30",
       "source": "thehackernews.com",
       "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
-      "description": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-97229 (CVSS score: 10.0) - An integer overflow or wraparound vulnerability in GitLab Community Edition and Enterprise"
+      "description": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-97229 (CVSS score: 10.0) - An integer overflow or wraparound vulnerability in GitLab Community Edition and Enterprise",
+      "publishedAt": "2026-11-02T22:06:30.553Z",
+      "postId": "1392578940603197_122109341907514487"
     },
     "2026-10-30-binance-suffers-security-breach-affecting-63-billi-d563e9.html": {
       "status": "pending",
