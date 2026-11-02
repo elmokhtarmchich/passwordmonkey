@@ -190,12 +190,14 @@
       "postId": "1392578940603197_122109339453514487"
     },
     "2026-10-29-rethinking-cybersecurity-awareness-in-the-ai-era-1a817c.html": {
-      "status": "pending",
+      "status": "published",
       "discoveredAt": "2026-10-30T03:38:59.736Z",
       "published": "2026-10-29",
       "source": "darkreading.com",
       "title": "Rethinking Cybersecurity Awareness in the AI Era",
-      "description": "This installment of the Reporters' Notebook video series discusses some of the trends and topics from Cybersecurity Awareness Month, from using AI for better training to educating next-generation workforces on modern risks and emerging threats."
+      "description": "This installment of the Reporters' Notebook video series discusses some of the trends and topics from Cybersecurity Awareness Month, from using AI for better training to educating next-generation workforces on modern risks and emerging threats.",
+      "publishedAt": "2026-11-02T22:00:15.363Z",
+      "postId": "1392578940603197_122109340791514487"
     },
     "2026-10-30-official-claude-code-vs-code-extension-compromised-4b5322.html": {
       "status": "pending",
