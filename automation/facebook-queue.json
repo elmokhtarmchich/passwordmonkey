@@ -240,12 +240,14 @@
       "postId": "1392578940603197_122109342813514487"
     },
     "2026-10-30-in-other-news-anthropic-breach-dispute-uefi-flaw-h-bf3b29.html": {
-      "status": "pending",
+      "status": "published",
       "discoveredAt": "2026-10-30T17:29:20.057Z",
       "published": "2026-10-30",
       "source": "securityweek.com",
       "title": "In Other News: Anthropic Breach Dispute, UEFI Flaw Hits Most Servers, Cloudflare AI Data Leak",
-      "description": "Noteworthy stories that might have slipped under the radar: Iran eyed in military freezer hacks, Copenhagen University breach, AI-powered malware.\nThe post In Other News: Anthropic Breach Dispute, UEFI Flaw Hits Most Servers, Cloudflare AI Data Leak appeared first on SecurityWeek."
+      "description": "Noteworthy stories that might have slipped under the radar: Iran eyed in military freezer hacks, Copenhagen University breach, AI-powered malware.\nThe post In Other News: Anthropic Breach Dispute, UEFI Flaw Hits Most Servers, Cloudflare AI Data Leak appeared first on SecurityWeek.",
+      "publishedAt": "2026-11-02T22:13:43.126Z",
+      "postId": "1392578940603197_122109343137514487"
     },
     "2026-10-30-cisa-says-max-severity-gitlab-flaw-now-exploited-i-651570.html": {
       "status": "pending",
