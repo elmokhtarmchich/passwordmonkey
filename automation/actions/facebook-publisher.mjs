@@ -49,28 +49,11 @@ async function getArticleImage(html) {
   const ogImage = html.match(/<meta\s+property=["']og:image["']\s+content=["']([^"']+)["']/i)?.[1];
 
   if (ogImage && isValidImageUrl(ogImage)) {
-    // For local files (not http://), read the file content for upload
-    if (ogImage.startsWith("https://passwordmonkey.org/images/")) {
-      const imageFile = ogImage.split("images/")[1];
-      const imagePath = path.join(newsDir, imageFile);
-      try {
-        const imageContent = await fs.readFile(imagePath);
-        return imageContent;
-      } catch (error) {
-        console.warn(`Failed to read local image ${ogImage}: ${error.message}`);
-      }
-    }
     return ogImage;
   }
 
   // Fallback to stock image if no valid og:image found
-  const fallbackPath = path.join(newsDir, "images/og-image.svg");
-  try {
-    return await fs.readFile(fallbackPath);
-  } catch (error) {
-    console.warn(`Failed to read fallback image: ${error.message}`);
-    return null;
-  }
+  return "https://passwordmonkey.org/images/og-image.svg";
 }
 
 function isValidImageUrl(url) {
@@ -171,7 +154,7 @@ async function validateEntry(file, entry) {
 
 async function publish(entry, html, file) {
   const endpoint = `https://graph.facebook.com/${apiVersion}/${encodeURIComponent(pageId)}/feed`;
-  const imageData = await getArticleImage(html);
+  const imageUrl = getArticleImage(html);
 
   const body = new URLSearchParams({
     message: articleMessage(entry, html),
@@ -179,16 +162,9 @@ async function publish(entry, html, file) {
     access_token: pageAccessToken
   });
 
-  // Add image to the post if available
-  if (imageData) {
-    const mediaFbid = await getMediaId(imageData);
-    if (mediaFbid) {
-      body.append("attached_media[0]", JSON.stringify({ media_fbid }));
-    } else {
-      console.warn(`⚠️ No media_fbid returned, post will be created without image`);
-    }
-  } else {
-    console.log(`🖼️ No image data available, post will be text-only`);
+  // Add image URL to the post if available
+  if (imageUrl) {
+    body.append("attached_media[0]", JSON.stringify({ media_fbid: await getMediaId(imageUrl) }));
   }
 
   const response = await fetch(endpoint, { method: "POST", body });
@@ -200,53 +176,35 @@ async function publish(entry, html, file) {
   return payload.id || payload.post_id || "unknown";
 }
 
-async function getMediaId(imageData) {
+async function getMediaId(imageUrl) {
   // Upload the image to Facebook Graph API and get back a media_fbid
   const uploadEndpoint = `https://graph.facebook.com/${apiVersion}/${encodeURIComponent(pageId)}/photos`;
 
   try {
-    let uploadBody;
-    let contentType;
-
-    // If imageData is a Buffer (local file), upload as base64 data
-    if (Buffer.isBuffer(imageData)) {
-      const base64Data = imageData.toString("base64");
-      uploadBody = JSON.stringify({
-        source: `data:image/svg+xml;base64,${base64Data}`,
-        caption: `PasswordMonkey article image`,
-        access_token: pageAccessToken
-      });
-      contentType = "application/json";
-    } else {
-      // If it's a URL, upload the URL directly (original behavior)
-      uploadBody = JSON.stringify({
-        url: imageData,
-        caption: `PasswordMonkey article image`,
-        access_token: pageAccessToken
-      });
-      contentType = "application/json";
-    }
-
     const response = await fetch(uploadEndpoint, {
       method: "POST",
       headers: {
-        "Content-Type": contentType,
+        "Content-Type": "application/json",
       },
-      body: uploadBody
+      body: JSON.stringify({
+        url: imageUrl,
+        caption: `PasswordMonkey article image`,
+        access_token: pageAccessToken
+      })
     });
 
     const result = await response.json();
 
     if (!response.ok || result.error) {
-      console.warn(`Failed to upload image: ${result.error?.message || response.status}`);
+      console.warn(`Failed to upload image ${imageUrl}: ${result.error?.message || response.status}`);
       return null;
     }
 
-    console.log(`✅ Uploaded image successfully -> media_fbid: ${result.id}`);
+    console.log(`✅ Uploaded image: ${imageUrl} -> media_fbid: ${result.id}`);
     return result.id;
 
   } catch (error) {
-    console.warn(`Error uploading image: ${error.message}`);
+    console.warn(`Error uploading image ${imageUrl}: ${error.message}`);
     return null;
   }
 }
