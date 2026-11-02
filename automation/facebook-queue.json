@@ -220,12 +220,14 @@
       "postId": "1392578940603197_122109341907514487"
     },
     "2026-10-30-binance-suffers-security-breach-affecting-63-billi-d563e9.html": {
-      "status": "pending",
+      "status": "published",
       "discoveredAt": "2026-10-30T11:53:43.526Z",
       "published": "2026-10-30",
       "source": "thehackernews.com",
       "title": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
-      "description": "Cryptocurrency giant Binance said on Thursday that a \"security incident\" on its platform has impacted about $6.3 billion worth of assets.\n\nThe world's biggest cryptocurrency exchange said nearly $3 billion of those assets have been frozen on-chain so far. \n\nTether and Circle said they have frozen more than 1.567 billion USDT and 800 million USDC related to the incident, respectively. The"
+      "description": "Cryptocurrency giant Binance said on Thursday that a \"security incident\" on its platform has impacted about $6.3 billion worth of assets.\n\nThe world's biggest cryptocurrency exchange said nearly $3 billion of those assets have been frozen on-chain so far. \n\nTether and Circle said they have frozen more than 1.567 billion USDT and 800 million USDC related to the incident, respectively. The",
+      "publishedAt": "2026-11-02T22:09:47.274Z",
+      "postId": "1392578940603197_122109342411514487"
     },
     "2026-10-30-official-claude-code-extension-on-cursor-marketpla-4b5322.html": {
       "status": "pending",
