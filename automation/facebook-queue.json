@@ -150,12 +150,14 @@
       ]
     },
     "2026-10-29-binance-probes-potential-58-billion-crypto-theft-h-84f3cb.html": {
-      "status": "pending",
+      "status": "published",
       "discoveredAt": "2026-10-30T03:38:59.736Z",
       "published": "2026-10-29",
       "source": "bleepingcomputer.com",
       "title": "Binance probes potential $5.8 billion crypto-theft hack",
-      "description": "Cryptocurrency exchange Binance is investigating a potential security breach involving up to $5.8 billion in digital assets, in what could become the largest cryptocurrency hack in history. [...]"
+      "description": "Cryptocurrency exchange Binance is investigating a potential security breach involving up to $5.8 billion in digital assets, in what could become the largest cryptocurrency hack in history. [...]",
+      "publishedAt": "2026-11-02T20:54:02.634Z",
+      "postId": "1392578940603197_122109329841514487"
     },
     "2026-10-29-japan-airlines-suffers-third-party-data-breach-exp-96442c.html": {
       "status": "pending",
