@@ -250,12 +250,14 @@
       "postId": "1392578940603197_122109343137514487"
     },
     "2026-10-30-cisa-says-max-severity-gitlab-flaw-now-exploited-i-651570.html": {
-      "status": "pending",
+      "status": "published",
       "discoveredAt": "2026-10-30T17:29:20.057Z",
       "published": "2026-10-30",
       "source": "bleepingcomputer.com",
       "title": "CISA says max severity GitLab flaw now exploited in the wild",
-      "description": "Attackers have started exploiting a maximum-severity GitLab vulnerability patched earlier this month, according to the US Cybersecurity and Infrastructure Security Agency (CISA). [...]"
+      "description": "Attackers have started exploiting a maximum-severity GitLab vulnerability patched earlier this month, according to the US Cybersecurity and Infrastructure Security Agency (CISA). [...]",
+      "publishedAt": "2026-11-02T22:28:07.101Z",
+      "postId": "1392578940603197_122109345309514487"
     },
     "2026-10-30-north-korean-hackers-blamed-for-stealing-record-63-511021.html": {
       "status": "pending",
