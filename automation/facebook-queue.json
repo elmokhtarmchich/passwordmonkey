@@ -180,12 +180,14 @@
       "postId": "1392578940603197_122109334959514487"
     },
     "2026-10-29-hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-45dcc2.html": {
-      "status": "pending",
+      "status": "published",
       "discoveredAt": "2026-10-30T03:38:59.736Z",
       "published": "2026-10-29",
       "source": "bleepingcomputer.com",
       "title": "Hackers exploit Cisco SD-WAN flaw to deploy custom KeyDrift malware",
-      "description": "A newly identified advanced persistent threat (APT) group tracked as UAT-11473 was observed exploiting CVE-2026-20127, an authentication-bypass flaw in Cisco Catalyst SD-WAN Controllers, to deploy a custom malware framework called KeyDrift. [...]"
+      "description": "A newly identified advanced persistent threat (APT) group tracked as UAT-11473 was observed exploiting CVE-2026-20127, an authentication-bypass flaw in Cisco Catalyst SD-WAN Controllers, to deploy a custom malware framework called KeyDrift. [...]",
+      "publishedAt": "2026-11-02T21:54:41.917Z",
+      "postId": "1392578940603197_122109339453514487"
     },
     "2026-10-29-rethinking-cybersecurity-awareness-in-the-ai-era-1a817c.html": {
       "status": "pending",
