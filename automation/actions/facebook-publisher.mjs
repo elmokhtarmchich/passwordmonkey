@@ -44,6 +44,52 @@ function articleMessage(entry, html) {
   return summary ? `🛡️ ${title}\n\n${summary}` : `🛡️ ${title}`;
 }
 
+function getArticleImage(html) {
+  // Extract og:image meta tag
+  const ogImage = html.match(/<meta\s+property=["']og:image["']\s+content=["']([^"']+)["']/i)?.[1];
+
+  if (ogImage && isValidImageUrl(ogImage)) {
+    return ogImage;
+  }
+
+  // Fallback to stock image if no valid og:image found
+  return "https://passwordmonkey.org/images/site_logo.png";
+}
+
+function isValidImageUrl(url) {
+  if (!url || typeof url !== "string") return false;
+
+  // Basic URL validation
+  try {
+    new URL(url);
+  } catch {
+    return false;
+  }
+
+  // Check for common image extensions
+  const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.bmp', '.svg'];
+  const lowerUrl = url.toLowerCase();
+
+  // Ensure it's a full URL and not a data URI
+  if (url.startsWith("data:") || !url.startsWith("http")) {
+    return false;
+  }
+
+  // Check extension
+  const hasImageExtension = imageExtensions.some(ext => lowerUrl.endsWith(ext));
+  if (!hasImageExtension) {
+    return false;
+  }
+
+  // Additional safety check - ensure it doesn't contain suspicious patterns
+  const suspiciousPatterns = ['javascript:', 'vbscript:', 'data:', '<script', '</script'];
+  const containsSuspicious = suspiciousPatterns.some(pattern =>
+    lowerUrl.includes(pattern.toLowerCase())
+  );
+
+  return !containsSuspicious;
+}
+
 async function readJson(file, fallback) {
   try {
     return JSON.parse(await fs.readFile(file, "utf8"));
@@ -86,12 +132,21 @@ async function validateEntry(file, entry) {
     const expectedUrls = new Set([articleUrl(file), `https://passwordmonkey.org/news/${file}`]);
     const ogUrl = html.match(/<meta\s+property=["']og:url["']\s+content=["']([^"']+)["']/i)?.[1];
     const title = decodeEntities(entry.title || html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]).replace(/\s*\|\s*Password Monkey\s*$/i, "");
-    const description = decodeEntities(entry.description || html.match(/<meta\s+name=["']description["']\s+content=["']([^"']*)["']/i)?.[1]);
+    const description = decodeEntities(entry.description || html.match(/<meta\s+name=["']description["']\s+content=['"]([^'"]*)['"]/i)?.[1]);
+
     if (!ogUrl || !expectedUrls.has(ogUrl)) errors.push("canonical Facebook URL does not match article");
     if (title.length < 10 || title.length > 180) errors.push("title length is invalid");
     if (description.length < 20 || description.length > 500) errors.push("description length is invalid");
     if (/related article title|brief description of the related article|passwordmonkey news/i.test(`${title} ${description}`)) {
       errors.push("placeholder content detected");
+    }
+
+    // Check for og:image for logging purposes (not an error, just info)
+    const ogImage = html.match(/<meta\s+property=["']og:image["']\s+content=["']([^"']+)["']/i)?.[1];
+    if (ogImage) {
+      console.log(`📸 Found og:image for ${file}: ${ogImage}`);
+    } else {
+      console.log(`🖼️ No og:image found for ${file}, will use stock fallback`);
     }
   }
   return { errors, html };
@@ -99,11 +154,19 @@ async function validateEntry(file, entry) {
 
 async function publish(entry, html, file) {
   const endpoint = `https://graph.facebook.com/${apiVersion}/${encodeURIComponent(pageId)}/feed`;
+  const imageUrl = getArticleImage(html);
+
   const body = new URLSearchParams({
     message: articleMessage(entry, html),
     link: articleUrl(file),
     access_token: pageAccessToken
   });
+
+  // Add image URL to the post if available
+  if (imageUrl) {
+    body.append("attached_media[0]", JSON.stringify({ media_fbid: await getMediaId(imageUrl) }));
+  }
+
   const response = await fetch(endpoint, { method: "POST", body });
   const payload = await response.json().catch(() => ({}));
   if (!response.ok || payload.error) {
@@ -111,6 +174,39 @@ async function publish(entry, html, file) {
     throw new Error(`Facebook publish failed for ${file}: ${detail}`);
   }
   return payload.id || payload.post_id || "unknown";
+}
+
+async function getMediaId(imageUrl) {
+  // Upload the image to Facebook Graph API and get back a media_fbid
+  const uploadEndpoint = `https://graph.facebook.com/${apiVersion}/${encodeURIComponent(pageId)}/photos`;
+
+  try {
+    const response = await fetch(uploadEndpoint, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        url: imageUrl,
+        caption: `Cover image for ${imageUrl}`,
+        access_token: pageAccessToken
+      })
+    });
+
+    const result = await response.json();
+
+    if (!response.ok || result.error) {
+      console.warn(`Failed to upload image ${imageUrl}: ${result.error?.message || response.status}`);
+      return null;
+    }
+
+    console.log(`✅ Uploaded image: ${imageUrl} -> media_fbid: ${result.id}`);
+    return result.id;
+
+  } catch (error) {
+    console.warn(`Error uploading image ${imageUrl}: ${error.message}`);
+    return null;
+  }
 }
 
 async function main() {
