@@ -53,7 +53,7 @@ function getArticleImage(html) {
   }
 
   // Fallback to stock image if no valid og:image found
-  return "https://passwordmonkey.org/images/og-image.svg";
+  return "https://passwordmonkey.org/images/site_logo.png";
 }
 
 function isValidImageUrl(url) {
