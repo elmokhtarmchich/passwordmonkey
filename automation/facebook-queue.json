@@ -160,12 +160,14 @@
       "postId": "1392578940603197_122109329841514487"
     },
     "2026-10-29-japan-airlines-suffers-third-party-data-breach-exp-96442c.html": {
-      "status": "pending",
+      "status": "published",
       "discoveredAt": "2026-10-30T03:38:59.736Z",
       "published": "2026-10-29",
       "source": "bleepingcomputer.com",
       "title": "Japan Airlines suffers third-party data breach exposing passenger info",
-      "description": "Japan Airlines (JAL) has announced that a data breach at Amadeus's Passenger Service System exposed the data of about 92,000 customers. [...]"
+      "description": "Japan Airlines (JAL) has announced that a data breach at Amadeus's Passenger Service System exposed the data of about 92,000 customers. [...]",
+      "publishedAt": "2026-11-02T21:13:20.804Z",
+      "postId": "1392578940603197_122109332751514487"
     },
     "2026-10-29-polymarket-halts-trading-after-crypto-draining-scr-c57f0a.html": {
       "status": "pending",
