@@ -1,4 +1,4 @@
-import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs';
+﻿import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -27,7 +27,6 @@ const ROOT_FILES = [
     'seo.json',
     'service-worker.js',
     'sitemap.xml',
-    'sitemap_index.xml',
     'style.css',
     'sidebar.css',
     'kilo-typography.css',
@@ -37,10 +36,9 @@ const ROOT_FILES = [
     'yandex_e8438f6f6907ddd1.html',
     'ahrefs_1de5b65148f02f6b479edaf4c598a1ed31c1ae272b87831fc6f5a6400025bf4c',
     '_redirects',
-    'lab/save-test.html',
 ];
 
-const DIRS = ['favicon_io', 'fonts', 'images', 'js', 'news', 'rss', 'guides', 'tools'];
+const DIRS = ['favicon_io', 'fonts', 'images', 'js', 'news'];
 
 const MARKER_RE = /<!--@include\s+([^\s>]+)((?:\s+[a-zA-Z][\w-]*=(?:"[^"]*"|[^\s>]+))*)\s*-->/g;
 const GUARD_RE = /<!--@if\s+([a-zA-Z][\w-]*)-->([\s\S]*?)<!--@endif-->/g;
@@ -48,7 +46,7 @@ const TOKEN_RE = /\{[a-zA-Z][\w-]*\}/g;
 const DIRECTIVE_LEFTOVER_RE = /<!--@(?:include|if|endif)/;
 const NAV_SENTINEL_RE = / data-pm-nav="[^"]*"/g;
 
-const stats = { files: 0, transformed: 0, copied: 0, includes: 0, news: 0, share: 0, related: 0, prevnext: 0, cta: 0, terms: 0 };
+const stats = { files: 0, transformed: 0, copied: 0, includes: 0, news: 0, share: 0, related: 0, prevnext: 0, cta: 0 };
 const warnings = [];
 
 function parseParams(raw) {
@@ -192,31 +190,8 @@ function getNewsManifest() {
     return newsManifestCache;
 }
 
-const NAMED_ENTITIES = {
-    nbsp: ' ', quot: '"', apos: "'", hellip: '\u2026', rsquo: '\u2019', lsquo: '\u2018',
-    rdquo: '\u201d', ldquo: '\u201c', mdash: '\u2014', ndash: '\u2013', copy: '\u00a9', reg: '\u00ae'
-};
-
-function safeFromCodePoint(code) {
-    try {
-        return String.fromCodePoint(code);
-    } catch (err) {
-        return '';
-    }
-}
-
-function decodeHtmlEntities(text) {
-    return String(text)
-        .replace(/&([a-zA-Z]+);/g, (full, name) => {
-            const key = name.toLowerCase();
-            return key in NAMED_ENTITIES ? NAMED_ENTITIES[key] : full;
-        })
-        .replace(/&#x([0-9a-fA-F]+);/g, (full, hex) => safeFromCodePoint(parseInt(hex, 16)))
-        .replace(/&#(\d+);/g, (full, dec) => safeFromCodePoint(parseInt(dec, 10)))
-        .replace(new RegExp('&' + 'amp;', 'g'), '&');
-}
 function stripTitleSuffix(title) {
-    return decodeHtmlEntities(String(title || '')).replace(/\s*\|\s*Password Monkey\s*$/, '').trim();
+    return String(title || '').replace(/\s*\|\s*Password Monkey\s*$/, '').trim();
 }
 
 function escapeHtml(text) {
@@ -325,37 +300,20 @@ function renderRelatedCard(article) {
                     </a>`;
 }
 
-function findMatchingDivClose(html, openIndex) {
-    const tagRe = /<\/?div\b/g;
-    tagRe.lastIndex = openIndex;
-    let depth = 0;
-    let match;
-    while ((match = tagRe.exec(html)) !== null) {
-        depth += match[0].startsWith('</') ? -1 : 1;
-        if (depth === 0) return match.index + match[0].length + 1;
-    }
-    return -1;
-}
-
 function enrichRelated(html, filename, entry, where) {
-    const gridOpen = '<div class="grid md:grid-cols-2 gap-6">';
-    const count = html.split(gridOpen).length - 1;
-    if (count !== 1) {
-        throw new Error(`${where}: related-articles grid matched ${count} (expected exactly 1)`);
+    const gridRe = /<div class="grid md:grid-cols-2 gap-6">\s*<\/div>/g;
+    const matches = [...html.matchAll(gridRe)];
+    if (matches.length !== 1) {
+        throw new Error(`${where}: related-articles grid matched ${matches.length} (expected exactly 1)`);
     }
     const related = computeRelated(filename, entry.title || '', entry.description || '');
     if (related.length === 0) {
         warnings.push(`${where}: no related articles available`);
         return html;
     }
-    const openIndex = html.indexOf(gridOpen);
-    const closeIndex = findMatchingDivClose(html, openIndex);
-    if (closeIndex === -1) {
-        throw new Error(`${where}: related-articles grid has unbalanced <div> tags`);
-    }
     const cards = related.map(renderRelatedCard).join('\n');
     const grid = `<div class="grid md:grid-cols-2 gap-6">\n${cards}\n                </div>`;
-    html = html.slice(0, openIndex) + grid + html.slice(closeIndex);
+    html = html.replace(gridRe, () => grid);
     stats.related += 1;
     return html;
 }
@@ -458,13 +416,6 @@ function enrichNewsArticle(html, rel) {
         warnings.push(`${rel}: not found in news-manifest.json - related/prev-next skipped`);
     }
     html = enrichTruncationCta(html, rel);
-    const scriptNeedle = '<script src="../script.js" defer></script>';
-    const scriptHits = html.split(scriptNeedle).length - 1;
-    if (scriptHits !== 1) {
-        throw new Error(`${rel}: script.js tag matched ${scriptHits} (expected exactly 1)`);
-    }
-    html = html.replace(scriptNeedle, `${scriptNeedle}\n<script src="../js/news-terms.js" defer></script>`);
-    stats.terms += 1;
     stats.news += 1;
     return html;
 }
@@ -496,7 +447,7 @@ function main() {
         console.warn(`WARN: ${warning}`);
     }
     console.log(`Built ${stats.files} files -> dist/ (${stats.transformed} pages transformed, ${stats.includes} includes resolved, ${stats.copied} copied byte-identical)`);
-        console.log(`news articles enriched: ${stats.news} (share: ${stats.share}, related: ${stats.related}, prevnext: ${stats.prevnext}, cta: ${stats.cta}, terms: ${stats.terms})`);
+    console.log(`news articles enriched: ${stats.news} (share: ${stats.share}, related: ${stats.related}, prevnext: ${stats.prevnext}, cta: ${stats.cta})`);
 }
 
 try {
