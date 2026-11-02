@@ -183,7 +183,7 @@ async function publish(entry, html, file) {
   return payload.id || payload.post_id || "unknown";
 }
 
-function getMediaId(imageUrl) {
+async function getMediaId(imageUrl) {
   // Debug: log what we received
   console.log(`🔍 getMediaId received:`, imageUrl);
   console.log(`🔍 Type:`, typeof imageUrl);
