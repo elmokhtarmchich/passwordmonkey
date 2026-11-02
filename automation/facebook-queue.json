@@ -170,12 +170,14 @@
       "postId": "1392578940603197_122109332751514487"
     },
     "2026-10-29-polymarket-halts-trading-after-crypto-draining-scr-c57f0a.html": {
-      "status": "pending",
+      "status": "published",
       "discoveredAt": "2026-10-30T03:38:59.736Z",
       "published": "2026-10-29",
       "source": "bleepingcomputer.com",
       "title": "Polymarket halts trading after crypto-draining script breach, $2.5M traced",
-      "description": "Prediction market platform Polymarket temporarily suspended trading on Thursday after hackers compromised a third-party service to distribute cryptocurrency-draining JavaScript, with approximately $2.5 million in assets traced to a suspected attacker wallet. [...]"
+      "description": "Prediction market platform Polymarket temporarily suspended trading on Thursday after hackers compromised a third-party service to distribute cryptocurrency-draining JavaScript, with approximately $2.5 million in assets traced to a suspected attacker wallet. [...]",
+      "publishedAt": "2026-11-02T21:29:25.249Z",
+      "postId": "1392578940603197_122109334959514487"
     },
     "2026-10-29-hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-45dcc2.html": {
       "status": "pending",
