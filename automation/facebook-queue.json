@@ -370,6 +370,54 @@
       "source": "securityweek.com",
       "title": "Chainalysis Discloses Data Breach Following AI-Driven Cyberattack",
       "description": "The attackers used offensive agentic techniques to access the company’s systems and internal tools.\nThe post Chainalysis Discloses Data Breach Following AI-Driven Cyberattack appeared first on SecurityWeek."
+    },
+    "2026-11-02-weekly-recap-critical-cves-linux-ddos-botnet-devic-a3562d.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-03T00:13:39.189Z",
+      "published": "2026-11-02",
+      "source": "thehackernews.com",
+      "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
+      "description": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble.\n\nThen there were the bigger messes. Billions stolen, hidden networks of hacked devices, poisoned software, and attackers finding new ways to turn normal tools against"
+    },
+    "2026-11-02-darkblinders-compromises-israeli-target-and-iraqi--772d27.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-03T00:13:39.189Z",
+      "published": "2026-11-02",
+      "source": "thehackernews.com",
+      "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
+      "description": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026.\n\nAccording to a report published by Dream Research Labs, the campaign has led to the compromise of a high-profile individual in Israel, along with additional compromises affecting a government cloud"
+    },
+    "2026-11-02-cybersecurity-ma-roundup-37-deals-announced-in-oct-db7dcd.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-03T00:13:39.189Z",
+      "published": "2026-11-02",
+      "source": "securityweek.com",
+      "title": "Cybersecurity M&A Roundup: 37 Deals Announced in October 2026",
+      "description": "Significant cybersecurity deals were announced by Absolute Security, Aikido, Anthropic, Cohere, Hex-Rays, and Proofpoint.\nThe post Cybersecurity M&A Roundup: 37 Deals Announced in October 2026 appeared first on SecurityWeek."
+    },
+    "2026-11-02-florida-student-aid-website-hack-puts-data-of-49-m-cd9c96.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-03T00:13:39.189Z",
+      "published": "2026-11-02",
+      "source": "securityweek.com",
+      "title": "Florida Student Aid Website Hack Puts Data of 4.9 Million People at Risk",
+      "description": "The Florida Department of Education says SSNs and other personal data may have been exposed in a breach of its financial aid website.\nThe post Florida Student Aid Website Hack Puts Data of 4.9 Million People at Risk appeared first on SecurityWeek."
+    },
+    "2026-11-02-one-compromised-laptop-billions-lost-the-binance-a-768777.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-03T00:13:39.189Z",
+      "published": "2026-11-02",
+      "source": "darkreading.com",
+      "title": "One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning",
+      "description": "The record theft shows how weak system separation, inadequate controls, and untested attack possibilities can turn one breach into systemic loss."
+    },
+    "2026-10-30-investors-dish-on-new-startups-amp-what-theyd-back-5a56d0.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-03T00:13:39.189Z",
+      "published": "2026-10-30",
+      "source": "darkreading.com",
+      "title": "Investors Dish on New Startups &amp; What They'd Back Next",
+      "description": "The cybersecurity market is difficult to predict, but a glimpse into the annual DataTribe Challenge shows what's trending and what's not."
     }
   }
 }
