@@ -4,7 +4,13 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Tue, 03 Nov 2026 13:19:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 22:42:37 GMT</lastBuildDate>
+    <item>
+      <title>3AM Affiliate Embraces AI-Like Loops in European School Attack | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-03-3am-affiliate-embraces-ai-like-loops-in-european-s-288904.html</link>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Evidence suggests a model may have generated and revised commands during the ransom gang</description>
+    </item>
     <item>
       <title>Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-11-03-attackers-exploit-critical-siemens-iot2050-flaw-to-b9ba4e.html</link>
@@ -14,16 +20,83 @@
 The vulnerabili</description>
     </item>
     <item>
+      <title>Barracuda Flaws Could Be Chained to Bypass Authorization and Gain Root Access | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-03-barracuda-flaws-could-be-chained-to-bypass-authori-5350cf.html</link>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Barracuda has disclosed details of two vulnerabilities affecting its products that, if chained together, could allow an attacker to bypass authorization control</description>
+    </item>
+    <item>
+      <title>Barracuda warns of critical flaws allowing root access to devices | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-03-barracuda-warns-of-critical-flaws-allowing-root-ac-7a78f5.html</link>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Cybersecurity company Barracuda Networks warned customers to patch two vulnerabilities that can let attackers run commands with root privileges. [...]</description>
+    </item>
+    <item>
+      <title>Binance Reveals How Fake Job Interviews and AI Tool Abuse Led to $6.43 Billion Theft | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-03-binance-reveals-how-fake-job-interviews-and-ai-too-62e23c.html</link>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Binance on Tuesday said the record-setting theft of $6.43 billion in assets from the world</description>
+    </item>
+    <item>
+      <title>Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-03-chainstack-reports-production-systems-breach-expos-49acf9.html</link>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Blockchain infrastructure provider Chainstack on Tuesday disclosed that it was targeted in a cyber attack that allowed an unauthorized party to gain access to s</description>
+    </item>
+    <item>
+      <title>cPGuard Update Channel Hijacked to Backdoor Linux Servers and Collect Password Hashes | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-03-cpguard-update-channel-hijacked-to-backdoor-linux--c3e615.html</link>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description>An attacker broke into the update system of the cPGuard security tool on November 2 and used it to send a malicious script to customers</description>
+    </item>
+    <item>
+      <title>Frontline Education Data Breach Impacts Over 1.3 Million | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-03-frontline-education-data-breach-impacts-over-13-mi-f01d9b.html</link>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Hackers exploited a flaw in third-party software and stole the personal information of school district staff and students.
+The post Frontline Education Data Bre</description>
+    </item>
+    <item>
       <title>Harvard University data breach exposed info of 851,000 accounts | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-11-03-harvard-university-data-breach-exposed-info-of-851-790f1d.html</link>
       <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
       <description>Hackers who breached Harvard University</description>
     </item>
     <item>
+      <title>mSecure Warns Users to Change Passwords, Reset 2FA and Passkeys After Suspicious Activity | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-03-msecure-warns-users-to-change-passwords-reset-2fa--e357dd.html</link>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Customers of the mSecure password manager are being urged to act now to protect the confidential information they store in it, possibly by changing passwords, r</description>
+    </item>
+    <item>
+      <title>New York City’s Mamdani criticizes Madison Square Garden owner over surveillance tech | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-03-new-york-citys-mamdani-criticizes-madison-square-g-e8a3cf.html</link>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description>The mayor</description>
+    </item>
+    <item>
+      <title>Researchers warned of North Korean hacking tactics years before record $6.3B Binance heist | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-03-researchers-warned-of-north-korean-hacking-tactics-9b0b38.html</link>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Cybersecurity experts have long warned of the persistent and patient threat from North Korea</description>
+    </item>
+    <item>
+      <title>Ted Schlein’s Ballistic Ventures seeks $490M for new funds amid AI-driven cybersecurity boom | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-03-ted-schleins-ballistic-ventures-seeks-490m-for-new-14409f.html</link>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Cybersecurity focused Ballistic Ventures is seeking to raise $360 million for a new flagship fund and another $130 million for a separate investment vehicle.</description>
+    </item>
+    <item>
       <title>The 4 Elements of Exposure Prioritization and How to Operationalize Them | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-11-03-the-4-elements-of-exposure-prioritization-and-how--e168d5.html</link>
       <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
       <description>Your team is remediating more vulnerabilities than ever, yet your breach risk has barely changed. You’re spending too much time and effort on exposures attacker</description>
+    </item>
+    <item>
+      <title>WorkOS says attacker used ARTEX AI to breach internal sales app | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-03-workos-says-attacker-used-artex-ai-to-breach-inter-cf2ea7.html</link>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Developer platform WorkOS suffered a data breach after a threat actor accessed business contact records and summaries of customer communications. [...]</description>
     </item>
     <item>
       <title>Chainalysis Discloses Data Breach Following AI-Driven Cyberattack | Password Monkey</title>
