@@ -418,6 +418,38 @@
       "source": "darkreading.com",
       "title": "Investors Dish on New Startups &amp; What They'd Back Next",
       "description": "The cybersecurity market is difficult to predict, but a glimpse into the annual DataTribe Challenge shows what's trending and what's not."
+    },
+    "2026-11-03-the-4-elements-of-exposure-prioritization-and-how--e168d5.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-03T13:18:58.851Z",
+      "published": "2026-11-03",
+      "source": "thehackernews.com",
+      "title": "The 4 Elements of Exposure Prioritization and How to Operationalize Them",
+      "description": "Your team is remediating more vulnerabilities than ever, yet your breach risk has barely changed. You’re spending too much time and effort on exposures attackers may never exploit, while higher-risk exposures sit, waiting in the queue. Gartner®’s report on exposure prioritization states that fewer than 10% of vulnerabilities are exploited, yet most are treated as urgent. The report also argues"
+    },
+    "2026-11-03-attackers-exploit-critical-siemens-iot2050-flaw-to-b9ba4e.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-03T13:18:58.851Z",
+      "published": "2026-11-03",
+      "source": "thehackernews.com",
+      "title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
+      "description": "A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed.\n\nThe vulnerability, tracked as CVE-2026-58115 (CVSS score: 10.0), is a case of missing authentication for a critical function that could be exploited by an unauthenticated remote attacker to run arbitrary code.\n\n\"SIMATIC IoT2050 Advanced devices running"
+    },
+    "2026-11-02-revolve-data-breach-impacts-at-least-200000-people-f57d67.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-03T13:18:58.851Z",
+      "published": "2026-11-02",
+      "source": "securityweek.com",
+      "title": "Revolve Data Breach Impacts at Least 200,000 People",
+      "description": "Hackers accessed its online shopping platform and stole customers’ personal and payment card information.\nThe post Revolve Data Breach Impacts at Least 200,000 People appeared first on SecurityWeek."
+    },
+    "2026-11-03-harvard-university-data-breach-exposed-info-of-851-790f1d.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-03T13:18:58.851Z",
+      "published": "2026-11-03",
+      "source": "bleepingcomputer.com",
+      "title": "Harvard University data breach exposed info of 851,000 accounts",
+      "description": "Hackers who breached Harvard University's Alumni Affairs and Development systems in November 2025 stole data linked to more than 850,000 unique email addresses, according to breach notification service Have I Been Pwned. [...]"
     }
   }
 }
