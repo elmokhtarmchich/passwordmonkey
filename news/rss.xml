@@ -4,7 +4,27 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Tue, 03 Nov 2026 00:13:40 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 13:19:00 GMT</lastBuildDate>
+    <item>
+      <title>Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-03-attackers-exploit-critical-siemens-iot2050-flaw-to-b9ba4e.html</link>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description>A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed.
+
+The vulnerabili</description>
+    </item>
+    <item>
+      <title>Harvard University data breach exposed info of 851,000 accounts | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-03-harvard-university-data-breach-exposed-info-of-851-790f1d.html</link>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Hackers who breached Harvard University</description>
+    </item>
+    <item>
+      <title>The 4 Elements of Exposure Prioritization and How to Operationalize Them | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-03-the-4-elements-of-exposure-prioritization-and-how--e168d5.html</link>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Your team is remediating more vulnerabilities than ever, yet your breach risk has barely changed. You’re spending too much time and effort on exposures attacker</description>
+    </item>
     <item>
       <title>Chainalysis Discloses Data Breach Following AI-Driven Cyberattack | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-11-02-chainalysis-discloses-data-breach-following-ai-dri-3b54dc.html</link>
@@ -64,6 +84,13 @@ The post Florida Student A</description>
       <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
       <description>Hackers accessed its online shopping platform and stole customers’ personal and payment card information.
 The post Revolve Data Breach Impacts at Least 180,000</description>
+    </item>
+    <item>
+      <title>Revolve Data Breach Impacts at Least 200,000 People | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-02-revolve-data-breach-impacts-at-least-200000-people-f57d67.html</link>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Hackers accessed its online shopping platform and stole customers’ personal and payment card information.
+The post Revolve Data Breach Impacts at Least 200,000</description>
     </item>
     <item>
       <title>⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More | Password Monkey</title>
