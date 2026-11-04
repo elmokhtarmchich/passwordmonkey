@@ -578,6 +578,38 @@
       "source": "darkreading.com",
       "title": "Phishing-Resistant Isn't Enough; Yubico Takes Aim at Identity-Verification Gap",
       "description": "The new YubiID service bridges identity verification with credential enrollment and recovery across existing identity platforms, closing a phishing-resistant authentication gap. Plus: post-quantum YubiKey beta."
+    },
+    "2026-11-04-researchers-uncover-prompt-adware-hidden-in-openai-049f08.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-04T23:00:31.785Z",
+      "published": "2026-11-04",
+      "source": "thehackernews.com",
+      "title": "Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit",
+      "description": "Cybersecurity researchers have disclosed details of an OpenAI Codex jailbreak bundle that's designed to modify an artificial intelligence (AI) agent's trusted instructions to insert advertisements for a third-party AI gateway.\n\nThe phenomenon has been codenamed prompt adware by Check Point Research.\n\nCalled Haiou (meaning Seagull in Chinese), the jailbreak modifies OpenAI Codex's configuration"
+    },
+    "2026-11-04-barracuda-esg-authentication-bypass-flaw-opens-pat-2765c9.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-04T23:00:31.785Z",
+      "published": "2026-11-04",
+      "source": "securityweek.com",
+      "title": "Barracuda ESG Authentication Bypass Flaw Opens Path to Root",
+      "description": "An authentication bypass and a command injection flaw can be chained for root access on Barracuda’s Email Security Gateway appliances.\nThe post Barracuda ESG Authentication Bypass Flaw Opens Path to Root appeared first on SecurityWeek."
+    },
+    "2026-11-04-dreamhost-confirms-data-breach-exposed-ftp-logins--622646.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-04T23:00:31.785Z",
+      "published": "2026-11-04",
+      "source": "bleepingcomputer.com",
+      "title": "DreamHost confirms data breach exposed FTP logins and webmail sessions",
+      "description": "DreamHost is warning of a data breach after attackers gained access to its File Manager platform for two months and stole customers' FTP/SFTP usernames and passwords. [...]"
+    },
+    "2026-11-04-msecure-password-manager-hack-prompts-password-res-096e4f.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-04T23:00:31.785Z",
+      "published": "2026-11-04",
+      "source": "bleepingcomputer.com",
+      "title": "mSecure password manager hack prompts password reset warnings",
+      "description": "mSeven Software is warning current and former mSecure password manager customers to change passwords, reset two-factor authentication, and remove passkeys following a cyberattack that reportedly exposed an encrypted customer database. [...]"
     }
   }
 }
