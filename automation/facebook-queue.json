@@ -554,6 +554,30 @@
       "source": "darkreading.com",
       "title": "Philippine Migrant Worker Data Likely Leaked in 69GB Government Breach",
       "description": "An unknown operator appears to have exfiltrated SQL Server backups from the Philippine Overseas Employment Administration in under a half hour."
+    },
+    "2026-11-04-cisa-confirms-hackers-exploiting-wordpress-core-fl-0f2962.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-04T13:30:00.746Z",
+      "published": "2026-11-04",
+      "source": "thehackernews.com",
+      "title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
+      "description": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw in WordPress Core to the Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe high-severity vulnerability, tracked as CVE-2026-119977 (CVSS score: 8.1), is a case of Time-of-check Time-of-use (TOCTOU) race condition that could be exploited to achieve arbitrary code"
+    },
+    "2026-11-04-cisa-flags-wordpress-rce-flaw-as-actively-exploite-c401bb.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-04T13:30:00.746Z",
+      "published": "2026-11-04",
+      "source": "bleepingcomputer.com",
+      "title": "CISA flags WordPress RCE flaw as actively exploited in attacks",
+      "description": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers have started exploiting a recently patched high-severity WordPress vulnerability in the wild. [...]"
+    },
+    "2026-11-04-phishing-resistant-isnt-enough-yubico-takes-aim-at-c8e5e0.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-04T13:30:00.746Z",
+      "published": "2026-11-04",
+      "source": "darkreading.com",
+      "title": "Phishing-Resistant Isn't Enough; Yubico Takes Aim at Identity-Verification Gap",
+      "description": "The new YubiID service bridges identity verification with credential enrollment and recovery across existing identity platforms, closing a phishing-resistant authentication gap. Plus: post-quantum YubiKey beta."
     }
   }
 }
