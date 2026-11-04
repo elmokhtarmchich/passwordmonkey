@@ -4,7 +4,13 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Tue, 03 Nov 2026 22:42:37 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 03:59:51 GMT</lastBuildDate>
+    <item>
+      <title>Philippine Migrant Worker Data Likely Leaked in 69GB Government Breach | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-04-philippine-migrant-worker-data-likely-leaked-in-69-b0b51d.html</link>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <description>An unknown operator appears to have exfiltrated SQL Server backups from the Philippine Overseas Employment Administration in under a half hour.</description>
+    </item>
     <item>
       <title>3AM Affiliate Embraces AI-Like Loops in European School Attack | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-11-03-3am-affiliate-embraces-ai-like-loops-in-european-s-288904.html</link>
