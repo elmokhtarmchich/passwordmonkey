@@ -4,7 +4,14 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Wed, 04 Nov 2026 13:30:03 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 23:00:33 GMT</lastBuildDate>
+    <item>
+      <title>Barracuda ESG Authentication Bypass Flaw Opens Path to Root | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-04-barracuda-esg-authentication-bypass-flaw-opens-pat-2765c9.html</link>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <description>An authentication bypass and a command injection flaw can be chained for root access on Barracuda’s Email Security Gateway appliances.
+The post Barracuda ESG Au</description>
+    </item>
     <item>
       <title>CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-11-04-cisa-confirms-hackers-exploiting-wordpress-core-fl-0f2962.html</link>
@@ -18,6 +25,18 @@
       <description>The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers have started exploiting a recently patched high-severity W</description>
     </item>
     <item>
+      <title>DreamHost confirms data breach exposed FTP logins and webmail sessions | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-04-dreamhost-confirms-data-breach-exposed-ftp-logins--622646.html</link>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <description>DreamHost is warning of a data breach after attackers gained access to its File Manager platform for two months and stole customers</description>
+    </item>
+    <item>
+      <title>mSecure password manager hack prompts password reset warnings | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-04-msecure-password-manager-hack-prompts-password-res-096e4f.html</link>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <description>mSeven Software is warning current and former mSecure password manager customers to change passwords, reset two-factor authentication, and remove passkeys follo</description>
+    </item>
+    <item>
       <title>Philippine Migrant Worker Data Likely Leaked in 69GB Government Breach | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-11-04-philippine-migrant-worker-data-likely-leaked-in-69-b0b51d.html</link>
       <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
@@ -28,6 +47,12 @@
       <link>https://passwordmonkey.org/news/2026-11-04-phishing-resistant-isnt-enough-yubico-takes-aim-at-c8e5e0.html</link>
       <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
       <description>The new YubiID service bridges identity verification with credential enrollment and recovery across existing identity platforms, closing a phishing-resistant au</description>
+    </item>
+    <item>
+      <title>Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-04-researchers-uncover-prompt-adware-hidden-in-openai-049f08.html</link>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of an OpenAI Codex jailbreak bundle that</description>
     </item>
     <item>
       <title>3AM Affiliate Embraces AI-Like Loops in European School Attack | Password Monkey</title>

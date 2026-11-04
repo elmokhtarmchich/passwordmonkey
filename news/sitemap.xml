@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://passwordmonkey.org/news/2026-11-04-barracuda-esg-authentication-bypass-flaw-opens-pat-2765c9.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://passwordmonkey.org/news/2026-11-04-cisa-confirms-hackers-exploiting-wordpress-core-fl-0f2962.html</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -13,6 +19,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://passwordmonkey.org/news/2026-11-04-dreamhost-confirms-data-breach-exposed-ftp-logins--622646.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-11-04-msecure-password-manager-hack-prompts-password-res-096e4f.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://passwordmonkey.org/news/2026-11-04-philippine-migrant-worker-data-likely-leaked-in-69-b0b51d.html</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -20,6 +38,12 @@
   </url>
   <url>
     <loc>https://passwordmonkey.org/news/2026-11-04-phishing-resistant-isnt-enough-yubico-takes-aim-at-c8e5e0.html</loc>
+    <lastmod>2026-11-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-11-04-researchers-uncover-prompt-adware-hidden-in-openai-049f08.html</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
