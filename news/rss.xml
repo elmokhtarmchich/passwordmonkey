@@ -4,12 +4,30 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Wed, 04 Nov 2026 03:59:51 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 13:30:03 GMT</lastBuildDate>
+    <item>
+      <title>CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-04-cisa-confirms-hackers-exploiting-wordpress-core-fl-0f2962.html</link>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw in WordPress Core to the Known Exploited Vulnerabilities (KEV) catalo</description>
+    </item>
+    <item>
+      <title>CISA flags WordPress RCE flaw as actively exploited in attacks | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-04-cisa-flags-wordpress-rce-flaw-as-actively-exploite-c401bb.html</link>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <description>The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers have started exploiting a recently patched high-severity W</description>
+    </item>
     <item>
       <title>Philippine Migrant Worker Data Likely Leaked in 69GB Government Breach | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-11-04-philippine-migrant-worker-data-likely-leaked-in-69-b0b51d.html</link>
       <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
       <description>An unknown operator appears to have exfiltrated SQL Server backups from the Philippine Overseas Employment Administration in under a half hour.</description>
+    </item>
+    <item>
+      <title>Phishing-Resistant Isn&apos;t Enough; Yubico Takes Aim at Identity-Verification Gap | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-04-phishing-resistant-isnt-enough-yubico-takes-aim-at-c8e5e0.html</link>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 GMT</pubDate>
+      <description>The new YubiID service bridges identity verification with credential enrollment and recovery across existing identity platforms, closing a phishing-resistant au</description>
     </item>
     <item>
       <title>3AM Affiliate Embraces AI-Like Loops in European School Attack | Password Monkey</title>
