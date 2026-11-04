@@ -546,6 +546,14 @@
       "source": "techcrunch.com",
       "title": "New York City’s Mamdani criticizes Madison Square Garden owner over surveillance tech",
       "description": "The mayor's comments come after the entertainment giant's data breach last year, which exposed James Dolan's surveillance."
+    },
+    "2026-11-04-philippine-migrant-worker-data-likely-leaked-in-69-b0b51d.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-04T03:59:49.855Z",
+      "published": "2026-11-04",
+      "source": "darkreading.com",
+      "title": "Philippine Migrant Worker Data Likely Leaked in 69GB Government Breach",
+      "description": "An unknown operator appears to have exfiltrated SQL Server backups from the Philippine Overseas Employment Administration in under a half hour."
     }
   }
 }
