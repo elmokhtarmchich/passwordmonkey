@@ -634,6 +634,78 @@
       "source": "securityweek.com",
       "title": "Cisco, WatchGuard Release Patches; SonicWall Won’t Fix GMS Flaws",
       "description": "Cisco patched an RCE in UCS Central Software; WatchGuard fixed authentication and MitM flaws.\nThe post Cisco, WatchGuard Release Patches; SonicWall Won’t Fix GMS Flaws appeared first on SecurityWeek."
+    },
+    "2026-11-05-openssh-issues-emergency-fix-for-flaw-letting-long-90a9e7.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-05T23:03:40.100Z",
+      "published": "2026-11-05",
+      "source": "thehackernews.com",
+      "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
+      "description": "Attackers can log in to accounts that have no password, such as SSH key-only accounts, on some Alpine Linux servers running the standard openssh-server package. They need network access to the server, an account name, and a password between 257 and 1,024 bytes long.\n\nOpenSSH, which rates the flaw critical, released version 10.6p2 today to block it. Alpine has published fixed packages for every"
+    },
+    "2026-11-05-researchers-bypass-chatgpt-lockdown-mode-to-exfilt-dd9d10.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-05T23:03:40.100Z",
+      "published": "2026-11-05",
+      "source": "thehackernews.com",
+      "title": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
+      "description": "Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT.\n\nLockdown Mode was introduced by the artificial intelligence (AI) company in June 2026 as an optional setting to minimize data exfiltration risks arising from prompt injections.\n\n\"The flaw could enable silent chat data theft, phishing,"
+    },
+    "2026-11-05-threatsday-apache-ofbiz-rce-dreamhost-breach-defi--7d3fdb.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-05T23:03:40.100Z",
+      "published": "2026-11-05",
+      "source": "thehackernews.com",
+      "title": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
+      "description": "How much damage can someone do without breaking much? Quite a lot, it seems. A stolen login can open doors across several systems. A trusted setting can be used to lock people out. Even a simple file copy can reach places it shouldn't. And while new tools are helping find security holes faster, some important systems are still taking months, sometimes over a year, to get patched. Not exactly a"
+    },
+    "2026-11-05-fake-openai-spacex-events-used-to-steal-microsoft--2ae34d.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-05T23:03:40.100Z",
+      "published": "2026-11-05",
+      "source": "bleepingcomputer.com",
+      "title": "Fake OpenAI, SpaceX events used to steal Microsoft, Google accounts",
+      "description": "Hackers are using fake OpenAI, SpaceX, and Anthropic event invitations to lure employees into phishing attacks, using two different phishing-as-a-service platforms to steal Microsoft and Google account credentials and authentication sessions. [...]"
+    },
+    "2026-11-05-openssh-flaw-lets-attackers-log-into-password-disa-0104ff.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-05T23:03:40.100Z",
+      "published": "2026-11-05",
+      "source": "bleepingcomputer.com",
+      "title": "OpenSSH flaw lets attackers log into password-disabled Linux accounts",
+      "description": "A newly disclosed OpenSSH vulnerability dubbed \"*sshole\" allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts that are configured to block password authentication, simply by entering an oversized password. [...]"
+    },
+    "2026-11-05-digicert-data-breach-exposes-customer-information--83e08e.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-05T23:03:40.100Z",
+      "published": "2026-11-05",
+      "source": "bleepingcomputer.com",
+      "title": "DigiCert data breach exposes customer information, identity documents",
+      "description": "DigiCert warns it suffered a data breach after a server migration mistakenly exposed an internal business system to the internet, allowing unauthorized access to customer information and identity documents. [...]"
+    },
+    "2026-11-05-closing-the-identity-gap-at-the-service-desk-a51c86.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-05T23:03:40.100Z",
+      "published": "2026-11-05",
+      "source": "bleepingcomputer.com",
+      "title": "Closing the Identity Gap at the Service Desk",
+      "description": "Attackers target IT service desks to bypass MFA by impersonating employees and convincing staff to reset passwords or register new authentication devices. Specops Software explains why traditional identity verification methods are no longer sufficient and how organizations can secure account recovery against social engineering risks. [...]"
+    },
+    "2026-11-05-openai-released-a-new-cybersecurity-model-is-that--423707.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-05T23:03:40.100Z",
+      "published": "2026-11-05",
+      "source": "techcrunch.com",
+      "title": "OpenAI released a new cybersecurity model. Is that enough?",
+      "description": "OpenAI's newest cybersecurity model comes out as AI labs face scrutiny of their work to protect digital infrastructure."
+    },
+    "2026-11-05-the-ex-secret-service-agent-who-flipped-a-hacker-i-b2184d.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-05T23:03:40.100Z",
+      "published": "2026-11-05",
+      "source": "techcrunch.com",
+      "title": "The ex-Secret Service agent who flipped a hacker is now raising a second $250M cybersecurity fund",
+      "description": "Stephen Ward, a former Secret Service agent and Home Depot CISO, is preparing a second fund of roughly $250 million for Brightmind Partners."
     }
   }
 }
