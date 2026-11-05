@@ -610,6 +610,30 @@
       "source": "bleepingcomputer.com",
       "title": "mSecure password manager hack prompts password reset warnings",
       "description": "mSeven Software is warning current and former mSecure password manager customers to change passwords, reset two-factor authentication, and remove passkeys following a cyberattack that reportedly exposed an encrypted customer database. [...]"
+    },
+    "2026-11-05-5-active-cyber-threats-that-put-us-enterprises-at--e5838d.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-05T13:44:29.325Z",
+      "published": "2026-11-05",
+      "source": "thehackernews.com",
+      "title": "5 Active Cyber Threats That Put US Enterprises at Risk in October 2026",
+      "description": "October 2026 brought another wave of cyber threats targeting US businesses, with attackers exploiting trusted platforms, legitimate authentication processes, and everyday business workflows. For enterprises, these campaigns raise the stakes beyond individual security incidents, increasing the risk of financial losses, data breaches, and costly operational disruption.\n\nBelow, we examine five"
+    },
+    "2026-11-05-hackers-exploit-patched-apple-flaw-to-deliver-info-16bf85.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-05T13:44:29.325Z",
+      "published": "2026-11-05",
+      "source": "thehackernews.com",
+      "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
+      "description": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe vulnerability in question is CVE-2024-27834 (CVSS score: 5.5), a case of improper authentication that could allow an attacker with"
+    },
+    "2026-11-05-cisco-watchguard-release-patches-sonicwall-wont-fi-daf3a4.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-05T13:44:29.325Z",
+      "published": "2026-11-05",
+      "source": "securityweek.com",
+      "title": "Cisco, WatchGuard Release Patches; SonicWall Won’t Fix GMS Flaws",
+      "description": "Cisco patched an RCE in UCS Central Software; WatchGuard fixed authentication and MitM flaws.\nThe post Cisco, WatchGuard Release Patches; SonicWall Won’t Fix GMS Flaws appeared first on SecurityWeek."
     }
   }
 }
