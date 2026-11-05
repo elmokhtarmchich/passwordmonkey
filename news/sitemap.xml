@@ -13,7 +13,61 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://passwordmonkey.org/news/2026-11-05-closing-the-identity-gap-at-the-service-desk-a51c86.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-11-05-digicert-data-breach-exposes-customer-information--83e08e.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-11-05-fake-openai-spacex-events-used-to-steal-microsoft--2ae34d.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://passwordmonkey.org/news/2026-11-05-hackers-exploit-patched-apple-flaw-to-deliver-info-16bf85.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-11-05-openai-released-a-new-cybersecurity-model-is-that--423707.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-11-05-openssh-flaw-lets-attackers-log-into-password-disa-0104ff.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-11-05-openssh-issues-emergency-fix-for-flaw-letting-long-90a9e7.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-11-05-researchers-bypass-chatgpt-lockdown-mode-to-exfilt-dd9d10.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-11-05-the-ex-secret-service-agent-who-flipped-a-hacker-i-b2184d.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-11-05-threatsday-apache-ofbiz-rce-dreamhost-breach-defi--7d3fdb.html</loc>
     <lastmod>2026-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
