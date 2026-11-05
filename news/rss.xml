@@ -4,7 +4,26 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Thu, 05 Nov 2026 04:21:53 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 13:44:31 GMT</lastBuildDate>
+    <item>
+      <title>5 Active Cyber Threats That Put US Enterprises at Risk in October 2026 | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-05-5-active-cyber-threats-that-put-us-enterprises-at--e5838d.html</link>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <description>October 2026 brought another wave of cyber threats targeting US businesses, with attackers exploiting trusted platforms, legitimate authentication processes, an</description>
+    </item>
+    <item>
+      <title>Cisco, WatchGuard Release Patches; SonicWall Won’t Fix GMS Flaws | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-05-cisco-watchguard-release-patches-sonicwall-wont-fi-daf3a4.html</link>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Cisco patched an RCE in UCS Central Software; WatchGuard fixed authentication and MitM flaws.
+The post Cisco, WatchGuard Release Patches; SonicWall Won’t Fix GM</description>
+    </item>
+    <item>
+      <title>Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-05-hackers-exploit-patched-apple-flaw-to-deliver-info-16bf85.html</link>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 GMT</pubDate>
+      <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems t</description>
+    </item>
     <item>
       <title>Barracuda ESG Authentication Bypass Flaw Opens Path to Root | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-11-04-barracuda-esg-authentication-bypass-flaw-opens-pat-2765c9.html</link>

@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://passwordmonkey.org/news/2026-11-05-5-active-cyber-threats-that-put-us-enterprises-at--e5838d.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-11-05-cisco-watchguard-release-patches-sonicwall-wont-fi-daf3a4.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-11-05-hackers-exploit-patched-apple-flaw-to-deliver-info-16bf85.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://passwordmonkey.org/news/2026-11-04-barracuda-esg-authentication-bypass-flaw-opens-pat-2765c9.html</loc>
     <lastmod>2026-11-04</lastmod>
     <changefreq>monthly</changefreq>
