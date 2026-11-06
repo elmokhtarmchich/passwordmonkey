@@ -260,12 +260,16 @@
       "postId": "1392578940603197_122109345309514487"
     },
     "2026-10-30-north-korean-hackers-blamed-for-stealing-record-63-511021.html": {
-      "status": "pending",
+      "status": "rejected",
       "discoveredAt": "2026-10-30T17:29:20.057Z",
       "published": "2026-10-30",
       "source": "techcrunch.com",
       "title": "North Korean hackers blamed for stealing record $6.3B in Binance breach",
-      "description": "Hackers working for North Korea are suspected of hacking a Binance employee's laptop, which allowed the theft of billions in crypto."
+      "description": "Hackers working for North Korea are suspected of hacking a Binance employee's laptop, which allowed the theft of billions in crypto.",
+      "rejectedAt": "2026-11-06T22:33:13.534Z",
+      "rejectionReasons": [
+        "queue entry is too old"
+      ]
     },
     "2026-10-30-applebees-exposed-customers-personal-data-after-le-fd5da6.html": {
       "status": "pending",
