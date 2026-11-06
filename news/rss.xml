@@ -4,12 +4,55 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Fri, 06 Nov 2026 13:28:39 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 22:32:57 GMT</lastBuildDate>
     <item>
       <title>Chainalysis Breach Exposes All Users&apos; Credentials, Forces Shutdown of Key Services | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-11-06-chainalysis-breach-exposes-all-users-credentials-f-a3b94f.html</link>
       <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
       <description>Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed names, usernam</description>
+    </item>
+    <item>
+      <title>Chainalysis says breach exposed credentials for all customers | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-06-chainalysis-says-breach-exposed-credentials-for-al-68f16a.html</link>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Blockchain intelligence firm Chainalysis says a recent attack on its systems and internal tools has exposed credentials and live tokens for all customers. [...]</description>
+    </item>
+    <item>
+      <title>DigiCert Data Breach Impacts Business Customer Information | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-06-digicert-data-breach-impacts-business-customer-inf-273a7a.html</link>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Hackers created an account on an internal system and accessed names, email addresses, phone numbers, and business addresses.
+The post DigiCert Data Breach Impac</description>
+    </item>
+    <item>
+      <title>Fake security tools on GitHub push backdoors and infostealers | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-06-fake-security-tools-on-github-push-backdoors-and-i-b43272.html</link>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Cybersecurity professionals are being targeted with infected security projects on GitHub that deploy a backdoor and information stealer malware. [...]</description>
+    </item>
+    <item>
+      <title>Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-06-hackers-target-openssh-sshole-flaw-within-hours-of-12404f.html</link>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, acc</description>
+    </item>
+    <item>
+      <title>In Other News: Trezor Implant, LLMJacking Bills Hit $1M, SAP Flaws Weaponized Within Days | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-06-in-other-news-trezor-implant-llmjacking-bills-hit--a0294f.html</link>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Noteworthy stories that might have slipped under the radar: Synology warns about NAS ransomware attacks, Flowise ‘hello’ attacks, Chainalysis breach impact expa</description>
+    </item>
+    <item>
+      <title>Japan Announces Emergency Cybersecurity Package Following a Wave of Attacks | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-06-japan-announces-emergency-cybersecurity-package-fo-ddce59.html</link>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <description>The emergency package comes after dozens of companies and government agencies were hit by unauthorized access to their systems and leaks of client data, prompti</description>
+    </item>
+    <item>
+      <title>OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-06-openai-launches-gpt-6-cyber-after-ai-helps-find-81-4ab15b.html</link>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <description>OpenAI on Thursday unveiled GPT‑6 Cyber, which it described as a major step forward in security research that brings together stronger cybersecurity capabilitie</description>
     </item>
     <item>
       <title>OpenAI Says New GPT-6 Cyber Model Hunts Flaws Without Crossing the Line | Password Monkey</title>
@@ -24,6 +67,12 @@ The post OpenAI Says New GPT-6 Cy</description>
       <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
       <description>On Linux distributions using musl libc without PAM, some accounts accept any password between 257 and 1024 characters.
 The post OpenSSH Rushes Patches for ‘SSHo</description>
+    </item>
+    <item>
+      <title>Runaway AI hacking agent behind WorkOS breach after escaping sandbox | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-06-runaway-ai-hacking-agent-behind-workos-breach-afte-246617.html</link>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
+      <description>WorkOS says an AI-powered hacking agent that breached its internal sales application and accessed customer information was operated by a security researcher who</description>
     </item>
     <item>
       <title>5 Active Cyber Threats That Put US Enterprises at Risk in October 2026 | Password Monkey</title>
