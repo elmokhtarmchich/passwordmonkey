@@ -706,6 +706,30 @@
       "source": "techcrunch.com",
       "title": "The ex-Secret Service agent who flipped a hacker is now raising a second $250M cybersecurity fund",
       "description": "Stephen Ward, a former Secret Service agent and Home Depot CISO, is preparing a second fund of roughly $250 million for Brightmind Partners."
+    },
+    "2026-11-06-chainalysis-breach-exposes-all-users-credentials-f-a3b94f.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-06T13:28:37.573Z",
+      "published": "2026-11-06",
+      "source": "thehackernews.com",
+      "title": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
+      "description": "Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed names, usernames, password hashes and live tokens for all users.\n\n\"While we investigated, we removed access to Reactor and Data Solutions,\" the company said. \"At this time we continue to have no evidence that any investigations data has been accessed"
+    },
+    "2026-11-06-openai-says-new-gpt-6-cyber-model-hunts-flaws-with-e3a0ea.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-06T13:28:37.573Z",
+      "published": "2026-11-06",
+      "source": "securityweek.com",
+      "title": "OpenAI Says New GPT-6 Cyber Model Hunts Flaws Without Crossing the Line",
+      "description": "Rated Critical for cybersecurity, OpenAI’s new model beats GPT-5.6 Cyber at exploitation while staying in scope more reliably.\nThe post OpenAI Says New GPT-6 Cyber Model Hunts Flaws Without Crossing the Line appeared first on SecurityWeek."
+    },
+    "2026-11-06-openssh-rushes-patches-for-sshole-authentication-b-5e2fc4.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-06T13:28:37.573Z",
+      "published": "2026-11-06",
+      "source": "securityweek.com",
+      "title": "OpenSSH Rushes Patches for ‘SSHole’ Authentication Bypass",
+      "description": "On Linux distributions using musl libc without PAM, some accounts accept any password between 257 and 1024 characters.\nThe post OpenSSH Rushes Patches for ‘SSHole’ Authentication Bypass appeared first on SecurityWeek."
     }
   }
 }
