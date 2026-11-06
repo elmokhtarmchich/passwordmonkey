@@ -730,6 +730,70 @@
       "source": "securityweek.com",
       "title": "OpenSSH Rushes Patches for ‘SSHole’ Authentication Bypass",
       "description": "On Linux distributions using musl libc without PAM, some accounts accept any password between 257 and 1024 characters.\nThe post OpenSSH Rushes Patches for ‘SSHole’ Authentication Bypass appeared first on SecurityWeek."
+    },
+    "2026-11-06-hackers-target-openssh-sshole-flaw-within-hours-of-12404f.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-06T22:32:55.092Z",
+      "published": "2026-11-06",
+      "source": "thehackernews.com",
+      "title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
+      "description": "Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, according to Previdian.\n\nThe vulnerability, tracked as CVE-2026-123158 (CVSS score: 8.1) and codenamed SSHole (or *sshole), impacts Linux systems that run OpenSSH on the musl C library with Pluggable Authentication Modules (PAM) disabled,"
+    },
+    "2026-11-06-openai-launches-gpt-6-cyber-after-ai-helps-find-81-4ab15b.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-06T22:32:55.092Z",
+      "published": "2026-11-06",
+      "source": "thehackernews.com",
+      "title": "OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits",
+      "description": "OpenAI on Thursday unveiled GPT‑6 Cyber, which it described as a major step forward in security research that brings together stronger cybersecurity capabilities with a step-change improvement in model alignment.\n\nThe new model is \"more capable at finding and fixing vulnerabilities, and far more reliable staying within the boundaries researchers set,\" OpenAI said. It has classified the model as"
+    },
+    "2026-11-06-japan-announces-emergency-cybersecurity-package-fo-ddce59.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-06T22:32:55.092Z",
+      "published": "2026-11-06",
+      "source": "securityweek.com",
+      "title": "Japan Announces Emergency Cybersecurity Package Following a Wave of Attacks",
+      "description": "The emergency package comes after dozens of companies and government agencies were hit by unauthorized access to their systems and leaks of client data, prompting uneasiness across Japan.\nThe post Japan Announces Emergency Cybersecurity Package Following a Wave of Attacks appeared first on SecurityWeek."
+    },
+    "2026-11-06-in-other-news-trezor-implant-llmjacking-bills-hit--a0294f.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-06T22:32:55.092Z",
+      "published": "2026-11-06",
+      "source": "securityweek.com",
+      "title": "In Other News: Trezor Implant, LLMJacking Bills Hit $1M, SAP Flaws Weaponized Within Days",
+      "description": "Noteworthy stories that might have slipped under the radar: Synology warns about NAS ransomware attacks, Flowise ‘hello’ attacks, Chainalysis breach impact expands.\nThe post In Other News: Trezor Implant, LLMJacking Bills Hit $1M, SAP Flaws Weaponized Within Days appeared first on SecurityWeek."
+    },
+    "2026-11-06-digicert-data-breach-impacts-business-customer-inf-273a7a.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-06T22:32:55.092Z",
+      "published": "2026-11-06",
+      "source": "securityweek.com",
+      "title": "DigiCert Data Breach Impacts Business Customer Information",
+      "description": "Hackers created an account on an internal system and accessed names, email addresses, phone numbers, and business addresses.\nThe post DigiCert Data Breach Impacts Business Customer Information appeared first on SecurityWeek."
+    },
+    "2026-11-06-runaway-ai-hacking-agent-behind-workos-breach-afte-246617.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-06T22:32:55.092Z",
+      "published": "2026-11-06",
+      "source": "bleepingcomputer.com",
+      "title": "Runaway AI hacking agent behind WorkOS breach after escaping sandbox",
+      "description": "WorkOS says an AI-powered hacking agent that breached its internal sales application and accessed customer information was operated by a security researcher who claims the tool escaped its testing environment and unintentionally attacked the company. [...]"
+    },
+    "2026-11-06-fake-security-tools-on-github-push-backdoors-and-i-b43272.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-06T22:32:55.092Z",
+      "published": "2026-11-06",
+      "source": "bleepingcomputer.com",
+      "title": "Fake security tools on GitHub push backdoors and infostealers",
+      "description": "Cybersecurity professionals are being targeted with infected security projects on GitHub that deploy a backdoor and information stealer malware. [...]"
+    },
+    "2026-11-06-chainalysis-says-breach-exposed-credentials-for-al-68f16a.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-06T22:32:55.092Z",
+      "published": "2026-11-06",
+      "source": "bleepingcomputer.com",
+      "title": "Chainalysis says breach exposed credentials for all customers",
+      "description": "Blockchain intelligence firm Chainalysis says a recent attack on its systems and internal tools has exposed credentials and live tokens for all customers. [...]"
     }
   }
 }
