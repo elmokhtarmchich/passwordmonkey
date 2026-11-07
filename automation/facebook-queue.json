@@ -798,6 +798,14 @@
       "source": "bleepingcomputer.com",
       "title": "Chainalysis says breach exposed credentials for all customers",
       "description": "Blockchain intelligence firm Chainalysis says a recent attack on its systems and internal tools has exposed credentials and live tokens for all customers. [...]"
+    },
+    "2026-11-07-sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exp-3851f1.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-07T03:49:41.132Z",
+      "published": "2026-11-07",
+      "source": "bleepingcomputer.com",
+      "title": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
+      "description": "SonicWall has released security updates to fix seven vulnerabilities in SonicOS firewalls, including an SSL-VPN authentication bypass flaw exploited in attacks. [...]"
     }
   }
 }
