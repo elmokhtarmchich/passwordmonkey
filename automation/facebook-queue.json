@@ -272,12 +272,16 @@
       ]
     },
     "2026-10-30-applebees-exposed-customers-personal-data-after-le-fd5da6.html": {
-      "status": "pending",
+      "status": "rejected",
       "discoveredAt": "2026-10-31T03:23:35.925Z",
       "published": "2026-10-30",
       "source": "techcrunch.com",
       "title": "Applebee’s exposed customers’ personal data after leaving database password in app",
-      "description": "EXCLUSIVE: A security researcher discovered the hardcoded credential in Applebee's app, allowing unrestricted access to customers' personal data."
+      "description": "EXCLUSIVE: A security researcher discovered the hardcoded credential in Applebee's app, allowing unrestricted access to customers' personal data.",
+      "rejectedAt": "2026-11-07T03:49:56.953Z",
+      "rejectionReasons": [
+        "queue entry is too old"
+      ]
     },
     "2026-10-31-attackers-chain-three-ivanti-connect-secure-flaws--c305d6.html": {
       "status": "pending",
