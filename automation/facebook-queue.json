@@ -296,12 +296,16 @@
       ]
     },
     "2026-10-31-chainalysis-confirms-intrusion-into-internal-tools-b84dfe.html": {
-      "status": "pending",
+      "status": "rejected",
       "discoveredAt": "2026-10-31T16:33:42.183Z",
       "published": "2026-10-31",
       "source": "thehackernews.com",
       "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
-      "description": "American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data.\n\nHowever, the company noted that the breach did not result in unauthorized access to its investigation content, authentication credentials, or session tokens.\n\n\"This month, Chainalysis detected an external actor using offensive agentic"
+      "description": "American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data.\n\nHowever, the company noted that the breach did not result in unauthorized access to its investigation content, authentication credentials, or session tokens.\n\n\"This month, Chainalysis detected an external actor using offensive agentic",
+      "rejectedAt": "2026-11-07T21:14:56.435Z",
+      "rejectionReasons": [
+        "queue entry is too old"
+      ]
     },
     "2026-10-31-from-beginner-to-bug-hunter-learning-cybersecurity-a7455b.html": {
       "status": "pending",
