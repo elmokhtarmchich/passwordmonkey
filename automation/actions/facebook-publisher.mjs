@@ -45,14 +45,33 @@ function articleMessage(entry, html) {
 }
 
 function getArticleImage(html) {
-  // Extract og:image meta tag
+  // Extract og:image meta tag (primary source)
   const ogImage = html.match(/<meta\s+property=["'og:image["']\s+content=["']([^"']+)["']/i)?.[1];
 
   if (ogImage && isValidImageUrl(ogImage)) {
-    return ogImage;
+    // Exclude site logo and og-image.svg from og:image results
+    const logoUrls = ["https://passwordmonkey.org/images/site_logo.png", "https://passwordmonkey.org/images/og-image.svg"];
+    if (!logoUrls.some(logo => ogImage.toLowerCase().includes(logo.toLowerCase()))) {
+      return ogImage;
+    }
   }
 
-  // Fallback to stock image if no valid og:image found
+  // Fallback: extract first relevant image from article <img> tags
+  // Skip site_logo.png and og-image.svg
+  const imgTagMatch = html.match(/<img\s+[^>]*src=["']([^"']+)["'][^>]*>/gi);
+  if (imgTagMatch) {
+    for (const imgTag of imgTagMatch) {
+      const imageUrl = imgTag.match(/src=["']([^"']+)["']/i)?.[1];
+      if (imageUrl && isValidImageUrl(imageUrl)) {
+        const logoUrls = ["https://passwordmonkey.org/images/site_logo.png", "https://passwordmonkey.org/images/og-image.svg"];
+        if (!logoUrls.some(logo => imageUrl.toLowerCase().includes(logo.toLowerCase()))) {
+          return imageUrl;
+        }
+      }
+    }
+  }
+
+  // Ultimate fallback to stock image
   return "https://passwordmonkey.org/images/site_logo.png";
 }
 
@@ -226,7 +245,7 @@ async function main() {
   const entries = queue?.articles && typeof queue.articles === "object" ? queue.articles : {};
   const candidates = Object.entries(entries)
     .filter(([file, entry]) => entry?.status === "pending" && !state.articles?.[file])
-    .sort(([, a], [, b]) => String(a.discoveredAt).localeCompare(String(b.discoveredAt)))
+    .sort(([, a], [, b]) => String(b.discoveredAt).localeCompare(String(a.discoveredAt)))
     .slice(0, 1);
 
   console.log(`Facebook candidates: ${candidates.length} (new-article queue, limit 1)`);
