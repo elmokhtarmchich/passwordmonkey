@@ -842,6 +842,22 @@
       "source": "theverge.com",
       "title": "Why a new report on Anthropic automating AI development is alarming researchers",
       "description": "Anthropic CEO Dario Amodei. | Photo: Jason Henry/Bloomberg via Getty Images\t\n\nAnthropic is using AI to build more powerful AI. And it appears to be working remarkably well, with the company's models improving roughly twice as quickly as a year ago, with little indication of slowing down.\nThat's according to a new report published Thursday by the AI safety research organization METR, following an 11-week investigation inside the company, as part of a report evaluating its AI research and development. The probe is separate from a program offering safety researchers \"employee-like\" access to systems in the wake of high-profile hacking incidents over the summer.\nThe findings offer some of the clearest evidence yet of AI …\nRead the full story at The Verge."
+    },
+    "2026-11-08-iris-ohyama-data-cloud-breach-exposes-info-of-77-m-f3cdbd.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-08T20:48:37.319Z",
+      "published": "2026-11-08",
+      "source": "bleepingcomputer.com",
+      "title": "Iris Ohyama data cloud breach exposes info of 7.7 million customers",
+      "description": "Japanese manufacturer Iris Ohyama, the operator of the Iris Plaza shopping platform, disclosed that personal information belonging to about 7.7 million people may have been exposed after unauthorized access to a third-party cloud service the company used. [...]"
+    },
+    "2026-11-08-he-arrested-a-hacker-then-spent-18-months-clearing-2f1c02.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-08T20:48:37.319Z",
+      "published": "2026-11-08",
+      "source": "techcrunch.com",
+      "title": "He arrested a hacker, then spent 18 months clearing his own name. Now he’s a cybersecurity VC.",
+      "description": "Stephen Ward, a former Secret Service agent and Home Depot CISO, is preparing a second fund of roughly $250 million for Brightmind Partners."
     }
   }
 }
