@@ -308,12 +308,16 @@
       ]
     },
     "2026-10-31-from-beginner-to-bug-hunter-learning-cybersecurity-a7455b.html": {
-      "status": "pending",
+      "status": "rejected",
       "discoveredAt": "2026-10-31T16:33:42.183Z",
       "published": "2026-10-31",
       "source": "bleepingcomputer.com",
       "title": "From Beginner to Bug Hunter: Learning Cybersecurity in the AI Era.",
-      "description": "AI-generated vulnerability reports are overwhelming some bug bounty programs, making it harder for aspiring security researchers to know where to start. TryHackMe explains how beginners can build practical cybersecurity skills, use AI responsibly, and produce reproducible findings that stand up to scrutiny. [...]"
+      "description": "AI-generated vulnerability reports are overwhelming some bug bounty programs, making it harder for aspiring security researchers to know where to start. TryHackMe explains how beginners can build practical cybersecurity skills, use AI responsibly, and produce reproducible findings that stand up to scrutiny. [...]",
+      "rejectedAt": "2026-11-08T03:30:26.891Z",
+      "rejectionReasons": [
+        "queue entry is too old"
+      ]
     },
     "2026-10-31-chainalysis-discloses-data-breach-from-offensive-a-41cdd4.html": {
       "status": "pending",
