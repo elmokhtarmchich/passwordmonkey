@@ -4,12 +4,44 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Tue, 10 Nov 2026 13:59:03 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 22:40:12 GMT</lastBuildDate>
+    <item>
+      <title>AI Makes Reverse Engineering Mainstream Software &amp;amp; Malware Far Easier | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-10-ai-makes-reverse-engineering-mainstream-software-a-3928e1.html</link>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Researchers unpacked, mapped, and recreated complex software and the Turla malware, raising opportunities and concerns for organizations and cybersecurity analy</description>
+    </item>
+    <item>
+      <title>Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-10-attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-db01d0.html</link>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant.
+
+The</description>
+    </item>
+    <item>
+      <title>Checkmarx Appoints Kobi Sivilya as Chief Information Security Officer | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-10-checkmarx-appoints-kobi-sivilya-as-chief-informati-b004ff.html</link>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Sivilya brings deep cybersecurity and technology leadership to Checkmarx as AI transforms software development.</description>
+    </item>
     <item>
       <title>CISA Warns of Active Exploitation of OpenSSH, GPUStack, FreeSWITCH, and IBM Flaws | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-11-10-cisa-warns-of-active-exploitation-of-openssh-gpust-4703b2.html</link>
       <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
       <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added four security flaws impacting GPUStack, SignalWire FreeSwitch, OpenBSD OpenSSH,</description>
+    </item>
+    <item>
+      <title>Critical Xen Orchestra auth bypass flaw exploited to hijack VM servers | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-10-critical-xen-orchestra-auth-bypass-flaw-exploited--f71a91.html</link>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>A critical authentication bypass vulnerability in Xen Orchestra is being actively exploited in attacks that could grant administrator privileges and allow takeo</description>
+    </item>
+    <item>
+      <title>Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-10-fireworks-ai-confirms-wider-breach-affecting-custo-78de25.html</link>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Fireworks AI disclosed on Monday that its investigation into a security incident first reported early last month  uncovered further malicious activity, affectin</description>
     </item>
     <item>
       <title>Fireworks AI discloses new breach after cloud provider hack | Password Monkey</title>
@@ -18,10 +50,49 @@
       <description>AI infrastructure startup Fireworks has disclosed a new security breach in which attackers accessed its development machines after breaching a third-party cloud</description>
     </item>
     <item>
+      <title>Google&apos;s Gemini 4 Carbon is now widely available around the world | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-10-googles-gemini-4-carbon-is-now-widely-available-ar-adc3b8.html</link>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Google is rolling out Gemini 4 Carbon after a limited release to cybersecurity companies.</description>
+    </item>
+    <item>
+      <title>Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-10-hackers-exploit-critical-xen-orchestra-auth-bypass-452012.html</link>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>French software company Vates VMS has warned of a critical security vulnerability in Xen Orchestra that it said is being actively exploited in the wild.
+
+The au</description>
+    </item>
+    <item>
+      <title>Hackers exploit trusted AWS access to breach multiple cloud environments | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-10-hackers-exploit-trusted-aws-access-to-breach-multi-ddf41e.html</link>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>A threat actor used compromised identity and access management (IAM) credentials for a Qubole big data platform</description>
+    </item>
+    <item>
       <title>Hackers now exploit critical Barracuda ESG flaws to gain root access | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-11-10-hackers-now-exploit-critical-barracuda-esg-flaws-t-40f3a4.html</link>
       <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
       <description>Cybersecurity company Barracuda Networks warned that attackers have begun exploiting two recently patched Email Security Gateway (ESG) vulnerabilities that let</description>
+    </item>
+    <item>
+      <title>Railway breach leads to $740,000 in fraudulent AI charges | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-10-railway-breach-leads-to-740000-in-fraudulent-ai-ch-43b501.html</link>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Cloud hosting provider Railway says hackers exploited vulnerabilities in its infrastructure to steal customer authentication secrets and generate approximately</description>
+    </item>
+    <item>
+      <title>Today: CISO Forum Virtual Summit 2026 – Join Global Cybersecurity Leaders | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-10-today-ciso-forum-virtual-summit-2026-join-global-c-873ada.html</link>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Designed for cybersecurity leaders, this immersive two-day virtual event is your premier destination to discuss, share, and learn innovative risk management and</description>
+    </item>
+    <item>
+      <title>WhiteMatter Raises $20 Million in Series A Funding | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-10-whitematter-raises-20-million-in-series-a-funding-ee3628.html</link>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
+      <description>The cybersecurity startup deploys a dedicated guardian agent for every AI agent in an organization’s environment.
+The post WhiteMatter Raises $20 Million in Ser</description>
     </item>
     <item>
       <title>Amplifon Americas Data Breach Impacts 1.3 Million | Password Monkey</title>
@@ -92,6 +163,12 @@ The post Iris Plaza Breach May Hav</description>
       <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
       <description>Frontline Education told Indiana regulators that its August data breach affected over 3 million school district staff and students.
 The post Over 3 Million Peop</description>
+    </item>
+    <item>
+      <title>People Are Getting Weird About AI | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-09-people-are-getting-weird-about-ai-afdc04.html</link>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Dark Reading Confidential Episode 22: You can love AI without being blind to cybersecurity being sacrificed for utility.</description>
     </item>
     <item>
       <title>Revolve Puts Data Breach Victim Count at 1.5 Million | Password Monkey</title>
