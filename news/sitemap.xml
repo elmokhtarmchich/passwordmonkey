@@ -7,6 +7,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://passwordmonkey.org/news/2026-11-09-binance-denies-data-breach-after-alleged-shinyhunt-e58a25.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-11-09-black-hat-india-2026-makes-a-landmark-debut-in-ben-97eefd.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://passwordmonkey.org/news/2026-11-09-cisa-flags-sonicwall-sonicos-mfa-bypass-flaw-amid--4d02c2.html</loc>
     <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -14,6 +26,24 @@
   </url>
   <url>
     <loc>https://passwordmonkey.org/news/2026-11-09-default-adminadmin-server-password-helps-researche-3b7113.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-11-09-hackers-compromise-etherspheres-bee-js-and-swarm-d-2ba6cb.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-11-09-hackers-exploit-quboles-trusted-aws-access-to-brea-ee5e2c.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-11-09-hackers-exploit-sshole-openssh-flaw-to-breach-linu-2d302e.html</loc>
     <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -43,6 +73,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://passwordmonkey.org/news/2026-11-09-sega-newsletter-data-breach-exposes-22-million-ema-d6705a.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://passwordmonkey.org/news/2026-11-09-torrent-underground-738fb8.html</loc>
     <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -50,6 +86,12 @@
   </url>
   <url>
     <loc>https://passwordmonkey.org/news/2026-11-09-weekly-recap-sshole-exploited-apt-root-rce-robot-t-dca974.html</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-11-09-york-university-breach-exposed-personal-informatio-79849d.html</loc>
     <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

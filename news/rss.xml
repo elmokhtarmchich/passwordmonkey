@@ -4,13 +4,25 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Mon, 09 Nov 2026 14:44:34 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 00:59:33 GMT</lastBuildDate>
     <item>
       <title>Amplifon Americas Data Breach Impacts 1.3 Million | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-11-09-amplifon-americas-data-breach-impacts-13-million-f991e7.html</link>
       <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
       <description>Hackers stole personal, health, and insurance information, including Social Security numbers, from the company’s internal systems.
 The post Amplifon Americas Da</description>
+    </item>
+    <item>
+      <title>Binance denies data breach after alleged ShinyHunters claims | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-09-binance-denies-data-breach-after-alleged-shinyhunt-e58a25.html</link>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Binance, the world</description>
+    </item>
+    <item>
+      <title>Black Hat India 2026 Makes a Landmark Debut in Bengaluru, Bringing the Global Cybersecurity Community to India | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-09-black-hat-india-2026-makes-a-landmark-debut-in-ben-97eefd.html</link>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Inaugural edition by Informa Markets in India brings together leading researchers, security practitioners and industry decision makers for four days of cutting-</description>
     </item>
     <item>
       <title>CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation | Password Monkey</title>
@@ -23,6 +35,24 @@ The post Amplifon Americas Da</description>
       <link>https://passwordmonkey.org/news/2026-11-09-default-adminadmin-server-password-helps-researche-3b7113.html</link>
       <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
       <description>The login systems behind two car brands</description>
+    </item>
+    <item>
+      <title>Hackers Compromise Ethersphere&apos;s bee-js and Swarm Desktop to Deliver Wallet-Stealing Malware | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-09-hackers-compromise-etherspheres-bee-js-and-swarm-d-2ba6cb.html</link>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Attackers used the Ethersphere project</description>
+    </item>
+    <item>
+      <title>Hackers Exploit Qubole&apos;s Trusted AWS Access to Breach Customer Accounts and Steal Data | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-09-hackers-exploit-quboles-trusted-aws-access-to-brea-ee5e2c.html</link>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description>An attacker broke into AWS accounts belonging to multiple Qubole customers between October 14 and October 26 and stole stored secrets and data, cloud security c</description>
+    </item>
+    <item>
+      <title>Hackers exploit SSHole OpenSSH flaw to breach Linux systems | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-09-hackers-exploit-sshole-openssh-flaw-to-breach-linu-2d302e.html</link>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Hackers are actively exploiting the</description>
     </item>
     <item>
       <title>Hackers Exploiting ‘SSHole’ Authentication Bypass in OpenSSH | Password Monkey</title>
@@ -53,6 +83,12 @@ The post Over 3 Million Peop</description>
 The post Revolve Puts Data Breach</description>
     </item>
     <item>
+      <title>SEGA newsletter data breach exposes 2.2 million email addresses | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-09-sega-newsletter-data-breach-exposes-22-million-ema-d6705a.html</link>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Japanese gaming giant SEGA has disclosed that a data breach at its third-party newsletter provider, ARARA, exposed the email addresses of 2.2 million newsletter</description>
+    </item>
+    <item>
       <title>Torrent underground | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-11-09-torrent-underground-738fb8.html</link>
       <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
@@ -63,6 +99,12 @@ The post Revolve Puts Data Breach</description>
       <link>https://passwordmonkey.org/news/2026-11-09-weekly-recap-sshole-exploited-apt-root-rce-robot-t-dca974.html</link>
       <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
       <description>A system doesn</description>
+    </item>
+    <item>
+      <title>York University breach exposed personal information dating to 2007 | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-09-york-university-breach-exposed-personal-informatio-79849d.html</link>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 GMT</pubDate>
+      <description>York University has announced it suffered a cybersecurity incident in which a threat actor stole personal information people submitted through online forms. [..</description>
     </item>
     <item>
       <title>He arrested a hacker, then spent 18 months clearing his own name. Now he’s a cybersecurity VC. | Password Monkey</title>
