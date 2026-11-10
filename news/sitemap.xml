@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://passwordmonkey.org/news/2026-11-10-cisa-warns-of-active-exploitation-of-openssh-gpust-4703b2.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-11-10-fireworks-ai-discloses-new-breach-after-cloud-prov-4e0613.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://passwordmonkey.org/news/2026-11-10-hackers-now-exploit-critical-barracuda-esg-flaws-t-40f3a4.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://passwordmonkey.org/news/2026-11-09-amplifon-americas-data-breach-impacts-13-million-f991e7.html</loc>
     <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
