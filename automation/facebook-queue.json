@@ -1018,6 +1018,102 @@
       "source": "bleepingcomputer.com",
       "title": "Fireworks AI discloses new breach after cloud provider hack",
       "description": "AI infrastructure startup Fireworks has disclosed a new security breach in which attackers accessed its development machines after breaching a third-party cloud provider. [...]"
+    },
+    "2026-11-10-hackers-exploit-critical-xen-orchestra-auth-bypass-452012.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-10T22:40:10.624Z",
+      "published": "2026-11-10",
+      "source": "thehackernews.com",
+      "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
+      "description": "French software company Vates VMS has warned of a critical security vulnerability in Xen Orchestra that it said is being actively exploited in the wild.\n\nThe authentication bypass flaw, which does not yet have a CVE identifier, is tracked as VSA-2026-062.\n\n\"REST cookie parsing turns authenticationToken=j:%7B%7D into {},\" Vates VMS said in an alert. \"REST authentication passes that object to the"
+    },
+    "2026-11-10-attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-db01d0.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-10T22:40:10.624Z",
+      "published": "2026-11-10",
+      "source": "thehackernews.com",
+      "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
+      "description": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant.\n\nThe activity, observed by Huntress in early October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 to bypass authentication and execute arbitrary commands on affected systems. Patches for the two"
+    },
+    "2026-11-10-fireworks-ai-confirms-wider-breach-affecting-custo-78de25.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-10T22:40:10.624Z",
+      "published": "2026-11-10",
+      "source": "thehackernews.com",
+      "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
+      "description": "Fireworks AI disclosed on Monday that its investigation into a security incident first reported early last month  uncovered further malicious activity, affecting account and billing information, alongside secrets, datasets, and incomplete models for a \"limited set of accounts.\"\n\nIn a notice published on October 10, 2026, the company said it detected unauthorized use of internal Fireworks"
+    },
+    "2026-11-10-today-ciso-forum-virtual-summit-2026-join-global-c-873ada.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-10T22:40:10.624Z",
+      "published": "2026-11-10",
+      "source": "securityweek.com",
+      "title": "Today: CISO Forum Virtual Summit 2026 – Join Global Cybersecurity Leaders",
+      "description": "Designed for cybersecurity leaders, this immersive two-day virtual event is your premier destination to discuss, share, and learn innovative risk management and defense strategies defining the modern enterprise.\nThe post Today: CISO Forum Virtual Summit 2026 – Join Global Cybersecurity Leaders appeared first on SecurityWeek."
+    },
+    "2026-11-10-whitematter-raises-20-million-in-series-a-funding-ee3628.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-10T22:40:10.624Z",
+      "published": "2026-11-10",
+      "source": "securityweek.com",
+      "title": "WhiteMatter Raises $20 Million in Series A Funding",
+      "description": "The cybersecurity startup deploys a dedicated guardian agent for every AI agent in an organization’s environment.\nThe post WhiteMatter Raises $20 Million in Series A Funding appeared first on SecurityWeek."
+    },
+    "2026-11-10-railway-breach-leads-to-740000-in-fraudulent-ai-ch-43b501.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-10T22:40:10.624Z",
+      "published": "2026-11-10",
+      "source": "bleepingcomputer.com",
+      "title": "Railway breach leads to $740,000 in fraudulent AI charges",
+      "description": "Cloud hosting provider Railway says hackers exploited vulnerabilities in its infrastructure to steal customer authentication secrets and generate approximately $740,000 in fraudulent AI usage, potentially exposing credentials for up to 100,000 workspaces. [...]"
+    },
+    "2026-11-10-hackers-exploit-trusted-aws-access-to-breach-multi-ddf41e.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-10T22:40:10.624Z",
+      "published": "2026-11-10",
+      "source": "bleepingcomputer.com",
+      "title": "Hackers exploit trusted AWS access to breach multiple cloud environments",
+      "description": "A threat actor used compromised identity and access management (IAM) credentials for a Qubole big data platform's AWS account to access and exfiltrate data from multiple customers' AWS environments. [...]"
+    },
+    "2026-11-10-critical-xen-orchestra-auth-bypass-flaw-exploited--f71a91.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-10T22:40:10.624Z",
+      "published": "2026-11-10",
+      "source": "bleepingcomputer.com",
+      "title": "Critical Xen Orchestra auth bypass flaw exploited to hijack VM servers",
+      "description": "A critical authentication bypass vulnerability in Xen Orchestra is being actively exploited in attacks that could grant administrator privileges and allow takeover of XCP-ng virtualization hosts. [...]"
+    },
+    "2026-11-10-checkmarx-appoints-kobi-sivilya-as-chief-informati-b004ff.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-10T22:40:10.624Z",
+      "published": "2026-11-10",
+      "source": "darkreading.com",
+      "title": "Checkmarx Appoints Kobi Sivilya as Chief Information Security Officer",
+      "description": "Sivilya brings deep cybersecurity and technology leadership to Checkmarx as AI transforms software development."
+    },
+    "2026-11-10-ai-makes-reverse-engineering-mainstream-software-a-3928e1.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-10T22:40:10.624Z",
+      "published": "2026-11-10",
+      "source": "darkreading.com",
+      "title": "AI Makes Reverse Engineering Mainstream Software &amp; Malware Far Easier",
+      "description": "Researchers unpacked, mapped, and recreated complex software and the Turla malware, raising opportunities and concerns for organizations and cybersecurity analysts."
+    },
+    "2026-11-09-people-are-getting-weird-about-ai-afdc04.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-10T22:40:10.624Z",
+      "published": "2026-11-09",
+      "source": "darkreading.com",
+      "title": "People Are Getting Weird About AI",
+      "description": "Dark Reading Confidential Episode 22: You can love AI without being blind to cybersecurity being sacrificed for utility."
+    },
+    "2026-11-10-googles-gemini-4-carbon-is-now-widely-available-ar-adc3b8.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-10T22:40:10.624Z",
+      "published": "2026-11-10",
+      "source": "engadget.com",
+      "title": "Google's Gemini 4 Carbon is now widely available around the world",
+      "description": "Google is rolling out Gemini 4 Carbon after a limited release to cybersecurity companies."
     }
   }
 }
