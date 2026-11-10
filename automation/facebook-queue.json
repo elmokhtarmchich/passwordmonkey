@@ -994,6 +994,30 @@
       "source": "darkreading.com",
       "title": "Black Hat India 2026 Makes a Landmark Debut in Bengaluru, Bringing the Global Cybersecurity Community to India",
       "description": "Inaugural edition by Informa Markets in India brings together leading researchers, security practitioners and industry decision makers for four days of cutting-edge research, technical exchange and strategic dialogue."
+    },
+    "2026-11-10-cisa-warns-of-active-exploitation-of-openssh-gpust-4703b2.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-10T13:59:01.437Z",
+      "published": "2026-11-10",
+      "source": "thehackernews.com",
+      "title": "CISA Warns of Active Exploitation of OpenSSH, GPUStack, FreeSWITCH, and IBM Flaws",
+      "description": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added four security flaws impacting GPUStack, SignalWire FreeSwitch, OpenBSD OpenSSH, and IBM Aspera Faspex to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-123218 (CVSS score: 9.8) - An incorrect authorization vulnerability"
+    },
+    "2026-11-10-hackers-now-exploit-critical-barracuda-esg-flaws-t-40f3a4.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-10T13:59:01.437Z",
+      "published": "2026-11-10",
+      "source": "bleepingcomputer.com",
+      "title": "Hackers now exploit critical Barracuda ESG flaws to gain root access",
+      "description": "Cybersecurity company Barracuda Networks warned that attackers have begun exploiting two recently patched Email Security Gateway (ESG) vulnerabilities that let them run commands with root privileges. [...]"
+    },
+    "2026-11-10-fireworks-ai-discloses-new-breach-after-cloud-prov-4e0613.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-10T13:59:01.437Z",
+      "published": "2026-11-10",
+      "source": "bleepingcomputer.com",
+      "title": "Fireworks AI discloses new breach after cloud provider hack",
+      "description": "AI infrastructure startup Fireworks has disclosed a new security breach in which attackers accessed its development machines after breaching a third-party cloud provider. [...]"
     }
   }
 }
