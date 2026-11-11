@@ -1138,6 +1138,62 @@
       "source": "bleepingcomputer.com",
       "title": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks",
       "description": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in attacks. [...]"
+    },
+    "2026-11-11-antifox-ai-pentesting-platform-linked-to-attacks-t-99d239.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-11T23:52:23.335Z",
+      "published": "2026-11-11",
+      "source": "thehackernews.com",
+      "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
+      "description": "Cybersecurity researchers have disclosed details of a campaign in which an emerging agentic penetration testing platform called AntiFox has been used to steal Amazon Web Services (AWS) credentials and pivot laterally into compromised environments.\n\n\"In several recently observed intrusions, Alibaba Cloud systems hosting AntiFox interfaces were associated with confirmed malicious actions against"
+    },
+    "2026-11-11-today-ciso-forum-virtual-summit-2026-day-2-join-cy-873ada.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-11T23:52:23.335Z",
+      "published": "2026-11-11",
+      "source": "securityweek.com",
+      "title": "Today: CISO Forum Virtual Summit 2026 Day 2 – Join Cybersecurity Leaders Online",
+      "description": "Designed for cybersecurity leaders, this immersive two-day virtual event is your premier destination to discuss, share, and learn innovative risk management and defense strategies defining the modern enterprise.\nThe post Today: CISO Forum Virtual Summit 2026 Day 2 – Join Cybersecurity Leaders Online appeared first on SecurityWeek."
+    },
+    "2026-11-11-critical-xen-orchestra-flaws-exploited-in-attacks-1850dc.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-11T23:52:23.335Z",
+      "published": "2026-11-11",
+      "source": "securityweek.com",
+      "title": "Critical Xen Orchestra Flaws Exploited in Attacks",
+      "description": "A critical authentication bypass allows attackers to execute arbitrary code as admin and take over XCP-ng nodes.\nThe post Critical Xen Orchestra Flaws Exploited in Attacks appeared first on SecurityWeek."
+    },
+    "2026-11-11-baker-tilly-notifies-clients-of-data-breach-at-thi-2fa347.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-11T23:52:23.335Z",
+      "published": "2026-11-11",
+      "source": "bleepingcomputer.com",
+      "title": "Baker Tilly notifies clients of data breach at third-party provider",
+      "description": "The Baker Tilly Advisory Group is notifying clients that a data breach has compromised certain personal information about them and their dependents. [...]"
+    },
+    "2026-11-11-active-screenconnect-attacks-breach-msps-impact-do-8ecf3d.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-11T23:52:23.335Z",
+      "published": "2026-11-11",
+      "source": "bleepingcomputer.com",
+      "title": "Active ScreenConnect attacks breach MSPs, impact dozens of organizations",
+      "description": "ConnectWise is investigating an active malware campaign targeting managed service providers (MSPs) that uses compromised ScreenConnect environments to deploy rogue remote-access clients to customer devices. [...]"
+    },
+    "2026-11-11-notion-says-fireworks-breach-exposed-customer-ai-c-3c445f.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-11T23:52:23.335Z",
+      "published": "2026-11-11",
+      "source": "bleepingcomputer.com",
+      "title": "Notion says Fireworks breach exposed customer AI chat transcripts",
+      "description": "Notion, the digital workspace platform, disclosed that a security breach at its AI infrastructure provider, Fireworks AI, exposed Notion AI chat transcripts in a small number of workspaces. [...]"
+    },
+    "2026-11-11-maersk-confirms-data-breach-as-whitearmor-ransomwa-9d0e65.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-11T23:52:23.335Z",
+      "published": "2026-11-11",
+      "source": "bleepingcomputer.com",
+      "title": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
+      "description": "Maersk announced that a threat actor gained unauthorized access to a local legacy system inherited through an earlier acquisition and extracted data from it. [...]"
     }
   }
 }
