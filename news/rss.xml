@@ -4,7 +4,25 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Wed, 11 Nov 2026 03:51:31 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 13:14:57 GMT</lastBuildDate>
+    <item>
+      <title>CISA flags Cisco BroadWorks flaw as actively exploited in attacks | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-11-cisa-flags-cisco-broadworks-flaw-as-actively-explo-22463f.html</link>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description>The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability</description>
+    </item>
+    <item>
+      <title>Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-11-cisco-broadworks-and-openwave-flaws-actively-explo-85ce9b.html</link>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media</description>
+    </item>
+    <item>
+      <title>Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-11-railway-says-stolen-customer-ai-keys-led-to-740000-74289a.html</link>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description>AI provider keys that customers stored on Railway were stolen in an October breach and used to commit an estimated $740,000 in unauthorized spending, the platfo</description>
+    </item>
     <item>
       <title>AI Makes Reverse Engineering Mainstream Software &amp;amp; Malware Far Easier | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-11-10-ai-makes-reverse-engineering-mainstream-software-a-3928e1.html</link>
