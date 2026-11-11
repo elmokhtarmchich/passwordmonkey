@@ -4,7 +4,25 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Wed, 11 Nov 2026 13:14:57 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 23:52:25 GMT</lastBuildDate>
+    <item>
+      <title>Active ScreenConnect attacks breach MSPs, impact dozens of organizations | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-11-active-screenconnect-attacks-breach-msps-impact-do-8ecf3d.html</link>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description>ConnectWise is investigating an active malware campaign targeting managed service providers (MSPs) that uses compromised ScreenConnect environments to deploy ro</description>
+    </item>
+    <item>
+      <title>AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-11-antifox-ai-pentesting-platform-linked-to-attacks-t-99d239.html</link>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Cybersecurity researchers have disclosed details of a campaign in which an emerging agentic penetration testing platform called AntiFox has been used to steal A</description>
+    </item>
+    <item>
+      <title>Baker Tilly notifies clients of data breach at third-party provider | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-11-baker-tilly-notifies-clients-of-data-breach-at-thi-2fa347.html</link>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description>The Baker Tilly Advisory Group is notifying clients that a data breach has compromised certain personal information about them and their dependents. [...]</description>
+    </item>
     <item>
       <title>CISA flags Cisco BroadWorks flaw as actively exploited in attacks | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-11-11-cisa-flags-cisco-broadworks-flaw-as-actively-explo-22463f.html</link>
@@ -18,10 +36,35 @@
       <description>The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media</description>
     </item>
     <item>
+      <title>Critical Xen Orchestra Flaws Exploited in Attacks | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-11-critical-xen-orchestra-flaws-exploited-in-attacks-1850dc.html</link>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description>A critical authentication bypass allows attackers to execute arbitrary code as admin and take over XCP-ng nodes.
+The post Critical Xen Orchestra Flaws Exploited</description>
+    </item>
+    <item>
+      <title>Maersk confirms data breach as WhiteArmor ransomware demands $5 million | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-11-maersk-confirms-data-breach-as-whitearmor-ransomwa-9d0e65.html</link>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Maersk announced that a threat actor gained unauthorized access to a local legacy system inherited through an earlier acquisition and extracted data from it. [.</description>
+    </item>
+    <item>
+      <title>Notion says Fireworks breach exposed customer AI chat transcripts | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-11-notion-says-fireworks-breach-exposed-customer-ai-c-3c445f.html</link>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Notion, the digital workspace platform, disclosed that a security breach at its AI infrastructure provider, Fireworks AI, exposed Notion AI chat transcripts in</description>
+    </item>
+    <item>
       <title>Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-11-11-railway-says-stolen-customer-ai-keys-led-to-740000-74289a.html</link>
       <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
       <description>AI provider keys that customers stored on Railway were stolen in an October breach and used to commit an estimated $740,000 in unauthorized spending, the platfo</description>
+    </item>
+    <item>
+      <title>Today: CISO Forum Virtual Summit 2026 Day 2 – Join Cybersecurity Leaders Online | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-11-today-ciso-forum-virtual-summit-2026-day-2-join-cy-873ada.html</link>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Designed for cybersecurity leaders, this immersive two-day virtual event is your premier destination to discuss, share, and learn innovative risk management and</description>
     </item>
     <item>
       <title>AI Makes Reverse Engineering Mainstream Software &amp;amp; Malware Far Easier | Password Monkey</title>
