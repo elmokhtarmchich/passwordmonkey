@@ -1114,6 +1114,30 @@
       "source": "engadget.com",
       "title": "Google's Gemini 4 Carbon is now widely available around the world",
       "description": "Google is rolling out Gemini 4 Carbon after a limited release to cybersecurity companies."
+    },
+    "2026-11-11-railway-says-stolen-customer-ai-keys-led-to-740000-74289a.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-11T13:14:55.535Z",
+      "published": "2026-11-11",
+      "source": "thehackernews.com",
+      "title": "Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges",
+      "description": "AI provider keys that customers stored on Railway were stolen in an October breach and used to commit an estimated $740,000 in unauthorized spending, the platform-as-a-service provider said yesterday. It has promised to pay those charges itself when an AI provider will not refund them.\n\nThe company builds and runs apps for its customers and stores their secrets, such as API keys and database"
+    },
+    "2026-11-11-cisco-broadworks-and-openwave-flaws-actively-explo-85ce9b.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-11T13:14:55.535Z",
+      "published": "2026-11-11",
+      "source": "thehackernews.com",
+      "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
+      "description": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nDetails of the vulnerabilities are below -\n\n\n  CVE-2026-20320 (CVSS score: 7.5) - An improper restriction of XML external entity"
+    },
+    "2026-11-11-cisa-flags-cisco-broadworks-flaw-as-actively-explo-22463f.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-11T13:14:55.535Z",
+      "published": "2026-11-11",
+      "source": "bleepingcomputer.com",
+      "title": "CISA flags Cisco BroadWorks flaw as actively exploited in attacks",
+      "description": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned on Tuesday that hackers are now exploiting a high-severity Cisco BroadWorks vulnerability in attacks. [...]"
     }
   }
 }
