@@ -1202,6 +1202,38 @@
       "source": "darkreading.com",
       "title": "Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise",
       "description": "The package adds public-private cyber responders, an AI-focused team run by the economic ministry, and more leeway to use the government's new active cyber-defense powers."
+    },
+    "2026-11-12-hackers-deploy-malware-in-fresh-screenconnect-camp-e9d69b.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-12T14:19:18.745Z",
+      "published": "2026-11-12",
+      "source": "securityweek.com",
+      "title": "Hackers Deploy Malware in Fresh ScreenConnect Campaign",
+      "description": "The attackers exploited a vulnerability in a legitimate extension to bypass ScreenConnect authentication.\nThe post Hackers Deploy Malware in Fresh ScreenConnect Campaign appeared first on SecurityWeek."
+    },
+    "2026-11-12-inside-an-ai-attack-against-a-us-retailer-e5581e.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-12T14:19:18.745Z",
+      "published": "2026-11-12",
+      "source": "darkreading.com",
+      "title": "Inside an AI Attack Against a US Retailer",
+      "description": "When hand-typed commands failed to breach a US retailer, the attacker turned to AI-generated scripts, achieving lateral movement in minutes."
+    },
+    "2026-11-12-apples-homeview-tries-face-authentication-without--f821ba.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-12T14:19:18.745Z",
+      "published": "2026-11-12",
+      "source": "wired.com",
+      "title": "Apple’s HomeView Tries Face Authentication Without FaceID",
+      "description": "Apple’s FaceID has long provided robust authentication. But for its smart home device, HomeView, the company is betting on new “person recognition” technology that has yet to be challenged in the wild."
+    },
+    "2026-11-12-legos-bricklink-marketplace-has-been-offline-for-a-cf25b9.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-12T14:19:18.745Z",
+      "published": "2026-11-12",
+      "source": "theverge.com",
+      "title": "Lego’s BrickLink marketplace has been offline for a week following ‘unusual activity’",
+      "description": "Bricklink, a popular online marketplace that Lego bought in 2019 where fans can buy and sell parts and sets, has been down for a week and the company doesn't know when it will return. The team who runs the site has been sharing updates over the past week including estimates of when it will be back up. It was last expected to return on November 11th, according to Jay's Brick Blog, but a statement Lego shared to the site yesterday says there's currently no estimate of when BrickLink will be back online.\nLego hasn't explained exactly what happened with the marketplace, but says it \"took BrickLink offline after identifying unusual activity on t …\nRead the full story at The Verge."
     }
   }
 }
