@@ -4,12 +4,36 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Thu, 12 Nov 2026 14:19:20 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 22:59:45 GMT</lastBuildDate>
+    <item>
+      <title>186 Fake AI Domains Redirect Users to ClickFix Lures, Browser Malware, and Search Hijackers | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-12-186-fake-ai-domains-redirect-users-to-clickfix-lur-9d9670.html</link>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Cybersecurity researchers have found that lookalike domains masquerading as artificial intelligence (AI) tools are being used to serve ClickFix-style lures, bro</description>
+    </item>
+    <item>
+      <title>Apify rotates API tokens, prompts 2FA resets after breach | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-12-apify-rotates-api-tokens-prompts-2fa-resets-after--92e206.html</link>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Apify has rotated critical internal secrets and revoked some third-party OAuth connections after detecting unauthorized access to its internal systems. [...]</description>
+    </item>
     <item>
       <title>Apple’s HomeView Tries Face Authentication Without FaceID | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-11-12-apples-homeview-tries-face-authentication-without--f821ba.html</link>
       <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
       <description>Apple’s FaceID has long provided robust authentication. But for its smart home device, HomeView, the company is betting on new “person recognition” technology t</description>
+    </item>
+    <item>
+      <title>Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-12-citrix-patches-12-netscaler-and-secure-access-clie-96d21d.html</link>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Citrix has released patches for multiple critical security flaws impacting NetScaler ADC, Citrix NetScaler Gateway, and NetScaler Console that could lead to den</description>
+    </item>
+    <item>
+      <title>Cyberattack on Fireworks AI allowed hackers to access Notion customers’ chat transcripts | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-12-cyberattack-on-fireworks-ai-allowed-hackers-to-acc-3d14e9.html</link>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description>This is Fireworks</description>
     </item>
     <item>
       <title>Hackers Deploy Malware in Fresh ScreenConnect Campaign | Password Monkey</title>
@@ -35,6 +59,20 @@ The post Hackers Deploy Malware in Fresh ScreenConnect</description>
       <link>https://passwordmonkey.org/news/2026-11-12-legos-bricklink-marketplace-has-been-offline-for-a-cf25b9.html</link>
       <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
       <description>Bricklink, a popular online marketplace that Lego bought in 2019 where fans can buy and sell parts and sets, has been down for a week and the company doesn</description>
+    </item>
+    <item>
+      <title>New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-12-new-signdrop-zero-day-exploit-turns-windows-clfs-s-c892fb.html</link>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Public exploit code released earlier this week claims that a local Windows user can gain SYSTEM privileges through the Common Log File System driver.
+
+The proof</description>
+    </item>
+    <item>
+      <title>United Airlines blocks AI agents from booking flights, citing cybersecurity risks | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-12-united-airlines-blocks-ai-agents-from-booking-flig-0544f1.html</link>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description>The airline said it will not allow customers to use AI agents to book flights and manage reservations.</description>
     </item>
     <item>
       <title>Active ScreenConnect attacks breach MSPs, impact dozens of organizations | Password Monkey</title>
