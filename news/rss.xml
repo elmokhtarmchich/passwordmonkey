@@ -4,12 +4,37 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Thu, 12 Nov 2026 04:58:57 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 14:19:20 GMT</lastBuildDate>
+    <item>
+      <title>Apple’s HomeView Tries Face Authentication Without FaceID | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-12-apples-homeview-tries-face-authentication-without--f821ba.html</link>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Apple’s FaceID has long provided robust authentication. But for its smart home device, HomeView, the company is betting on new “person recognition” technology t</description>
+    </item>
+    <item>
+      <title>Hackers Deploy Malware in Fresh ScreenConnect Campaign | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-12-hackers-deploy-malware-in-fresh-screenconnect-camp-e9d69b.html</link>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description>The attackers exploited a vulnerability in a legitimate extension to bypass ScreenConnect authentication.
+The post Hackers Deploy Malware in Fresh ScreenConnect</description>
+    </item>
+    <item>
+      <title>Inside an AI Attack Against a US Retailer | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-12-inside-an-ai-attack-against-a-us-retailer-e5581e.html</link>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description>When hand-typed commands failed to breach a US retailer, the attacker turned to AI-generated scripts, achieving lateral movement in minutes.</description>
+    </item>
     <item>
       <title>Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-11-12-japan-pushes-emergency-funding-for-cybersecurity-a-9a08fb.html</link>
       <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
       <description>The package adds public-private cyber responders, an AI-focused team run by the economic ministry, and more leeway to use the government</description>
+    </item>
+    <item>
+      <title>Lego’s BrickLink marketplace has been offline for a week following ‘unusual activity’ | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-12-legos-bricklink-marketplace-has-been-offline-for-a-cf25b9.html</link>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description>Bricklink, a popular online marketplace that Lego bought in 2019 where fans can buy and sell parts and sets, has been down for a week and the company doesn</description>
     </item>
     <item>
       <title>Active ScreenConnect attacks breach MSPs, impact dozens of organizations | Password Monkey</title>
