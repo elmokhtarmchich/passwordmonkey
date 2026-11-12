@@ -1234,6 +1234,54 @@
       "source": "theverge.com",
       "title": "Lego’s BrickLink marketplace has been offline for a week following ‘unusual activity’",
       "description": "Bricklink, a popular online marketplace that Lego bought in 2019 where fans can buy and sell parts and sets, has been down for a week and the company doesn't know when it will return. The team who runs the site has been sharing updates over the past week including estimates of when it will be back up. It was last expected to return on November 11th, according to Jay's Brick Blog, but a statement Lego shared to the site yesterday says there's currently no estimate of when BrickLink will be back online.\nLego hasn't explained exactly what happened with the marketplace, but says it \"took BrickLink offline after identifying unusual activity on t …\nRead the full story at The Verge."
+    },
+    "2026-11-12-new-signdrop-zero-day-exploit-turns-windows-clfs-s-c892fb.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-12T22:59:43.725Z",
+      "published": "2026-11-12",
+      "source": "thehackernews.com",
+      "title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
+      "description": "Public exploit code released earlier this week claims that a local Windows user can gain SYSTEM privileges through the Common Log File System driver.\n\nThe proof of concept, called SignDrop, targets a log-authentication feature added to the driver last year. It abuses how clfs.sys creates companion files when a privileged process opens a prepared log, using path redirection to take control of"
+    },
+    "2026-11-12-citrix-patches-12-netscaler-and-secure-access-clie-96d21d.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-12T22:59:43.725Z",
+      "published": "2026-11-12",
+      "source": "thehackernews.com",
+      "title": "Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass",
+      "description": "Citrix has released patches for multiple critical security flaws impacting NetScaler ADC, Citrix NetScaler Gateway, and NetScaler Console that could lead to denial-of-service (DoS) or an authentication bypass.\n\nThe critical vulnerabilities that impact NetScaler ADC and NetScaler Gateway are listed below -\n\n\n  CVE-2026-120868 (CVSS score: 9.3) - A memory overflow vulnerability in Packet"
+    },
+    "2026-11-12-186-fake-ai-domains-redirect-users-to-clickfix-lur-9d9670.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-12T22:59:43.725Z",
+      "published": "2026-11-12",
+      "source": "thehackernews.com",
+      "title": "186 Fake AI Domains Redirect Users to ClickFix Lures, Browser Malware, and Search Hijackers",
+      "description": "Cybersecurity researchers have found that lookalike domains masquerading as artificial intelligence (AI) tools are being used to serve ClickFix-style lures, browser-hijacking malware, and a set of extensions that hijack user searches.\n\nThis delivery pattern has been codenamed TypoPrompting by Island.\n\n\"AI-app lookalikes that turn an attempt to reach a familiar tool into a prompt to verify,"
+    },
+    "2026-11-12-apify-rotates-api-tokens-prompts-2fa-resets-after--92e206.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-12T22:59:43.725Z",
+      "published": "2026-11-12",
+      "source": "bleepingcomputer.com",
+      "title": "Apify rotates API tokens, prompts 2FA resets after breach",
+      "description": "Apify has rotated critical internal secrets and revoked some third-party OAuth connections after detecting unauthorized access to its internal systems. [...]"
+    },
+    "2026-11-12-united-airlines-blocks-ai-agents-from-booking-flig-0544f1.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-12T22:59:43.725Z",
+      "published": "2026-11-12",
+      "source": "techcrunch.com",
+      "title": "United Airlines blocks AI agents from booking flights, citing cybersecurity risks",
+      "description": "The airline said it will not allow customers to use AI agents to book flights and manage reservations."
+    },
+    "2026-11-12-cyberattack-on-fireworks-ai-allowed-hackers-to-acc-3d14e9.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-12T22:59:43.725Z",
+      "published": "2026-11-12",
+      "source": "techcrunch.com",
+      "title": "Cyberattack on Fireworks AI allowed hackers to access Notion customers’ chat transcripts",
+      "description": "This is Fireworks' second data breach in as many months."
     }
   }
 }
