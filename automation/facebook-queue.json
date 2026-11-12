@@ -1194,6 +1194,14 @@
       "source": "bleepingcomputer.com",
       "title": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
       "description": "Maersk announced that a threat actor gained unauthorized access to a local legacy system inherited through an earlier acquisition and extracted data from it. [...]"
+    },
+    "2026-11-12-japan-pushes-emergency-funding-for-cybersecurity-a-9a08fb.html": {
+      "status": "pending",
+      "discoveredAt": "2026-11-12T04:58:56.051Z",
+      "published": "2026-11-12",
+      "source": "darkreading.com",
+      "title": "Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise",
+      "description": "The package adds public-private cyber responders, an AI-focused team run by the economic ministry, and more leeway to use the government's new active cyber-defense powers."
     }
   }
 }
