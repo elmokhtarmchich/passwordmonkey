@@ -1,7 +1,10 @@
 <!-- Text Animation for H2 -->
 <div class="relative bg-black rounded-lg p-4 border border-green-400">
-  <span id="typed-text" class="font-mono font-bold text-4xl md:text-5xl lg:text-4xl xl:text-5xl text-green-400 tracking-wide leading-tight terminal-text">
+  <span id="typed-text" class="text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-bold title-font tracking-tight terminal-text hidden sm:block">
     <span id="typed-content"></span><span id="cursor" class="inline-block w-3 h-6 bg-slate-900 dark:bg-slate-100 ml-1 animate-blink"></span>
+  </span>
+  <span id="typed-text-mobile" class="text-xs md:text-sm font-bold title-font tracking-tight terminal-text block sm:hidden whitespace-nowrap overflow-hidden">
+    <span id="typed-content-mobile"></span><span id="cursor-mobile" class="inline-block text-xs md:text-sm font-bold bg-slate-900 dark:bg-slate-100 ml-1 animate-blink"></span>
   </span>
 </div>
 
@@ -14,8 +17,9 @@
     animation: blink 1s infinite;
   }
   .terminal-text {
-    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
-    font-family: 'Courier New', monospace;
+    text-shadow: 0 0 10px rgba(57, 255, 20, 0.8);
+    font-family: 'JetBrains Mono', 'Geist Mono', 'IBM Plex Mono', monospace;
+    color: #39FF14 !important;
   }
   @keyframes scanline {
     0% { transform: translateY(-100%); }
@@ -47,21 +51,36 @@
 
 <script>
   const fullText = "Free Password Generator - Create Strong, Secure Passwords";
+  const fullTextMobile = "Free Password Generator - Create Strong, Secure Passwords";
   const targetWords = ["Free", "Strong", "Secure"];
   const typedContent = document.getElementById("typed-content");
   const cursor = document.getElementById("cursor");
+  const typedContentMobile = document.getElementById("typed-content-mobile");
+  const cursorMobile = document.getElementById("cursor-mobile");
 
-  let index = 0;
+  let indexDesktop = 0;
+  let indexMobile = 0;
   const typingSpeed = 70; // Typing delay in ms
 
   function typeText() {
-    if (index < fullText.length) {
-      typedContent.textContent += fullText.charAt(index);
-      index++;
+    if (indexDesktop < fullText.length) {
+      typedContent.textContent += fullText.charAt(indexDesktop);
+      indexDesktop++;
       setTimeout(typeText, typingSpeed);
     } else {
       // Pause briefly after typing finishes, then apply the purple background highlight
       setTimeout(applyHighlights, 800);
+    }
+  }
+
+  function typeTextMobile() {
+    if (indexMobile < fullTextMobile.length) {
+      typedContentMobile.textContent += fullTextMobile.charAt(indexMobile);
+      indexMobile++;
+      setTimeout(typeTextMobile, typingSpeed);
+    } else {
+      // Pause briefly after typing finishes, then apply the purple background highlight
+      setTimeout(applyHighlightsMobile, 800);
     }
   }
 
@@ -76,6 +95,22 @@
     typedContent.innerHTML = htmlResult;
   }
 
+  function applyHighlightsMobile() {
+    let htmlResult = fullTextMobile;
+
+    targetWords.forEach(function(word) {
+      const regex = new RegExp('\\b(' + word + ')\\b', 'g');
+      htmlResult = htmlResult.replace(regex, '<span class="highlight-purple">$1</span>');
+    });
+
+    typedContentMobile.innerHTML = htmlResult;
+  }
+
   // Start typing animation when the page loads
-  window.addEventListener('DOMContentLoaded', typeText);
+  window.addEventListener('DOMContentLoaded', function() {
+    indexDesktop = 0;
+    indexMobile = 0;
+    typeText();
+    typeTextMobile();
+  });
 </script>
