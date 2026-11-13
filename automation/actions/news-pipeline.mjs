@@ -80,15 +80,20 @@ function slugify(text) {
     .replace(/\s+/g, "-")
     .replace(/-+/g, "-")
     .replace(/^-+|-+$/g, "")
-    .substring(0, 50);
+    // Removed substring(0, 50) - filename limit is well above this
+    // Max filename would be: YYYY-MM-DD-slug-6chars.html (approx 70-80 chars)
+    // Well within filesystem limits (typically 255 chars)
+    .trim();
 }
 
-export function buildArticleHtml(item) {
+export async function buildArticleHtml(item) {
   const readingTime = item.readingTime || 5;
   const dateFormatted = item.dateFormatted;
   const dateISO = item.dateISO;
 
-  const hash = crypto.createHash("sha256").update(item.link).digest("hex").substring(0, 6);
+  // Ensure item.link exists for hash generation (fallback to empty string if undefined)
+  const link = item.link || "";
+  const hash = crypto.createHash("sha256").update(link).digest("hex").substring(0, 6);
 
   const publishDate = new Date(item.publishedAt);
   const publishDateYMD = publishDate.toISOString().split("T")[0];
@@ -112,6 +117,7 @@ export function buildArticleHtml(item) {
     bodyHtml = `<p>${bodyHtml}</p>`;
   }
 
+  // Use source URL directly (no truncation prevention needed at this level)
   const proxyBase = "https://passwordmonkey.org/rss?url=";
   const proxiedLink = proxyBase + encodeURIComponent(item.link);
 

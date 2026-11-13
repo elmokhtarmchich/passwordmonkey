@@ -7,6 +7,9 @@
     <meta name="description" content="Support PasswordMonkey. Your donations help us cover costs and continue to provide a free, private, and secure password generator for everyone.">
     <meta name="keywords" content="donate, support, passwordmonkey, open source, security tool">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script async
+      src="https://js.stripe.com/v3/buy-button.js">
+    </script>
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -72,11 +75,23 @@
             <p class="text-gray-600 dark:text-gray-300 mb-6">
                 PasswordMonkey is a free, open-source project maintained by a single developer. If you find this tool useful, please consider making a small donation. Your support helps cover hosting costs and fuels future improvements.
             </p>
-            <div class="flex justify-center items-center gap-4">
-                <a href="#" class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition" aria-label="Buy Me a Coffee">
-                    <i class="fas fa-coffee mr-2"></i> Buy Me a Coffee
-                </a>
-                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition" aria-label="Donate with PayPal">
+            <div class="flex justify-center items-center gap-4 flex-col sm:flex-row">
+                <stripe-buy-button
+                  buy-button-id="buy_btn_1Ub47bGfR7JgjXGZkJpVq9VY"
+                  publishable-key="pk_live_51UOoCYGfR7JgjXGZI097cCfBUrqPJeJ8TKAnpXBslBGTQDzgXEdGk81SJWgbYRz2zyD6TEdUKpPkvX4B5JQkKEmU00oZMjRfTw">
+                </stripe-buy-button>
+                <div class="border border-neutral-200 dark:border-neutral-700 rounded-lg hover:border-brand-400 dark:hover:border-brand-400 transition overflow-hidden">
+                    <div class="bg-gradient-to-br from-yellow-400 to-yellow-500 dark:from-yellow-600 dark:to-yellow-700 px-6 py-4">
+                        <div class="flex items-center justify-center gap-2">
+                            <span class="text-2xl">☕</span>
+                            <span class="font-bold text-gray-900 dark:text-white">Buy Me a Coffee</span>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-neutral-800 px-6 py-4 text-center">
+                        <p class="text-sm text-gray-600 dark:text-gray-300">Support us with a small coffee donation</p>
+                    </div>
+                </div>
+                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition flex items-center justify-center" aria-label="Donate with PayPal">
                     <i class="fab fa-paypal mr-2"></i> Donate with PayPal
                 </a>
             </div>
