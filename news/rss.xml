@@ -4,7 +4,7 @@
     <title>Password Security News | Password Monkey</title>
     <link>https://passwordmonkey.org/news/</link>
     <description>Latest password security updates, data breaches, and cybersecurity news curated by Password Monkey.</description>
-    <lastBuildDate>Thu, 12 Nov 2026 22:59:45 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 04:13:57 GMT</lastBuildDate>
     <item>
       <title>186 Fake AI Domains Redirect Users to ClickFix Lures, Browser Malware, and Search Hijackers | Password Monkey</title>
       <link>https://passwordmonkey.org/news/2026-11-12-186-fake-ai-domains-redirect-users-to-clickfix-lur-9d9670.html</link>
@@ -41,6 +41,12 @@
       <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
       <description>The attackers exploited a vulnerability in a legitimate extension to bypass ScreenConnect authentication.
 The post Hackers Deploy Malware in Fresh ScreenConnect</description>
+    </item>
+    <item>
+      <title>Humble Bundle redesign removes two-factor verification from settings | Password Monkey</title>
+      <link>https://passwordmonkey.org/news/2026-11-12-humble-bundle-redesign-removes-two-factor-verifica-ecab0e.html</link>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
+      <description>The Humble Bundle storefront for buying games and other software recently got a new look, but on the settings page, it no longer offers a way to add or update t</description>
     </item>
     <item>
       <title>Inside an AI Attack Against a US Retailer | Password Monkey</title>
