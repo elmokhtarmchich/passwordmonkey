@@ -1284,12 +1284,16 @@
       "description": "This is Fireworks' second data breach in as many months."
     },
     "2026-11-12-humble-bundle-redesign-removes-two-factor-verifica-ecab0e.html": {
-      "status": "pending",
+      "status": "rejected",
       "discoveredAt": "2026-11-13T04:13:55.593Z",
       "published": "2026-11-12",
       "source": "theverge.com",
       "title": "Humble Bundle redesign removes two-factor verification from settings",
-      "description": "The Humble Bundle storefront for buying games and other software recently got a new look, but on the settings page, it no longer offers a way to add or update two-factor verification methods, as reported by Kotaku. PC Gamer also points out that there are Humble Bundle support pages discussing two-factor verification, and the writer for the publication said that they had set up two-factor verification on the old version of the site.\nHowever, it does appear that, at least as of now, there is some form of two-factor verification. When I tried logging into my Humble Bundle account while writing this article, I was prompted to check my email for …\nRead the full story at The Verge."
+      "description": "The Humble Bundle storefront for buying games and other software recently got a new look, but on the settings page, it no longer offers a way to add or update two-factor verification methods, as reported by Kotaku. PC Gamer also points out that there are Humble Bundle support pages discussing two-factor verification, and the writer for the publication said that they had set up two-factor verification on the old version of the site.\nHowever, it does appear that, at least as of now, there is some form of two-factor verification. When I tried logging into my Humble Bundle account while writing this article, I was prompted to check my email for …\nRead the full story at The Verge.",
+      "rejectedAt": "2026-11-13T04:14:13.436Z",
+      "rejectionReasons": [
+        "description length is invalid"
+      ]
     }
   }
 }
